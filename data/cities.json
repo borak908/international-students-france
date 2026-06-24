@@ -1,0 +1,131 @@
+[
+  {
+    "slug": "lille",
+    "name": "Lille",
+    "country": "France",
+    "region": "Hauts-de-France",
+    "tagline": "France's student capital of the north — affordable, energetic, and surprisingly international.",
+    "metaDescription": "Everything international students need to know about studying in Lille, France — housing costs, universities, transport, visa rules, and city life.",
+    "heroStats": [
+      { "label": "Students", "value": "100,000+" },
+      { "label": "Monthly Budget", "value": "€913" },
+      { "label": "Studio Rent", "value": "€700/mo" },
+      { "label": "Safety Rating", "value": "5/10" }
+    ],
+    "overview": {
+      "studentPopulation": "100,000+",
+      "internationalStudentPct": "~13% (11,000 of 81,000 at Univ. Lille)",
+      "englishProgramsAvailable": true,
+      "safetyRating": "5/10 (Numbeo safety index: 49)",
+      "overallVibe": "Student city, energised, warm, Flemish charm"
+    },
+    "housing": {
+      "studioRentMonthly": 700,
+      "sharedRoomMonthly": "€400–550",
+      "totalMonthlyBudget": 913,
+      "cafAidMonthly": "€100–300",
+      "bestNeighborhoods": ["Vauban", "Wazemmes", "Centre", "Vieux-Lille"]
+    },
+    "universities": {
+      "main": [
+        "Université de Lille (81,000 students)"
+      ],
+      "grandesEcoles": [
+        "Sciences Po Lille",
+        "SKEMA",
+        "EDHEC",
+        "IÉSEG",
+        "HEI"
+      ],
+      "tuitionEUPerYear": 178,
+      "tuitionNonEUPerYear": 2895,
+      "bestFields": ["Business", "Law", "Medicine", "Engineering", "Social Sciences"]
+    },
+    "transport": {
+      "studentPassMonthly": 30,
+      "regularPassMonthly": 62.50,
+      "airportConnection": "Eurostar to London, TGV to Paris (1 hr)",
+      "bikeFriendly": true,
+      "bikeShareName": "V'Lille"
+    },
+    "workVisa": {
+      "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
+      "studentJobMarket": "Medium — smaller city, fewer opportunities",
+      "visaType": "Long-stay student visa + residence permit",
+      "internshipScene": "Business schools strong (EDHEC, IÉSEG); regional industry"
+    },
+    "internationalExperience": {
+      "studentPopulation": "100,000+",
+      "internationalStudentPct": "~13%",
+      "englishPrograms": "Yes — EDHEC, SKEMA, IÉSEG fully English",
+      "safetyRating": "5/10 (Numbeo safety index: 49)",
+      "overallVibe": "Student city, energised, warm, Flemish charm"
+    }
+  },
+  {
+    "slug": "paris",
+    "name": "Paris",
+    "country": "France",
+    "region": "Île-de-France",
+    "tagline": "The world's most iconic student city — unmatched universities, culture, and career opportunities.",
+    "metaDescription": "Complete guide for international students studying in Paris, France — rent prices, top universities, transport costs, part-time work rules, and student life.",
+    "heroStats": [
+      { "label": "Students", "value": "600,000+" },
+      { "label": "Monthly Budget", "value": "€1,064" },
+      { "label": "Studio Rent", "value": "€1,230/mo" },
+      { "label": "Safety Rating", "value": "4/10" }
+    ],
+    "overview": {
+      "studentPopulation": "600,000+ (Île-de-France region)",
+      "internationalStudentPct": "~15–20% depending on institution",
+      "englishProgramsAvailable": true,
+      "safetyRating": "4/10 (Numbeo safety index: 42)",
+      "overallVibe": "Vibrant, elegant, cultural capital, fast-paced"
+    },
+    "housing": {
+      "studioRentMonthly": 1230,
+      "sharedRoomMonthly": "€600–900",
+      "totalMonthlyBudget": 1064,
+      "cafAidMonthly": "€100–300",
+      "bestNeighborhoods": ["Latin Quarter (5e)", "Bastille (11e)", "Belleville (20e)", "Montparnasse (14e)"]
+    },
+    "universities": {
+      "main": [
+        "Sorbonne (53,400 students)",
+        "Paris Cité",
+        "PSL University",
+        "Paris Panthéon-Sorbonne"
+      ],
+      "grandesEcoles": [
+        "HEC",
+        "Sciences Po Paris",
+        "École Polytechnique",
+        "ENS",
+        "ESSEC"
+      ],
+      "tuitionEUPerYear": 178,
+      "tuitionNonEUPerYear": 2895,
+      "bestFields": ["Law", "Medicine", "Arts", "Engineering", "Business"]
+    },
+    "transport": {
+      "studentPassMonthly": 32.80,
+      "regularPassMonthly": 90.80,
+      "airportConnection": "CDG via RER B (30 min), Orly via RER B + tram",
+      "bikeFriendly": true,
+      "bikeShareName": "Vélib' (1,400+ stations)"
+    },
+    "workVisa": {
+      "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
+      "studentJobMarket": "Strong — finance, tech, fashion, luxury, consulting",
+      "visaType": "Long-stay student visa + residence permit",
+      "internshipScene": "Exceptional — all major sectors headquartered here"
+    },
+    "internationalExperience": {
+      "studentPopulation": "600,000+ (Île-de-France region)",
+      "internationalStudentPct": "~15–20%",
+      "englishPrograms": "Yes — wide range at Sciences Po, HEC, Sorbonne",
+      "safetyRating": "4/10 (Numbeo safety index: 42)",
+      "overallVibe": "Vibrant, elegant, cultural capital, fast-paced"
+    }
+  }
+]
