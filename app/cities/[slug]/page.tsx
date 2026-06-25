@@ -63,10 +63,19 @@ function Section({
 
 // ── Stat card ─────────────────────────────────────────────────────────────────
 function StatCard({ label, value, sub }: { label: string; value: string; sub?: string }) {
+  const isEstimated = value.includes('est.')
+  const displayValue = value.replace(' est.', '')
   return (
     <div className="bg-stone-50 rounded-xl p-4 border border-stone-100">
       <p className="text-xs text-stone-400 font-medium uppercase tracking-wide mb-1">{label}</p>
-      <p className="text-lg font-bold text-stone-800">{value}</p>
+      <p className="text-lg font-bold text-stone-800 flex items-center gap-1.5 flex-wrap">
+        {displayValue}
+        {isEstimated && (
+          <span className="text-[10px] font-semibold text-amber-700 bg-amber-100 border border-amber-200 px-1.5 py-0.5 rounded-full leading-none">
+            est.
+          </span>
+        )}
+      </p>
       {sub && <p className="text-xs text-stone-500 mt-0.5">{sub}</p>}
     </div>
   )
@@ -135,12 +144,22 @@ export default function CityPage({ params }: { params: { slug: string } }) {
 
           {/* Hero stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            {city.heroStats.map((stat) => (
+            {city.heroStats.map((stat) => {
+              const isEst = stat.value.includes('est.')
+              const display = stat.value.replace(' est.', '')
+              return (
               <div key={stat.label} className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
                 <p className="text-blue-300 text-xs font-medium mb-1">{stat.label}</p>
-                <p className="text-white text-xl font-bold">{stat.value}</p>
+                <p className="text-white text-xl font-bold flex items-center gap-1.5 flex-wrap">
+                  {display}
+                  {isEst && (
+                    <span className="text-[10px] font-semibold text-amber-300 bg-amber-900/40 border border-amber-600/40 px-1.5 py-0.5 rounded-full leading-none">
+                      est.
+                    </span>
+                  )}
+                </p>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>
@@ -291,12 +310,12 @@ export default function CityPage({ params }: { params: { slug: string } }) {
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
                 <StatCard
                   label="Student pass"
-                  value={`€${city.transport.studentPassMonthly}/mo`}
-                  sub="With student discount"
+                  value={city.transport.studentPassMonthly === 0 ? 'FREE 🎉' : `€${city.transport.studentPassMonthly}/mo`}
+                  sub={city.transport.studentPassMonthly === 0 ? 'Public transport free for residents' : 'With student discount'}
                 />
                 <StatCard
                   label="Regular pass"
-                  value={`€${city.transport.regularPassMonthly}/mo`}
+                  value={city.transport.regularPassMonthly === 0 ? 'FREE' : `€${city.transport.regularPassMonthly}/mo`}
                   sub="Without discount"
                 />
                 <StatCard

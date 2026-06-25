@@ -127,5 +127,626 @@
       "safetyRating": "4/10 (Numbeo safety index: 42)",
       "overallVibe": "Vibrant, elegant, cultural capital, fast-paced"
     }
+  },
+  {
+    "slug": "lyon",
+    "name": "Lyon",
+    "country": "France",
+    "region": "Auvergne-Rhône-Alpes",
+    "tagline": "France's gastronomic capital and fastest-growing student city — rich in culture, tech, and career opportunities.",
+    "metaDescription": "Complete guide for international students studying in Lyon, France — housing costs, top universities, transport, visa rules, and student life.",
+    "heroStats": [
+      { "label": "Students", "value": "120,000+" },
+      { "label": "Monthly Budget", "value": "€1,062" },
+      { "label": "Studio Rent", "value": "€840/mo" },
+      { "label": "Safety Rating", "value": "4/10" }
+    ],
+    "overview": {
+      "studentPopulation": "120,000+",
+      "internationalStudentPct": "~17%",
+      "englishProgramsAvailable": true,
+      "safetyRating": "4/10 (Numbeo safety index: 42.5)",
+      "overallVibe": "Sophisticated, gastronomic, fast-growing tech hub"
+    },
+    "housing": {
+      "studioRentMonthly": 840,
+      "sharedRoomMonthly": "€450–650",
+      "totalMonthlyBudget": 1062,
+      "cafAidMonthly": "€100–300",
+      "bestNeighborhoods": ["Croix-Rousse", "Guillotière", "Villeurbanne", "Part-Dieu"]
+    },
+    "universities": {
+      "main": [
+        "Université Claude Bernard Lyon 1 (45,000)",
+        "Lyon 2 (30,000)",
+        "Lyon 3 (25,000)"
+      ],
+      "grandesEcoles": [
+        "EM Lyon",
+        "Sciences Po Lyon",
+        "INSA Lyon",
+        "École Centrale Lyon",
+        "ESDES"
+      ],
+      "tuitionEUPerYear": 178,
+      "tuitionNonEUPerYear": 2895,
+      "bestFields": ["Business", "Engineering", "Medicine", "Law", "Sciences"]
+    },
+    "transport": {
+      "studentPassMonthly": 34,
+      "regularPassMonthly": 72.30,
+      "airportConnection": "Lyon-Saint-Exupéry; TGV to Paris 2 hrs",
+      "bikeFriendly": true,
+      "bikeShareName": "Vélo'v (350+ stations)"
+    },
+    "workVisa": {
+      "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
+      "studentJobMarket": "Strong — finance, tech, biotech, manufacturing HQs",
+      "visaType": "Long-stay student visa + residence permit",
+      "internshipScene": "Excellent — Euronews, Sanofi, Bosch"
+    },
+    "internationalExperience": {
+      "studentPopulation": "120,000+",
+      "internationalStudentPct": "~17%",
+      "englishPrograms": "Yes — EM Lyon, INSA, Sciences Po Lyon",
+      "safetyRating": "4/10 (Numbeo safety index: 42.5)",
+      "overallVibe": "Sophisticated, gastronomic, fast-growing tech hub"
+    }
+  },
+  {
+    "slug": "bordeaux",
+    "name": "Bordeaux",
+    "country": "France",
+    "region": "Nouvelle-Aquitaine",
+    "tagline": "France's most beautiful city — world-class wine, architecture, and a thriving student scene at affordable prices.",
+    "metaDescription": "Everything international students need to know about studying in Bordeaux, France — rent, universities, transport, visa rules, and student life.",
+    "heroStats": [
+      { "label": "Students", "value": "100,000+" },
+      { "label": "Monthly Budget", "value": "€980" },
+      { "label": "Studio Rent", "value": "€850/mo" },
+      { "label": "Safety Rating", "value": "5/10" }
+    ],
+    "overview": {
+      "studentPopulation": "100,000+",
+      "internationalStudentPct": "~12%",
+      "englishProgramsAvailable": true,
+      "safetyRating": "5/10 (Numbeo safety index: 50.2)",
+      "overallVibe": "Elegant, vibrant, most attractive city in France (2023 ranking)"
+    },
+    "housing": {
+      "studioRentMonthly": 850,
+      "sharedRoomMonthly": "€420–600",
+      "totalMonthlyBudget": 980,
+      "cafAidMonthly": "€100–300",
+      "bestNeighborhoods": ["Saint-Michel", "Chartrons", "Bacalan", "Nansouty"]
+    },
+    "universities": {
+      "main": [
+        "Université de Bordeaux (55,000 students)"
+      ],
+      "grandesEcoles": [
+        "KEDGE Business School",
+        "Sciences Po Bordeaux",
+        "Bordeaux INP",
+        "ENSEIRB-MATMECA"
+      ],
+      "tuitionEUPerYear": 178,
+      "tuitionNonEUPerYear": 2895,
+      "bestFields": ["Business", "Law", "Sciences", "Medicine", "Oenology"]
+    },
+    "transport": {
+      "studentPassMonthly": 20.80,
+      "regularPassMonthly": 62,
+      "airportConnection": "Bordeaux-Mérignac international; TGV to Paris 2 hrs",
+      "bikeFriendly": true,
+      "bikeShareName": "V3 bike-share (extensive cycling lanes)"
+    },
+    "workVisa": {
+      "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
+      "studentJobMarket": "Medium-strong — aerospace, wine, digital sector",
+      "visaType": "Long-stay student visa + residence permit",
+      "internshipScene": "Good — Dassault Aviation, Airbus nearby, growing startups"
+    },
+    "internationalExperience": {
+      "studentPopulation": "100,000+",
+      "internationalStudentPct": "~12%",
+      "englishPrograms": "Yes — KEDGE, Sciences Po Bordeaux",
+      "safetyRating": "5/10 (Numbeo safety index: 50.2)",
+      "overallVibe": "Elegant, vibrant, most attractive city in France (2023 ranking)"
+    }
+  },
+  {
+    "slug": "toulouse",
+    "name": "Toulouse",
+    "country": "France",
+    "region": "Occitanie",
+    "tagline": "France's #1 student city in 2025 — sunny, energetic, and home to the world's aerospace capital.",
+    "metaDescription": "Complete guide for international students in Toulouse, France — costs, universities, Airbus internships, transport, and student life.",
+    "heroStats": [
+      { "label": "Students", "value": "120,000+" },
+      { "label": "Monthly Budget", "value": "€900" },
+      { "label": "Studio Rent", "value": "€750/mo" },
+      { "label": "Safety Rating", "value": "5/10" }
+    ],
+    "overview": {
+      "studentPopulation": "120,000+",
+      "internationalStudentPct": "~15%",
+      "englishProgramsAvailable": true,
+      "safetyRating": "5/10 (Numbeo safety index: 50.1)",
+      "overallVibe": "Energetic, warm, sunny southwest — France's #1 student city 2025"
+    },
+    "housing": {
+      "studioRentMonthly": 750,
+      "sharedRoomMonthly": "€380–530",
+      "totalMonthlyBudget": 900,
+      "cafAidMonthly": "€100–300",
+      "bestNeighborhoods": ["Les Carmes", "Saint-Aubin", "Minimes", "Empalot"]
+    },
+    "universities": {
+      "main": [
+        "Toulouse III Paul Sabatier (35,000)",
+        "Toulouse Capitole (25,000)",
+        "Jean Jaurès (22,000)"
+      ],
+      "grandesEcoles": [
+        "TBS Education",
+        "INSA Toulouse",
+        "ISAE-SUPAERO",
+        "Sciences Po Toulouse"
+      ],
+      "tuitionEUPerYear": 178,
+      "tuitionNonEUPerYear": 2895,
+      "bestFields": ["Aerospace Engineering", "Business", "Medicine", "Sciences", "Law"]
+    },
+    "transport": {
+      "studentPassMonthly": 30,
+      "regularPassMonthly": 63,
+      "airportConnection": "Toulouse-Blagnac international airport; TGV to Paris 4 hrs",
+      "bikeFriendly": true,
+      "bikeShareName": "VélÔToulouse bike-share"
+    },
+    "workVisa": {
+      "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
+      "studentJobMarket": "Strong — Airbus, Thales, Safran, Capgemini HQs",
+      "visaType": "Long-stay student visa + residence permit",
+      "internshipScene": "Exceptional for engineering — Airbus global HQ in Toulouse"
+    },
+    "internationalExperience": {
+      "studentPopulation": "120,000+",
+      "internationalStudentPct": "~15%",
+      "englishPrograms": "Yes — TBS, ISAE-SUPAERO, INSA Toulouse",
+      "safetyRating": "5/10 (Numbeo safety index: 50.1)",
+      "overallVibe": "Energetic, warm, sunny southwest — France's #1 student city 2025"
+    }
+  },
+  {
+    "slug": "montpellier",
+    "name": "Montpellier",
+    "country": "France",
+    "region": "Occitanie",
+    "tagline": "France's youngest and most international city — free public transport and a vibrant Mediterranean lifestyle.",
+    "metaDescription": "Everything international students need to know about studying in Montpellier, France — free transport, housing costs, universities, and city life.",
+    "heroStats": [
+      { "label": "Students", "value": "80,000+" },
+      { "label": "Monthly Budget", "value": "€880" },
+      { "label": "Studio Rent", "value": "€700/mo" },
+      { "label": "Safety Rating", "value": "4/10" }
+    ],
+    "overview": {
+      "studentPopulation": "80,000+",
+      "internationalStudentPct": "~20%",
+      "englishProgramsAvailable": true,
+      "safetyRating": "4/10 (Numbeo safety index: 38.9)",
+      "overallVibe": "Young, vibrant, Mediterranean, international"
+    },
+    "housing": {
+      "studioRentMonthly": 700,
+      "sharedRoomMonthly": "€380–520",
+      "totalMonthlyBudget": 880,
+      "cafAidMonthly": "€100–300",
+      "bestNeighborhoods": ["Écusson", "Antigone", "Port Marianne", "Beaux-Arts"]
+    },
+    "universities": {
+      "main": [
+        "Université de Montpellier (55,000)",
+        "Université Paul-Valéry (22,000)"
+      ],
+      "grandesEcoles": [
+        "Montpellier Business School",
+        "Sciences Po Montpellier",
+        "SupAgro"
+      ],
+      "tuitionEUPerYear": 178,
+      "tuitionNonEUPerYear": 2895,
+      "bestFields": ["Medicine", "Law", "Sciences", "Business", "Languages"]
+    },
+    "transport": {
+      "studentPassMonthly": 0,
+      "regularPassMonthly": 0,
+      "airportConnection": "Montpellier-Méditerranée airport; TGV to Paris 3.5 hrs",
+      "bikeFriendly": true,
+      "bikeShareName": "VéloMagg (€20/yr student pass) — tram/bus FREE for metro residents"
+    },
+    "workVisa": {
+      "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
+      "studentJobMarket": "Medium — digital, biotech, agri-tech growing",
+      "visaType": "Long-stay student visa + residence permit",
+      "internshipScene": "Good — biotech sector, digital startups"
+    },
+    "internationalExperience": {
+      "studentPopulation": "80,000+",
+      "internationalStudentPct": "~20%",
+      "englishPrograms": "Yes — Montpellier Business School, Sciences Po",
+      "safetyRating": "4/10 (Numbeo safety index: 38.9)",
+      "overallVibe": "Young, vibrant, Mediterranean, international"
+    }
+  },
+  {
+    "slug": "strasbourg",
+    "name": "Strasbourg",
+    "country": "France",
+    "region": "Grand Est",
+    "tagline": "Europe's political heart — study where the EU is shaped, in a bicultural French-German city.",
+    "metaDescription": "Complete guide for international students in Strasbourg, France — housing, EU institution internships, universities, transport, and student life.",
+    "heroStats": [
+      { "label": "Students", "value": "60,000+" },
+      { "label": "Monthly Budget", "value": "€950" },
+      { "label": "Studio Rent", "value": "€720/mo" },
+      { "label": "Safety Rating", "value": "5/10 est." }
+    ],
+    "overview": {
+      "studentPopulation": "60,000+",
+      "internationalStudentPct": "~20%",
+      "englishProgramsAvailable": true,
+      "safetyRating": "5/10 est. (Numbeo safety index: ~52)",
+      "overallVibe": "European, bicultural French-German, highly liveable"
+    },
+    "housing": {
+      "studioRentMonthly": 720,
+      "sharedRoomMonthly": "€380–530",
+      "totalMonthlyBudget": 950,
+      "cafAidMonthly": "€100–300",
+      "bestNeighborhoods": ["Krutenau", "Neudorf", "Esplanade", "Orangerie"]
+    },
+    "universities": {
+      "main": [
+        "Université de Strasbourg (50,000+ students)"
+      ],
+      "grandesEcoles": [
+        "EM Strasbourg",
+        "Sciences Po Strasbourg",
+        "INSA Strasbourg"
+      ],
+      "tuitionEUPerYear": 178,
+      "tuitionNonEUPerYear": 2895,
+      "bestFields": ["Law", "European Studies", "Medicine", "Engineering", "Business"]
+    },
+    "transport": {
+      "studentPassMonthly": 28,
+      "regularPassMonthly": 68,
+      "airportConnection": "Strasbourg Airport; TGV to Paris 1h45; direct train to Frankfurt",
+      "bikeFriendly": true,
+      "bikeShareName": "Vélo'Hop (extremely bike-friendly city)"
+    },
+    "workVisa": {
+      "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
+      "studentJobMarket": "Strong — EU institutions, pharma, tech",
+      "visaType": "Long-stay student visa + residence permit",
+      "internshipScene": "Excellent — European Parliament, Council of Europe, Alsatian industry"
+    },
+    "internationalExperience": {
+      "studentPopulation": "60,000+",
+      "internationalStudentPct": "~20%",
+      "englishPrograms": "Yes — EM Strasbourg, Sciences Po, Université de Strasbourg",
+      "safetyRating": "5/10 est. (Numbeo safety index: ~52)",
+      "overallVibe": "European, bicultural French-German, highly liveable"
+    }
+  },
+  {
+    "slug": "nantes",
+    "name": "Nantes",
+    "country": "France",
+    "region": "Pays de la Loire",
+    "tagline": "France's most liveable city — creative, green, and affordable with strong engineering and business schools.",
+    "metaDescription": "Everything international students need to know about studying in Nantes, France — housing costs, universities, transport, and student life.",
+    "heroStats": [
+      { "label": "Students", "value": "60,000+" },
+      { "label": "Monthly Budget", "value": "€900" },
+      { "label": "Studio Rent", "value": "€650/mo" },
+      { "label": "Safety Rating", "value": "4/10" }
+    ],
+    "overview": {
+      "studentPopulation": "60,000+",
+      "internationalStudentPct": "~12%",
+      "englishProgramsAvailable": true,
+      "safetyRating": "4/10 (Numbeo safety index: 41.5)",
+      "overallVibe": "Creative, green, dynamic — named most liveable French city multiple times"
+    },
+    "housing": {
+      "studioRentMonthly": 650,
+      "sharedRoomMonthly": "€370–520",
+      "totalMonthlyBudget": 900,
+      "cafAidMonthly": "€100–300",
+      "bestNeighborhoods": ["Bouffay", "Hauts-Pavés", "Zola", "Doulon"]
+    },
+    "universities": {
+      "main": [
+        "Nantes Université (40,000 students)"
+      ],
+      "grandesEcoles": [
+        "Audencia Business School",
+        "École Centrale Nantes",
+        "IMT Atlantique"
+      ],
+      "tuitionEUPerYear": 178,
+      "tuitionNonEUPerYear": 2895,
+      "bestFields": ["Engineering", "Business", "Sciences", "Arts", "Law"]
+    },
+    "transport": {
+      "studentPassMonthly": 24.90,
+      "regularPassMonthly": 67,
+      "airportConnection": "Nantes Atlantique airport; TGV to Paris 2.5 hrs",
+      "bikeFriendly": true,
+      "bikeShareName": "Bicloo bike-share"
+    },
+    "workVisa": {
+      "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
+      "studentJobMarket": "Strong — digital/tech hub, naval, aerospace",
+      "visaType": "Long-stay student visa + residence permit",
+      "internshipScene": "Good — Airbus, STX, Naval Group, growing startup ecosystem"
+    },
+    "internationalExperience": {
+      "studentPopulation": "60,000+",
+      "internationalStudentPct": "~12%",
+      "englishPrograms": "Yes — Audencia, École Centrale Nantes, IMT Atlantique",
+      "safetyRating": "4/10 (Numbeo safety index: 41.5)",
+      "overallVibe": "Creative, green, dynamic — named most liveable French city multiple times"
+    }
+  },
+  {
+    "slug": "grenoble",
+    "name": "Grenoble",
+    "country": "France",
+    "region": "Auvergne-Rhône-Alpes",
+    "tagline": "France's best student city for tech and engineering — nestled in the Alps with exceptional research institutes.",
+    "metaDescription": "Complete guide for international students in Grenoble, France — housing, tech internships, universities, transport, and student life.",
+    "heroStats": [
+      { "label": "Students", "value": "60,000+" },
+      { "label": "Monthly Budget", "value": "€800" },
+      { "label": "Studio Rent", "value": "€620/mo" },
+      { "label": "Safety Rating", "value": "4/10" }
+    ],
+    "overview": {
+      "studentPopulation": "60,000+",
+      "internationalStudentPct": "~25%",
+      "englishProgramsAvailable": true,
+      "safetyRating": "4/10 (Numbeo safety index: 38.8)",
+      "overallVibe": "Alpine, intellectual, international, compact and walkable"
+    },
+    "housing": {
+      "studioRentMonthly": 620,
+      "sharedRoomMonthly": "€350–480",
+      "totalMonthlyBudget": 800,
+      "cafAidMonthly": "€100–300",
+      "bestNeighborhoods": ["Centre Ville", "Ile Verte", "Championnet", "Villeneuve"]
+    },
+    "universities": {
+      "main": [
+        "Université Grenoble Alpes (45,000 students)"
+      ],
+      "grandesEcoles": [
+        "Grenoble École de Management (GEM)",
+        "Sciences Po Grenoble",
+        "Grenoble INP",
+        "ENSIMAG"
+      ],
+      "tuitionEUPerYear": 178,
+      "tuitionNonEUPerYear": 2895,
+      "bestFields": ["Engineering", "Computer Science", "Physics", "Business", "International Relations"]
+    },
+    "transport": {
+      "studentPassMonthly": 35,
+      "regularPassMonthly": 75,
+      "airportConnection": "Lyon-Saint-Exupéry 1 hr; TGV to Paris 3 hrs; Grenoble-Isère airport",
+      "bikeFriendly": true,
+      "bikeShareName": "Metrovélo (€30/yr student pass)"
+    },
+    "workVisa": {
+      "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
+      "studentJobMarket": "Strong in tech — STMicroelectronics, Schneider Electric, CEA",
+      "visaType": "Long-stay student visa + residence permit",
+      "internshipScene": "Excellent for engineering/tech — CEA, STMicro, Schneider all in Grenoble"
+    },
+    "internationalExperience": {
+      "studentPopulation": "60,000+",
+      "internationalStudentPct": "~25%",
+      "englishPrograms": "Yes — GEM, ENSIMAG, Grenoble INP",
+      "safetyRating": "4/10 (Numbeo safety index: 38.8)",
+      "overallVibe": "Alpine, intellectual, international, compact and walkable"
+    }
+  },
+  {
+    "slug": "rennes",
+    "name": "Rennes",
+    "country": "France",
+    "region": "Bretagne",
+    "tagline": "Brittany's vibrant capital — affordable, compact, and a rising hub for digital and cybersecurity careers.",
+    "metaDescription": "Everything international students need to know about studying in Rennes, France — housing costs, universities, transport, and student life.",
+    "heroStats": [
+      { "label": "Students", "value": "70,000+" },
+      { "label": "Monthly Budget", "value": "€820" },
+      { "label": "Studio Rent", "value": "€630/mo" },
+      { "label": "Safety Rating", "value": "6/10 est." }
+    ],
+    "overview": {
+      "studentPopulation": "70,000+",
+      "internationalStudentPct": "~13%",
+      "englishProgramsAvailable": true,
+      "safetyRating": "6/10 est. (Numbeo safety index: ~55)",
+      "overallVibe": "Friendly, Celtic culture, vibrant nightlife, compact and walkable"
+    },
+    "housing": {
+      "studioRentMonthly": 630,
+      "sharedRoomMonthly": "€350–490",
+      "totalMonthlyBudget": 820,
+      "cafAidMonthly": "€100–300",
+      "bestNeighborhoods": ["Centre Ville", "Thabor", "Villejean", "Beaulieu"]
+    },
+    "universities": {
+      "main": [
+        "Université de Rennes (35,000)",
+        "Université Rennes 2 (22,000)"
+      ],
+      "grandesEcoles": [
+        "Sciences Po Rennes",
+        "INSA Rennes",
+        "ESC Rennes",
+        "Centrale Rennes"
+      ],
+      "tuitionEUPerYear": 178,
+      "tuitionNonEUPerYear": 2895,
+      "bestFields": ["Law", "Computer Science", "Social Sciences", "Engineering", "Business"]
+    },
+    "transport": {
+      "studentPassMonthly": 32,
+      "regularPassMonthly": 68,
+      "airportConnection": "Rennes Bretagne airport; TGV to Paris 1.5 hrs",
+      "bikeFriendly": true,
+      "bikeShareName": "Star Vélo'v (extensive bike network)"
+    },
+    "workVisa": {
+      "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
+      "studentJobMarket": "Medium-strong — tech/digital cluster, Orange HQ, cybersecurity",
+      "visaType": "Long-stay student visa + residence permit",
+      "internshipScene": "Good — Orange, Thales, growing cybersecurity sector"
+    },
+    "internationalExperience": {
+      "studentPopulation": "70,000+",
+      "internationalStudentPct": "~13%",
+      "englishPrograms": "Yes — Sciences Po Rennes, ESC Rennes, INSA",
+      "safetyRating": "6/10 est. (Numbeo safety index: ~55)",
+      "overallVibe": "Friendly, Celtic culture, vibrant nightlife, compact and walkable"
+    }
+  },
+  {
+    "slug": "aix-en-provence",
+    "name": "Aix-en-Provence",
+    "country": "France",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "tagline": "Provence's elegant student town — sun-drenched, walkable, and connected to Marseille's career opportunities.",
+    "metaDescription": "Complete guide for international students in Aix-en-Provence, France — housing costs, universities, transport, and student life.",
+    "heroStats": [
+      { "label": "Students", "value": "40,000+" },
+      { "label": "Monthly Budget", "value": "€1,050" },
+      { "label": "Studio Rent", "value": "€900/mo" },
+      { "label": "Safety Rating", "value": "6/10 est." }
+    ],
+    "overview": {
+      "studentPopulation": "40,000+",
+      "internationalStudentPct": "~15%",
+      "englishProgramsAvailable": true,
+      "safetyRating": "6/10 est. (Numbeo safety index: ~58)",
+      "overallVibe": "Elegant, sunny, Provençal charm, slower pace"
+    },
+    "housing": {
+      "studioRentMonthly": 900,
+      "sharedRoomMonthly": "€450–650",
+      "totalMonthlyBudget": 1050,
+      "cafAidMonthly": "€100–300",
+      "bestNeighborhoods": ["Cours Mirabeau", "Mazarin", "Les Allées", "Jas de Bouffan"]
+    },
+    "universities": {
+      "main": [
+        "Aix-Marseille Université (80,000 students — shared with Marseille)"
+      ],
+      "grandesEcoles": [
+        "Sciences Po Aix",
+        "KEDGE Business School (Aix campus)",
+        "École Centrale Marseille"
+      ],
+      "tuitionEUPerYear": 178,
+      "tuitionNonEUPerYear": 2895,
+      "bestFields": ["Law", "Political Science", "Arts", "Languages", "Business"]
+    },
+    "transport": {
+      "studentPassMonthly": 8.30,
+      "regularPassMonthly": 30,
+      "airportConnection": "Marseille Provence airport 30 min; TGV Aix to Paris 3 hrs",
+      "bikeFriendly": true,
+      "bikeShareName": "Vélo'in bike-share"
+    },
+    "workVisa": {
+      "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
+      "studentJobMarket": "Medium — connected to Marseille market; luxury, tourism, legal",
+      "visaType": "Long-stay student visa + residence permit",
+      "internshipScene": "Moderate — closer to Marseille for corporate opportunities"
+    },
+    "internationalExperience": {
+      "studentPopulation": "40,000+",
+      "internationalStudentPct": "~15%",
+      "englishPrograms": "Yes — Sciences Po Aix (English track), KEDGE",
+      "safetyRating": "6/10 est. (Numbeo safety index: ~58)",
+      "overallVibe": "Elegant, sunny, Provençal charm, slower pace"
+    }
+  },
+  {
+    "slug": "nice",
+    "name": "Nice",
+    "country": "France",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "tagline": "The glamorous Riviera student experience — world-class business schools, Mediterranean sunshine, and tech giants at Sophia Antipolis.",
+    "metaDescription": "Everything international students need to know about studying in Nice, France — housing costs, universities, transport, and student life.",
+    "heroStats": [
+      { "label": "Students", "value": "30,000+" },
+      { "label": "Monthly Budget", "value": "€1,100" },
+      { "label": "Studio Rent", "value": "€980/mo" },
+      { "label": "Safety Rating", "value": "5/10 est." }
+    ],
+    "overview": {
+      "studentPopulation": "30,000+",
+      "internationalStudentPct": "~20%",
+      "englishProgramsAvailable": true,
+      "safetyRating": "5/10 est. (Numbeo safety index: ~50)",
+      "overallVibe": "Glamorous, sunny, international — proximity to Monaco and Italy"
+    },
+    "housing": {
+      "studioRentMonthly": 980,
+      "sharedRoomMonthly": "€500–720",
+      "totalMonthlyBudget": 1100,
+      "cafAidMonthly": "€100–300",
+      "bestNeighborhoods": ["Libération", "Musiciens", "Madeleine", "Riquier"]
+    },
+    "universities": {
+      "main": [
+        "Université Côte d'Azur (30,000 students)"
+      ],
+      "grandesEcoles": [
+        "SKEMA Business School (Sophia Antipolis)",
+        "EDHEC Nice campus"
+      ],
+      "tuitionEUPerYear": 178,
+      "tuitionNonEUPerYear": 2895,
+      "bestFields": ["Business", "Tourism", "Medicine", "Sciences", "Digital"]
+    },
+    "transport": {
+      "studentPassMonthly": 35,
+      "regularPassMonthly": 75,
+      "airportConnection": "Nice Côte d'Azur (3rd busiest in France); TGV to Paris 5.5 hrs",
+      "bikeFriendly": true,
+      "bikeShareName": "Vélobleu bike-share"
+    },
+    "workVisa": {
+      "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
+      "studentJobMarket": "Medium — tourism, luxury, tech (Sophia Antipolis tech park nearby)",
+      "visaType": "Long-stay student visa + residence permit",
+      "internshipScene": "Good — Sophia Antipolis: IBM, SAP, TotalEnergies, INRIA"
+    },
+    "internationalExperience": {
+      "studentPopulation": "30,000+",
+      "internationalStudentPct": "~20%",
+      "englishPrograms": "Yes — SKEMA, EDHEC, Université Côte d'Azur",
+      "safetyRating": "5/10 est. (Numbeo safety index: ~50)",
+      "overallVibe": "Glamorous, sunny, international — proximity to Monaco and Italy"
+    }
   }
 ]

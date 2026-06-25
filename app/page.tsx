@@ -85,15 +85,15 @@ export default function HomePage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {cityData.map((city) => (
             <Link
               key={city.slug}
               href={`/cities/${city.slug}`}
               className="group bg-white rounded-2xl border border-stone-200 hover:border-blue-300 hover:shadow-lg transition-all duration-200 overflow-hidden"
             >
-              {/* Card top colour bar */}
-              <div className={`h-1.5 ${city.slug === 'paris' ? 'bg-gradient-to-r from-[#002395] via-white to-[#ED2939]' : 'bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500'}`} />
+              {/* Card top colour bar — French tricolour for all */}
+              <div className="h-1.5 bg-gradient-to-r from-[#002395] via-white to-[#ED2939]" />
 
               <div className="p-6">
                 <div className="flex items-start justify-between mb-3">
@@ -151,16 +151,18 @@ export default function HomePage() {
           <p className="text-stone-500 mt-2 text-sm">Key numbers side by side</p>
         </div>
 
-        <div className="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
-          <table className="w-full text-sm">
+        <div className="bg-white rounded-2xl border border-stone-200 overflow-x-auto shadow-sm">
+          <table className="text-sm" style={{ minWidth: '900px' }}>
             <thead>
               <tr className="border-b border-stone-200">
-                <th className="text-left px-5 py-4 text-stone-400 font-medium text-xs uppercase tracking-wider w-1/3">
+                <th className="text-left px-4 py-4 text-stone-400 font-medium text-xs uppercase tracking-wider sticky left-0 bg-white z-10 min-w-[140px]">
                   Metric
                 </th>
                 {cityData.map((city) => (
-                  <th key={city.slug} className="px-5 py-4 text-center font-bold text-stone-800">
-                    {city.name}
+                  <th key={city.slug} className="px-3 py-4 text-center font-bold text-stone-800 whitespace-nowrap min-w-[110px]">
+                    <Link href={`/cities/${city.slug}`} className="hover:text-blue-700 transition-colors">
+                      {city.name}
+                    </Link>
                   </th>
                 ))}
               </tr>
@@ -171,9 +173,9 @@ export default function HomePage() {
                   key={row.label}
                   className={i % 2 === 0 ? 'bg-stone-50/50' : 'bg-white'}
                 >
-                  <td className="px-5 py-3.5 text-stone-600 font-medium">{row.label}</td>
+                  <td className="px-4 py-3 text-stone-600 font-medium sticky left-0 z-10 text-xs" style={{ background: i % 2 === 0 ? 'rgb(250 250 249 / 0.5)' : 'white' }}>{row.label}</td>
                   {cityData.map((city) => (
-                    <td key={city.slug} className="px-5 py-3.5 text-center text-stone-700 font-semibold">
+                    <td key={city.slug} className="px-3 py-3 text-center text-stone-700 font-semibold text-xs whitespace-nowrap">
                       {row.values(city)}
                     </td>
                   ))}
