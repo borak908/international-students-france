@@ -66,7 +66,7 @@ function StatCard({ label, value, sub }: { label: string; value: string; sub?: s
   const isEstimated = value.includes('est.')
   const displayValue = value.replace(' est.', '')
   return (
-    <div className="bg-stone-50 rounded-xl p-4 border border-stone-100">
+    <div className="bg-[#F5F2ED] rounded-xl p-4 border border-stone-100">
       <p className="text-xs text-stone-400 font-medium uppercase tracking-wide mb-1">{label}</p>
       <p className="text-lg font-bold text-stone-800 flex items-center gap-1.5 flex-wrap">
         {displayValue}
@@ -96,7 +96,7 @@ function InfoRow({ label, value }: { label: string; value: string | React.ReactN
 // ── Tag pill ─────────────────────────────────────────────────────────────────
 function Tag({ children }: { children: string }) {
   return (
-    <span className="inline-block bg-[#E8F6F2] text-[#1E7A5E] text-xs font-medium px-2.5 py-1 rounded-full">
+    <span className="inline-block bg-[#EDF0F8] text-[#1E3A6E] text-xs font-medium px-2.5 py-1 rounded-full">
       {children}
     </span>
   )
@@ -119,15 +119,15 @@ export default function CityPage({ params }: { params: { slug: string } }) {
   return (
     <>
       {/* ── Hero banner ── */}
-      <div className="bg-gradient-to-br from-[#12312A] via-[#194035] to-[#22513F] text-white">
+      <div className="bg-gradient-to-br from-[#0D1B35] via-[#122240] to-[#182C50] text-white">
         <div className="absolute top-16 left-0 right-0 h-0.5 flex pointer-events-none" aria-hidden>
-          <div className="flex-1 bg-[#5580C0]" />
+          <div className="flex-1 bg-[#4A70C4]" />
           <div className="flex-1 bg-white/40" />
           <div className="flex-1 bg-[#B86040]" />
         </div>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-14">
           {/* Breadcrumb */}
-          <nav className="flex items-center gap-2 text-[#8ECFC0] text-xs mb-6">
+          <nav className="flex items-center gap-2 text-[#90ADDA] text-xs mb-6">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
             <span className="text-white">Cities</span>
@@ -138,7 +138,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
           <h1 className="text-3xl sm:text-5xl font-bold mb-3">
             Study in {city.name}
           </h1>
-          <p className="text-[#B8E0D5] text-sm sm:text-base max-w-xl mb-8 leading-relaxed">
+          <p className="text-[#B8CAE8] text-sm sm:text-base max-w-xl mb-8 leading-relaxed">
             {city.tagline}
           </p>
 
@@ -149,7 +149,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
               const display = stat.value.replace(' est.', '')
               return (
               <div key={stat.label} className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-                <p className="text-[#8ECFC0] text-xs font-medium mb-1">{stat.label}</p>
+                <p className="text-[#90ADDA] text-xs font-medium mb-1">{stat.label}</p>
                 <p className="text-white text-xl font-bold flex items-center gap-1.5 flex-wrap">
                   {display}
                   {isEst && (
@@ -165,14 +165,14 @@ export default function CityPage({ params }: { params: { slug: string } }) {
       </div>
 
       {/* ── Sticky section nav ── */}
-      <div className="sticky top-16 z-40 bg-white border-b border-stone-200 shadow-sm">
+      <div className="sticky top-16 z-40 bg-[#FDFBF7] border-b border-stone-200 shadow-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <nav className="flex gap-1 overflow-x-auto no-scrollbar py-1">
             {sections.map((s) => (
               <a
                 key={s.id}
                 href={`#${s.id}`}
-                className="flex-shrink-0 text-xs font-medium text-stone-500 hover:text-[#1E7A5E] hover:bg-[#E8F6F2] px-3 py-2 rounded-lg transition-colors whitespace-nowrap"
+                className="flex-shrink-0 text-xs font-medium text-stone-500 hover:text-[#1E3A6E] hover:bg-[#EDF0F8] px-3 py-2 rounded-lg transition-colors whitespace-nowrap"
               >
                 {s.label}
               </a>
@@ -333,7 +333,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
             {/* 5 — Work & Visa */}
             <Section id="work-visa" emoji="💼" title="Work & Visa">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-                <div className="bg-stone-50 rounded-xl p-4 border border-stone-100 col-span-1 sm:col-span-2">
+                <div className="bg-[#F5F2ED] rounded-xl p-4 border border-stone-100 col-span-1 sm:col-span-2">
                   <p className="text-xs text-stone-400 font-medium uppercase tracking-wide mb-1">Part-time work allowance</p>
                   <p className="text-xl font-bold text-stone-800">{city.workVisa.partTimeHours}</p>
                   <p className="text-xs text-stone-500 mt-1">Applies to all student visa holders in France</p>
@@ -344,7 +344,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                 <InfoRow label="Job market"       value={city.workVisa.studentJobMarket} />
                 <InfoRow label="Internship scene" value={city.workVisa.internshipScene} />
               </div>
-              <div className="mt-4 bg-[#E8F6F2] border border-[#B8DACF] rounded-xl p-4 text-sm text-[#185F49]">
+              <div className="mt-4 bg-[#EDF0F8] border border-[#C5D0EC] rounded-xl p-4 text-sm text-[#162D58]">
                 <strong>📋 Visa tip:</strong> Apply for your long-stay student visa (VLS-TS) through
                 Campus France in your home country. After arrival, validate it online via the ANEF portal
                 — no prefecture appointment needed.
@@ -410,7 +410,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                       <Link
                         key={c.slug}
                         href={`/cities/${c.slug}`}
-                        className="flex items-center gap-2 text-sm text-stone-600 hover:text-[#1E7A5E] transition-colors group"
+                        className="flex items-center gap-2 text-sm text-stone-600 hover:text-[#1E3A6E] transition-colors group"
                       >
                         <svg className="w-4 h-4 text-stone-300 group-hover:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -426,10 +426,10 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                 href="https://www.campusfrance.org/en"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-[#1E7A5E] hover:bg-[#185F49] text-white rounded-2xl p-5 text-sm transition-colors"
+                className="block bg-[#1E3A6E] hover:bg-[#162D58] text-white rounded-2xl p-5 text-sm transition-colors"
               >
                 <p className="font-bold mb-1">Apply via CampusFrance</p>
-                <p className="text-[#B8E0D5] text-xs leading-relaxed">
+                <p className="text-[#B8CAE8] text-xs leading-relaxed">
                   Official gateway for international student applications to French universities.
                 </p>
                 <p className="text-white text-xs mt-2 flex items-center gap-1">

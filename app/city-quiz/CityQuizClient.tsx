@@ -239,7 +239,7 @@ export default function CityQuizClient() {
           {ranked.map((r, i) => (
             <div
               key={r.city.slug}
-              className={`bg-white rounded-2xl border p-6 shadow-sm ${i === 0 ? 'border-[#8ECFC0] ring-2 ring-[#C0EAE0]' : 'border-stone-200'}`}
+              className={`bg-white rounded-2xl border p-6 shadow-sm ${i === 0 ? 'border-[#90ADDA] ring-2 ring-[#C0CEEC]' : 'border-stone-200'}`}
             >
               <div className="flex items-start justify-between mb-3">
                 <div className="flex items-center gap-3">
@@ -250,7 +250,7 @@ export default function CityQuizClient() {
                   </div>
                 </div>
                 <div className="text-right">
-                  <span className={`text-2xl font-bold ${i === 0 ? 'text-[#1E7A5E]' : 'text-stone-700'}`}>
+                  <span className={`text-2xl font-bold ${i === 0 ? 'text-[#1E3A6E]' : 'text-stone-700'}`}>
                     {r.pct}%
                   </span>
                   <p className="text-xs text-stone-400">match</p>
@@ -260,7 +260,7 @@ export default function CityQuizClient() {
               {/* Progress bar */}
               <div className="w-full bg-stone-100 rounded-full h-2 mb-4">
                 <div
-                  className={`h-2 rounded-full transition-all ${i === 0 ? 'bg-[#1E7A5E]' : 'bg-stone-400'}`}
+                  className={`h-2 rounded-full transition-all ${i === 0 ? 'bg-[#1E3A6E]' : 'bg-stone-400'}`}
                   style={{ width: `${r.pct}%` }}
                 />
               </div>
@@ -269,7 +269,7 @@ export default function CityQuizClient() {
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
                 {r.city.heroStats.map((stat) => (
-                  <div key={stat.label} className="bg-stone-50 rounded-xl p-3">
+                  <div key={stat.label} className="bg-[#F5F2ED] rounded-xl p-3">
                     <p className="text-xs text-stone-400 mb-0.5">{stat.label}</p>
                     <p className="text-sm font-bold text-stone-800">{stat.value}</p>
                   </div>
@@ -280,7 +280,7 @@ export default function CityQuizClient() {
                 href={`/cities/${r.city.slug}`}
                 className={`inline-flex items-center gap-2 text-sm font-semibold px-5 py-2.5 rounded-full transition-colors ${
                   i === 0
-                    ? 'bg-[#1E7A5E] text-white hover:bg-[#185F49]'
+                    ? 'bg-[#1E3A6E] text-white hover:bg-[#162D58]'
                     : 'bg-stone-100 text-stone-700 hover:bg-stone-200'
                 }`}
               >
@@ -293,13 +293,13 @@ export default function CityQuizClient() {
         <div className="flex flex-col sm:flex-row gap-4">
           <button
             onClick={reset}
-            className="flex-1 border border-stone-200 text-stone-600 hover:bg-stone-50 font-medium py-3 rounded-full transition-colors text-sm"
+            className="flex-1 border border-stone-200 text-stone-600 hover:bg-[#F5F2ED] font-medium py-3 rounded-full transition-colors text-sm"
           >
             ← Retake quiz
           </button>
           <Link
             href="/budget-planner"
-            className="flex-1 bg-[#1E7A5E] hover:bg-[#185F49] text-white font-medium py-3 rounded-full transition-colors text-sm text-center"
+            className="flex-1 bg-[#1E3A6E] hover:bg-[#162D58] text-white font-medium py-3 rounded-full transition-colors text-sm text-center"
           >
             Check your budget →
           </Link>
@@ -331,7 +331,7 @@ export default function CityQuizClient() {
         </div>
         <div className="w-full bg-stone-100 rounded-full h-2">
           <div
-            className="bg-[#1E7A5E] h-2 rounded-full transition-all duration-300"
+            className="bg-[#1E3A6E] h-2 rounded-full transition-all duration-300"
             style={{ width: `${progress}%` }}
           />
         </div>
@@ -345,9 +345,9 @@ export default function CityQuizClient() {
             <button
               key={i}
               onClick={() => handleAnswer(i)}
-              className="w-full text-left bg-stone-50 hover:bg-[#E8F6F2] hover:border-[#8ECFC0] border border-stone-100 rounded-xl px-5 py-4 text-sm text-stone-700 font-medium transition-all duration-150 group"
+              className="w-full text-left bg-[#F5F2ED] hover:bg-[#EDF0F8] hover:border-[#90ADDA] border border-stone-100 rounded-xl px-5 py-4 text-sm text-stone-700 font-medium transition-all duration-150 group"
             >
-              <span className="group-hover:text-[#1E7A5E] transition-colors">{opt.label}</span>
+              <span className="group-hover:text-[#1E3A6E] transition-colors">{opt.label}</span>
             </button>
           ))}
         </div>
