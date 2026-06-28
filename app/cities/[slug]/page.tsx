@@ -165,14 +165,14 @@ export default function CityPage({ params }: { params: { slug: string } }) {
       </div>
 
       {/* ── Sticky section nav ── */}
-      <div className="sticky top-16 z-40 bg-[#FDFBF7] border-b border-stone-200 shadow-sm">
+      <div className="sticky top-[3.625rem] z-40 bg-[#0D1B35] border-b border-[#1E3A6E]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <nav className="flex gap-1 overflow-x-auto no-scrollbar py-1">
             {sections.map((s) => (
               <a
                 key={s.id}
                 href={`#${s.id}`}
-                className="flex-shrink-0 text-xs font-medium text-stone-500 hover:text-[#1E3A6E] hover:bg-[#EDF0F8] px-3 py-2 rounded-lg transition-colors whitespace-nowrap"
+                className="flex-shrink-0 text-xs font-medium text-[#90ADDA] hover:text-white hover:bg-[#1E3A6E] px-3 py-2 rounded-lg transition-colors whitespace-nowrap"
               >
                 {s.label}
               </a>

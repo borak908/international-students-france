@@ -154,13 +154,13 @@ export default function HomePage() {
         <div className="bg-white rounded-2xl border border-stone-200 overflow-x-auto shadow-sm">
           <table className="text-sm" style={{ minWidth: '900px' }}>
             <thead>
-              <tr className="border-b border-stone-200">
-                <th className="text-left px-4 py-4 text-stone-400 font-medium text-xs uppercase tracking-wider sticky left-0 bg-[#FDFBF7] z-10 min-w-[140px]">
+              <tr className="bg-[#0D1B35] border-b border-[#1E3A6E]">
+                <th className="text-left px-4 py-4 text-[#90ADDA] font-medium text-xs uppercase tracking-wider sticky left-0 bg-[#0D1B35] z-10 min-w-[140px]">
                   Metric
                 </th>
                 {cityData.map((city) => (
-                  <th key={city.slug} className="px-3 py-4 text-center font-bold text-stone-800 whitespace-nowrap min-w-[110px]">
-                    <Link href={`/cities/${city.slug}`} className="hover:text-[#1E3A6E] transition-colors">
+                  <th key={city.slug} className="px-3 py-4 text-center font-bold text-white whitespace-nowrap min-w-[110px]">
+                    <Link href={`/cities/${city.slug}`} className="hover:text-[#90ADDA] transition-colors">
                       {city.name}
                     </Link>
                   </th>
