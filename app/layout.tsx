@@ -33,11 +33,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
             <a href="/" className="flex items-center gap-2.5 group">
-              <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M50 80 C50 80 10 52 10 30 C10 18 20 10 32 14 C39 16 45 22 50 30 C50 30 50 80 50 80Z" fill="#002395"/>
-                <path d="M50 30 C55 22 61 16 68 14 C80 10 90 18 90 30 C90 52 50 80 50 80 Z" fill="#ED2939"/>
-                <circle cx="68" cy="34" r="9" fill="white"/>
-              </svg>
+              <span className="flex items-center justify-center bg-white rounded-md p-1 shadow-sm">
+                <svg width="26" height="26" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M50 80 C50 80 10 52 10 30 C10 18 20 10 32 14 C39 16 45 22 50 30 C50 30 50 80 50 80Z" fill="#002395"/>
+                  <path d="M50 30 C55 22 61 16 68 14 C80 10 90 18 90 30 C90 52 50 80 50 80 Z" fill="#ED2939"/>
+                  <circle cx="68" cy="34" r="9" fill="white"/>
+                </svg>
+              </span>
               <span className="font-semibold text-white text-sm sm:text-base tracking-widest uppercase group-hover:text-[#90ADDA] transition-colors">
                 Compare Study France
               </span>
