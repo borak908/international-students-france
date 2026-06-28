@@ -35,20 +35,20 @@ export default function BlogPage() {
       {/* Featured post */}
       <Link
         href={`/blog/${blogPosts[0].slug}`}
-        className="group block bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white rounded-2xl overflow-hidden mb-8 hover:shadow-xl transition-all duration-200"
+        className="group block bg-gradient-to-br from-[#2D3F6B] via-[#3A4F80] to-[#4A6090] text-white rounded-2xl overflow-hidden mb-8 hover:shadow-xl transition-all duration-200"
       >
-        <div className="h-1 bg-gradient-to-r from-[#002395] via-white/40 to-[#ED2939]" />
+        <div className="h-1 bg-gradient-to-r from-[#6B8EC9] via-white/50 to-[#C97878]" />
         <div className="p-7 sm:p-10">
-          <span className="inline-block text-xs font-semibold text-blue-300 uppercase tracking-widest mb-4">
+          <span className="inline-block text-xs font-semibold text-[#93BAD9] uppercase tracking-widest mb-4">
             Featured
           </span>
-          <h2 className="text-xl sm:text-2xl font-bold mb-3 group-hover:text-blue-200 transition-colors">
+          <h2 className="text-xl sm:text-2xl font-bold mb-3 group-hover:text-[#BAD4EB] transition-colors">
             {blogPosts[0].title}
           </h2>
-          <p className="text-blue-200 text-sm leading-relaxed mb-6 max-w-2xl">
+          <p className="text-[#BAD4EB] text-sm leading-relaxed mb-6 max-w-2xl">
             {blogPosts[0].excerpt}
           </p>
-          <div className="flex items-center gap-4 text-xs text-blue-300">
+          <div className="flex items-center gap-4 text-xs text-[#93BAD9]">
             <span>{blogPosts[0].date}</span>
             <span>·</span>
             <span>{blogPosts[0].readTime}</span>
@@ -65,10 +65,10 @@ export default function BlogPage() {
           <Link
             key={post.slug}
             href={`/blog/${post.slug}`}
-            className="group bg-white rounded-2xl border border-stone-200 hover:border-blue-300 hover:shadow-md transition-all duration-200 p-6 flex flex-col"
+            className="group bg-white rounded-2xl border border-stone-200 hover:border-[#93BAD9] hover:shadow-md transition-all duration-200 p-6 flex flex-col"
           >
             <div className="flex-1">
-              <h2 className="text-base font-bold text-stone-800 group-hover:text-blue-700 transition-colors mb-2 leading-snug">
+              <h2 className="text-base font-bold text-stone-800 group-hover:text-[#3464A8] transition-colors mb-2 leading-snug">
                 {post.title}
               </h2>
               <p className="text-stone-500 text-sm leading-relaxed line-clamp-3">{post.excerpt}</p>
@@ -86,7 +86,7 @@ export default function BlogPage() {
       <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4">
         <Link
           href="/city-quiz"
-          className="block text-center bg-blue-700 hover:bg-blue-800 text-white rounded-xl px-5 py-4 text-sm font-semibold transition-colors"
+          className="block text-center bg-[#3464A8] hover:bg-[#2A4E82] text-white rounded-xl px-5 py-4 text-sm font-semibold transition-colors"
         >
           🎯 Take the city quiz
         </Link>

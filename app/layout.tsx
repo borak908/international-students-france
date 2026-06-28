@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
   title: {
-    default: 'CompareStudyFrance — Compare French Cities for International Students',
-    template: '%s | CompareStudyFrance',
+    default: 'Compare Study France — Compare French Cities for International Students',
+    template: '%s | Compare Study France',
   },
   description:
     'The complete comparison guide for international students choosing where to study in France. Compare 12 cities by housing costs, universities, transport, visa rules, and student life.',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    siteName: 'CompareStudyFrance',
+    siteName: 'Compare Study France',
   },
 }
 
@@ -27,14 +27,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
             <a href="/" className="flex items-center gap-2 group">
-              {/* French flag mini */}
-              <span className="flex h-5 w-8 rounded-sm overflow-hidden shadow-sm">
-                <span className="flex-1 bg-[#002395]" />
-                <span className="flex-1 bg-white" />
-                <span className="flex-1 bg-[#ED2939]" />
-              </span>
-              <span className="font-semibold text-stone-800 text-sm sm:text-base group-hover:text-blue-700 transition-colors">
-                CompareStudyFrance
+              {/* Logo icon — heart with map pin */}
+              <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                {/* Blue left-heart half */}
+                <path d="M50 80 C50 80 10 52 10 30 C10 18 20 10 32 14 C39 16 45 22 50 30 C50 30 50 80 50 80Z" fill="#3464A8"/>
+                {/* Red right-heart / pin half */}
+                <path d="M50 30 C55 22 61 16 68 14 C80 10 90 18 90 30 C90 52 50 80 50 80 Z" fill="#BF4040"/>
+                {/* Pin circle cutout on red side */}
+                <circle cx="68" cy="34" r="9" fill="white"/>
+              </svg>
+              {/* Site name with letter-spacing */}
+              <span className="font-semibold text-stone-800 text-sm sm:text-base tracking-widest uppercase group-hover:text-[#3464A8] transition-colors">
+                Compare Study France
               </span>
             </a>
             <nav className="flex items-center gap-1 sm:gap-2 text-sm text-stone-500">
@@ -44,7 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <a href="/blog" className="hover:text-stone-800 transition-colors px-2 py-1 rounded-lg hover:bg-stone-50">Blog</a>
               <a
                 href="/city-quiz"
-                className="ml-2 bg-blue-700 hover:bg-blue-800 text-white text-xs font-semibold px-3 py-2 rounded-full transition-colors whitespace-nowrap"
+                className="ml-2 bg-[#3464A8] hover:bg-[#2A4E82] text-white text-xs font-semibold px-3 py-2 rounded-full transition-colors whitespace-nowrap"
               >
                 Find my city →
               </a>
@@ -63,12 +67,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
               <div>
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="flex h-4 w-6 rounded-sm overflow-hidden shadow-sm">
-                    <span className="flex-1 bg-[#002395]" />
-                    <span className="flex-1 bg-white border-y border-stone-200" />
-                    <span className="flex-1 bg-[#ED2939]" />
-                  </span>
-                  <p className="font-semibold text-stone-700 text-sm">CompareStudyFrance</p>
+                  <svg width="24" height="24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M50 80 C50 80 10 52 10 30 C10 18 20 10 32 14 C39 16 45 22 50 30 C50 30 50 80 50 80Z" fill="#3464A8"/>
+                    <path d="M50 30 C55 22 61 16 68 14 C80 10 90 18 90 30 C90 52 50 80 50 80 Z" fill="#BF4040"/>
+                    <circle cx="68" cy="34" r="9" fill="white"/>
+                  </svg>
+                  <p className="font-semibold text-stone-700 text-sm tracking-widest uppercase">Compare Study France</p>
                 </div>
                 <p className="text-xs text-stone-400 leading-relaxed">
                   The independent comparison guide for international students choosing where to study in France.
@@ -98,7 +102,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 Data sourced from Numbeo, CampusFrance, CAF.fr, and university websites.
               </p>
               <p className="text-xs text-stone-400">
-                © {new Date().getFullYear()} CompareStudyFrance · For informational purposes only
+                © {new Date().getFullYear()} Compare Study France · For informational purposes only
               </p>
             </div>
           </div>
