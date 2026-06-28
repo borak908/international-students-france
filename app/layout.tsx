@@ -30,14 +30,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               {/* Logo icon — heart with map pin */}
               <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 {/* Blue left-heart half */}
-                <path d="M50 80 C50 80 10 52 10 30 C10 18 20 10 32 14 C39 16 45 22 50 30 C50 30 50 80 50 80Z" fill="#3464A8"/>
+                <path d="M50 80 C50 80 10 52 10 30 C10 18 20 10 32 14 C39 16 45 22 50 30 C50 30 50 80 50 80Z" fill="#1E7A5E"/>
                 {/* Red right-heart / pin half */}
-                <path d="M50 30 C55 22 61 16 68 14 C80 10 90 18 90 30 C90 52 50 80 50 80 Z" fill="#BF4040"/>
+                <path d="M50 30 C55 22 61 16 68 14 C80 10 90 18 90 30 C90 52 50 80 50 80 Z" fill="#B86040"/>
                 {/* Pin circle cutout on red side */}
                 <circle cx="68" cy="34" r="9" fill="white"/>
               </svg>
               {/* Site name with letter-spacing */}
-              <span className="font-semibold text-stone-800 text-sm sm:text-base tracking-widest uppercase group-hover:text-[#3464A8] transition-colors">
+              <span className="font-semibold text-stone-800 text-sm sm:text-base tracking-widest uppercase group-hover:text-[#1E7A5E] transition-colors">
                 Compare Study France
               </span>
             </a>
@@ -48,7 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <a href="/blog" className="hover:text-stone-800 transition-colors px-2 py-1 rounded-lg hover:bg-stone-50">Blog</a>
               <a
                 href="/city-quiz"
-                className="ml-2 bg-[#3464A8] hover:bg-[#2A4E82] text-white text-xs font-semibold px-3 py-2 rounded-full transition-colors whitespace-nowrap"
+                className="ml-2 bg-[#1E7A5E] hover:bg-[#185F49] text-white text-xs font-semibold px-3 py-2 rounded-full transition-colors whitespace-nowrap"
               >
                 Find my city →
               </a>
@@ -68,8 +68,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>
                 <div className="flex items-center gap-2 mb-2">
                   <svg width="24" height="24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path d="M50 80 C50 80 10 52 10 30 C10 18 20 10 32 14 C39 16 45 22 50 30 C50 30 50 80 50 80Z" fill="#3464A8"/>
-                    <path d="M50 30 C55 22 61 16 68 14 C80 10 90 18 90 30 C90 52 50 80 50 80 Z" fill="#BF4040"/>
+                    <path d="M50 80 C50 80 10 52 10 30 C10 18 20 10 32 14 C39 16 45 22 50 30 C50 30 50 80 50 80Z" fill="#1E7A5E"/>
+                    <path d="M50 30 C55 22 61 16 68 14 C80 10 90 18 90 30 C90 52 50 80 50 80 Z" fill="#B86040"/>
                     <circle cx="68" cy="34" r="9" fill="white"/>
                   </svg>
                   <p className="font-semibold text-stone-700 text-sm tracking-widest uppercase">Compare Study France</p>

@@ -50,7 +50,7 @@ function renderContent(content: string) {
   function parseInline(text: string): string {
     return text
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-[#3464A8] underline hover:text-[#1A2E4A] font-medium">$1</a>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-[#1E7A5E] underline hover:text-[#12312A] font-medium">$1</a>')
   }
 
   for (const line of lines) {
@@ -96,10 +96,10 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   return (
     <>
       {/* Hero */}
-      <div className="bg-gradient-to-br from-[#2D3F6B] via-[#3A4F80] to-[#4A6090] text-white">
-        <div className="h-0.5 bg-gradient-to-r from-[#6B8EC9] via-white/50 to-[#C97878]" />
+      <div className="bg-gradient-to-br from-[#12312A] via-[#194035] to-[#22513F] text-white">
+        <div className="h-0.5 bg-gradient-to-r from-[#5580C0] via-white/50 to-[#B86040]" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-10 pb-12">
-          <nav className="flex items-center gap-2 text-[#93BAD9] text-xs mb-6">
+          <nav className="flex items-center gap-2 text-[#8ECFC0] text-xs mb-6">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
             <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
@@ -109,7 +109,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           <h1 className="text-2xl sm:text-3xl font-bold leading-snug mb-4 max-w-2xl">
             {post.title}
           </h1>
-          <div className="flex items-center gap-4 text-[#93BAD9] text-xs">
+          <div className="flex items-center gap-4 text-[#8ECFC0] text-xs">
             <span>{post.date}</span>
             <span>·</span>
             <span>{post.readTime}</span>
@@ -122,13 +122,13 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Article */}
           <article className="flex-1 min-w-0 max-w-2xl">
-            <p className="text-stone-500 text-base leading-relaxed mb-8 text-lg border-l-4 border-[#C0D9F0] pl-4 italic">
+            <p className="text-stone-500 text-base leading-relaxed mb-8 text-lg border-l-4 border-[#8ECFC0] pl-4 italic">
               {post.excerpt}
             </p>
             {renderContent(post.content)}
 
             {/* Bottom CTA */}
-            <div className="mt-10 bg-[#EBF3FB] border border-[#D0E4F7] rounded-2xl p-6">
+            <div className="mt-10 bg-[#E8F6F2] border border-[#B8DACF] rounded-2xl p-6">
               <h3 className="font-bold text-stone-800 mb-2">Find your ideal city</h3>
               <p className="text-stone-600 text-sm mb-4">
                 Take our city quiz to get a personalised match across all 12 French cities.
@@ -136,7 +136,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/city-quiz"
-                  className="inline-flex items-center gap-2 bg-[#3464A8] hover:bg-[#2A4E82] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors"
+                  className="inline-flex items-center gap-2 bg-[#1E7A5E] hover:bg-[#185F49] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors"
                 >
                   Take the city quiz →
                 </Link>
@@ -163,7 +163,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                       href={`/blog/${r.slug}`}
                       className="block group"
                     >
-                      <p className="text-sm text-stone-700 group-hover:text-[#3464A8] transition-colors font-medium leading-snug mb-1">
+                      <p className="text-sm text-stone-700 group-hover:text-[#1E7A5E] transition-colors font-medium leading-snug mb-1">
                         {r.title}
                       </p>
                       <p className="text-xs text-stone-400">{r.readTime}</p>
@@ -172,7 +172,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 </div>
                 <Link
                   href="/blog"
-                  className="block mt-4 text-xs text-[#3464A8] hover:text-[#2A4E82] font-medium"
+                  className="block mt-4 text-xs text-[#1E7A5E] hover:text-[#185F49] font-medium"
                 >
                   All articles →
                 </Link>
@@ -181,10 +181,10 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               {/* City quiz CTA */}
               <Link
                 href="/city-quiz"
-                className="block bg-[#3464A8] hover:bg-[#2A4E82] text-white rounded-2xl p-5 text-sm transition-colors"
+                className="block bg-[#1E7A5E] hover:bg-[#185F49] text-white rounded-2xl p-5 text-sm transition-colors"
               >
                 <p className="font-bold mb-1">Not sure where to study?</p>
-                <p className="text-[#BAD4EB] text-xs leading-relaxed">
+                <p className="text-[#B8E0D5] text-xs leading-relaxed">
                   Take our 8-question quiz to find your best-matched French city.
                 </p>
                 <p className="text-white text-xs mt-2 font-medium">Take the quiz →</p>

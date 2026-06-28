@@ -8,7 +8,7 @@ export default function NotFound() {
       <p className="text-stone-500 mb-6">We don't have data for that city yet.</p>
       <Link
         href="/"
-        className="bg-blue-700 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-blue-800 transition-colors"
+        className="bg-[#3464A8] text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#2A4E82] transition-colors"
       >
         Back to all cities
       </Link>

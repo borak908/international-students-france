@@ -239,7 +239,7 @@ export default function CityQuizClient() {
           {ranked.map((r, i) => (
             <div
               key={r.city.slug}
-              className={`bg-white rounded-2xl border p-6 shadow-sm ${i === 0 ? 'border-blue-300 ring-2 ring-blue-100' : 'border-stone-200'}`}
+              className={`bg-white rounded-2xl border p-6 shadow-sm ${i === 0 ? 'border-[#8ECFC0] ring-2 ring-[#C0EAE0]' : 'border-stone-200'}`}
             >
               <div className="flex items-start justify-between mb-3">
                 <div className="flex items-center gap-3">
@@ -250,7 +250,7 @@ export default function CityQuizClient() {
                   </div>
                 </div>
                 <div className="text-right">
-                  <span className={`text-2xl font-bold ${i === 0 ? 'text-blue-700' : 'text-stone-700'}`}>
+                  <span className={`text-2xl font-bold ${i === 0 ? 'text-[#1E7A5E]' : 'text-stone-700'}`}>
                     {r.pct}%
                   </span>
                   <p className="text-xs text-stone-400">match</p>
@@ -260,7 +260,7 @@ export default function CityQuizClient() {
               {/* Progress bar */}
               <div className="w-full bg-stone-100 rounded-full h-2 mb-4">
                 <div
-                  className={`h-2 rounded-full transition-all ${i === 0 ? 'bg-blue-600' : 'bg-stone-400'}`}
+                  className={`h-2 rounded-full transition-all ${i === 0 ? 'bg-[#1E7A5E]' : 'bg-stone-400'}`}
                   style={{ width: `${r.pct}%` }}
                 />
               </div>
@@ -280,7 +280,7 @@ export default function CityQuizClient() {
                 href={`/cities/${r.city.slug}`}
                 className={`inline-flex items-center gap-2 text-sm font-semibold px-5 py-2.5 rounded-full transition-colors ${
                   i === 0
-                    ? 'bg-blue-700 text-white hover:bg-blue-800'
+                    ? 'bg-[#1E7A5E] text-white hover:bg-[#185F49]'
                     : 'bg-stone-100 text-stone-700 hover:bg-stone-200'
                 }`}
               >
@@ -299,7 +299,7 @@ export default function CityQuizClient() {
           </button>
           <Link
             href="/budget-planner"
-            className="flex-1 bg-blue-700 hover:bg-blue-800 text-white font-medium py-3 rounded-full transition-colors text-sm text-center"
+            className="flex-1 bg-[#1E7A5E] hover:bg-[#185F49] text-white font-medium py-3 rounded-full transition-colors text-sm text-center"
           >
             Check your budget →
           </Link>
@@ -331,7 +331,7 @@ export default function CityQuizClient() {
         </div>
         <div className="w-full bg-stone-100 rounded-full h-2">
           <div
-            className="bg-blue-600 h-2 rounded-full transition-all duration-300"
+            className="bg-[#1E7A5E] h-2 rounded-full transition-all duration-300"
             style={{ width: `${progress}%` }}
           />
         </div>
@@ -345,9 +345,9 @@ export default function CityQuizClient() {
             <button
               key={i}
               onClick={() => handleAnswer(i)}
-              className="w-full text-left bg-stone-50 hover:bg-blue-50 hover:border-blue-300 border border-stone-100 rounded-xl px-5 py-4 text-sm text-stone-700 font-medium transition-all duration-150 group"
+              className="w-full text-left bg-stone-50 hover:bg-[#E8F6F2] hover:border-[#8ECFC0] border border-stone-100 rounded-xl px-5 py-4 text-sm text-stone-700 font-medium transition-all duration-150 group"
             >
-              <span className="group-hover:text-blue-700 transition-colors">{opt.label}</span>
+              <span className="group-hover:text-[#1E7A5E] transition-colors">{opt.label}</span>
             </button>
           ))}
         </div>

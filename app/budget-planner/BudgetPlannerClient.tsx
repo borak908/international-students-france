@@ -154,7 +154,7 @@ export default function BudgetPlannerClient() {
             <select
               value={selectedSlug}
               onChange={(e) => setSelectedSlug(e.target.value)}
-              className="w-full border border-stone-200 rounded-xl px-4 py-2.5 text-stone-800 text-sm bg-stone-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-stone-200 rounded-xl px-4 py-2.5 text-stone-800 text-sm bg-stone-50 focus:outline-none focus:ring-2 focus:ring-[#1E7A5E]"
             >
               {cities.map((c) => (
                 <option key={c.slug} value={c.slug}>{c.name}</option>
@@ -170,13 +170,13 @@ export default function BudgetPlannerClient() {
             <div className="flex rounded-xl border border-stone-200 overflow-hidden bg-stone-50">
               <button
                 onClick={() => setRentType('studio')}
-                className={`flex-1 py-2.5 text-sm font-medium transition-colors ${rentType === 'studio' ? 'bg-blue-700 text-white' : 'text-stone-600 hover:bg-stone-100'}`}
+                className={`flex-1 py-2.5 text-sm font-medium transition-colors ${rentType === 'studio' ? 'bg-[#1E7A5E] text-white' : 'text-stone-600 hover:bg-stone-100'}`}
               >
                 Studio
               </button>
               <button
                 onClick={() => setRentType('shared')}
-                className={`flex-1 py-2.5 text-sm font-medium transition-colors ${rentType === 'shared' ? 'bg-blue-700 text-white' : 'text-stone-600 hover:bg-stone-100'}`}
+                className={`flex-1 py-2.5 text-sm font-medium transition-colors ${rentType === 'shared' ? 'bg-[#1E7A5E] text-white' : 'text-stone-600 hover:bg-stone-100'}`}
               >
                 Shared room
               </button>
@@ -197,7 +197,7 @@ export default function BudgetPlannerClient() {
                 placeholder="e.g. 1500"
                 value={userBudget}
                 onChange={(e) => setUserBudget(e.target.value)}
-                className="w-full border border-stone-200 rounded-xl pl-8 pr-4 py-2.5 text-stone-800 text-sm bg-stone-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border border-stone-200 rounded-xl pl-8 pr-4 py-2.5 text-stone-800 text-sm bg-stone-50 focus:outline-none focus:ring-2 focus:ring-[#1E7A5E]"
               />
             </div>
           </div>
@@ -217,7 +217,7 @@ export default function BudgetPlannerClient() {
           </div>
           <Link
             href={`/cities/${city.slug}`}
-            className="text-xs text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1"
+            className="text-xs text-[#1E7A5E] hover:text-[#185F49] font-medium flex items-center gap-1"
           >
             Full city guide →
           </Link>
@@ -241,7 +241,7 @@ export default function BudgetPlannerClient() {
         {/* Total */}
         <div className="border-t-2 border-stone-200 bg-stone-50 px-6 py-4 flex items-center justify-between">
           <span className="font-bold text-stone-800">Total per month</span>
-          <span className="text-xl font-bold text-blue-700">€{breakdown.total}</span>
+          <span className="text-xl font-bold text-[#1E7A5E]">€{breakdown.total}</span>
         </div>
       </div>
 
@@ -311,10 +311,10 @@ export default function BudgetPlannerClient() {
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
         <Link
           href="/city-quiz"
-          className="block bg-blue-700 hover:bg-blue-800 text-white rounded-2xl p-5 transition-colors"
+          className="block bg-[#1E7A5E] hover:bg-[#185F49] text-white rounded-2xl p-5 transition-colors"
         >
           <p className="font-bold mb-1">Not sure which city to pick?</p>
-          <p className="text-blue-200 text-sm">Take our 8-question quiz →</p>
+          <p className="text-[#B8E0D5] text-sm">Take our 8-question quiz →</p>
         </Link>
         <Link
           href="/"
