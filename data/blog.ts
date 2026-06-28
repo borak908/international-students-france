@@ -322,4 +322,447 @@ I would do it again. I would just have applied for CAF on the day I signed my le
 
 If you're still deciding where in France to study, our [city quiz](/city-quiz) can help you find the city that matches your priorities. Or browse the full [city guides](/cities/lyon) to compare costs, universities, and lifestyle across 12 cities.`,
   },
+  {
+    slug: 'french-student-visa-guide-vls-ts',
+    title: 'The French student visa explained: everything you need to know in 2025',
+    excerpt: 'The VLS-TS student visa is not as complicated as it looks — once you understand what it actually requires and in what order.',
+    date: '2025-06-22',
+    readTime: '8 min read',
+    metaTitle: 'French Student Visa Guide 2025 — VLS-TS Complete Walkthrough',
+    metaDescription: 'A complete, accurate guide to the French student visa (VLS-TS) for international students in 2025 — Campus France, the visa application, and the ANEF validation you must do on arrival.',
+    content: `## Two stages, one visa
+
+The French student visa process has two distinct stages that confuse a lot of applicants. The first is getting the visa. The second is validating it when you arrive. Both matter. Missing the second one is a serious mistake.
+
+The visa you'll receive is called a **VLS-TS** (*Visa Long Séjour valant Titre de Séjour*) — a long-stay visa that acts as a residence permit for up to one year. For most non-EU students in degree programmes of 12 months or more, this is the correct visa type.
+
+## Stage 1: Before you apply — Campus France
+
+If you're from one of the roughly 50 countries in the Campus France procedure (which includes most of Africa, Asia, Latin America, and the Middle East), you must register through **Campus France** before applying for your visa at the consulate.
+
+Go to **campusfrance.org** and select your country. The process involves:
+
+- Creating a Campus France account and entering your academic history
+- Attaching your French university acceptance letter (*lettre d'admission*)
+- Attending a mandatory interview at your local Campus France office
+
+The interview is not a test — it's a conversation about your project and your chosen programme. Most students pass without difficulty. Allow **4–6 weeks** for the full Campus France process before you can proceed to the consulate.
+
+If your country is NOT in the Campus France procedure, you go directly to the consulate.
+
+## Stage 2: The visa application at the French consulate
+
+Apply at the **French consulate or embassy in your country of residence**. Applications are usually made via the **France-Visas portal** (france-visas.gouv.fr), which handles appointment booking and document submission.
+
+Documents required (standard list — verify with your specific consulate):
+
+- Valid passport (must be valid for at least 6 months beyond your intended stay)
+- Completed visa application form
+- Passport photos meeting French specifications
+- Proof of university acceptance (letter from your French institution)
+- Campus France approval letter (if applicable)
+- Proof of accommodation in France (lease, residence hall booking, or host letter)
+- Proof of financial resources: at least **€615/month** for the duration of your studies (you can show bank statements, scholarship letters, or a notarised sponsor declaration)
+- Valid health insurance covering France (private policy or CPAM pre-registration)
+- Visa fee: **€99** for long-stay student visas (non-EU students)
+
+Processing time varies by consulate but is typically **3–6 weeks**. Apply well in advance of your programme start date.
+
+## Stage 3: Arrival and ANEF validation — do not skip this
+
+This is the step many students miss, sometimes with serious consequences.
+
+Within **three months of arriving in France**, you must validate your VLS-TS visa on the **ANEF portal** (*administration-etrangers-en-france.interieur.gouv.fr*). This online procedure replaces the old prefecture appointment for most students.
+
+What validation involves:
+- Creating an ANEF account with your passport details and visa number
+- Uploading a recent photo
+- Paying the **€50 validation fee** by bank card
+
+Once validated, the ANEF sends you a digital validation certificate. This certificate, combined with your VLS-TS visa, functions as your residence permit for the first year. Keep a PDF copy. You will need it for CAF, CPAM, your bank, and your university.
+
+**If you do not validate within three months, your visa becomes invalid and you will need to apply from your home country again.** This is not a minor administrative issue.
+
+## Renewing after the first year
+
+If your programme is longer than one year, you'll apply for a **Titre de Séjour Étudiant** (student residence card) before your VLS-TS expires. The renewal application is also on the ANEF portal. Apply at least **two months before your visa expires** — processing can take weeks, and delays are common. During the wait, the ANEF provides a receipt (*récépissé*) that extends your right to stay.
+
+## Timeline: working backwards from your programme start
+
+- **6+ months before:** accept your French university offer and get your acceptance letter
+- **5 months before:** register with Campus France (if required) and book your consulate appointment
+- **3–4 months before:** submit your visa application at the consulate
+- **1–2 months before:** confirm your accommodation and get your lease or residence hall booking
+- **Arrival:** validate your VLS-TS on ANEF within 3 months — ideally in the first week
+- **First month in France:** register with CPAM (health insurance), open a bank account, apply for CAF (housing benefit)
+
+The process looks long, but each step is manageable if you start on time. The most common reason students have problems is not starting early enough.
+
+For city-specific guides on what to do after you arrive, see our individual [city pages](/cities/lyon) or use the [city quiz](/city-quiz) to find where in France best fits your goals.`,
+  },
+  {
+    slug: 'working-as-student-in-france-964-hours',
+    title: 'Working as a student in France: what you\'re actually allowed to do',
+    excerpt: 'You can work legally in France as a student. Here\'s the exact rule, what it means in practice, and how to find a job that works with your timetable.',
+    date: '2025-06-25',
+    readTime: '6 min read',
+    metaTitle: 'Working as a Student in France 2025 — The 964-Hour Rule Explained',
+    metaDescription: 'Can international students work in France? Yes — up to 964 hours per year. Here\'s exactly how it works, how much you can earn, and where to find student jobs.',
+    content: `## The rule: 964 hours per year
+
+International students in France with a valid student visa (VLS-TS) or student residence permit are authorised to work **up to 964 hours per year**. This is not an informal allowance — it is a legal right written into French immigration law.
+
+964 hours is exactly **60% of the French legal working year** (which is 1,607 hours). In practice, it works out to roughly **18–19 hours per week** if spread evenly across the year, or about 80 hours per month.
+
+You do not need any additional work permit. Your student visa or residence permit already includes work authorisation. Employers are used to hiring students — show them your valid residence document and your ID.
+
+## How much can you earn?
+
+France has a national minimum wage called the **SMIC** (*Salaire Minimum Interprofessionnel de Croissance*). As of **January 2025**, the SMIC is **€11.88 gross per hour**.
+
+If you work the maximum 964 hours at minimum wage:
+- **Gross annual earnings:** €11,455
+- **Net (after social charges of ~23%):** approximately **€8,820/year**, or about **€735/month**
+
+For students in cities like [Grenoble](/cities/grenoble), [Rennes](/cities/rennes), or [Lille](/cities/lille), this covers a substantial portion of living costs. In [Paris](/cities/paris), it covers significantly less.
+
+Many student jobs pay above minimum wage — waitressing, tutoring, language instruction, and tech internships in particular.
+
+## Types of work available to students
+
+**CROUS jobs (*emplois étudiants*):** The CROUS student services organisation runs a jobs board specifically for students, with flexible on-campus roles. Hours are typically short and schedules are built around lectures. Find listings on **crous.fr** under *Offres d'emploi étudiants*.
+
+**Autolib (off-campus jobs):** Cafés, restaurants, retail, hotels, and logistics companies all hire students regularly. The hospitality sector in particular has consistent demand and is tolerant of non-native French speakers.
+
+**Tutoring and language teaching:** If you are a native English, Spanish, German, or Mandarin speaker, private tutoring is well paid (€15–25/hour informally, or through platforms like **superprof.fr** which handles the administrative side). Demand is consistent and hours are flexible.
+
+**Tech and digital internships:** France has a growing startup ecosystem, particularly in [Paris](/cities/paris), [Lyon](/cities/lyon), [Nantes](/cities/nantes), and [Toulouse](/cities/toulouse). Internships (*stages*) of more than two months must be accompanied by a convention de stage (internship agreement) from your university — but they are classified separately from regular employment under French law and do not count against your 964-hour allowance.
+
+**English-language call centres:** Companies like Teleperformance and Concentrix hire bilingual students in multiple cities. The work is repetitive but the pay is reliable and the hours are flexible.
+
+## Declaring your income
+
+If you work in France, your employer registers you with the French social security system (URSSAF) and deducts contributions from your salary. You will receive a **numéro de sécurité sociale** (social security number) which also activates your CPAM health insurance registration.
+
+At the end of the tax year, you must file a French tax return (*déclaration de revenus*) if your annual income exceeded roughly €10,225 (the 2025 threshold). Student income below this level is typically not taxed, but you still need to file. The French tax administration (*impots.gouv.fr*) has an online process that is genuinely straightforward — the pre-filled return auto-populates most of your income if your employer was French.
+
+**Important for CAF:** If you start working while receiving CAF housing benefit, declare your income change to CAF within 30 days. Your benefit amount may be adjusted, but you won't lose it entirely at student income levels.
+
+## Practical tips
+
+- Get a French bank account within your first two weeks. You need it to be paid and for your IBAN for CAF and CPAM.
+- Your university's international office often has a dedicated student employment adviser. Use it.
+- Apps like **StudentPop**, **JobEtudiant**, and **Wizbii** aggregate student-friendly listings in France.
+- The university notice boards (physical and digital) are still a primary source of local tutoring and odd-job listings.
+
+Working in France is a real option, not a theoretical one. Most students who do it consistently find it improves their French, their savings, and their CV — usually in that order.`,
+  },
+  {
+    slug: 'crous-housing-france-students-guide',
+    title: 'CROUS student housing in France: how it works and how to apply',
+    excerpt: 'CROUS residences are the most affordable student housing in France. Here\'s exactly how to apply, when, and what to expect if you get a room.',
+    date: '2025-06-28',
+    readTime: '6 min read',
+    metaTitle: 'CROUS Student Housing France 2025 — How to Apply and What to Expect',
+    metaDescription: 'A complete guide to CROUS student housing in France — how to apply via Dossier Social Étudiant, when applications open, typical rents, and what the rooms are actually like.',
+    content: `## What is CROUS?
+
+CROUS stands for *Centre Régional des Œuvres Universitaires et Scolaires* — the regional student services organisation that manages student housing, restaurants, and social assistance across France. Each major French university city has a CROUS.
+
+CROUS residences are the most affordable student accommodation in France, with rents significantly subsidised by the state. They are the closest equivalent to university halls in the UK or dormitories in the US — with the caveat that demand far exceeds supply, and securing a room requires planning.
+
+## What does CROUS housing cost?
+
+Rents vary by room type and city, but as a general guide in 2025:
+
+- **Studio T1 (18–25m²):** €200–450/month
+- **Shared flat (*colocation CROUS*):** €160–300/month per person
+- **Traditional single room (shared bathroom/kitchen):** €130–250/month
+
+These prices are before CAF housing benefit — note that students in CROUS residences can also claim CAF, which further reduces the effective rent by €80–200/month depending on location.
+
+In [Paris](/cities/paris), where private rents average €1,230/month for a studio, a CROUS room at €350/month represents an extraordinary saving. In smaller cities the gap is narrower but still meaningful.
+
+## How to apply: Dossier Social Étudiant
+
+The application system is called the **Dossier Social Étudiant (DSE)**, and it is the single entry point for CROUS housing (and also for CROUS scholarships, called *bourses sur critères sociaux*).
+
+**Applications open in January each year** for the following academic year (September start). This is the most important thing to know: if you apply in June you will be joining the back of a long queue. Apply in January or February.
+
+**Step 1: Go to messervices.etudiant.gouv.fr**
+This is the official portal for the DSE. Create an account using your personal email.
+
+**Step 2: Complete your Dossier Social Étudiant**
+The form covers your personal details, your programme of study, your family income (parents' most recent tax assessment), and your housing preference. You rank up to six CROUS residences in order of preference across France.
+
+**Step 3: Upload supporting documents**
+Documents typically required:
+- Proof of enrolment or acceptance at a French higher education institution
+- Parents' most recent tax notice (*avis d'imposition*) — even if your parents are not French, a translated equivalent may be accepted
+- Your own income declaration (usually zero as a student)
+- ID document
+
+**Step 4: Wait for allocation**
+
+CROUS allocates rooms based on social criteria — family income, distance from home, specific vulnerability situations — not on a first-come basis. Priority goes to students with the lowest household incomes. International students from outside the EU sometimes face challenges here because income documentation from non-French tax systems can be difficult to compare.
+
+Offers are typically sent from **June onwards**. You usually have 72 hours to accept or decline.
+
+## What the rooms are actually like
+
+CROUS housing quality varies considerably between residences and cities. Newer buildings have private bathrooms and kitchenettes in each studio. Older residences may have shared bathrooms per floor and limited kitchen access.
+
+The facilities are functional rather than comfortable. Rooms are small. The internet connection quality varies. Common areas are basic.
+
+The practical upside: everything is included (utilities, internet) in the quoted rent, and CROUS residences are always located close to campus or well-connected by public transport.
+
+## Alternative: private student residences (*résidences étudiantes*)
+
+If you don't get a CROUS room — and many students don't — private student residences are a mid-market option. Companies like **Nexity Studéa**, **Les Estudines**, and **Résidences Cardinal** operate managed student buildings across France with private studios including utilities.
+
+Rents run €500–900/month depending on city and room size, which is more than CROUS but often less than the private rental market. Booking usually opens in spring for September occupancy.
+
+## Visale: the free guarantor for private rentals
+
+If you're renting privately (through a landlord or agency rather than CROUS), you'll almost certainly be asked for a **French guarantor** — someone with a French bank account who co-signs your lease.
+
+**Visale** is the government's solution to this problem. It's a free guarantor scheme run by Action Logement that covers students under 30 (and up to 35 for certain profiles). The process is entirely online at **visale.fr** and takes about a week to get your certificate. Visale is widely accepted by private landlords and eliminates the guarantor barrier for most students.
+
+## Practical checklist
+
+- Apply for DSE in **January** at messervices.etudiant.gouv.fr
+- Simultaneously start looking at private options as a backup
+- If no CROUS room: apply for Visale at visale.fr before contacting landlords
+- Sign your lease as early as possible and apply for CAF immediately
+- Use our [budget planner](/budget-planner) to model your actual monthly cost in your target city`,
+  },
+  {
+    slug: 'health-insurance-france-international-students',
+    title: 'Health insurance in France as an international student: what you actually need to do',
+    excerpt: 'Since 2019, French health insurance is automatic for most students. But there are steps you still need to take — and gaps you may need to fill.',
+    date: '2025-07-01',
+    readTime: '5 min read',
+    metaTitle: 'Health Insurance France for International Students 2025 — CPAM Guide',
+    metaDescription: 'How health insurance works for international students in France in 2025 — automatic CPAM registration, what is covered, supplementary insurance, and what to do when you arrive.',
+    content: `## The good news: France's healthcare system is among the world's best
+
+France's health system consistently ranks first or second globally. As a student registered in France, you have access to it. The coverage is real: doctors, specialists, hospital stays, prescriptions, and emergency care are all reimbursed by the state — typically at 70% of the regulated fee for a doctor's visit, higher for hospital care.
+
+The question is not *whether* you can access the system, but *how to register correctly* and *what gaps in coverage you might want to fill*.
+
+## How it works since 2019: automatic CPAM registration
+
+Before September 2019, students in France had a separate student health insurance scheme (*Sécurité Sociale Étudiante*) run by mutual organisations (LMDE, SMENO, etc.). This system was abolished.
+
+Today, students are integrated into the general social security system, managed by **CPAM** (*Caisse Primaire d'Assurance Maladie*). Registration with CPAM is:
+
+- **Free of cost** for students under 28
+- **Automatic** — you don't pay premiums
+- **Linked to your social security number** (numéro de sécurité sociale, or NIR)
+
+However, "automatic" does not mean you do nothing. You need to trigger the registration by submitting documents, and the timeline in France can be slow.
+
+## What to do when you arrive
+
+**Step 1: Register with CPAM**
+If you are under 28 and enrolled at a French higher education institution, go to **ameli.fr** and create your account. You'll need to submit:
+- Your passport or ID
+- Your student enrolment certificate (*certificat de scolarité*)
+- Your visa or residence permit
+- A completed registration form (available on ameli.fr)
+
+If you have previously worked in France or already have a French social security number, the process is quicker. If this is your first time in France, it may take **4–12 weeks** for your NIR to be assigned and your Carte Vitale (the green insurance card) to be issued.
+
+**Step 2: Get a temporary certificate**
+While waiting for your Carte Vitale, CPAM can issue a temporary attestation. Carry this with you to medical appointments.
+
+**Step 3: Choose a médecin traitant**
+To receive the maximum reimbursement (70% of fees), you should declare a primary care doctor (*médecin traitant*). This is done through your Carte Vitale or ameli.fr. Visits outside this pathway are reimbursed at a lower rate.
+
+## What CPAM covers and what it doesn't
+
+CPAM reimburses **70% of the regulated fee** for a general practitioner visit. In France in 2025, a standard consultation with a non-specialist costs €25–26.50 (the tarif conventionné). CPAM reimburses €16.50–18.55; you pay the remaining €6–8 directly.
+
+For specialist visits, the reimbursement rate varies. For hospitalisation, CPAM covers a large portion but not everything.
+
+The gap — the percentage not covered by CPAM — is the main reason most students, like most French residents, also have a **mutuelle** (complementary health insurance).
+
+## Mutuelle: do you need it?
+
+A mutuelle tops up the 30% not covered by CPAM. For a healthy student in their 20s with no chronic conditions, the out-of-pocket costs without a mutuelle are manageable (a GP visit costs you around €7). For dental care, optical care (glasses/contacts), and any specialist or hospital visits, the gap can become significant.
+
+Your university may offer a group mutuelle contract at a reduced rate — check with your student services office. Companies like **LMDE** (now part of Harmonie Mutuelle), **HEYME**, and **April** offer student-specific policies for approximately €10–30/month.
+
+EU students who already have European Health Insurance Card (EHIC) coverage may have adequate protection for the first year without purchasing an additional mutuelle — verify this with your home country's insurer.
+
+## Non-EU students: private insurance for the visa
+
+When applying for your French student visa, you'll need to show proof of health insurance coverage for the visa application. Your CPAM registration is not yet in place at this point (you haven't arrived yet), so you'll typically provide a private insurance policy valid from your departure date.
+
+Policies from Ornikar, ACS, or your university's partner insurer are commonly used. Once you've registered with CPAM and have your Carte Vitale, this private policy can lapse — you're covered by CPAM going forward.
+
+## Emergency situations
+
+France has a national emergency number: **15** for medical emergencies (*SAMU*), **18** for fire, **17** for police. The unified European emergency number **112** also works.
+
+Hospital emergency departments (*urgences*) are open 24/7. Treatment will not be withheld for lack of a Carte Vitale — you can settle payment arrangements after the fact if needed.
+
+The French healthcare system rewards patience (doctors' appointments can have waiting times of several weeks for specialists) and punishes emergencies that could have been treated earlier. Registering with a médecin traitant early is the practical advice here — having a doctor who knows you makes accessing the system dramatically easier.`,
+  },
+  {
+    slug: 'grandes-ecoles-vs-public-universities-france',
+    title: 'Grandes écoles vs public universities in France: which is right for you?',
+    excerpt: 'France has two entirely different higher education systems running in parallel. Understanding the difference is essential before you apply.',
+    date: '2025-07-05',
+    readTime: '7 min read',
+    metaTitle: 'Grandes Écoles vs Public Universities France — Which Should You Choose?',
+    metaDescription: 'The difference between grandes écoles and public universities in France explained for international students — prestige, cost, admission, and career outcomes.',
+    content: `## Two parallel systems
+
+France operates two distinct higher education systems simultaneously. Understanding which one you're applying to — and whether the difference matters for your goals — is essential before you start the application process.
+
+**Public universities** (*universités publiques*) are the large, open-access institutions that enrol most French students: Sorbonne, Paris Cité, Lyon 1, Bordeaux, Toulouse Paul Sabatier. They are funded by the state and charge fees of **€170–200/year for EU students** and **€2,770/year (Licence) or €3,770/year (Master)** for non-EU students since the Bienvenue en France reform of 2019.
+
+**Grandes écoles** are selective institutions — typically smaller, often privately managed, and highly prestigious within France. They include the engineering schools (*Écoles d'Ingénieurs*), the business schools (*Écoles de Commerce*), and the political/administrative schools. Examples: HEC Paris, École Polytechnique, Sciences Po, ESSEC, CentraleSupélec, ESCP.
+
+## Admission: how they differ
+
+**Public universities** operate on a largely open-access principle at undergraduate level. French students apply through the national Parcoursup platform. International students typically apply directly to the institution or through Campus France. Admission to a licence (undergraduate) programme is possible with a secondary school diploma equivalent to the French *baccalauréat*.
+
+At Master's level, public universities are competitive and selective. You apply directly to individual programmes with your undergraduate transcript and a motivation letter. Acceptance rates at the best programmes can be low.
+
+**Grandes écoles** are highly selective at all levels. French students traditionally enter through a gruelling two-year preparatory class (*Classes Préparatoires aux Grandes Écoles*, CPGE) and a competitive national entrance exam. International students bypass the CPGE system and apply directly — but are still assessed against competitive academic criteria. Most grandes écoles have specific international admission tracks.
+
+## Cost comparison
+
+This is where the difference becomes stark for non-EU international students:
+
+**Public universities:** €2,770/year (Licence), €3,770/year (Master), €380/year (Doctorat). These are the official 2024/25 non-EU rates. Many international students receive exemptions (bourses d'excellence, bilateral agreements) that reduce this to EU-level fees.
+
+**Grandes écoles:** fees vary enormously. Typical ranges in 2025:
+- **Business schools (HEC, ESSEC, ESCP):** €15,000–18,000/year for Master's programmes
+- **Engineering schools (CentraleSupélec, Mines, Ponts):** €3,000–8,000/year (often closer to public university pricing)
+- **Sciences Po Paris:** €13,000–15,000/year for most Master's programmes; lower for Licence
+- **Smaller business schools (SKEMA, KEDGE, Audencia):** €8,000–14,000/year
+
+The gap is significant. A two-year Master's at HEC costs approximately €35,000 in fees alone; the equivalent at a strong public university (Paris Cité, Grenoble-Alpes) costs under €8,000.
+
+## Career outcomes: does the label matter?
+
+In France, yes — significantly. The grandes écoles system produces most of France's senior executives, politicians, and high-level civil servants. The *réseau* (alumni network) of HEC, Polytechnique, or Sciences Po Paris is a genuine career asset.
+
+For international students planning to **work in France** long-term, the grande école brand recognition matters more. French employers, particularly in consulting, finance, and the public sector, filter heavily by institution.
+
+For international students planning to **return home or work internationally**, the picture is more nuanced. Outside France, the name recognition of grandes écoles varies considerably. A degree from HEC Paris is recognised globally in business circles. A degree from a mid-tier grande école may be less recognised abroad than a strong public university master's from a well-ranked research institution.
+
+**Engineering and research fields** are a partial exception. French public universities like [Grenoble](/cities/grenoble)-Alpes (QS ranked globally for engineering and computer science) and [Paris](/cities/paris)-Saclay produce research and graduates with strong international recognition.
+
+## Which should you choose?
+
+**Choose a grande école if:**
+- You have a clear goal of working in France in a field where grandes écoles dominate (consulting, finance, luxury, government)
+- You can access funding (scholarships, family) to cover the fees
+- The specific network and selective environment matter to your development
+
+**Choose a public university if:**
+- Cost is a real constraint and you need the €2,770–3,770/year fee structure
+- You're in a field where research quality or academic reputation matters more than institutional branding (sciences, medicine, law, humanities)
+- You plan to work internationally, where the public/grande école distinction carries less weight
+- You want a larger, more diverse student community
+
+**Sciences Po:** worth noting separately. Sciences Po (Paris, Lyon, Toulouse, Bordeaux, and regional campuses) occupies a middle position — it is a grande école by tradition and prestige, but operates somewhat like a public university for international students in terms of admission. Its programmes in international relations, European affairs, and political science have genuine global recognition.
+
+## A practical note on rankings
+
+Global university rankings (QS, Times Higher Education) often undercount French higher education because they aggregate large multi-faculty public universities in ways that obscure departmental strengths. French institutions are often stronger in specific fields than their overall rank suggests. Research the specific programme and department you're applying to, not just the institutional ranking.
+
+For city-specific information on which institutions are located where, see our individual city guides — [Paris](/cities/paris) for the broadest grande école concentration, [Lyon](/cities/lyon), [Toulouse](/cities/toulouse), and [Grenoble](/cities/grenoble) for strong public universities, and [Strasbourg](/cities/strasbourg) for a public university with genuine European research standing.`,
+  },
+  {
+    slug: 'finding-accommodation-france-avoid-scams',
+    title: 'How to find accommodation in France as a student (and avoid the scams)',
+    excerpt: 'The French private rental market is competitive and has some specific scams targeting international students. Here\'s how to navigate it safely.',
+    date: '2025-07-08',
+    readTime: '7 min read',
+    metaTitle: 'Finding Student Accommodation in France 2025 — Avoid Scams & Find Housing',
+    metaDescription: 'A practical guide to finding student accommodation in France — which platforms are safe, what documents you need, how Visale works, and the scams to watch out for.',
+    content: `## Start early and expect competition
+
+The French student housing market is tighter than most international students expect. In cities like [Paris](/cities/paris), [Lyon](/cities/lyon), and [Bordeaux](/cities/bordeaux), demand for student accommodation consistently outpaces supply. Starting your search **at least three months before** your move date is not excessive caution — it's the minimum.
+
+For September arrivals (the standard start of the French academic year), begin searching in May or June. For January arrivals, start in October.
+
+## Legitimate platforms for student accommodation
+
+**PAP (pap.fr):** Particulier à Particulier — France's largest direct-landlord platform. No agency fees (*honoraires*), which saves one month's rent compared to going through an agency. Listings are real, posted by individual landlords. Language is entirely French.
+
+**Leboncoin (leboncoin.fr):** France's largest classifieds platform, similar to Craigslist. Widely used for accommodation. Very large selection, significant variation in quality. Most listings are legitimate; a minority are fraudulent (see scams section below).
+
+**SeLoger (seloger.com):** Agency and individual listings. More expensive on average than direct landlord sites, but some listings include additional services (furnished apartments with appliances, utilities included).
+
+**Spotahome (spotahome.com):** International-facing platform designed for people relocating to a new country. All listings are verified with video tours. No need to visit in person before booking. Higher prices than the local market, but appropriate for students arriving from abroad who cannot view properties.
+
+**HousingAnywhere (housinganywhere.com):** Similar to Spotahome — international focus, verified listings, priced above local market. Useful for initial short-term housing while you find something locally.
+
+**CROUS (trouverunlogement.lescrous.fr):** The official portal for CROUS student residences. Apply via the Dossier Social Étudiant (see our [CROUS housing guide](/blog/crous-housing-france-students-guide)).
+
+**University housing offices:** Many universities maintain lists of verified private landlords who regularly rent to students and are familiar with international tenants. Ask your international admissions office.
+
+## Documents you'll need (the standard French dossier)
+
+French landlords ask for a *dossier de location* — a standardised set of documents to assess your reliability as a tenant. This is legally regulated: landlords cannot ask for documents outside the official list (Decree No. 2015-1437).
+
+The legitimate required documents are:
+- Valid ID or passport
+- Proof of student status (enrolment certificate)
+- Proof of income or scholarship (grant letter, bank statements, parental support letter)
+- Proof of guarantor (or Visale certificate — see below)
+- Last three rent receipts from previous accommodation (if applicable)
+
+**Landlords may NOT legally request:** your bank account number, a bank statement older than 3 months, a photograph, your social media profiles, or a deposit more than one month's rent (for unfurnished) or two months' rent (for furnished).
+
+## Visale: your free government guarantor
+
+The most common barrier for international students is the guarantor requirement. Most French landlords want a French guarantor — someone with a French bank account and income who will cover your rent if you default.
+
+**Visale** is the government's answer to this. It's a free guarantor service run by Action Logement, available to:
+- Students and young workers under 30
+- Renters of any age who are not yet settled in a stable job
+
+Get your Visale certificate at **visale.fr** before you start applying for flats. The certificate is issued online in about a week and is widely accepted by private landlords. It removes the guarantor problem entirely.
+
+If you have a scholarship or institutional housing guarantee from your university, check whether your institution has a convention with Action Logement — many grandes écoles and universities have specific Visale agreements.
+
+## The scams: how to recognise and avoid them
+
+The French rental market has specific, well-documented scams targeting international students who cannot visit properties in person.
+
+**The absent landlord scam:** The landlord claims to be abroad (working on a project, in an emergency, etc.) and offers to send the keys by post once you pay the deposit and first month's rent. There is no flat. Once you transfer the money, they disappear. **Rule: never transfer money for accommodation you have not seen in person, or that has not been verified by a trusted third party (like Spotahome or HousingAnywhere).**
+
+**The fake duplicate listing:** Scammers take photos from real, legitimate listings and repost them at a lower price. The price is the signal — if a studio in central Lyon is advertised at €400/month when comparable studios are €750+, it is almost certainly fraudulent.
+
+**The "guarantor fee" scam:** Legitimate Visale is free. Anyone asking you to pay for a guarantor service is either running a scam or operating an unregulated commercial service. Use Visale.
+
+**Platforms where scam risk is higher:** Leboncoin and Facebook Marketplace have more fraudulent listings than PAP or SeLoger. Cross-reference any listing you find on these platforms by searching the images on Google reverse image search.
+
+**Safe signals:** Landlord has verifiable French phone number, is willing to video call you and show the flat on camera, provides a real address you can cross-check on Google Maps, and does not request payment before any lease is signed.
+
+## Understanding the lease: key terms
+
+French leases are standardised by law. For furnished accommodation (*meublé*), the standard lease is **one year** (renewable). For unfurnished (*non-meublé*), it's typically **three years**.
+
+Notice periods:
+- Tenant: **1 month** notice to leave a furnished apartment; **3 months** for unfurnished
+- Landlord: **3 months** for furnished; **6 months** for unfurnished
+
+The deposit (*dépôt de garantie*) is **one month's rent** for furnished, **two months** for unfurnished, capped by law.
+
+**Quittance de loyer:** your landlord must provide a rent receipt each month if you request one. You need these receipts for your CAF housing benefit application and for future rental applications.
+
+## After you sign: apply for CAF immediately
+
+The day you sign your lease, apply for CAF housing benefit at **caf.fr**. The benefit is retroactive to your application date — not your lease start. Every week of delay is housing benefit you don't receive.
+
+See our detailed [CAF application guide](/blog/how-to-apply-caf-housing-aid-international-students) for the full step-by-step process.`,
+  },
 ]
