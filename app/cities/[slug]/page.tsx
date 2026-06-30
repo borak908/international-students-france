@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import cities from '@/data/cities.json'
 import type { City } from '@/types/city'
+import RelatedCities from '@/components/RelatedCities'
 
 const cityData = cities as City[]
 
@@ -20,9 +21,16 @@ export async function generateMetadata({
   const city = cityData.find((c) => c.slug === params.slug)
   if (!city) return {}
 
+  // Use `absolute` to bypass the layout template — keeps <title> under 60 chars
+  // OG title can be longer (social previews aren't truncated the same way)
   return {
-    title: `Study in ${city.name}, France — International Student Guide`,
+    title: {
+      absolute: `Study in ${city.name} — International Student Guide`,
+    },
     description: city.metaDescription,
+    alternates: {
+      canonical: `https://comparestudyfrance.com/cities/${city.slug}`,
+    },
     keywords: [
       `study in ${city.name}`,
       `international students ${city.name}`,
@@ -34,6 +42,7 @@ export async function generateMetadata({
       title: `Study in ${city.name}, France — International Student Guide`,
       description: city.metaDescription,
       type: 'article',
+      url: `https://comparestudyfrance.com/cities/${city.slug}`,
     },
   }
 }
@@ -102,6 +111,20 @@ function Tag({ children }: { children: string }) {
   )
 }
 
+// ── Temp badge ────────────────────────────────────────────────────────────────
+function TempBadge({ label, tempC }: { label: string; tempC: number }) {
+  const warm = tempC >= 20
+  return (
+    <div className="bg-[#F5F2ED] rounded-xl p-4 border border-stone-100 text-center">
+      <p className="text-xs text-stone-400 font-medium uppercase tracking-wide mb-1">{label}</p>
+      <p className={`text-lg font-bold ${warm ? 'text-orange-600' : 'text-blue-600'}`}>
+        {tempC}°C
+      </p>
+      <p className="text-xs text-stone-400 mt-0.5">{warm ? 'Avg. summer' : 'Avg. winter'}</p>
+    </div>
+  )
+}
+
 // ── Page ─────────────────────────────────────────────────────────────────────
 export default function CityPage({ params }: { params: { slug: string } }) {
   const city = cityData.find((c) => c.slug === params.slug)
@@ -113,11 +136,55 @@ export default function CityPage({ params }: { params: { slug: string } }) {
     { id: 'universities',  label: 'Universities' },
     { id: 'transport',     label: 'Transport' },
     { id: 'work-visa',     label: 'Work & Visa' },
-    { id: 'international', label: 'International' },
+    { id: 'city-life',     label: 'City Life' },
+    { id: 'related-cities', label: 'Similar Cities' },
   ]
+
+  // Top 3 budget-nearest cities for the sidebar (excluding self)
+  const sidebarCities = cityData
+    .filter((c) => c.slug !== city.slug)
+    .sort(
+      (a, b) =>
+        Math.abs(a.housing.totalMonthlyBudget - city.housing.totalMonthlyBudget) -
+        Math.abs(b.housing.totalMonthlyBudget - city.housing.totalMonthlyBudget)
+    )
+    .slice(0, 5)
 
   return (
     <>
+      {/* ── JSON-LD structured data ── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://comparestudyfrance.com' },
+                { '@type': 'ListItem', position: 2, name: 'Cities', item: 'https://comparestudyfrance.com/cities' },
+                { '@type': 'ListItem', position: 3, name: city.name, item: `https://comparestudyfrance.com/cities/${city.slug}` },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'City',
+              name: city.name,
+              description: city.metaDescription,
+              containedInPlace: {
+                '@type': 'Country',
+                name: 'France',
+              },
+              additionalProperty: [
+                { '@type': 'PropertyValue', name: 'Student Population', value: city.overview.studentPopulation },
+                { '@type': 'PropertyValue', name: 'Monthly Budget', value: `€${city.housing.totalMonthlyBudget}` },
+                { '@type': 'PropertyValue', name: 'City Population', value: city.cityLife.cityPopulation },
+              ],
+            },
+          ]),
+        }}
+      />
+
       {/* ── Hero banner ── */}
       <div className="bg-gradient-to-br from-[#0D1B35] via-[#122240] to-[#182C50] text-white">
         <div className="absolute top-16 left-0 right-0 h-0.5 flex pointer-events-none" aria-hidden>
@@ -127,7 +194,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
         </div>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-14">
           {/* Breadcrumb */}
-          <nav className="flex items-center gap-2 text-[#90ADDA] text-xs mb-6">
+          <nav className="flex items-center gap-2 text-[#90ADDA] text-xs mb-6" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
             <span className="text-white">Cities</span>
@@ -167,7 +234,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
       {/* ── Sticky section nav ── */}
       <div className="sticky top-[3.625rem] z-40 bg-[#0D1B35] border-b border-[#1E3A6E]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <nav className="flex gap-1 overflow-x-auto no-scrollbar py-1">
+          <nav className="flex gap-1 overflow-x-auto no-scrollbar py-1" aria-label="Page sections">
             {sections.map((s) => (
               <a
                 key={s.id}
@@ -197,6 +264,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
               </div>
               <div className="bg-white rounded-xl border border-stone-100 px-5 divide-y divide-stone-100">
                 <InfoRow label="City vibe"            value={city.overview.overallVibe} />
+                <InfoRow label="City population"      value={city.cityLife.cityPopulation + ' residents'} />
                 <InfoRow
                   label="English programs"
                   value={
@@ -232,6 +300,26 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                   sub="Housing benefit"
                 />
               </div>
+
+              {/* Cost breakdown */}
+              <div className="grid grid-cols-3 gap-3 mb-5">
+                <StatCard
+                  label="Groceries"
+                  value={`€${city.cityLife.costBreakdown.groceriesMonthly}/mo`}
+                  sub="Supermarket estimate"
+                />
+                <StatCard
+                  label="Dining out"
+                  value={`€${city.cityLife.costBreakdown.diningOutAvgMeal} avg`}
+                  sub="Per meal (restaurant)"
+                />
+                <StatCard
+                  label="Utilities"
+                  value={`€${city.cityLife.costBreakdown.utilitiesMonthly}/mo`}
+                  sub="Electricity, water, internet"
+                />
+              </div>
+
               <div className="bg-white rounded-xl border border-stone-100 px-5 divide-y divide-stone-100">
                 <InfoRow
                   label="Best neighborhoods"
@@ -351,18 +439,30 @@ export default function CityPage({ params }: { params: { slug: string } }) {
               </div>
             </Section>
 
-            {/* 6 — International Experience */}
-            <Section id="international" emoji="🌍" title="International Experience">
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
-                <StatCard label="Students"       value={city.internationalExperience.studentPopulation} />
-                <StatCard label="International %" value={city.internationalExperience.internationalStudentPct} />
-                <StatCard label="Safety"          value={city.internationalExperience.safetyRating} />
+            {/* 6 — City Life & Climate */}
+            <Section id="city-life" emoji="🌤️" title="City Life & Climate">
+              {/* Climate */}
+              <div className="grid grid-cols-3 gap-3 mb-5">
+                <TempBadge label="Summer" tempC={city.cityLife.climate.avgSummerTempC} />
+                <TempBadge label="Winter" tempC={city.cityLife.climate.avgWinterTempC} />
+                <div className="bg-[#F5F2ED] rounded-xl p-4 border border-stone-100 text-center">
+                  <p className="text-xs text-stone-400 font-medium uppercase tracking-wide leading-none mb-1">Sunshine</p>
+                  <p className="text-lg font-bold text-stone-700">{city.cityLife.climate.sunshineDaysPerYear}</p>
+                  <p className="text-xs text-stone-400 mt-0.5">days/year</p>
+                </div>
               </div>
-              <div className="bg-white rounded-xl border border-stone-100 px-5 divide-y divide-stone-100">
-                <InfoRow label="English programs" value={city.internationalExperience.englishPrograms} />
-                <InfoRow label="City vibe"        value={city.internationalExperience.overallVibe} />
+
+              <div className="bg-white rounded-xl border border-stone-100 px-5 divide-y divide-stone-100 mb-5">
+                <InfoRow label="Climate character" value={city.cityLife.climate.character} />
+                <InfoRow label="Language barrier"  value={city.cityLife.languageBarrier} />
+                {city.cityLife.notableStatus && (
+                  <InfoRow label="Notable for" value={city.cityLife.notableStatus} />
+                )}
               </div>
             </Section>
+
+            {/* 7 — Related Cities */}
+            <RelatedCities currentCity={city} allCities={cityData} />
 
           </div>
 
@@ -378,46 +478,54 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                     <span className="font-medium text-stone-700">{city.region}</span>
                   </div>
                   <div className="flex justify-between">
+                    <span className="text-stone-500">Population</span>
+                    <span className="font-medium text-stone-700">{city.cityLife.cityPopulation}</span>
+                  </div>
+                  <div className="flex justify-between">
                     <span className="text-stone-500">Monthly budget</span>
                     <span className="font-medium text-stone-700">€{city.housing.totalMonthlyBudget}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-stone-500">EU tuition</span>
-                    <span className="font-medium text-stone-700">€{city.universities.tuitionEUPerYear}/yr</span>
+                    <span className="text-stone-500">Studio rent</span>
+                    <span className="font-medium text-stone-700">€{city.housing.studioRentMonthly}/mo</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-stone-500">Non-EU tuition</span>
-                    <span className="font-medium text-stone-700">€{city.universities.tuitionNonEUPerYear}/yr</span>
+                    <span className="text-stone-500">Transport</span>
+                    <span className="font-medium text-stone-700">
+                      {city.transport.studentPassMonthly === 0 ? 'FREE' : `€${city.transport.studentPassMonthly}/mo`}
+                    </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-stone-500">Transport (student)</span>
-                    <span className="font-medium text-stone-700">€{city.transport.studentPassMonthly}/mo</span>
+                    <span className="text-stone-500">Summer avg</span>
+                    <span className="font-medium text-orange-600">{city.cityLife.climate.avgSummerTempC}°C</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-stone-500">Work hours</span>
-                    <span className="font-medium text-stone-700">964 hrs/yr</span>
+                    <span className="text-stone-500">Sunshine</span>
+                    <span className="font-medium text-stone-700">{city.cityLife.climate.sunshineDaysPerYear} days/yr</span>
                   </div>
                 </div>
               </div>
 
-              {/* Other cities */}
+              {/* Budget-nearest cities */}
               <div className="bg-white rounded-2xl border border-stone-200 p-5">
-                <h3 className="text-sm font-bold text-stone-700 mb-3">Other cities</h3>
+                <h3 className="text-sm font-bold text-stone-700 mb-1">Similar budget</h3>
+                <p className="text-xs text-stone-400 mb-3">Cities closest to €{city.housing.totalMonthlyBudget}/mo</p>
                 <div className="space-y-2">
-                  {cityData
-                    .filter((c) => c.slug !== city.slug)
-                    .map((c) => (
-                      <Link
-                        key={c.slug}
-                        href={`/cities/${c.slug}`}
-                        className="flex items-center gap-2 text-sm text-stone-600 hover:text-[#1E3A6E] transition-colors group"
-                      >
-                        <svg className="w-4 h-4 text-stone-300 group-hover:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  {sidebarCities.map((c) => (
+                    <Link
+                      key={c.slug}
+                      href={`/cities/${c.slug}`}
+                      className="flex items-center justify-between text-sm text-stone-600 hover:text-[#1E3A6E] transition-colors group"
+                    >
+                      <span className="flex items-center gap-2">
+                        <svg className="w-4 h-4 text-stone-300 group-hover:text-blue-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                         </svg>
                         {c.name}
-                      </Link>
-                    ))}
+                      </span>
+                      <span className="text-xs text-stone-400">€{c.housing.totalMonthlyBudget}</span>
+                    </Link>
+                  ))}
                 </div>
               </div>
 

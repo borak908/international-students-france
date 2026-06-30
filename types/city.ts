@@ -42,12 +42,25 @@ export interface WorkVisa {
   internshipScene: string
 }
 
-export interface InternationalExperience {
-  studentPopulation: string
-  internationalStudentPct: string
-  englishPrograms: string
-  safetyRating: string
-  overallVibe: string
+export interface Climate {
+  avgSummerTempC: number
+  avgWinterTempC: number
+  sunshineDaysPerYear: number
+  character: string
+}
+
+export interface CostBreakdown {
+  groceriesMonthly: number
+  diningOutAvgMeal: number
+  utilitiesMonthly: number
+}
+
+export interface CityLife {
+  climate: Climate
+  costBreakdown: CostBreakdown
+  cityPopulation: string
+  notableStatus: string | null
+  languageBarrier: string
 }
 
 export interface City {
@@ -63,5 +76,5 @@ export interface City {
   universities: Universities
   transport: Transport
   workVisa: WorkVisa
-  internationalExperience: InternationalExperience
+  cityLife: CityLife
 }

@@ -54,12 +54,21 @@
       "visaType": "Long-stay student visa + residence permit",
       "internshipScene": "Business schools strong (EDHEC, IÉSEG); regional industry"
     },
-    "internationalExperience": {
-      "studentPopulation": "100,000+",
-      "internationalStudentPct": "~13%",
-      "englishPrograms": "Yes — EDHEC, SKEMA, IÉSEG fully English",
-      "safetyRating": "5/10 (Numbeo safety index: 49)",
-      "overallVibe": "Student city, energised, warm, Flemish charm"
+    "cityLife": {
+      "climate": {
+        "avgSummerTempC": 22,
+        "avgWinterTempC": 4,
+        "sunshineDaysPerYear": 165,
+        "character": "Temperate oceanic — mild summers, cold damp winters; snow possible December–February"
+      },
+      "costBreakdown": {
+        "groceriesMonthly": 200,
+        "diningOutAvgMeal": 12,
+        "utilitiesMonthly": 80
+      },
+      "cityPopulation": "235,000",
+      "notableStatus": "Historic Flemish Grand Place; gateway to Belgium and London via Eurostar — Paris is just 1 hour by TGV",
+      "languageBarrier": "Moderate — English spoken in universities and student neighbourhoods; French required for everyday errands and admin"
     }
   },
   {
@@ -120,12 +129,21 @@
       "visaType": "Long-stay student visa + residence permit",
       "internshipScene": "Exceptional — all major sectors headquartered here"
     },
-    "internationalExperience": {
-      "studentPopulation": "600,000+ (Île-de-France region)",
-      "internationalStudentPct": "~15–20%",
-      "englishPrograms": "Yes — wide range at Sciences Po, HEC, Sorbonne",
-      "safetyRating": "4/10 (Numbeo safety index: 42)",
-      "overallVibe": "Vibrant, elegant, cultural capital, fast-paced"
+    "cityLife": {
+      "climate": {
+        "avgSummerTempC": 25,
+        "avgWinterTempC": 5,
+        "sunshineDaysPerYear": 164,
+        "character": "Temperate oceanic — warm summers, mild winters; rain spread evenly year-round"
+      },
+      "costBreakdown": {
+        "groceriesMonthly": 250,
+        "diningOutAvgMeal": 15,
+        "utilitiesMonthly": 100
+      },
+      "cityPopulation": "2,100,000",
+      "notableStatus": "UNESCO World Heritage — Seine riverbanks, Versailles, Notre-Dame cathedral",
+      "languageBarrier": "Low-moderate — English very common in tourist and student areas; French appreciated outside central arrondissements"
     }
   },
   {
@@ -185,12 +203,21 @@
       "visaType": "Long-stay student visa + residence permit",
       "internshipScene": "Excellent — Euronews, Sanofi, Bosch"
     },
-    "internationalExperience": {
-      "studentPopulation": "120,000+",
-      "internationalStudentPct": "~17%",
-      "englishPrograms": "Yes — EM Lyon, INSA, Sciences Po Lyon",
-      "safetyRating": "4/10 (Numbeo safety index: 42.5)",
-      "overallVibe": "Sophisticated, gastronomic, fast-growing tech hub"
+    "cityLife": {
+      "climate": {
+        "avgSummerTempC": 27,
+        "avgWinterTempC": 4,
+        "sunshineDaysPerYear": 188,
+        "character": "Semi-continental — hot summers, cold winters; heavy rainfall in spring and autumn"
+      },
+      "costBreakdown": {
+        "groceriesMonthly": 220,
+        "diningOutAvgMeal": 13,
+        "utilitiesMonthly": 90
+      },
+      "cityPopulation": "520,000",
+      "notableStatus": "UNESCO World Heritage — historic centre (Vieux-Lyon, Fourvière) since 1998; world capital of gastronomy",
+      "languageBarrier": "Moderate — English limited outside universities and expat communities; French strongly preferred in daily life"
     }
   },
   {
@@ -247,12 +274,21 @@
       "visaType": "Long-stay student visa + residence permit",
       "internshipScene": "Good — Dassault Aviation, Airbus nearby, growing startups"
     },
-    "internationalExperience": {
-      "studentPopulation": "100,000+",
-      "internationalStudentPct": "~12%",
-      "englishPrograms": "Yes — KEDGE, Sciences Po Bordeaux",
-      "safetyRating": "5/10 (Numbeo safety index: 50.2)",
-      "overallVibe": "Elegant, vibrant, most attractive city in France (2023 ranking)"
+    "cityLife": {
+      "climate": {
+        "avgSummerTempC": 26,
+        "avgWinterTempC": 7,
+        "sunshineDaysPerYear": 200,
+        "character": "Oceanic — warm sunny summers, mild wet winters; one of France's most pleasant climates"
+      },
+      "costBreakdown": {
+        "groceriesMonthly": 210,
+        "diningOutAvgMeal": 13,
+        "utilitiesMonthly": 85
+      },
+      "cityPopulation": "260,000",
+      "notableStatus": "UNESCO World Heritage — Port of the Moon historic district since 2007; global wine capital",
+      "languageBarrier": "Moderate — English in business schools and tourist spots; French for daily life and admin"
     }
   },
   {
@@ -311,12 +347,21 @@
       "visaType": "Long-stay student visa + residence permit",
       "internshipScene": "Exceptional for engineering — Airbus global HQ in Toulouse"
     },
-    "internationalExperience": {
-      "studentPopulation": "120,000+",
-      "internationalStudentPct": "~15%",
-      "englishPrograms": "Yes — TBS, ISAE-SUPAERO, INSA Toulouse",
-      "safetyRating": "5/10 (Numbeo safety index: 50.1)",
-      "overallVibe": "Energetic, warm, sunny southwest — France's #1 student city 2025"
+    "cityLife": {
+      "climate": {
+        "avgSummerTempC": 28,
+        "avgWinterTempC": 6,
+        "sunshineDaysPerYear": 210,
+        "character": "Sub-Mediterranean — hot sunny summers, mild winters; lowest rainfall of France's major student cities"
+      },
+      "costBreakdown": {
+        "groceriesMonthly": 200,
+        "diningOutAvgMeal": 12,
+        "utilitiesMonthly": 80
+      },
+      "cityPopulation": "480,000",
+      "notableStatus": "La Ville Rose — iconic rose-brick medieval city; Airbus global headquarters and Europe's aerospace capital",
+      "languageBarrier": "Moderate — English common in engineering and business schools; French essential in daily life and local commerce"
     }
   },
   {
@@ -373,12 +418,21 @@
       "visaType": "Long-stay student visa + residence permit",
       "internshipScene": "Good — biotech sector, digital startups"
     },
-    "internationalExperience": {
-      "studentPopulation": "80,000+",
-      "internationalStudentPct": "~20%",
-      "englishPrograms": "Yes — Montpellier Business School, Sciences Po",
-      "safetyRating": "4/10 (Numbeo safety index: 38.9)",
-      "overallVibe": "Young, vibrant, Mediterranean, international"
+    "cityLife": {
+      "climate": {
+        "avgSummerTempC": 28,
+        "avgWinterTempC": 8,
+        "sunshineDaysPerYear": 300,
+        "character": "Mediterranean — hot dry summers, mild winters; ~300 sunshine days per year, one of France's sunniest cities"
+      },
+      "costBreakdown": {
+        "groceriesMonthly": 200,
+        "diningOutAvgMeal": 12,
+        "utilitiesMonthly": 75
+      },
+      "cityPopulation": "295,000",
+      "notableStatus": "Home to the world's oldest operating medical school (founded 1220); public transport free for all metropolitan residents",
+      "languageBarrier": "Moderate-low — high international student ratio (20%) makes English more common than average; French still essential"
     }
   },
   {
@@ -434,12 +488,21 @@
       "visaType": "Long-stay student visa + residence permit",
       "internshipScene": "Excellent — European Parliament, Council of Europe, Alsatian industry"
     },
-    "internationalExperience": {
-      "studentPopulation": "60,000+",
-      "internationalStudentPct": "~20%",
-      "englishPrograms": "Yes — EM Strasbourg, Sciences Po, Université de Strasbourg",
-      "safetyRating": "5/10 est. (Numbeo safety index: ~52)",
-      "overallVibe": "European, bicultural French-German, highly liveable"
+    "cityLife": {
+      "climate": {
+        "avgSummerTempC": 25,
+        "avgWinterTempC": 2,
+        "sunshineDaysPerYear": 173,
+        "character": "Semi-continental — warm summers, very cold winters; snow common December–February; coldest of the major student cities"
+      },
+      "costBreakdown": {
+        "groceriesMonthly": 215,
+        "diningOutAvgMeal": 13,
+        "utilitiesMonthly": 100
+      },
+      "cityPopulation": "285,000",
+      "notableStatus": "UNESCO World Heritage — Grande Île historic centre (1988); seat of the European Parliament and Council of Europe",
+      "languageBarrier": "Low — English widely spoken due to EU institutions; German also common; one of France's most internationally accessible cities"
     }
   },
   {
@@ -495,12 +558,21 @@
       "visaType": "Long-stay student visa + residence permit",
       "internshipScene": "Good — Airbus, STX, Naval Group, growing startup ecosystem"
     },
-    "internationalExperience": {
-      "studentPopulation": "60,000+",
-      "internationalStudentPct": "~12%",
-      "englishPrograms": "Yes — Audencia, École Centrale Nantes, IMT Atlantique",
-      "safetyRating": "4/10 (Numbeo safety index: 41.5)",
-      "overallVibe": "Creative, green, dynamic — named most liveable French city multiple times"
+    "cityLife": {
+      "climate": {
+        "avgSummerTempC": 23,
+        "avgWinterTempC": 6,
+        "sunshineDaysPerYear": 186,
+        "character": "Temperate oceanic — mild year-round with Atlantic rainfall; green and lush but one of France's wetter student cities"
+      },
+      "costBreakdown": {
+        "groceriesMonthly": 200,
+        "diningOutAvgMeal": 12,
+        "utilitiesMonthly": 82
+      },
+      "cityPopulation": "320,000",
+      "notableStatus": "Named most liveable French city multiple times (L'Express); famous for 'Les Machines de l'Île' — world-renowned mechanical art installations",
+      "languageBarrier": "Moderate — English spoken in tech sector and grandes écoles; French for day-to-day life and admin"
     }
   },
   {
@@ -557,12 +629,21 @@
       "visaType": "Long-stay student visa + residence permit",
       "internshipScene": "Excellent for engineering/tech — CEA, STMicro, Schneider all in Grenoble"
     },
-    "internationalExperience": {
-      "studentPopulation": "60,000+",
-      "internationalStudentPct": "~25%",
-      "englishPrograms": "Yes — GEM, ENSIMAG, Grenoble INP",
-      "safetyRating": "4/10 (Numbeo safety index: 38.8)",
-      "overallVibe": "Alpine, intellectual, international, compact and walkable"
+    "cityLife": {
+      "climate": {
+        "avgSummerTempC": 26,
+        "avgWinterTempC": 2,
+        "sunshineDaysPerYear": 182,
+        "character": "Alpine — warm sunny summers, cold snowy winters; surrounded by three mountain ranges (Chartreuse, Belledonne, Vercors)"
+      },
+      "costBreakdown": {
+        "groceriesMonthly": 190,
+        "diningOutAvgMeal": 11,
+        "utilitiesMonthly": 90
+      },
+      "cityPopulation": "160,000",
+      "notableStatus": "Surrounded by three mountain ranges with ski resorts 45 min away; one of Europe's top research ecosystems (CEA, CNRS, ESRF)",
+      "languageBarrier": "Low — 25% international student body and major multilingual research institutes make English a functional working language on campus"
     }
   },
   {
@@ -620,12 +701,21 @@
       "visaType": "Long-stay student visa + residence permit",
       "internshipScene": "Good — Orange, Thales, growing cybersecurity sector"
     },
-    "internationalExperience": {
-      "studentPopulation": "70,000+",
-      "internationalStudentPct": "~13%",
-      "englishPrograms": "Yes — Sciences Po Rennes, ESC Rennes, INSA",
-      "safetyRating": "6/10 est. (Numbeo safety index: ~55)",
-      "overallVibe": "Friendly, Celtic culture, vibrant nightlife, compact and walkable"
+    "cityLife": {
+      "climate": {
+        "avgSummerTempC": 22,
+        "avgWinterTempC": 5,
+        "sunshineDaysPerYear": 165,
+        "character": "Temperate oceanic — mild all year, overcast and rainy; Atlantic climate similar to western Britain"
+      },
+      "costBreakdown": {
+        "groceriesMonthly": 195,
+        "diningOutAvgMeal": 11,
+        "utilitiesMonthly": 78
+      },
+      "cityPopulation": "220,000",
+      "notableStatus": "Celtic/Breton capital with a preserved medieval old town; home to Les Transmusicales, one of Europe's most important music discovery festivals",
+      "languageBarrier": "Moderate — English in tech and cybersecurity companies and grandes écoles; French for everyday life and local culture"
     }
   },
   {
@@ -681,12 +771,21 @@
       "visaType": "Long-stay student visa + residence permit",
       "internshipScene": "Moderate — closer to Marseille for corporate opportunities"
     },
-    "internationalExperience": {
-      "studentPopulation": "40,000+",
-      "internationalStudentPct": "~15%",
-      "englishPrograms": "Yes — Sciences Po Aix (English track), KEDGE",
-      "safetyRating": "6/10 est. (Numbeo safety index: ~58)",
-      "overallVibe": "Elegant, sunny, Provençal charm, slower pace"
+    "cityLife": {
+      "climate": {
+        "avgSummerTempC": 30,
+        "avgWinterTempC": 8,
+        "sunshineDaysPerYear": 300,
+        "character": "Provençal Mediterranean — very hot dry summers, mild winters; exceptional sunshine with the famous Mistral wind"
+      },
+      "costBreakdown": {
+        "groceriesMonthly": 230,
+        "diningOutAvgMeal": 15,
+        "utilitiesMonthly": 75
+      },
+      "cityPopulation": "145,000",
+      "notableStatus": "Birthplace of Paul Cézanne; 17th-century Provençal architecture along Cours Mirabeau; surrounded by lavender fields and Sainte-Victoire mountain",
+      "languageBarrier": "Low-moderate — significant English-speaking expat and tourist presence; French still essential for daily life and admin"
     }
   },
   {
@@ -741,12 +840,21 @@
       "visaType": "Long-stay student visa + residence permit",
       "internshipScene": "Good — Sophia Antipolis: IBM, SAP, TotalEnergies, INRIA"
     },
-    "internationalExperience": {
-      "studentPopulation": "30,000+",
-      "internationalStudentPct": "~20%",
-      "englishPrograms": "Yes — SKEMA, EDHEC, Université Côte d'Azur",
-      "safetyRating": "5/10 est. (Numbeo safety index: ~50)",
-      "overallVibe": "Glamorous, sunny, international — proximity to Monaco and Italy"
+    "cityLife": {
+      "climate": {
+        "avgSummerTempC": 29,
+        "avgWinterTempC": 10,
+        "sunshineDaysPerYear": 300,
+        "character": "Mediterranean — hot sunny summers, very mild winters; warmest major French city with the mildest winters in the country"
+      },
+      "costBreakdown": {
+        "groceriesMonthly": 240,
+        "diningOutAvgMeal": 15,
+        "utilitiesMonthly": 80
+      },
+      "cityPopulation": "340,000",
+      "notableStatus": "UNESCO World Heritage — Nice's winter resort town architecture (2021); hosts one of the world's largest carnivals (since 1294)",
+      "languageBarrier": "Low — major international tourist destination; English very widely spoken near the Promenade des Anglais and in business schools"
     }
   }
 ]

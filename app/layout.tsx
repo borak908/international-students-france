@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import cities from '@/data/cities.json'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
@@ -12,10 +13,18 @@ export const metadata: Metadata = {
   description:
     'The complete comparison guide for international students choosing where to study in France. Compare 12 cities by housing costs, universities, transport, visa rules, and student life.',
   keywords: ['study in France', 'international students France', 'French universities', 'student visa France', 'compare French cities'],
+  alternates: {
+    canonical: 'https://comparestudyfrance.com',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
     siteName: 'Compare Study France',
+    url: 'https://comparestudyfrance.com',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@comparestudyfr',
   },
 }
 
@@ -98,9 +107,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>
                 <p className="font-semibold text-white text-sm mb-3">Cities</p>
                 <div className="grid grid-cols-2 gap-x-4 gap-y-2">
-                  {['paris','lyon','toulouse','bordeaux','montpellier','strasbourg','nantes','grenoble','rennes','nice'].map((slug) => (
-                    <a key={slug} href={`/cities/${slug}`} className="text-xs text-[#90ADDA] hover:text-white transition-colors capitalize">
-                      {slug === 'aix-en-provence' ? 'Aix-en-Provence' : slug.charAt(0).toUpperCase() + slug.slice(1)}
+                  {cities.map((city) => (
+                    <a key={city.slug} href={`/cities/${city.slug}`} className="text-xs text-[#90ADDA] hover:text-white transition-colors">
+                      {city.name}
                     </a>
                   ))}
                 </div>
