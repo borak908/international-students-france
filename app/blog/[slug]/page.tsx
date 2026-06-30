@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { blogPosts } from '@/data/blog'
+import NewsletterSignup from '@/components/NewsletterSignup'
 
 export function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }))
@@ -93,8 +94,42 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
   const related = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 2)
 
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://comparestudyfrance.com' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://comparestudyfrance.com/blog' },
+        { '@type': 'ListItem', position: 3, name: post.title, item: `https://comparestudyfrance.com/blog/${post.slug}` },
+      ],
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: post.metaTitle,
+      description: post.metaDescription,
+      datePublished: post.date,
+      url: `https://comparestudyfrance.com/blog/${post.slug}`,
+      publisher: {
+        '@type': 'Organization',
+        name: 'Compare Study France',
+        url: 'https://comparestudyfrance.com',
+      },
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': `https://comparestudyfrance.com/blog/${post.slug}`,
+      },
+    },
+  ]
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Hero */}
       <div className="bg-gradient-to-br from-[#0D1B35] via-[#122240] to-[#182C50] text-white">
         <div className="h-0.5 bg-gradient-to-r from-[#4A70C4] via-white/50 to-[#B03232]" />
@@ -127,8 +162,13 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             </p>
             {renderContent(post.content)}
 
+            {/* Newsletter signup */}
+            <div className="mt-10">
+              <NewsletterSignup variant="blog" />
+            </div>
+
             {/* Bottom CTA */}
-            <div className="mt-10 bg-[#EDF0F8] border border-[#C5D0EC] rounded-2xl p-6">
+            <div className="mt-6 bg-[#EDF0F8] border border-[#C5D0EC] rounded-2xl p-6">
               <h3 className="font-bold text-stone-800 mb-2">Find your ideal city</h3>
               <p className="text-stone-600 text-sm mb-4">
                 Take our city quiz to get a personalised match across all 12 French cities.

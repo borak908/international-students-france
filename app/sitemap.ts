@@ -4,13 +4,15 @@ import { blogPosts } from '@/data/blog'
 
 const BASE_URL = 'https://comparestudyfrance.com'
 
-// Update this date whenever static pages are meaningfully changed
-const SITE_LAST_UPDATED = new Date('2026-06-28')
+// Update this date whenever shared layout or global content changes
+const SITE_LAST_UPDATED = new Date('2026-06-30')
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  // Each city uses its own lastUpdated field — update that field in cities.json
+  // whenever you change a city's data, so Googlebot prioritises recrawling it
   const cityEntries: MetadataRoute.Sitemap = cities.map((city) => ({
     url: `${BASE_URL}/cities/${city.slug}`,
-    lastModified: SITE_LAST_UPDATED,
+    lastModified: new Date(city.lastUpdated),
     changeFrequency: 'monthly',
     priority: 0.8,
   }))

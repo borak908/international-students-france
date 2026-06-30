@@ -18,14 +18,19 @@ function computeBreakdown(city: (typeof cities)[0], rentType: 'studio' | 'shared
       ? city.housing.studioRentMonthly
       : parseSharedRoom(city.housing.sharedRoomMonthly)
 
-  const living = city.housing.totalMonthlyBudget // excludes rent per Numbeo methodology
   const transport = city.transport.studentPassMonthly
-  const remaining = living - transport
-  const food = Math.round(remaining * 0.52)
-  const utilities = Math.round(remaining * 0.16)
-  const phone = 15
-  const leisure = Math.round(remaining * 0.20)
-  const misc = Math.max(0, remaining - food - utilities - phone - leisure)
+
+  // Use real per-city data from cities.json instead of flat percentage estimates
+  const food      = city.cityLife.costBreakdown.groceriesMonthly
+  const utilities = city.cityLife.costBreakdown.utilitiesMonthly
+  const phone     = 15
+
+  // Leisure and misc share whatever remains up to the city's known living cost total
+  const living    = city.housing.totalMonthlyBudget
+  const allocated = transport + food + utilities + phone
+  const leftover  = Math.max(0, living - allocated)
+  const leisure   = Math.round(leftover * 0.60)
+  const misc      = Math.max(0, leftover - leisure)
 
   return { rent, food, transport, utilities, phone, leisure, misc, total: rent + living }
 }

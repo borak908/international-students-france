@@ -9,6 +9,14 @@
   body {
     @apply bg-[#F5F3EF] text-stone-800 antialiased;
   }
+
+  /* Global focus ring — covers all interactive elements without per-component overrides.
+     Uses focus-visible so mouse users never see the ring, only keyboard/assistive tech. */
+  :focus-visible {
+    outline: 2px solid #1E3A6E;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
 }
 
 @layer utilities {

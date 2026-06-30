@@ -267,6 +267,19 @@ export default function CityQuizClient() {
 
               <p className="text-stone-500 text-sm mb-4">{r.city.tagline}</p>
 
+              {/* Top ranking — shown only for cities with confirmed ranking data */}
+              {r.city.rankings && r.city.rankings.length > 0 && (
+                <div className="flex items-center gap-2.5 bg-[#0D1B35] rounded-xl px-4 py-2.5 mb-4">
+                  <span className="text-sm flex-shrink-0">🏆</span>
+                  <p className="text-xs text-[#B8CAE8] leading-snug">
+                    <span className="text-white font-semibold">{r.city.rankings[0].school}</span>
+                    {' — '}
+                    <span className="text-[#90ADDA]">{r.city.rankings[0].rank}{r.city.rankings[0].program ? ` · ${r.city.rankings[0].program}` : ''}</span>
+                    <span className="text-[#506A8A] ml-1 hidden sm:inline">· {r.city.rankings[0].rankingType}</span>
+                  </p>
+                </div>
+              )}
+
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
                 {r.city.heroStats.map((stat) => (
                   <div key={stat.label} className="bg-[#F5F2ED] rounded-xl p-3">

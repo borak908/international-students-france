@@ -7,10 +7,22 @@
     "tagline": "France's student capital of the north — affordable, energetic, and surprisingly international.",
     "metaDescription": "Everything international students need to know about studying in Lille, France — housing costs, universities, transport, visa rules, and city life.",
     "heroStats": [
-      { "label": "Students", "value": "100,000+" },
-      { "label": "Monthly Budget", "value": "€913" },
-      { "label": "Studio Rent", "value": "€700/mo" },
-      { "label": "Safety Rating", "value": "5/10" }
+      {
+        "label": "Students",
+        "value": "100,000+"
+      },
+      {
+        "label": "Monthly Budget",
+        "value": "€913"
+      },
+      {
+        "label": "Studio Rent",
+        "value": "€700/mo"
+      },
+      {
+        "label": "Safety Rating",
+        "value": "5/10"
+      }
     ],
     "overview": {
       "studentPopulation": "100,000+",
@@ -24,7 +36,12 @@
       "sharedRoomMonthly": "€400–550",
       "totalMonthlyBudget": 913,
       "cafAidMonthly": "€100–300",
-      "bestNeighborhoods": ["Vauban", "Wazemmes", "Centre", "Vieux-Lille"]
+      "bestNeighborhoods": [
+        "Vauban",
+        "Wazemmes",
+        "Centre",
+        "Vieux-Lille"
+      ]
     },
     "universities": {
       "main": [
@@ -39,11 +56,17 @@
       ],
       "tuitionEUPerYear": 178,
       "tuitionNonEUPerYear": 2895,
-      "bestFields": ["Business", "Law", "Medicine", "Engineering", "Social Sciences"]
+      "bestFields": [
+        "Business",
+        "Law",
+        "Medicine",
+        "Engineering",
+        "Social Sciences"
+      ]
     },
     "transport": {
       "studentPassMonthly": 30,
-      "regularPassMonthly": 62.50,
+      "regularPassMonthly": 62.5,
       "airportConnection": "Eurostar to London, TGV to Paris (1 hr)",
       "bikeFriendly": true,
       "bikeShareName": "V'Lille"
@@ -69,7 +92,19 @@
       "cityPopulation": "235,000",
       "notableStatus": "Historic Flemish Grand Place; gateway to Belgium and London via Eurostar — Paris is just 1 hour by TGV",
       "languageBarrier": "Moderate — English spoken in universities and student neighbourhoods; French required for everyday errands and admin"
-    }
+    },
+    "rankings": [
+      {
+        "school": "EDHEC Business School",
+        "program": "Master in Management (MiM)",
+        "rankingType": "QS Business Masters 2026",
+        "rank": "#18 worldwide",
+        "sourceLabel": "QS Business Master's Rankings 2026",
+        "sourceUrl": "https://www.trainy.co/en/blog/best-masters-management-qs-ranking",
+        "note": "School-wide rank — campuses in Lille and Nice"
+      }
+    ],
+    "lastUpdated": "2026-06-30"
   },
   {
     "slug": "paris",
@@ -79,10 +114,22 @@
     "tagline": "The world's most iconic student city — unmatched universities, culture, and career opportunities.",
     "metaDescription": "Complete guide for international students studying in Paris, France — rent prices, top universities, transport costs, part-time work rules, and student life.",
     "heroStats": [
-      { "label": "Students", "value": "600,000+" },
-      { "label": "Monthly Budget", "value": "€1,064" },
-      { "label": "Studio Rent", "value": "€1,230/mo" },
-      { "label": "Safety Rating", "value": "4/10" }
+      {
+        "label": "Students",
+        "value": "600,000+"
+      },
+      {
+        "label": "Monthly Budget",
+        "value": "€1,064"
+      },
+      {
+        "label": "Studio Rent",
+        "value": "€1,230/mo"
+      },
+      {
+        "label": "Safety Rating",
+        "value": "4/10"
+      }
     ],
     "overview": {
       "studentPopulation": "600,000+ (Île-de-France region)",
@@ -96,7 +143,12 @@
       "sharedRoomMonthly": "€600–900",
       "totalMonthlyBudget": 1064,
       "cafAidMonthly": "€100–300",
-      "bestNeighborhoods": ["Latin Quarter (5e)", "Bastille (11e)", "Belleville (20e)", "Montparnasse (14e)"]
+      "bestNeighborhoods": [
+        "Latin Quarter (5e)",
+        "Bastille (11e)",
+        "Belleville (20e)",
+        "Montparnasse (14e)"
+      ]
     },
     "universities": {
       "main": [
@@ -114,11 +166,17 @@
       ],
       "tuitionEUPerYear": 178,
       "tuitionNonEUPerYear": 2895,
-      "bestFields": ["Law", "Medicine", "Arts", "Engineering", "Business"]
+      "bestFields": [
+        "Law",
+        "Medicine",
+        "Arts",
+        "Engineering",
+        "Business"
+      ]
     },
     "transport": {
-      "studentPassMonthly": 32.80,
-      "regularPassMonthly": 90.80,
+      "studentPassMonthly": 32.8,
+      "regularPassMonthly": 90.8,
       "airportConnection": "CDG via RER B (30 min), Orly via RER B + tram",
       "bikeFriendly": true,
       "bikeShareName": "Vélib' (1,400+ stations)"
@@ -144,7 +202,64 @@
       "cityPopulation": "2,100,000",
       "notableStatus": "UNESCO World Heritage — Seine riverbanks, Versailles, Notre-Dame cathedral",
       "languageBarrier": "Low-moderate — English very common in tourist and student areas; French appreciated outside central arrondissements"
-    }
+    },
+    "rankings": [
+      {
+        "school": "HEC Paris",
+        "program": "Master in Management (MiM)",
+        "rankingType": "QS Business Masters 2026",
+        "rank": "#1 worldwide",
+        "sourceLabel": "QS Business Master's Rankings 2026",
+        "sourceUrl": "https://www.topuniversities.com/business-masters-rankings/management",
+        "note": null
+      },
+      {
+        "school": "ESSEC Business School",
+        "program": "Master in Management (MiM)",
+        "rankingType": "QS Business Masters 2026",
+        "rank": "#3 worldwide",
+        "sourceLabel": "QS Business Master's Rankings 2026",
+        "sourceUrl": "https://www.topuniversities.com/business-masters-rankings/management",
+        "note": null
+      },
+      {
+        "school": "ESCP Business School",
+        "program": "Master in Management (MiM)",
+        "rankingType": "QS Business Masters 2026",
+        "rank": "#6 worldwide",
+        "sourceLabel": "QS Business Master's Rankings 2026",
+        "sourceUrl": "https://www.topuniversities.com/business-masters-rankings/management",
+        "note": null
+      },
+      {
+        "school": "Institut Polytechnique de Paris (École Polytechnique)",
+        "program": "Overall University",
+        "rankingType": "QS World University Rankings 2026",
+        "rank": "#41 worldwide / #2 in France",
+        "sourceLabel": "QS World University Rankings 2026",
+        "sourceUrl": "https://www.polytechnique.edu/en/news/ip-paris-rises-5-places-qs-2026-ranking-41st-worldwide",
+        "note": null
+      },
+      {
+        "school": "Sciences Po Paris",
+        "program": "Overall University",
+        "rankingType": "QS World University Rankings 2026",
+        "rank": "#367 worldwide",
+        "sourceLabel": "QS World University Rankings 2026",
+        "sourceUrl": "https://yocket.com/universities/sciences-po-3646/rankings",
+        "note": null
+      },
+      {
+        "school": "Sciences Po Paris",
+        "program": "Politics",
+        "rankingType": "QS Subject Rankings 2026",
+        "rank": "#3 worldwide",
+        "sourceLabel": "QS Subject Rankings 2026",
+        "sourceUrl": "https://www.sciencespo.fr/en/news/2026-qs-ranking-sciences-po-world-s-3rd-best-university-in-politics/",
+        "note": "#1 in the EU for 11 consecutive years"
+      }
+    ],
+    "lastUpdated": "2026-06-30"
   },
   {
     "slug": "lyon",
@@ -154,10 +269,22 @@
     "tagline": "France's gastronomic capital and fastest-growing student city — rich in culture, tech, and career opportunities.",
     "metaDescription": "Complete guide for international students studying in Lyon, France — housing costs, top universities, transport, visa rules, and student life.",
     "heroStats": [
-      { "label": "Students", "value": "120,000+" },
-      { "label": "Monthly Budget", "value": "€1,062" },
-      { "label": "Studio Rent", "value": "€840/mo" },
-      { "label": "Safety Rating", "value": "4/10" }
+      {
+        "label": "Students",
+        "value": "120,000+"
+      },
+      {
+        "label": "Monthly Budget",
+        "value": "€1,062"
+      },
+      {
+        "label": "Studio Rent",
+        "value": "€840/mo"
+      },
+      {
+        "label": "Safety Rating",
+        "value": "4/10"
+      }
     ],
     "overview": {
       "studentPopulation": "120,000+",
@@ -171,7 +298,12 @@
       "sharedRoomMonthly": "€450–650",
       "totalMonthlyBudget": 1062,
       "cafAidMonthly": "€100–300",
-      "bestNeighborhoods": ["Croix-Rousse", "Guillotière", "Villeurbanne", "Part-Dieu"]
+      "bestNeighborhoods": [
+        "Croix-Rousse",
+        "Guillotière",
+        "Villeurbanne",
+        "Part-Dieu"
+      ]
     },
     "universities": {
       "main": [
@@ -188,11 +320,17 @@
       ],
       "tuitionEUPerYear": 178,
       "tuitionNonEUPerYear": 2895,
-      "bestFields": ["Business", "Engineering", "Medicine", "Law", "Sciences"]
+      "bestFields": [
+        "Business",
+        "Engineering",
+        "Medicine",
+        "Law",
+        "Sciences"
+      ]
     },
     "transport": {
       "studentPassMonthly": 34,
-      "regularPassMonthly": 72.30,
+      "regularPassMonthly": 72.3,
       "airportConnection": "Lyon-Saint-Exupéry; TGV to Paris 2 hrs",
       "bikeFriendly": true,
       "bikeShareName": "Vélo'v (350+ stations)"
@@ -218,7 +356,19 @@
       "cityPopulation": "520,000",
       "notableStatus": "UNESCO World Heritage — historic centre (Vieux-Lyon, Fourvière) since 1998; world capital of gastronomy",
       "languageBarrier": "Moderate — English limited outside universities and expat communities; French strongly preferred in daily life"
-    }
+    },
+    "rankings": [
+      {
+        "school": "INSA Lyon",
+        "program": "Engineering & Technology",
+        "rankingType": "QS Subject Rankings 2026",
+        "rank": "#201 worldwide / #8 in France",
+        "sourceLabel": "QS Subject Rankings 2026",
+        "sourceUrl": "https://www.insa-lyon.fr/en/rankings",
+        "note": null
+      }
+    ],
+    "lastUpdated": "2026-06-30"
   },
   {
     "slug": "bordeaux",
@@ -228,10 +378,22 @@
     "tagline": "France's most beautiful city — world-class wine, architecture, and a thriving student scene at affordable prices.",
     "metaDescription": "Everything international students need to know about studying in Bordeaux, France — rent, universities, transport, visa rules, and student life.",
     "heroStats": [
-      { "label": "Students", "value": "100,000+" },
-      { "label": "Monthly Budget", "value": "€980" },
-      { "label": "Studio Rent", "value": "€850/mo" },
-      { "label": "Safety Rating", "value": "5/10" }
+      {
+        "label": "Students",
+        "value": "100,000+"
+      },
+      {
+        "label": "Monthly Budget",
+        "value": "€980"
+      },
+      {
+        "label": "Studio Rent",
+        "value": "€850/mo"
+      },
+      {
+        "label": "Safety Rating",
+        "value": "5/10"
+      }
     ],
     "overview": {
       "studentPopulation": "100,000+",
@@ -245,7 +407,12 @@
       "sharedRoomMonthly": "€420–600",
       "totalMonthlyBudget": 980,
       "cafAidMonthly": "€100–300",
-      "bestNeighborhoods": ["Saint-Michel", "Chartrons", "Bacalan", "Nansouty"]
+      "bestNeighborhoods": [
+        "Saint-Michel",
+        "Chartrons",
+        "Bacalan",
+        "Nansouty"
+      ]
     },
     "universities": {
       "main": [
@@ -259,10 +426,16 @@
       ],
       "tuitionEUPerYear": 178,
       "tuitionNonEUPerYear": 2895,
-      "bestFields": ["Business", "Law", "Sciences", "Medicine", "Oenology"]
+      "bestFields": [
+        "Business",
+        "Law",
+        "Sciences",
+        "Medicine",
+        "Oenology"
+      ]
     },
     "transport": {
-      "studentPassMonthly": 20.80,
+      "studentPassMonthly": 20.8,
       "regularPassMonthly": 62,
       "airportConnection": "Bordeaux-Mérignac international; TGV to Paris 2 hrs",
       "bikeFriendly": true,
@@ -289,7 +462,19 @@
       "cityPopulation": "260,000",
       "notableStatus": "UNESCO World Heritage — Port of the Moon historic district since 2007; global wine capital",
       "languageBarrier": "Moderate — English in business schools and tourist spots; French for daily life and admin"
-    }
+    },
+    "rankings": [
+      {
+        "school": "Université de Bordeaux",
+        "program": "Overall University",
+        "rankingType": "QS World University Rankings 2026",
+        "rank": "#494 worldwide",
+        "sourceLabel": "QS World University Rankings 2026",
+        "sourceUrl": "https://www.campusfrance.org/en/qs-world-university-ranking-2026-the-latest-ranking-confirms-french-positions",
+        "note": null
+      }
+    ],
+    "lastUpdated": "2026-06-30"
   },
   {
     "slug": "toulouse",
@@ -299,10 +484,22 @@
     "tagline": "France's #1 student city in 2025 — sunny, energetic, and home to the world's aerospace capital.",
     "metaDescription": "Complete guide for international students in Toulouse, France — costs, universities, Airbus internships, transport, and student life.",
     "heroStats": [
-      { "label": "Students", "value": "120,000+" },
-      { "label": "Monthly Budget", "value": "€900" },
-      { "label": "Studio Rent", "value": "€750/mo" },
-      { "label": "Safety Rating", "value": "5/10" }
+      {
+        "label": "Students",
+        "value": "120,000+"
+      },
+      {
+        "label": "Monthly Budget",
+        "value": "€900"
+      },
+      {
+        "label": "Studio Rent",
+        "value": "€750/mo"
+      },
+      {
+        "label": "Safety Rating",
+        "value": "5/10"
+      }
     ],
     "overview": {
       "studentPopulation": "120,000+",
@@ -316,7 +513,12 @@
       "sharedRoomMonthly": "€380–530",
       "totalMonthlyBudget": 900,
       "cafAidMonthly": "€100–300",
-      "bestNeighborhoods": ["Les Carmes", "Saint-Aubin", "Minimes", "Empalot"]
+      "bestNeighborhoods": [
+        "Les Carmes",
+        "Saint-Aubin",
+        "Minimes",
+        "Empalot"
+      ]
     },
     "universities": {
       "main": [
@@ -332,7 +534,13 @@
       ],
       "tuitionEUPerYear": 178,
       "tuitionNonEUPerYear": 2895,
-      "bestFields": ["Aerospace Engineering", "Business", "Medicine", "Sciences", "Law"]
+      "bestFields": [
+        "Aerospace Engineering",
+        "Business",
+        "Medicine",
+        "Sciences",
+        "Law"
+      ]
     },
     "transport": {
       "studentPassMonthly": 30,
@@ -362,7 +570,28 @@
       "cityPopulation": "480,000",
       "notableStatus": "La Ville Rose — iconic rose-brick medieval city; Airbus global headquarters and Europe's aerospace capital",
       "languageBarrier": "Moderate — English common in engineering and business schools; French essential in daily life and local commerce"
-    }
+    },
+    "rankings": [
+      {
+        "school": "TBS Education",
+        "program": "Master in Management (MiM)",
+        "rankingType": "QS Business Masters 2026",
+        "rank": "#74 worldwide",
+        "sourceLabel": "QS Business Master's Rankings 2026",
+        "sourceUrl": "https://www.trainy.co/en/blog/best-masters-management-qs-ranking",
+        "note": null
+      },
+      {
+        "school": "Université Paul Sabatier Toulouse 3",
+        "program": "Overall University",
+        "rankingType": "QS World University Rankings 2026",
+        "rank": "501–1000 band",
+        "sourceLabel": "QS World University Rankings 2026",
+        "sourceUrl": "https://www.campusfrance.org/en/qs-world-university-ranking-2026-the-latest-ranking-confirms-french-positions",
+        "note": null
+      }
+    ],
+    "lastUpdated": "2026-06-30"
   },
   {
     "slug": "montpellier",
@@ -372,10 +601,22 @@
     "tagline": "France's youngest and most international city — free public transport and a vibrant Mediterranean lifestyle.",
     "metaDescription": "Everything international students need to know about studying in Montpellier, France — free transport, housing costs, universities, and city life.",
     "heroStats": [
-      { "label": "Students", "value": "80,000+" },
-      { "label": "Monthly Budget", "value": "€880" },
-      { "label": "Studio Rent", "value": "€700/mo" },
-      { "label": "Safety Rating", "value": "4/10" }
+      {
+        "label": "Students",
+        "value": "80,000+"
+      },
+      {
+        "label": "Monthly Budget",
+        "value": "€880"
+      },
+      {
+        "label": "Studio Rent",
+        "value": "€700/mo"
+      },
+      {
+        "label": "Safety Rating",
+        "value": "4/10"
+      }
     ],
     "overview": {
       "studentPopulation": "80,000+",
@@ -389,7 +630,12 @@
       "sharedRoomMonthly": "€380–520",
       "totalMonthlyBudget": 880,
       "cafAidMonthly": "€100–300",
-      "bestNeighborhoods": ["Écusson", "Antigone", "Port Marianne", "Beaux-Arts"]
+      "bestNeighborhoods": [
+        "Écusson",
+        "Antigone",
+        "Port Marianne",
+        "Beaux-Arts"
+      ]
     },
     "universities": {
       "main": [
@@ -403,7 +649,13 @@
       ],
       "tuitionEUPerYear": 178,
       "tuitionNonEUPerYear": 2895,
-      "bestFields": ["Medicine", "Law", "Sciences", "Business", "Languages"]
+      "bestFields": [
+        "Medicine",
+        "Law",
+        "Sciences",
+        "Business",
+        "Languages"
+      ]
     },
     "transport": {
       "studentPassMonthly": 0,
@@ -433,7 +685,19 @@
       "cityPopulation": "295,000",
       "notableStatus": "Home to the world's oldest operating medical school (founded 1220); public transport free for all metropolitan residents",
       "languageBarrier": "Moderate-low — high international student ratio (20%) makes English more common than average; French still essential"
-    }
+    },
+    "rankings": [
+      {
+        "school": "Université Paul Valéry – Montpellier",
+        "program": "Overall University",
+        "rankingType": "QS World University Rankings 2026",
+        "rank": "1000–1500 band",
+        "sourceLabel": "QS World University Rankings 2026",
+        "sourceUrl": "https://www.campusfrance.org/en/qs-world-university-ranking-2026-the-latest-ranking-confirms-french-positions",
+        "note": null
+      }
+    ],
+    "lastUpdated": "2026-06-30"
   },
   {
     "slug": "strasbourg",
@@ -443,10 +707,22 @@
     "tagline": "Europe's political heart — study where the EU is shaped, in a bicultural French-German city.",
     "metaDescription": "Complete guide for international students in Strasbourg, France — housing, EU institution internships, universities, transport, and student life.",
     "heroStats": [
-      { "label": "Students", "value": "60,000+" },
-      { "label": "Monthly Budget", "value": "€950" },
-      { "label": "Studio Rent", "value": "€720/mo" },
-      { "label": "Safety Rating", "value": "5/10 est." }
+      {
+        "label": "Students",
+        "value": "60,000+"
+      },
+      {
+        "label": "Monthly Budget",
+        "value": "€950"
+      },
+      {
+        "label": "Studio Rent",
+        "value": "€720/mo"
+      },
+      {
+        "label": "Safety Rating",
+        "value": "5/10 est."
+      }
     ],
     "overview": {
       "studentPopulation": "60,000+",
@@ -460,7 +736,12 @@
       "sharedRoomMonthly": "€380–530",
       "totalMonthlyBudget": 950,
       "cafAidMonthly": "€100–300",
-      "bestNeighborhoods": ["Krutenau", "Neudorf", "Esplanade", "Orangerie"]
+      "bestNeighborhoods": [
+        "Krutenau",
+        "Neudorf",
+        "Esplanade",
+        "Orangerie"
+      ]
     },
     "universities": {
       "main": [
@@ -473,7 +754,13 @@
       ],
       "tuitionEUPerYear": 178,
       "tuitionNonEUPerYear": 2895,
-      "bestFields": ["Law", "European Studies", "Medicine", "Engineering", "Business"]
+      "bestFields": [
+        "Law",
+        "European Studies",
+        "Medicine",
+        "Engineering",
+        "Business"
+      ]
     },
     "transport": {
       "studentPassMonthly": 28,
@@ -503,7 +790,8 @@
       "cityPopulation": "285,000",
       "notableStatus": "UNESCO World Heritage — Grande Île historic centre (1988); seat of the European Parliament and Council of Europe",
       "languageBarrier": "Low — English widely spoken due to EU institutions; German also common; one of France's most internationally accessible cities"
-    }
+    },
+    "lastUpdated": "2026-06-30"
   },
   {
     "slug": "nantes",
@@ -513,10 +801,22 @@
     "tagline": "France's most liveable city — creative, green, and affordable with strong engineering and business schools.",
     "metaDescription": "Everything international students need to know about studying in Nantes, France — housing costs, universities, transport, and student life.",
     "heroStats": [
-      { "label": "Students", "value": "60,000+" },
-      { "label": "Monthly Budget", "value": "€900" },
-      { "label": "Studio Rent", "value": "€650/mo" },
-      { "label": "Safety Rating", "value": "4/10" }
+      {
+        "label": "Students",
+        "value": "60,000+"
+      },
+      {
+        "label": "Monthly Budget",
+        "value": "€900"
+      },
+      {
+        "label": "Studio Rent",
+        "value": "€650/mo"
+      },
+      {
+        "label": "Safety Rating",
+        "value": "4/10"
+      }
     ],
     "overview": {
       "studentPopulation": "60,000+",
@@ -530,7 +830,12 @@
       "sharedRoomMonthly": "€370–520",
       "totalMonthlyBudget": 900,
       "cafAidMonthly": "€100–300",
-      "bestNeighborhoods": ["Bouffay", "Hauts-Pavés", "Zola", "Doulon"]
+      "bestNeighborhoods": [
+        "Bouffay",
+        "Hauts-Pavés",
+        "Zola",
+        "Doulon"
+      ]
     },
     "universities": {
       "main": [
@@ -543,10 +848,16 @@
       ],
       "tuitionEUPerYear": 178,
       "tuitionNonEUPerYear": 2895,
-      "bestFields": ["Engineering", "Business", "Sciences", "Arts", "Law"]
+      "bestFields": [
+        "Engineering",
+        "Business",
+        "Sciences",
+        "Arts",
+        "Law"
+      ]
     },
     "transport": {
-      "studentPassMonthly": 24.90,
+      "studentPassMonthly": 24.9,
       "regularPassMonthly": 67,
       "airportConnection": "Nantes Atlantique airport; TGV to Paris 2.5 hrs",
       "bikeFriendly": true,
@@ -573,7 +884,19 @@
       "cityPopulation": "320,000",
       "notableStatus": "Named most liveable French city multiple times (L'Express); famous for 'Les Machines de l'Île' — world-renowned mechanical art installations",
       "languageBarrier": "Moderate — English spoken in tech sector and grandes écoles; French for day-to-day life and admin"
-    }
+    },
+    "rankings": [
+      {
+        "school": "Audencia Business School",
+        "program": "Master in Management (MiM)",
+        "rankingType": "QS Business Masters 2026",
+        "rank": "#34 worldwide",
+        "sourceLabel": "QS Business Master's Rankings 2026",
+        "sourceUrl": "https://www.trainy.co/en/blog/best-masters-management-qs-ranking",
+        "note": null
+      }
+    ],
+    "lastUpdated": "2026-06-30"
   },
   {
     "slug": "grenoble",
@@ -583,10 +906,22 @@
     "tagline": "France's best student city for tech and engineering — nestled in the Alps with exceptional research institutes.",
     "metaDescription": "Complete guide for international students in Grenoble, France — housing, tech internships, universities, transport, and student life.",
     "heroStats": [
-      { "label": "Students", "value": "60,000+" },
-      { "label": "Monthly Budget", "value": "€800" },
-      { "label": "Studio Rent", "value": "€620/mo" },
-      { "label": "Safety Rating", "value": "4/10" }
+      {
+        "label": "Students",
+        "value": "60,000+"
+      },
+      {
+        "label": "Monthly Budget",
+        "value": "€800"
+      },
+      {
+        "label": "Studio Rent",
+        "value": "€620/mo"
+      },
+      {
+        "label": "Safety Rating",
+        "value": "4/10"
+      }
     ],
     "overview": {
       "studentPopulation": "60,000+",
@@ -600,7 +935,12 @@
       "sharedRoomMonthly": "€350–480",
       "totalMonthlyBudget": 800,
       "cafAidMonthly": "€100–300",
-      "bestNeighborhoods": ["Centre Ville", "Ile Verte", "Championnet", "Villeneuve"]
+      "bestNeighborhoods": [
+        "Centre Ville",
+        "Ile Verte",
+        "Championnet",
+        "Villeneuve"
+      ]
     },
     "universities": {
       "main": [
@@ -614,7 +954,13 @@
       ],
       "tuitionEUPerYear": 178,
       "tuitionNonEUPerYear": 2895,
-      "bestFields": ["Engineering", "Computer Science", "Physics", "Business", "International Relations"]
+      "bestFields": [
+        "Engineering",
+        "Computer Science",
+        "Physics",
+        "Business",
+        "International Relations"
+      ]
     },
     "transport": {
       "studentPassMonthly": 35,
@@ -644,7 +990,19 @@
       "cityPopulation": "160,000",
       "notableStatus": "Surrounded by three mountain ranges with ski resorts 45 min away; one of Europe's top research ecosystems (CEA, CNRS, ESRF)",
       "languageBarrier": "Low — 25% international student body and major multilingual research institutes make English a functional working language on campus"
-    }
+    },
+    "rankings": [
+      {
+        "school": "Grenoble École de Management (GEM)",
+        "program": "Master in Management (MiM)",
+        "rankingType": "QS Business Masters 2026",
+        "rank": "#33 worldwide",
+        "sourceLabel": "QS Business Master's Rankings 2026",
+        "sourceUrl": "https://www.trainy.co/en/blog/best-masters-management-qs-ranking",
+        "note": null
+      }
+    ],
+    "lastUpdated": "2026-06-30"
   },
   {
     "slug": "rennes",
@@ -654,10 +1012,22 @@
     "tagline": "Brittany's vibrant capital — affordable, compact, and a rising hub for digital and cybersecurity careers.",
     "metaDescription": "Everything international students need to know about studying in Rennes, France — housing costs, universities, transport, and student life.",
     "heroStats": [
-      { "label": "Students", "value": "70,000+" },
-      { "label": "Monthly Budget", "value": "€820" },
-      { "label": "Studio Rent", "value": "€630/mo" },
-      { "label": "Safety Rating", "value": "6/10 est." }
+      {
+        "label": "Students",
+        "value": "70,000+"
+      },
+      {
+        "label": "Monthly Budget",
+        "value": "€820"
+      },
+      {
+        "label": "Studio Rent",
+        "value": "€630/mo"
+      },
+      {
+        "label": "Safety Rating",
+        "value": "6/10 est."
+      }
     ],
     "overview": {
       "studentPopulation": "70,000+",
@@ -671,7 +1041,12 @@
       "sharedRoomMonthly": "€350–490",
       "totalMonthlyBudget": 820,
       "cafAidMonthly": "€100–300",
-      "bestNeighborhoods": ["Centre Ville", "Thabor", "Villejean", "Beaulieu"]
+      "bestNeighborhoods": [
+        "Centre Ville",
+        "Thabor",
+        "Villejean",
+        "Beaulieu"
+      ]
     },
     "universities": {
       "main": [
@@ -686,7 +1061,13 @@
       ],
       "tuitionEUPerYear": 178,
       "tuitionNonEUPerYear": 2895,
-      "bestFields": ["Law", "Computer Science", "Social Sciences", "Engineering", "Business"]
+      "bestFields": [
+        "Law",
+        "Computer Science",
+        "Social Sciences",
+        "Engineering",
+        "Business"
+      ]
     },
     "transport": {
       "studentPassMonthly": 32,
@@ -716,7 +1097,19 @@
       "cityPopulation": "220,000",
       "notableStatus": "Celtic/Breton capital with a preserved medieval old town; home to Les Transmusicales, one of Europe's most important music discovery festivals",
       "languageBarrier": "Moderate — English in tech and cybersecurity companies and grandes écoles; French for everyday life and local culture"
-    }
+    },
+    "rankings": [
+      {
+        "school": "Université de Rennes",
+        "program": "Overall University",
+        "rankingType": "QS World University Rankings 2026",
+        "rank": "501–1000 band",
+        "sourceLabel": "QS World University Rankings 2026",
+        "sourceUrl": "https://www.campusfrance.org/en/qs-world-university-ranking-2026-the-latest-ranking-confirms-french-positions",
+        "note": null
+      }
+    ],
+    "lastUpdated": "2026-06-30"
   },
   {
     "slug": "aix-en-provence",
@@ -726,10 +1119,22 @@
     "tagline": "Provence's elegant student town — sun-drenched, walkable, and connected to Marseille's career opportunities.",
     "metaDescription": "Complete guide for international students in Aix-en-Provence, France — housing costs, universities, transport, and student life.",
     "heroStats": [
-      { "label": "Students", "value": "40,000+" },
-      { "label": "Monthly Budget", "value": "€1,050" },
-      { "label": "Studio Rent", "value": "€900/mo" },
-      { "label": "Safety Rating", "value": "6/10 est." }
+      {
+        "label": "Students",
+        "value": "40,000+"
+      },
+      {
+        "label": "Monthly Budget",
+        "value": "€1,050"
+      },
+      {
+        "label": "Studio Rent",
+        "value": "€900/mo"
+      },
+      {
+        "label": "Safety Rating",
+        "value": "6/10 est."
+      }
     ],
     "overview": {
       "studentPopulation": "40,000+",
@@ -743,7 +1148,12 @@
       "sharedRoomMonthly": "€450–650",
       "totalMonthlyBudget": 1050,
       "cafAidMonthly": "€100–300",
-      "bestNeighborhoods": ["Cours Mirabeau", "Mazarin", "Les Allées", "Jas de Bouffan"]
+      "bestNeighborhoods": [
+        "Cours Mirabeau",
+        "Mazarin",
+        "Les Allées",
+        "Jas de Bouffan"
+      ]
     },
     "universities": {
       "main": [
@@ -756,10 +1166,16 @@
       ],
       "tuitionEUPerYear": 178,
       "tuitionNonEUPerYear": 2895,
-      "bestFields": ["Law", "Political Science", "Arts", "Languages", "Business"]
+      "bestFields": [
+        "Law",
+        "Political Science",
+        "Arts",
+        "Languages",
+        "Business"
+      ]
     },
     "transport": {
-      "studentPassMonthly": 8.30,
+      "studentPassMonthly": 8.3,
       "regularPassMonthly": 30,
       "airportConnection": "Marseille Provence airport 30 min; TGV Aix to Paris 3 hrs",
       "bikeFriendly": true,
@@ -786,7 +1202,8 @@
       "cityPopulation": "145,000",
       "notableStatus": "Birthplace of Paul Cézanne; 17th-century Provençal architecture along Cours Mirabeau; surrounded by lavender fields and Sainte-Victoire mountain",
       "languageBarrier": "Low-moderate — significant English-speaking expat and tourist presence; French still essential for daily life and admin"
-    }
+    },
+    "lastUpdated": "2026-06-30"
   },
   {
     "slug": "nice",
@@ -796,10 +1213,22 @@
     "tagline": "The glamorous Riviera student experience — world-class business schools, Mediterranean sunshine, and tech giants at Sophia Antipolis.",
     "metaDescription": "Everything international students need to know about studying in Nice, France — housing costs, universities, transport, and student life.",
     "heroStats": [
-      { "label": "Students", "value": "30,000+" },
-      { "label": "Monthly Budget", "value": "€1,100" },
-      { "label": "Studio Rent", "value": "€980/mo" },
-      { "label": "Safety Rating", "value": "5/10 est." }
+      {
+        "label": "Students",
+        "value": "30,000+"
+      },
+      {
+        "label": "Monthly Budget",
+        "value": "€1,100"
+      },
+      {
+        "label": "Studio Rent",
+        "value": "€980/mo"
+      },
+      {
+        "label": "Safety Rating",
+        "value": "5/10 est."
+      }
     ],
     "overview": {
       "studentPopulation": "30,000+",
@@ -813,7 +1242,12 @@
       "sharedRoomMonthly": "€500–720",
       "totalMonthlyBudget": 1100,
       "cafAidMonthly": "€100–300",
-      "bestNeighborhoods": ["Libération", "Musiciens", "Madeleine", "Riquier"]
+      "bestNeighborhoods": [
+        "Libération",
+        "Musiciens",
+        "Madeleine",
+        "Riquier"
+      ]
     },
     "universities": {
       "main": [
@@ -825,7 +1259,13 @@
       ],
       "tuitionEUPerYear": 178,
       "tuitionNonEUPerYear": 2895,
-      "bestFields": ["Business", "Tourism", "Medicine", "Sciences", "Digital"]
+      "bestFields": [
+        "Business",
+        "Tourism",
+        "Medicine",
+        "Sciences",
+        "Digital"
+      ]
     },
     "transport": {
       "studentPassMonthly": 35,
@@ -855,6 +1295,27 @@
       "cityPopulation": "340,000",
       "notableStatus": "UNESCO World Heritage — Nice's winter resort town architecture (2021); hosts one of the world's largest carnivals (since 1294)",
       "languageBarrier": "Low — major international tourist destination; English very widely spoken near the Promenade des Anglais and in business schools"
-    }
+    },
+    "rankings": [
+      {
+        "school": "EDHEC Business School (Nice campus)",
+        "program": "Master in Management (MiM)",
+        "rankingType": "QS Business Masters 2026",
+        "rank": "#18 worldwide",
+        "sourceLabel": "QS Business Master's Rankings 2026",
+        "sourceUrl": "https://www.trainy.co/en/blog/best-masters-management-qs-ranking",
+        "note": "School-wide rank — campuses in Lille and Nice"
+      },
+      {
+        "school": "Université Côte d'Azur",
+        "program": "Overall University",
+        "rankingType": "QS World University Rankings 2026",
+        "rank": "501–1000 band",
+        "sourceLabel": "QS World University Rankings 2026",
+        "sourceUrl": "https://www.campusfrance.org/en/qs-world-university-ranking-2026-the-latest-ranking-confirms-french-positions",
+        "note": null
+      }
+    ],
+    "lastUpdated": "2026-06-30"
   }
 ]

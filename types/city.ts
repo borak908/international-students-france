@@ -63,6 +63,16 @@ export interface CityLife {
   languageBarrier: string
 }
 
+export interface SchoolRanking {
+  school: string
+  program: string | null
+  rankingType: string
+  rank: string
+  sourceLabel: string
+  sourceUrl: string
+  note: string | null
+}
+
 export interface City {
   slug: string
   name: string
@@ -77,4 +87,6 @@ export interface City {
   transport: Transport
   workVisa: WorkVisa
   cityLife: CityLife
+  rankings?: SchoolRanking[]
+  lastUpdated: string
 }

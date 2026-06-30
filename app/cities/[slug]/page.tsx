@@ -4,6 +4,7 @@ import Link from 'next/link'
 import cities from '@/data/cities.json'
 import type { City } from '@/types/city'
 import RelatedCities from '@/components/RelatedCities'
+import NewsletterSignup from '@/components/NewsletterSignup'
 
 const cityData = cities as City[]
 
@@ -134,6 +135,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
     { id: 'overview',      label: 'Overview' },
     { id: 'housing',       label: 'Housing & Cost' },
     { id: 'universities',  label: 'Universities' },
+    ...(city.rankings?.length ? [{ id: 'rankings', label: 'Rankings' }] : []),
     { id: 'transport',     label: 'Transport' },
     { id: 'work-visa',     label: 'Work & Visa' },
     { id: 'city-life',     label: 'City Life' },
@@ -393,7 +395,57 @@ export default function CityPage({ params }: { params: { slug: string } }) {
               </div>
             </Section>
 
-            {/* 4 — Transport */}
+            {/* 4 — Rankings (only for cities with confirmed data) */}
+            {city.rankings && city.rankings.length > 0 && (
+              <Section id="rankings" emoji="🏆" title="School Rankings">
+                <div className="space-y-3">
+                  {city.rankings.map((r, i) => (
+                    <div
+                      key={i}
+                      className="bg-white rounded-xl border border-stone-200 p-4 flex flex-col sm:flex-row sm:items-start gap-3"
+                    >
+                      {/* Rank badge */}
+                      <div className="flex-shrink-0">
+                        <span className="inline-block bg-[#0D1B35] text-white text-sm font-bold px-3 py-1.5 rounded-lg min-w-[80px] text-center">
+                          {r.rank}
+                        </span>
+                      </div>
+
+                      {/* Details */}
+                      <div className="flex-1 min-w-0">
+                        <p className="font-semibold text-stone-800 text-sm leading-snug">{r.school}</p>
+                        {r.program && (
+                          <p className="text-xs text-stone-500 mt-0.5">{r.program}</p>
+                        )}
+                        <p className="text-xs text-[#1E3A6E] font-medium mt-1">{r.rankingType}</p>
+                        {r.note && (
+                          <p className="text-xs text-stone-400 mt-1 italic">{r.note}</p>
+                        )}
+                      </div>
+
+                      {/* Source link */}
+                      <a
+                        href={r.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-shrink-0 text-[10px] text-stone-400 hover:text-[#1E3A6E] transition-colors flex items-center gap-1 mt-1 sm:mt-0"
+                      >
+                        Source
+                        <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-[10px] text-stone-400 mt-3">
+                  Source: QS World University Rankings 2026 and QS Business Master&apos;s Rankings 2026. Rankings updated annually — verify at{' '}
+                  <a href="https://www.topuniversities.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-stone-600">topuniversities.com</a>.
+                </p>
+              </Section>
+            )}
+
+            {/* — Transport */}
             <Section id="transport" emoji="🚇" title="Transport & Getting Around">
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
                 <StatCard
@@ -460,6 +512,9 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                 )}
               </div>
             </Section>
+
+            {/* Newsletter */}
+            <NewsletterSignup variant="city" />
 
             {/* 7 — Related Cities */}
             <RelatedCities currentCity={city} allCities={cityData} />

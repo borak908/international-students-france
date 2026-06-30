@@ -40,7 +40,7 @@ The CROUS student restaurants serve full hot meals for **€3.30** with a studen
 
 ## The language barrier is real, then it isn't
 
-My French was B1 when I arrived. I struggled in shops, at the prefecture, on the phone. Lyon is not as English-friendly as Paris. After three months, something clicked and I stopped noticing. The city rewards effort — locals are noticeably warmer once you try in French, even imperfectly.
+My French was B1 when I arrived. I struggled in shops, at the prefecture, on the phone. Lyon is not as English-friendly as [Paris](/cities/paris). After three months, something clicked and I stopped noticing. The city rewards effort — locals are noticeably warmer once you try in French, even imperfectly.
 
 If you're coming for English-taught programmes, [EM Lyon](https://em-lyon.com) and INSA Lyon run fully bilingual tracks. But if you're studying at the public university, expect lectures entirely in French.
 
@@ -58,7 +58,7 @@ If you're coming for English-taught programmes, [EM Lyon](https://em-lyon.com) a
 
 Without question. Lyon gave me a rigorous academic experience, a network I still use, and a standard of living that would cost three times as much in London or Zurich. The bureaucratic friction is real but temporary. The quality of life is not.
 
-If you're deciding between Lyon and other French cities, compare the full picture — housing, universities, and job market — on our [city comparison](/cities/lyon) page. And if you're weighing it against other options, our [city quiz](/city-quiz) might help you figure out where you actually belong.`,
+If you're deciding between [Lyon](/cities/lyon) and other French cities, compare the full picture — housing, universities, and job market — across all 12 cities on our [cities page](/cities). And if you're weighing it against other options, our [city quiz](/city-quiz) might help you figure out where you actually belong.`,
   },
   {
     slug: 'cheapest-french-cities-students-2025',
@@ -320,7 +320,7 @@ It is not the right choice if you want the cleanest administrative experience, t
 
 I would do it again. I would just have applied for CAF on the day I signed my lease, started looking for accommodation earlier, and trusted that the bureaucratic friction would eventually resolve itself.
 
-If you're still deciding where in France to study, our [city quiz](/city-quiz) can help you find the city that matches your priorities. Or browse the full [city guides](/cities/lyon) to compare costs, universities, and lifestyle across 12 cities.`,
+If you're still deciding where in France to study, our [city quiz](/city-quiz) can help you find the city that matches your priorities. Or browse the full [city guides](/cities) to compare costs, universities, and lifestyle across all 12 cities.`,
   },
   {
     slug: 'french-student-visa-guide-vls-ts',
@@ -398,7 +398,7 @@ If your programme is longer than one year, you'll apply for a **Titre de Séjour
 
 The process looks long, but each step is manageable if you start on time. The most common reason students have problems is not starting early enough.
 
-For city-specific guides on what to do after you arrive, see our individual [city pages](/cities/lyon) or use the [city quiz](/city-quiz) to find where in France best fits your goals.`,
+For city-specific guides on what to do after you arrive — including housing costs, transport, and what to tackle in your first week — see our [city guides](/cities) or use the [city quiz](/city-quiz) to find where in France best fits your goals.`,
   },
   {
     slug: 'working-as-student-in-france-964-hours',
@@ -607,7 +607,9 @@ France has a national emergency number: **15** for medical emergencies (*SAMU*),
 
 Hospital emergency departments (*urgences*) are open 24/7. Treatment will not be withheld for lack of a Carte Vitale — you can settle payment arrangements after the fact if needed.
 
-The French healthcare system rewards patience (doctors' appointments can have waiting times of several weeks for specialists) and punishes emergencies that could have been treated earlier. Registering with a médecin traitant early is the practical advice here — having a doctor who knows you makes accessing the system dramatically easier.`,
+The French healthcare system rewards patience (doctors' appointments can have waiting times of several weeks for specialists) and punishes emergencies that could have been treated earlier. Registering with a médecin traitant early is the practical advice here — having a doctor who knows you makes accessing the system dramatically easier.
+
+For city-specific cost breakdowns — including how much to budget for healthcare alongside rent and transport — see our [city guides](/cities) or run the numbers in our [budget planner](/budget-planner).`,
   },
   {
     slug: 'grandes-ecoles-vs-public-universities-france',
