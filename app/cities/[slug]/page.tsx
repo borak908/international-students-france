@@ -190,7 +190,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
         <div className="absolute top-16 left-0 right-0 h-0.5 flex pointer-events-none" aria-hidden>
           <div className="flex-1 bg-[#4A70C4]" />
           <div className="flex-1 bg-white/40" />
-          <div className="flex-1 bg-[#B86040]" />
+          <div className="flex-1 bg-[#B03232]" />
         </div>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-14">
           {/* Breadcrumb */}

@@ -45,7 +45,7 @@ export default function Image({ params }: { params: { slug: string } }) {
         <div style={{ display: 'flex', height: 8, width: '100%' }}>
           <div style={{ flex: 1, background: '#4A70C4' }} />
           <div style={{ flex: 1, background: '#F5F2ED' }} />
-          <div style={{ flex: 1, background: '#B86040' }} />
+          <div style={{ flex: 1, background: '#B03232' }} />
         </div>
 
         {/* Main content */}
@@ -125,7 +125,7 @@ export default function Image({ params }: { params: { slug: string } }) {
         <div style={{ display: 'flex', height: 8, width: '100%' }}>
           <div style={{ flex: 1, background: '#4A70C4' }} />
           <div style={{ flex: 1, background: '#F5F2ED' }} />
-          <div style={{ flex: 1, background: '#B86040' }} />
+          <div style={{ flex: 1, background: '#B03232' }} />
         </div>
       </div>
     ),

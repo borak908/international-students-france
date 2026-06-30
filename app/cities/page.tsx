@@ -155,7 +155,7 @@ export default function CitiesPage() {
                     className="group flex flex-col bg-white rounded-2xl border border-stone-200 hover:border-[#90ADDA] hover:shadow-md transition-all duration-200 overflow-hidden"
                   >
                     {/* Tricolour top stripe */}
-                    <div className="h-1 bg-gradient-to-r from-[#4A70C4] via-white to-[#B86040] flex-shrink-0" />
+                    <div className="h-1 bg-gradient-to-r from-[#4A70C4] via-white to-[#B03232] flex-shrink-0" />
 
                     <div className="p-5 flex flex-col flex-1">
                       {/* Name + budget badge */}

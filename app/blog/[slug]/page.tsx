@@ -97,7 +97,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     <>
       {/* Hero */}
       <div className="bg-gradient-to-br from-[#0D1B35] via-[#122240] to-[#182C50] text-white">
-        <div className="h-0.5 bg-gradient-to-r from-[#4A70C4] via-white/50 to-[#B86040]" />
+        <div className="h-0.5 bg-gradient-to-r from-[#4A70C4] via-white/50 to-[#B03232]" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-10 pb-12">
           <nav className="flex items-center gap-2 text-[#90ADDA] text-xs mb-6">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>

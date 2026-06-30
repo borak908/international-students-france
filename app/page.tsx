@@ -49,7 +49,7 @@ export default function HomePage() {
         <div className="absolute top-0 left-0 right-0 h-1 flex">
           <div className="flex-1 bg-[#4A70C4]" />
           <div className="flex-1 bg-white/60" />
-          <div className="flex-1 bg-[#B86040]" />
+          <div className="flex-1 bg-[#B03232]" />
         </div>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28 text-center">
           <span className="inline-block text-xs font-semibold tracking-widest text-[#90ADDA] uppercase mb-4">
@@ -93,7 +93,7 @@ export default function HomePage() {
               className="group bg-[#FDFBF7] rounded-2xl border border-stone-200 hover:border-[#90ADDA] hover:shadow-lg transition-all duration-200 overflow-hidden"
             >
               {/* Card top colour bar — French tricolour for all */}
-              <div className="h-1.5 bg-gradient-to-r from-[#4A70C4] via-white to-[#B86040]" />
+              <div className="h-1.5 bg-gradient-to-r from-[#4A70C4] via-white to-[#B03232]" />
 
               <div className="p-6">
                 <div className="flex items-start justify-between mb-3">

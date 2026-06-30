@@ -38,7 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="h-0.5 flex">
             <div className="flex-1 bg-[#4A70C4]" />
             <div className="flex-1 bg-[#F5F2ED]" />
-            <div className="flex-1 bg-[#B86040]" />
+            <div className="flex-1 bg-[#B03232]" />
           </div>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
             <a href="/" className="flex items-center gap-2.5 group">
@@ -60,7 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <a href="/blog" className="hover:text-white transition-colors px-2 py-1 rounded-lg hover:bg-[#1E3A6E]">Blog</a>
               <a
                 href="/city-quiz"
-                className="ml-2 bg-[#B86040] hover:bg-[#9E5234] text-white text-xs font-semibold px-3 py-2 rounded-full transition-colors whitespace-nowrap"
+                className="ml-2 bg-[#B03232] hover:bg-[#8C2020] text-white text-xs font-semibold px-3 py-2 rounded-full transition-colors whitespace-nowrap"
               >
                 Find my city →
               </a>
@@ -79,7 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="h-0.5 flex">
             <div className="flex-1 bg-[#4A70C4]" />
             <div className="flex-1 bg-[#F5F2ED]" />
-            <div className="flex-1 bg-[#B86040]" />
+            <div className="flex-1 bg-[#B03232]" />
           </div>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">

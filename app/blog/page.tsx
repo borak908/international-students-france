@@ -37,7 +37,7 @@ export default function BlogPage() {
         href={`/blog/${blogPosts[0].slug}`}
         className="group block bg-gradient-to-br from-[#0D1B35] via-[#122240] to-[#182C50] text-white rounded-2xl overflow-hidden mb-8 hover:shadow-xl transition-all duration-200"
       >
-        <div className="h-1 bg-gradient-to-r from-[#4A70C4] via-white/50 to-[#B86040]" />
+        <div className="h-1 bg-gradient-to-r from-[#4A70C4] via-white/50 to-[#B03232]" />
         <div className="p-7 sm:p-10">
           <span className="inline-block text-xs font-semibold text-[#90ADDA] uppercase tracking-widest mb-4">
             Featured
