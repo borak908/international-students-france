@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { blogPosts } from '@/data/blog'
+import { blogPosts, AUTHOR_NAME, AUTHOR_BIO } from '@/data/blog'
 import NewsletterSignup from '@/components/NewsletterSignup'
 
 export function generateStaticParams() {
@@ -114,7 +114,13 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       headline: post.metaTitle,
       description: post.metaDescription,
       datePublished: post.date,
+      dateModified: post.date,
       url: `https://comparestudyfrance.com/blog/${post.slug}`,
+      author: {
+        '@type': 'Person',
+        name: AUTHOR_NAME,
+        description: AUTHOR_BIO,
+      },
       publisher: {
         '@type': 'Organization',
         name: 'Compare Study France',
@@ -149,10 +155,13 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             {post.title}
           </h1>
           <div className="flex items-center gap-4 text-[#90ADDA] text-xs">
+            <span>By {AUTHOR_NAME}</span>
+            <span>·</span>
             <span>{post.date}</span>
             <span>·</span>
             <span>{post.readTime}</span>
           </div>
+          <p className="text-[#90ADDA]/80 text-xs mt-2 max-w-xl">{AUTHOR_BIO}</p>
         </div>
       </div>
 

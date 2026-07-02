@@ -2,9 +2,8 @@
 
 import { useState, useRef } from 'react'
 
-// Replace YOUR_BUTTONDOWN_USERNAME with your actual Buttondown username
-// (the part after buttondown.com/ in your Buttondown URL)
-const BUTTONDOWN_USERNAME = 'YOUR_BUTTONDOWN_USERNAME'
+// Buttondown username — the part after buttondown.com/ in the newsletter URL
+const BUTTONDOWN_USERNAME = 'borakocak'
 
 interface NewsletterSignupProps {
   variant?: 'blog' | 'city'

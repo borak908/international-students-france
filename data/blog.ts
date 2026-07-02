@@ -9,6 +9,11 @@ export interface BlogPost {
   content: string
 }
 
+// Single-author blog — used for visible bylines and BlogPosting author schema
+export const AUTHOR_NAME = 'Bora Koçak'
+export const AUTHOR_BIO =
+  'EDHEC Business School student and France Country Leader at YDTB.'
+
 export const blogPosts: BlogPost[] = [
   {
     slug: 'moving-to-lyon-international-student',
