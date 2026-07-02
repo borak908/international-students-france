@@ -18,11 +18,15 @@ export async function generateMetadata({
   return {
     title: post.metaTitle,
     description: post.metaDescription,
+    alternates: {
+      canonical: `https://comparestudyfrance.com/blog/${post.slug}`,
+    },
     openGraph: {
       title: post.metaTitle,
       description: post.metaDescription,
       type: 'article',
       publishedTime: post.date,
+      url: `https://comparestudyfrance.com/blog/${post.slug}`,
     },
   }
 }

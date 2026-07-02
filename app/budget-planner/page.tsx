@@ -12,11 +12,15 @@ export const metadata: Metadata = {
     'how much does it cost to study in France',
     'France student monthly budget',
   ],
+  alternates: {
+    canonical: 'https://comparestudyfrance.com/budget-planner',
+  },
   openGraph: {
     title: 'Student Budget Planner — France City Cost Calculator',
     description:
       'Calculate your monthly student budget for any French city. Compare rent, food, transport, and living costs across 12 cities.',
     type: 'website',
+    url: 'https://comparestudyfrance.com/budget-planner',
   },
 }
 

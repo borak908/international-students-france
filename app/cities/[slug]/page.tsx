@@ -170,6 +170,27 @@ export default function CityPage({ params }: { params: { slug: string } }) {
             },
             {
               '@context': 'https://schema.org',
+              '@type': 'WebPage',
+              name: `Study in ${city.name} — International Student Guide`,
+              description: city.metaDescription,
+              url: `https://comparestudyfrance.com/cities/${city.slug}`,
+              inLanguage: 'en',
+              isPartOf: {
+                '@type': 'WebSite',
+                name: 'Compare Study France',
+                url: 'https://comparestudyfrance.com',
+              },
+              breadcrumb: {
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://comparestudyfrance.com' },
+                  { '@type': 'ListItem', position: 2, name: 'Cities', item: 'https://comparestudyfrance.com/cities' },
+                  { '@type': 'ListItem', position: 3, name: city.name, item: `https://comparestudyfrance.com/cities/${city.slug}` },
+                ],
+              },
+            },
+            {
+              '@context': 'https://schema.org',
               '@type': 'City',
               name: city.name,
               description: city.metaDescription,
@@ -181,6 +202,44 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                 { '@type': 'PropertyValue', name: 'Student Population', value: city.overview.studentPopulation },
                 { '@type': 'PropertyValue', name: 'Monthly Budget', value: `€${city.housing.totalMonthlyBudget}` },
                 { '@type': 'PropertyValue', name: 'City Population', value: city.cityLife.cityPopulation },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: [
+                {
+                  '@type': 'Question',
+                  name: `How much does it cost to live in ${city.name} as a student?`,
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: `The average monthly budget for a student in ${city.name} is €${city.housing.totalMonthlyBudget}, including rent, food, transport, and daily expenses. Studio apartments average €${city.housing.studioRentMonthly}/month, while shared rooms start from ${city.housing.sharedRoomMonthly}/month. CAF housing aid of ${city.housing.cafAidMonthly} is available for eligible students.`,
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: `What are the best universities in ${city.name} for international students?`,
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: `${city.name} is home to several leading institutions including ${city.universities.main.slice(0, 2).join(' and ')}. Top grandes écoles include ${city.universities.grandesEcoles.slice(0, 3).join(', ')}. The strongest fields are ${city.universities.bestFields.join(', ')}. EU students pay €${city.universities.tuitionEUPerYear}/year and non-EU students pay €${city.universities.tuitionNonEUPerYear}/year at public universities.`,
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: `How do international students get around ${city.name}?`,
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: `${city.name} has good public transport. The student monthly pass costs ${city.transport.studentPassMonthly === 0 ? 'nothing — public transport is free for residents' : `€${city.transport.studentPassMonthly}/month with a student discount`}. The city is ${city.transport.bikeFriendly ? `bike-friendly with ${city.transport.bikeShareName} bike-share` : 'primarily served by public transit'}. Airport access is available via ${city.transport.airportConnection}.`,
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: `Can international students work part-time in ${city.name}?`,
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: `Yes. Students in ${city.name} on a French student visa can work ${city.workVisa.partTimeHours}. The local student job market is ${city.workVisa.studentJobMarket.toLowerCase()}. Internship opportunities are also ${city.workVisa.internshipScene.toLowerCase()}.`,
+                  },
+                },
               ],
             },
           ]),
@@ -276,6 +335,14 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                   }
                 />
               </div>
+              {city.editorNote && (
+                <div className="mt-5 bg-[#F5F2ED] border-l-4 border-[#1E3A6E] rounded-r-xl px-5 py-4">
+                  <p className="text-xs font-semibold text-[#1E3A6E] uppercase tracking-wider mb-2">
+                    Student perspective
+                  </p>
+                  <p className="text-sm text-stone-700 leading-relaxed">{city.editorNote}</p>
+                </div>
+              )}
             </Section>
 
             {/* 2 — Housing & Cost */}
@@ -518,6 +585,31 @@ export default function CityPage({ params }: { params: { slug: string } }) {
 
             {/* 7 — Related Cities */}
             <RelatedCities currentCity={city} allCities={cityData} />
+
+            {/* 8 — Compare links (internal linking for SEO) */}
+            <section className="scroll-mt-24 pt-2">
+              <h2 className="text-base font-bold text-stone-700 mb-3">
+                Compare {city.name} to other French student cities
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                {cityData
+                  .filter((c) => c.slug !== city.slug)
+                  .sort((a, b) =>
+                    Math.abs(a.housing.totalMonthlyBudget - city.housing.totalMonthlyBudget) -
+                    Math.abs(b.housing.totalMonthlyBudget - city.housing.totalMonthlyBudget)
+                  )
+                  .slice(0, 6)
+                  .map((c) => (
+                    <Link
+                      key={c.slug}
+                      href={`/cities/${c.slug}`}
+                      className="text-xs font-medium text-[#1E3A6E] bg-[#EDF0F8] hover:bg-[#C5D0EC] px-3 py-1.5 rounded-full transition-colors"
+                    >
+                      {city.name} vs {c.name}
+                    </Link>
+                  ))}
+              </div>
+            </section>
 
           </div>
 

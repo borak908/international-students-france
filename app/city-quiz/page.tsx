@@ -12,11 +12,15 @@ export const metadata: Metadata = {
     'where to study in France',
     'French city quiz international student',
   ],
+  alternates: {
+    canonical: 'https://comparestudyfrance.com/city-quiz',
+  },
   openGraph: {
     title: 'Which French City is Right for Me? — Student City Quiz',
     description:
       'Answer 8 questions and get your top 3 French city matches. Free quiz for international students choosing where to study in France.',
     type: 'website',
+    url: 'https://comparestudyfrance.com/city-quiz',
   },
 }
 

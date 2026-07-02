@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import Link from 'next/link'
@@ -6,7 +6,7 @@ import NavHeader from '@/components/NavHeader'
 import cities from '@/data/cities.json'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' })
 
 export const metadata: Metadata = {
   title: {
@@ -29,6 +29,12 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@comparestudyfr',
   },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#0D1B35',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

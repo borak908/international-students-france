@@ -104,7 +104,8 @@
         "note": "School-wide rank — campuses in Lille and Nice"
       }
     ],
-    "lastUpdated": "2026-06-30"
+    "lastUpdated": "2026-06-30",
+    "editorNote": "What the data doesn't show: Lille has the highest student-to-resident ratio of any city on this list — one in six people here is a student. That density creates a remarkably self-contained student culture. The Wazemmes Sunday market is a Lille institution: cheap, chaotic, and brilliant for weekly grocery runs. The Vieux-Lille neighbourhood, with its narrow Flemish streets and stepped gable facades, looks more like Ghent than France — it's genuinely unlike anywhere else in the country. Practical bonus: Lille-Europe station puts you in London in 1h20 via Eurostar and Paris in 1h by TGV, making weekend travel cheaper and faster than from almost any other French city."
   },
   {
     "slug": "paris",
@@ -259,7 +260,8 @@
         "note": "#1 in the EU for 11 consecutive years"
       }
     ],
-    "lastUpdated": "2026-06-30"
+    "lastUpdated": "2026-06-30",
+    "editorNote": "The honest picture: Paris costs roughly €150–200/month more than Lyon or Bordeaux, and the housing market is the most competitive in France — expect to lose several apartments before securing one. That said, no other city matches it for career access: the density of multinational headquarters, consulting firms, and startup headquarters means internship and graduate job prospects are in a different league. The Latin Quarter (5th arrondissement) has been a student district since the 12th century and still feels it — bookshops, cheap crêpe stands, and library terraces along the Seine. If cost is a hard constraint, look at shared rooms in Belleville (20th) or Montparnasse (14th), where colocation prices are meaningfully lower than the studio averages."
   },
   {
     "slug": "lyon",
@@ -368,7 +370,8 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-06-30"
+    "lastUpdated": "2026-06-30",
+    "editorNote": "Lyon rewards students who arrive curious about food — the city takes gastronomy seriously at every price point, not just in Michelin-starred restaurants. Bouchons (traditional Lyonnais bistros) serve full weekday lunches for €12–15, and the Saturday market in Croix-Rousse — the old silk-workers' neighbourhood on the hill above the city — is one of the best farmers' markets in France. The city sits between two rivers (the Saône and the Rhône), which gives it an unusually pleasant cycling and running infrastructure along the quays. Lyon's growing biotech and digital cluster (Lyon French Tech) means the internship pipeline, especially in life sciences and software, is increasingly competitive with Paris."
   },
   {
     "slug": "bordeaux",
@@ -474,7 +477,8 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-06-30"
+    "lastUpdated": "2026-06-30",
+    "editorNote": "Bordeaux rebuilt its city centre in the 2000s around a tram network that now makes most of the city genuinely car-free for students. The result is one of the most walkable mid-size cities in France — the historic Belle Époque stone architecture, golden in afternoon light, is the reason it's consistently rated France's most beautiful city. Saint-Michel market (Sundays) is the affordable neighbourhood anchor: fruit, vegetables, and Moroccan street food. The Chartrons district, historically the wine merchants' quarter, has become the creative hub — independent coffee shops, vintage dealers, and a strong expat community. The obvious downside: job market depth outside wine, aerospace, and tourism is thinner than Lyon or Paris."
   },
   {
     "slug": "toulouse",
@@ -591,7 +595,8 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-06-30"
+    "lastUpdated": "2026-06-30",
+    "editorNote": "Toulouse is called La Ville Rose because every building in the historic centre is built from the same local rose-pink brick — it genuinely looks different from any other French city, especially at dusk. The aerospace connection is not just marketing: Airbus's global headquarters is here, alongside Thales, Safran, and Dassault Aviation. If you're studying engineering, the career pipeline from ISAE-SUPAERO or INP Toulouse into the aerospace industry is among the strongest in Europe. The Canal du Midi, a UNESCO World Heritage waterway, runs through the city and is the social spine of outdoor student life from March to October. Toulouse consistently ranks as France's #1 student city in national surveys — the infrastructure, nightlife, and student services reflect that."
   },
   {
     "slug": "montpellier",
@@ -697,7 +702,8 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-06-30"
+    "lastUpdated": "2026-06-30",
+    "editorNote": "Montpellier is demographically the youngest city in France — the median age is noticeably lower than any other major city, which shapes everything from the bar scene to the pace of the streets. The free public transport (tram, bus, bike-share) for all metropolitan residents is genuinely free: no student card required, no subscription, no registration. The Mediterranean coast is 30 minutes by tram-to-bus connection, which matters for mental health in a long academic year. The medical faculty here (Faculté de Médecine de Montpellier-Nîmes) was founded in 1220 and is still operating from its original medieval building — it's the oldest continuously running medical school in the world, which makes anatomy lectures slightly surreal."
   },
   {
     "slug": "strasbourg",
@@ -791,7 +797,8 @@
       "notableStatus": "UNESCO World Heritage — Grande Île historic centre (1988); seat of the European Parliament and Council of Europe",
       "languageBarrier": "Low — English widely spoken due to EU institutions; German also common; one of France's most internationally accessible cities"
     },
-    "lastUpdated": "2026-06-30"
+    "lastUpdated": "2026-06-30",
+    "editorNote": "Strasbourg is the only city in France where you can meaningfully feel the German border in everyday life — the architecture in the Petite France district is half-timbered Alsatian, the food blends French and German traditions (choucroute, flammekueche), and many residents are genuinely bilingual. For students interested in international law, European institutions, or political science, no city in the world offers the same access: the European Parliament, Council of Europe, and European Court of Human Rights are all within cycling distance of the university campus. Strasbourg has over 600km of bike lanes — it's the most cycle-friendly major city in France by infrastructure density, and most students never need public transport at all."
   },
   {
     "slug": "nantes",
@@ -896,7 +903,8 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-06-30"
+    "lastUpdated": "2026-06-30",
+    "editorNote": "Nantes has spent the last 15 years building a reputation as France's most creative city, anchored by Les Machines de l'Île — a permanent installation of giant mechanical animals built on the site of the old shipyards, including a working 12-metre mechanical elephant that walks visitors around the island. It sounds absurd; it's become one of France's most-visited cultural attractions. The creative economy is real: digital agencies, game studios, and design firms cluster in the former industrial districts, and the graduate retention rate is high. Nantes is also Jules Verne's birthplace — the Jules Verne Museum is worth an afternoon. Paris is 2h10 by TGV, cheap enough for regular trips, far enough to feel like a different city."
   },
   {
     "slug": "grenoble",
@@ -1002,7 +1010,8 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-06-30"
+    "lastUpdated": "2026-06-30",
+    "editorNote": "Grenoble's defining feature is physical: the city sits in a flat valley floor entirely surrounded by three mountain ranges (Belledonne, Vercors, Chartreuse), all visible from every street. The ski resorts are 45 minutes away by bus; the hiking trails start at the city's edge. The research ecosystem here is out of all proportion to the city's size — the CEA (Atomic Energy Commission), CNRS, ESRF (the most powerful synchrotron in Europe), and STMicroelectronics all operate major facilities here. Grenoble has the highest concentration of researchers per capita of any city in France, which creates an unusually international and intellectually intense campus atmosphere. If cost is your primary constraint and STEM is your field, Grenoble is the clearest value case on this entire site."
   },
   {
     "slug": "rennes",
@@ -1109,7 +1118,8 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-06-30"
+    "lastUpdated": "2026-06-30",
+    "editorNote": "Rennes carries a strong Breton identity that sets it apart from the rest of France — Celtic music sessions in bars on Thursday nights, Breton-language signs alongside French, and a food culture built around galettes (buckwheat crêpes) and local cider. The medieval old town, with its half-timbered houses around Place Saint-Anne, survived WWII largely intact. The emerging specialism worth noting: Rennes has quietly become France's leading city for cybersecurity and digital defence, with the Cyber Campus Bretagne and a cluster of defence-tech companies around the Beaulieu technology park. If you're studying computer science or cybersecurity, the internship market here is more targeted and less competitive than Paris. Les Transmusicales festival every December is one of Europe's best new-music discovery events."
   },
   {
     "slug": "aix-en-provence",
@@ -1203,7 +1213,8 @@
       "notableStatus": "Birthplace of Paul Cézanne; 17th-century Provençal architecture along Cours Mirabeau; surrounded by lavender fields and Sainte-Victoire mountain",
       "languageBarrier": "Low-moderate — significant English-speaking expat and tourist presence; French still essential for daily life and admin"
     },
-    "lastUpdated": "2026-06-30"
+    "lastUpdated": "2026-06-30",
+    "editorNote": "Aix is one of the few French cities where the physical environment — the light, the plane trees along Cours Mirabeau, the Sainte-Victoire mountain visible from the périphérique — becomes part of daily life in a way that's hard to overstate. Cézanne painted Sainte-Victoire over 80 times; the Cézanne trail around the city visits his studio and the landscapes he returned to obsessively. Practically: Aix is small (145,000 residents) and genuinely walkable — no student here is more than 20 minutes on foot from the centre. Marseille is 30 minutes by bus (€3 one-way), which effectively doubles your job market and cultural options while letting you live in a calmer, safer city. The trade-off is that Aix itself has limited industry — most careers requiring scale will pull you toward Marseille or further afield after graduation."
   },
   {
     "slug": "nice",
@@ -1316,6 +1327,7 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-06-30"
+    "lastUpdated": "2026-06-30",
+    "editorNote": "Nice's student experience is shaped by proximity to things that don't exist anywhere else in France: Monaco is 20 minutes by train (useful for finance and luxury sector internships), Italy is 40 minutes, and Sophia Antipolis — Europe's largest technology park, home to Microsoft, SAP, and 2,400 other companies — is 30 minutes by bus. The Promenade des Anglais and the Vieux-Nice neighbourhood (narrow Baroque lanes, Niçoise markets, socca flatbread from street stalls) make the city genuinely exceptional to live in. The cost is real: Nice is the most expensive city on this list, and the gap with Grenoble or Toulouse is significant over a full academic year. It makes most sense for students in business, tourism, digital, or luxury industries who can convert the location into internship and network access that justifies the premium."
   }
 ]

@@ -88,5 +88,6 @@ export interface City {
   workVisa: WorkVisa
   cityLife: CityLife
   rankings?: SchoolRanking[]
+  editorNote?: string
   lastUpdated: string
 }

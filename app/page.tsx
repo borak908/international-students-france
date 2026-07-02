@@ -40,9 +40,48 @@ const compareRows = [
   },
 ]
 
+export const metadata = {
+  alternates: {
+    canonical: 'https://comparestudyfrance.com',
+  },
+}
+
 export default function HomePage() {
+  const homepageJsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Compare Study France',
+      url: 'https://comparestudyfrance.com',
+      description:
+        'The complete comparison guide for international students choosing where to study in France. Compare 12 cities by housing costs, universities, transport, visa rules, and student life.',
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: 'https://comparestudyfrance.com/cities/{search_term_string}',
+        },
+        'query-input': 'required name=search_term_string',
+      },
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: 'Compare Study France — Compare French Cities for International Students',
+      url: 'https://comparestudyfrance.com',
+      description:
+        'The complete comparison guide for international students choosing where to study in France. Compare 12 cities by housing costs, universities, transport, visa rules, and student life.',
+      inLanguage: 'en',
+    },
+  ]
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageJsonLd) }}
+      />
+
       {/* ── Hero ── */}
       <section className="relative bg-gradient-to-br from-[#0D1B35] via-[#122240] to-[#182C50] text-white overflow-hidden">
         {/* Subtle tricolour strip */}
@@ -155,7 +194,7 @@ export default function HomePage() {
           <table className="text-sm" style={{ minWidth: '900px' }}>
             <thead>
               <tr className="bg-[#0D1B35] border-b border-[#1E3A6E]">
-                <th className="text-left px-4 py-4 text-[#90ADDA] font-medium text-xs uppercase tracking-wider sticky left-0 bg-[#0D1B35] z-10 min-w-[140px]">
+                <th className="text-left px-4 py-4 text-white font-bold text-xs uppercase tracking-wider sticky left-0 bg-[#0D1B35] z-20 min-w-[140px]">
                   Metric
                 </th>
                 {cityData.map((city) => (
@@ -173,7 +212,7 @@ export default function HomePage() {
                   key={row.label}
                   className={i % 2 === 0 ? 'bg-[#F5F2ED]/50' : 'bg-white'}
                 >
-                  <td className="px-4 py-3 text-stone-600 font-medium sticky left-0 z-10 text-xs" style={{ background: i % 2 === 0 ? 'rgb(250 250 249 / 0.5)' : 'white' }}>{row.label}</td>
+                  <td className="px-4 py-3 text-white font-semibold sticky left-0 z-20 text-xs bg-[#0D1B35]">{row.label}</td>
                   {cityData.map((city) => (
                     <td key={city.slug} className="px-3 py-3 text-center text-stone-700 font-semibold text-xs whitespace-nowrap">
                       {row.values(city)}

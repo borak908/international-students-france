@@ -6,11 +6,15 @@ export const metadata: Metadata = {
   title: 'Blog — International Student Guides for France',
   description:
     'Guides, data breakdowns, and honest first-person articles for international students studying in France. Housing, costs, visas, and city comparisons.',
+  alternates: {
+    canonical: 'https://comparestudyfrance.com/blog',
+  },
   openGraph: {
     title: 'Blog — International Student Guides for France',
     description:
       'Guides, data breakdowns, and honest articles for international students studying in France.',
     type: 'website',
+    url: 'https://comparestudyfrance.com/blog',
   },
 }
 
