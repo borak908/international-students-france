@@ -74,6 +74,8 @@ International students often compare France to their home countries and conclude
 
 Here's what the data actually shows across the 12 cities we track.
 
+> The totals below assume your own studio (studio rent + living costs). Our individual city pages quote an all-in budget based on shared/colocation housing instead, which runs roughly €600–750/month lower. Same data, two housing assumptions — pick the one that matches how you plan to live.
+
 ## The cheapest cities: where your money goes furthest
 
 **[Grenoble](/cities/grenoble) — Total ~€1,420/month (studio + living)**

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Compare All 12 Cities to Study in France',
     description:
-      'Monthly budgets from €800 to €1,100. 12 cities. Compare housing costs, universities, climate, and internship scenes to find your perfect French student city.',
+      'Monthly budgets from €800 to €1,200. 12 cities. Compare housing costs, universities, climate, and internship scenes to find your perfect French student city.',
     type: 'website',
     url: 'https://comparestudyfrance.com/cities',
   },
@@ -54,9 +54,9 @@ export default function CitiesPage() {
   const premium        = sorted.filter((c) => c.housing.totalMonthlyBudget > 1000)
 
   const groups = [
-    { label: 'Budget-friendly',  sublabel: 'Under €850/month all-in', cities: budgetFriendly, accent: 'bg-emerald-500' },
-    { label: 'Mid-range',        sublabel: '€850–€1,000/month all-in', cities: midRange,       accent: 'bg-amber-500'  },
-    { label: 'Premium',          sublabel: 'Over €1,000/month all-in', cities: premium,        accent: 'bg-rose-500'   },
+    { label: 'Budget-friendly',  sublabel: 'Under €850/month all-in (shared housing)', cities: budgetFriendly, accent: 'bg-emerald-500' },
+    { label: 'Mid-range',        sublabel: '€850–€1,000/month all-in (shared housing)', cities: midRange,       accent: 'bg-amber-500'  },
+    { label: 'Premium',          sublabel: 'Over €1,000/month all-in (shared housing)', cities: premium,        accent: 'bg-rose-500'   },
   ]
 
   // JSON-LD: BreadcrumbList + ItemList
@@ -106,7 +106,7 @@ export default function CitiesPage() {
           </h1>
           <p className="text-[#B8CAE8] text-sm sm:text-base max-w-2xl leading-relaxed mb-6">
             Monthly budgets range from <strong className="text-white">€800 in Grenoble</strong> to{' '}
-            <strong className="text-white">€1,100 in Nice</strong>. Every city offers the same
+            <strong className="text-white">€1,200 in Paris</strong>. Every city offers the same
             national tuition rates — your choice comes down to cost of living, career access,
             climate, and vibe. This page ranks all 12 from cheapest to most expensive so you
             can compare at a glance.

@@ -121,7 +121,7 @@
       },
       {
         "label": "Monthly Budget",
-        "value": "€1,064"
+        "value": "€1,200"
       },
       {
         "label": "Studio Rent",
@@ -142,7 +142,7 @@
     "housing": {
       "studioRentMonthly": 1230,
       "sharedRoomMonthly": "€600–900",
-      "totalMonthlyBudget": 1064,
+      "totalMonthlyBudget": 1200,
       "cafAidMonthly": "€100–300",
       "bestNeighborhoods": [
         "Latin Quarter (5e)",

@@ -76,7 +76,7 @@ export default function Image() {
           <div style={{ display: 'flex', gap: 16 }}>
             {[
               { label: '12 cities', sub: 'compared' },
-              { label: '€800–€1,100', sub: 'monthly budget range' },
+              { label: '€800–€1,200', sub: 'monthly budget range' },
               { label: '€178/yr', sub: 'EU tuition (all cities)' },
             ].map((s) => (
               <div

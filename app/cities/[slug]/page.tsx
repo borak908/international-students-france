@@ -126,6 +126,34 @@ function TempBadge({ label, tempC }: { label: string; tempC: number }) {
   )
 }
 
+// ── FAQ section (visible content — mirrors FAQPage JSON-LD) ─────────────────────
+function FAQSection({ items }: { items: { q: string; a: string }[] }) {
+  return (
+    <Section id="faq" emoji="❓" title="Frequently Asked Questions">
+      <div className="space-y-3">
+        {items.map((f) => (
+          <details
+            key={f.q}
+            className="group bg-white rounded-xl border border-stone-100 px-5 py-4"
+          >
+            <summary className="flex items-center justify-between gap-3 cursor-pointer list-none">
+              <h3 className="text-sm font-semibold text-stone-800">{f.q}</h3>
+              <span className="text-stone-300 group-open:rotate-180 transition-transform flex-shrink-0">▾</span>
+            </summary>
+            <p className="text-sm text-stone-600 leading-relaxed mt-3">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </Section>
+  )
+}
+
+// ── Shared-room rent midpoint (parses ranges like "€450–650") ───────────────────
+function sharedRoomMidpoint(range: string): number {
+  const nums = range.match(/\d+/g)?.map(Number) ?? []
+  return nums.length ? nums.reduce((a, b) => a + b, 0) / nums.length : 0
+}
+
 // ── Page ─────────────────────────────────────────────────────────────────────
 export default function CityPage({ params }: { params: { slug: string } }) {
   const city = cityData.find((c) => c.slug === params.slug)
@@ -139,7 +167,36 @@ export default function CityPage({ params }: { params: { slug: string } }) {
     { id: 'transport',     label: 'Transport' },
     { id: 'work-visa',     label: 'Work & Visa' },
     { id: 'city-life',     label: 'City Life' },
+    { id: 'faq',           label: 'FAQ' },
     { id: 'related-cities', label: 'Similar Cities' },
+  ]
+
+  // Budget is quoted on a shared-housing basis; derive the studio-basis figure by
+  // swapping the housing line only, so both share one living-cost basket.
+  const sharedBudget = city.housing.totalMonthlyBudget
+  const studioBudget =
+    Math.round(
+      (sharedBudget - sharedRoomMidpoint(city.housing.sharedRoomMonthly) + city.housing.studioRentMonthly) / 10
+    ) * 10
+
+  // Single source of truth — feeds BOTH the visible FAQ section and the FAQPage JSON-LD
+  const faqItems: { q: string; a: string }[] = [
+    {
+      q: `How much does it cost to live in ${city.name} as a student?`,
+      a: `Budget roughly €${sharedBudget}/month sharing an apartment (colocation), or around €${studioBudget}/month for your own studio. Both figures include rent, food, transport, and daily expenses. Studio apartments average €${city.housing.studioRentMonthly}/month and shared rooms ${city.housing.sharedRoomMonthly}/month; CAF housing aid of ${city.housing.cafAidMonthly} is available for eligible students.`,
+    },
+    {
+      q: `What are the best universities in ${city.name} for international students?`,
+      a: `${city.name} is home to several leading institutions including ${city.universities.main.slice(0, 2).join(' and ')}. Top grandes écoles include ${city.universities.grandesEcoles.slice(0, 3).join(', ')}. The strongest fields are ${city.universities.bestFields.join(', ')}. EU students pay €${city.universities.tuitionEUPerYear}/year and non-EU students pay €${city.universities.tuitionNonEUPerYear}/year at public universities.`,
+    },
+    {
+      q: `How do international students get around ${city.name}?`,
+      a: `${city.name} has good public transport. The student monthly pass costs ${city.transport.studentPassMonthly === 0 ? 'nothing — public transport is free for residents' : `€${city.transport.studentPassMonthly}/month with a student discount`}. The city is ${city.transport.bikeFriendly ? `bike-friendly with ${city.transport.bikeShareName} bike-share` : 'primarily served by public transit'}. Airport access is available via ${city.transport.airportConnection}.`,
+    },
+    {
+      q: `Can international students work part-time in ${city.name}?`,
+      a: `Yes. Students in ${city.name} on a French student visa can work ${city.workVisa.partTimeHours}. The local student job market is ${city.workVisa.studentJobMarket.toLowerCase()}. Internship opportunities are also ${city.workVisa.internshipScene.toLowerCase()}.`,
+    },
   ]
 
   // Top 3 budget-nearest cities for the sidebar (excluding self)
@@ -207,40 +264,11 @@ export default function CityPage({ params }: { params: { slug: string } }) {
             {
               '@context': 'https://schema.org',
               '@type': 'FAQPage',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: `How much does it cost to live in ${city.name} as a student?`,
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: `The average monthly budget for a student in ${city.name} is €${city.housing.totalMonthlyBudget}, including rent, food, transport, and daily expenses. Studio apartments average €${city.housing.studioRentMonthly}/month, while shared rooms start from ${city.housing.sharedRoomMonthly}/month. CAF housing aid of ${city.housing.cafAidMonthly} is available for eligible students.`,
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: `What are the best universities in ${city.name} for international students?`,
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: `${city.name} is home to several leading institutions including ${city.universities.main.slice(0, 2).join(' and ')}. Top grandes écoles include ${city.universities.grandesEcoles.slice(0, 3).join(', ')}. The strongest fields are ${city.universities.bestFields.join(', ')}. EU students pay €${city.universities.tuitionEUPerYear}/year and non-EU students pay €${city.universities.tuitionNonEUPerYear}/year at public universities.`,
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: `How do international students get around ${city.name}?`,
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: `${city.name} has good public transport. The student monthly pass costs ${city.transport.studentPassMonthly === 0 ? 'nothing — public transport is free for residents' : `€${city.transport.studentPassMonthly}/month with a student discount`}. The city is ${city.transport.bikeFriendly ? `bike-friendly with ${city.transport.bikeShareName} bike-share` : 'primarily served by public transit'}. Airport access is available via ${city.transport.airportConnection}.`,
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: `Can international students work part-time in ${city.name}?`,
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: `Yes. Students in ${city.name} on a French student visa can work ${city.workVisa.partTimeHours}. The local student job market is ${city.workVisa.studentJobMarket.toLowerCase()}. Internship opportunities are also ${city.workVisa.internshipScene.toLowerCase()}.`,
-                  },
-                },
-              ],
+              mainEntity: faqItems.map((f) => ({
+                '@type': 'Question',
+                name: f.q,
+                acceptedAnswer: { '@type': 'Answer', text: f.a },
+              })),
             },
           ]),
         }}
@@ -361,7 +389,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                 <StatCard
                   label="Monthly budget"
                   value={`€${city.housing.totalMonthlyBudget}`}
-                  sub="All-in estimate"
+                  sub="All-in, shared housing"
                 />
                 <StatCard
                   label="CAF aid"
@@ -579,6 +607,9 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                 )}
               </div>
             </Section>
+
+            {/* 7 — FAQ (visible content mirrors FAQPage JSON-LD) */}
+            <FAQSection items={faqItems} />
 
             {/* Newsletter */}
             <NewsletterSignup variant="city" />
