@@ -154,6 +154,54 @@ function sharedRoomMidpoint(range: string): number {
   return nums.length ? nums.reduce((a, b) => a + b, 0) / nums.length : 0
 }
 
+// ── Minutes → "1h 56m" / "45 min" ───────────────────────────────────────────────
+function formatMins(mins: number): string {
+  if (mins < 60) return `${mins} min`
+  const h = Math.floor(mins / 60)
+  const m = mins % 60
+  return m ? `${h}h ${m}m` : `${h}h`
+}
+
+// ── Sources & last-verified footnote (E-E-A-T / anti-hallucination) ─────────────
+function SourcesFootnote({ sources }: { sources?: City['sources'] }) {
+  const entries = sources ? Object.entries(sources) : []
+  if (!entries.length) return null
+  const labelFor: Record<string, string> = {
+    'housing.totalMonthlyBudget': 'Monthly budget',
+    'housing.studioRentMonthly': 'Studio rent',
+    'overview.safetyRating': 'Safety rating',
+    'distances.toParisMins': 'Time to Paris',
+    'distances.airportMins': 'Airport transfer',
+  }
+  return (
+    <section className="scroll-mt-24 pt-2">
+      <h2 className="text-base font-bold text-stone-700 mb-3">Sources &amp; last verified</h2>
+      <ul className="bg-white rounded-xl border border-stone-100 px-5 divide-y divide-stone-100">
+        {entries.map(([key, s]) => (
+          <li key={key} className="py-2.5 text-xs text-stone-500 flex flex-wrap items-center gap-x-2 gap-y-1">
+            <span className="font-semibold text-stone-600">{labelFor[key] ?? key}:</span>
+            <span>{s.label}</span>
+            {s.estimated && (
+              <span className="text-[10px] font-semibold text-amber-700 bg-amber-100 border border-amber-200 px-1.5 py-0.5 rounded-full leading-none">
+                est.
+              </span>
+            )}
+            {s.url && (
+              <a href={s.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-stone-700">
+                link
+              </a>
+            )}
+            <span className="text-stone-300">· retrieved {s.retrievedDate}</span>
+          </li>
+        ))}
+      </ul>
+      <p className="text-[10px] text-stone-400 mt-2">
+        Figures marked <span className="font-semibold text-amber-700">est.</span> are our own estimates from component costs and local listings, not official published statistics.
+      </p>
+    </section>
+  )
+}
+
 // ── Page ─────────────────────────────────────────────────────────────────────
 export default function CityPage({ params }: { params: { slug: string } }) {
   const city = cityData.find((c) => c.slug === params.slug)
@@ -197,6 +245,8 @@ export default function CityPage({ params }: { params: { slug: string } }) {
       q: `Can international students work part-time in ${city.name}?`,
       a: `Yes. Students in ${city.name} on a French student visa can work ${city.workVisa.partTimeHours}. The local student job market is ${city.workVisa.studentJobMarket.toLowerCase()}. Internship opportunities are also ${city.workVisa.internshipScene.toLowerCase()}.`,
     },
+    // City-specific questions authored per city (unique long-tail content)
+    ...(city.faq ?? []),
   ]
 
   // Top 3 budget-nearest cities for the sidebar (excluding self)
@@ -417,18 +467,33 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                 />
               </div>
 
-              <div className="bg-white rounded-xl border border-stone-100 px-5 divide-y divide-stone-100">
-                <InfoRow
-                  label="Best neighborhoods"
-                  value={
-                    <div className="flex flex-wrap gap-2 mt-1">
-                      {city.housing.bestNeighborhoods.map((n) => (
-                        <Tag key={n}>{n}</Tag>
-                      ))}
-                    </div>
-                  }
-                />
-              </div>
+              {/* Where to live — authored neighborhood guide, tag fallback */}
+              {city.neighborhoods && city.neighborhoods.length > 0 ? (
+                <div>
+                  <h3 className="text-sm font-semibold text-stone-700 mb-3">Where to live</h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {city.neighborhoods.map((n) => (
+                      <div key={n.name} className="bg-white rounded-xl border border-stone-100 p-4">
+                        <p className="text-sm font-semibold text-[#1E3A6E] mb-1">{n.name}</p>
+                        <p className="text-xs text-stone-600 leading-relaxed">{n.blurb}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <div className="bg-white rounded-xl border border-stone-100 px-5 divide-y divide-stone-100">
+                  <InfoRow
+                    label="Best neighborhoods"
+                    value={
+                      <div className="flex flex-wrap gap-2 mt-1">
+                        {city.housing.bestNeighborhoods.map((n) => (
+                          <Tag key={n}>{n}</Tag>
+                        ))}
+                      </div>
+                    }
+                  />
+                </div>
+              )}
               <div className="mt-4 bg-amber-50 border border-amber-100 rounded-xl p-4 text-sm text-amber-800">
                 <strong>💡 CAF tip:</strong> Apply for CAF housing benefit as soon as you have a signed lease.
                 Students from most countries are eligible for €100–300/month.
@@ -562,6 +627,22 @@ export default function CityPage({ params }: { params: { slug: string } }) {
               <div className="bg-white rounded-xl border border-stone-100 px-5 divide-y divide-stone-100">
                 <InfoRow label="Airport connection" value={city.transport.airportConnection} />
                 <InfoRow label="Bike-share"          value={city.transport.bikeShareName} />
+                {city.distances && (
+                  <>
+                    <InfoRow
+                      label="Nearest airport"
+                      value={`${city.distances.nearestAirport} · ${formatMins(city.distances.airportMins)} from the centre`}
+                    />
+                    <InfoRow
+                      label="Time to Paris"
+                      value={
+                        city.distances.toParisMins === null
+                          ? "You're already in Paris"
+                          : `${formatMins(city.distances.toParisMins)} by direct TGV`
+                      }
+                    />
+                  </>
+                )}
               </div>
             </Section>
 
@@ -610,6 +691,9 @@ export default function CityPage({ params }: { params: { slug: string } }) {
 
             {/* 7 — FAQ (visible content mirrors FAQPage JSON-LD) */}
             <FAQSection items={faqItems} />
+
+            {/* Sources & last-verified (E-E-A-T / anti-hallucination) */}
+            <SourcesFootnote sources={city.sources} />
 
             {/* Newsletter */}
             <NewsletterSignup variant="city" />

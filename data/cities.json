@@ -104,8 +104,72 @@
         "note": "School-wide rank — campuses in Lille and Nice"
       }
     ],
-    "lastUpdated": "2026-06-30",
-    "editorNote": "What the data doesn't show: Lille has the highest student-to-resident ratio of any city on this list — one in six people here is a student. That density creates a remarkably self-contained student culture. The Wazemmes Sunday market is a Lille institution: cheap, chaotic, and brilliant for weekly grocery runs. The Vieux-Lille neighbourhood, with its narrow Flemish streets and stepped gable facades, looks more like Ghent than France — it's genuinely unlike anywhere else in the country. Practical bonus: Lille-Europe station puts you in London in 1h20 via Eurostar and Paris in 1h by TGV, making weekend travel cheaper and faster than from almost any other French city."
+    "lastUpdated": "2026-07-02",
+    "editorNote": "What the data doesn't show: Lille has the highest student-to-resident ratio of any city on this list — one in six people here is a student. That density creates a remarkably self-contained student culture. The Wazemmes Sunday market is a Lille institution: cheap, chaotic, and brilliant for weekly grocery runs. The Vieux-Lille neighbourhood, with its narrow Flemish streets and stepped gable facades, looks more like Ghent than France — it's genuinely unlike anywhere else in the country. Practical bonus: Lille-Europe station puts you in London in 1h20 via Eurostar and Paris in 1h by TGV, making weekend travel cheaper and faster than from almost any other French city.",
+    "faq": [
+      {
+        "q": "Do I need a French guarantor to rent in Lille?",
+        "a": "Usually yes — most Lille landlords ask for a French guarantor. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+      },
+      {
+        "q": "Which Lille neighbourhood is best for international students?",
+        "a": "Wazemmes is the cheapest and most lively central option, while Vauban is the classic student quarter near the Catholic University. Vieux-Lille is beautiful but the priciest."
+      },
+      {
+        "q": "Is Lille well connected for travel around Europe?",
+        "a": "Exceptionally — Lille is 1 hour from Paris by TGV, on the Eurostar to London, and a short hop from Brussels. It's one of the best-connected student cities in France for weekend travel."
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Vauban",
+        "blurb": "Leafy student quarter around the Catholic University — quiet, well-kept and full of bars aimed at students."
+      },
+      {
+        "name": "Wazemmes",
+        "blurb": "Working-class, multicultural and cheap, famous for its Sunday market. The most affordable central option and a student favourite."
+      },
+      {
+        "name": "Centre",
+        "blurb": "The République/city-centre core — central, well-connected by metro and walkable, though pricier."
+      },
+      {
+        "name": "Vieux-Lille",
+        "blurb": "The picturesque old town with Flemish facades — beautiful and lively but the most expensive place to rent."
+      }
+    ],
+    "distances": {
+      "toParisMins": 60,
+      "nearestAirport": "Lille-Lesquin (LIL)",
+      "airportMins": 15
+    },
+    "sources": {
+      "housing.totalMonthlyBudget": {
+        "label": "author estimate from component costs",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "housing.studioRentMonthly": {
+        "label": "author estimate (local listings)",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "overview.safetyRating": {
+        "label": "Numbeo Safety Index",
+        "url": "https://www.numbeo.com/crime/",
+        "retrievedDate": "2026-07-02"
+      },
+      "distances.toParisMins": {
+        "label": "SNCF TGV timetable",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "distances.airportMins": {
+        "label": "airport shuttle estimate",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      }
+    }
   },
   {
     "slug": "paris",
@@ -260,8 +324,72 @@
         "note": "#1 in the EU for 11 consecutive years"
       }
     ],
-    "lastUpdated": "2026-06-30",
-    "editorNote": "The honest picture: Paris costs roughly €150–200/month more than Lyon or Bordeaux, and the housing market is the most competitive in France — expect to lose several apartments before securing one. That said, no other city matches it for career access: the density of multinational headquarters, consulting firms, and startup headquarters means internship and graduate job prospects are in a different league. The Latin Quarter (5th arrondissement) has been a student district since the 12th century and still feels it — bookshops, cheap crêpe stands, and library terraces along the Seine. If cost is a hard constraint, look at shared rooms in Belleville (20th) or Montparnasse (14th), where colocation prices are meaningfully lower than the studio averages."
+    "lastUpdated": "2026-07-02",
+    "editorNote": "The honest picture: Paris costs roughly €150–200/month more than Lyon or Bordeaux, and the housing market is the most competitive in France — expect to lose several apartments before securing one. That said, no other city matches it for career access: the density of multinational headquarters, consulting firms, and startup headquarters means internship and graduate job prospects are in a different league. The Latin Quarter (5th arrondissement) has been a student district since the 12th century and still feels it — bookshops, cheap crêpe stands, and library terraces along the Seine. If cost is a hard constraint, look at shared rooms in Belleville (20th) or Montparnasse (14th), where colocation prices are meaningfully lower than the studio averages.",
+    "faq": [
+      {
+        "q": "Do I need a French guarantor to rent in Paris?",
+        "a": "Almost always — Paris has France's most competitive rental market, so landlords expect a French guarantor and complete files. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted. Start your search two to three months early."
+      },
+      {
+        "q": "Which Paris neighbourhood is best for international students?",
+        "a": "The Latin Quarter (5e) is closest to the historic universities but expensive; Belleville (20e) and parts of the 11e offer more affordable rooms while staying central and well-connected."
+      },
+      {
+        "q": "Is studying in Paris worth the higher cost?",
+        "a": "It depends on your field. Paris has unrivalled academic prestige and career access, but living costs run several hundred euros a month above cheaper cities. If your programme or industry is concentrated in Paris, the premium can pay off; otherwise a regional city offers far better value."
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Latin Quarter (5e)",
+        "blurb": "The historic student heart around the Sorbonne — central, iconic and expensive, but unbeatable for university access."
+      },
+      {
+        "name": "Bastille (11e)",
+        "blurb": "Lively nightlife and a young crowd, with good transport and slightly better value than the most central arrondissements."
+      },
+      {
+        "name": "Belleville (20e)",
+        "blurb": "Diverse, artsy and among the more affordable central areas — popular with students and creatives."
+      },
+      {
+        "name": "Montparnasse (14e)",
+        "blurb": "Calmer and residential with excellent transport links; a practical base away from the tourist crush."
+      }
+    ],
+    "distances": {
+      "toParisMins": null,
+      "nearestAirport": "Paris-Charles de Gaulle (CDG)",
+      "airportMins": 35
+    },
+    "sources": {
+      "housing.totalMonthlyBudget": {
+        "label": "author estimate from component costs",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "housing.studioRentMonthly": {
+        "label": "author estimate (local listings)",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "overview.safetyRating": {
+        "label": "Numbeo Safety Index",
+        "url": "https://www.numbeo.com/crime/",
+        "retrievedDate": "2026-07-02"
+      },
+      "distances.toParisMins": {
+        "label": "SNCF TGV timetable",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "distances.airportMins": {
+        "label": "RER B estimate",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      }
+    }
   },
   {
     "slug": "lyon",
@@ -370,8 +498,72 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-06-30",
-    "editorNote": "Lyon rewards students who arrive curious about food — the city takes gastronomy seriously at every price point, not just in Michelin-starred restaurants. Bouchons (traditional Lyonnais bistros) serve full weekday lunches for €12–15, and the Saturday market in Croix-Rousse — the old silk-workers' neighbourhood on the hill above the city — is one of the best farmers' markets in France. The city sits between two rivers (the Saône and the Rhône), which gives it an unusually pleasant cycling and running infrastructure along the quays. Lyon's growing biotech and digital cluster (Lyon French Tech) means the internship pipeline, especially in life sciences and software, is increasingly competitive with Paris."
+    "lastUpdated": "2026-07-02",
+    "editorNote": "Lyon rewards students who arrive curious about food — the city takes gastronomy seriously at every price point, not just in Michelin-starred restaurants. Bouchons (traditional Lyonnais bistros) serve full weekday lunches for €12–15, and the Saturday market in Croix-Rousse — the old silk-workers' neighbourhood on the hill above the city — is one of the best farmers' markets in France. The city sits between two rivers (the Saône and the Rhône), which gives it an unusually pleasant cycling and running infrastructure along the quays. Lyon's growing biotech and digital cluster (Lyon French Tech) means the internship pipeline, especially in life sciences and software, is increasingly competitive with Paris.",
+    "faq": [
+      {
+        "q": "Do I need a French guarantor to rent in Lyon?",
+        "a": "Usually yes — most Lyon landlords require a French guarantor. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+      },
+      {
+        "q": "Which Lyon neighbourhood is best for students?",
+        "a": "Croix-Rousse and Guillotière are the classic student areas — walkable, lively and close to campuses. Villeurbanne is cheaper and well-connected, while Part-Dieu is central but more corporate and pricier."
+      },
+      {
+        "q": "How affordable is food in Lyon on a student budget?",
+        "a": "Very. CROUS student restaurants serve full hot meals for €3.30, and the Croix-Rousse and Guillotière markets are cheap and excellent. Expect roughly €220/month on groceries if you cook most days."
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Croix-Rousse",
+        "blurb": "The old silk-weavers' hill above the centre — bohemian, walkable, with one of the best Saturday markets in France. Popular with students who want character over convenience."
+      },
+      {
+        "name": "Guillotière",
+        "blurb": "Central, diverse and lively, wedged between the two universities. The cheapest central option and the most international in feel, though busier in patches."
+      },
+      {
+        "name": "Villeurbanne",
+        "blurb": "Technically its own city, immediately east of Lyon. Lower rents, strong metro links and a big student population around INSA and Lyon 1."
+      },
+      {
+        "name": "Part-Dieu",
+        "blurb": "The business district around the TGV station — modern, central and convenient for commuting, but pricier and less charming than the older quarters."
+      }
+    ],
+    "distances": {
+      "toParisMins": 116,
+      "nearestAirport": "Lyon-Saint-Exupéry (LYS)",
+      "airportMins": 30
+    },
+    "sources": {
+      "housing.totalMonthlyBudget": {
+        "label": "author estimate from component costs",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "housing.studioRentMonthly": {
+        "label": "author estimate (local listings)",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "overview.safetyRating": {
+        "label": "Numbeo Safety Index",
+        "url": "https://www.numbeo.com/crime/",
+        "retrievedDate": "2026-07-02"
+      },
+      "distances.toParisMins": {
+        "label": "SNCF TGV timetable",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "distances.airportMins": {
+        "label": "Rhônexpress tram estimate",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      }
+    }
   },
   {
     "slug": "bordeaux",
@@ -477,8 +669,72 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-06-30",
-    "editorNote": "Bordeaux rebuilt its city centre in the 2000s around a tram network that now makes most of the city genuinely car-free for students. The result is one of the most walkable mid-size cities in France — the historic Belle Époque stone architecture, golden in afternoon light, is the reason it's consistently rated France's most beautiful city. Saint-Michel market (Sundays) is the affordable neighbourhood anchor: fruit, vegetables, and Moroccan street food. The Chartrons district, historically the wine merchants' quarter, has become the creative hub — independent coffee shops, vintage dealers, and a strong expat community. The obvious downside: job market depth outside wine, aerospace, and tourism is thinner than Lyon or Paris."
+    "lastUpdated": "2026-07-02",
+    "editorNote": "Bordeaux rebuilt its city centre in the 2000s around a tram network that now makes most of the city genuinely car-free for students. The result is one of the most walkable mid-size cities in France — the historic Belle Époque stone architecture, golden in afternoon light, is the reason it's consistently rated France's most beautiful city. Saint-Michel market (Sundays) is the affordable neighbourhood anchor: fruit, vegetables, and Moroccan street food. The Chartrons district, historically the wine merchants' quarter, has become the creative hub — independent coffee shops, vintage dealers, and a strong expat community. The obvious downside: job market depth outside wine, aerospace, and tourism is thinner than Lyon or Paris.",
+    "faq": [
+      {
+        "q": "Do I need a French guarantor to rent in Bordeaux?",
+        "a": "Usually yes, and rents have risen sharply as the city has become fashionable, so landlords are selective. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+      },
+      {
+        "q": "Which Bordeaux neighbourhood is best for international students?",
+        "a": "Saint-Michel is central, lively and relatively affordable; Chartrons is trendier and pricier. Both are well served by the tram network that makes the city easy to get around without a car."
+      },
+      {
+        "q": "Is Bordeaux expensive compared to other French cities?",
+        "a": "It sits in the pricier tier — rents climbed as Bordeaux became fashionable and the 2-hour TGV to Paris drew new residents. It's still cheaper than Paris or Nice, but budget carefully for housing."
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Saint-Michel",
+        "blurb": "Bohemian and diverse around its famous basilica and flea market — central, lively and relatively affordable."
+      },
+      {
+        "name": "Chartrons",
+        "blurb": "The former wine-merchant district, now trendy with quays, antique shops and cafes; pricier but very pleasant."
+      },
+      {
+        "name": "Bacalan",
+        "blurb": "Regenerated docklands near the Cité du Vin — modern flats, improving fast and still cheaper than the centre."
+      },
+      {
+        "name": "Nansouty",
+        "blurb": "A quiet residential neighbourhood south of the centre, popular with students wanting calm and value."
+      }
+    ],
+    "distances": {
+      "toParisMins": 124,
+      "nearestAirport": "Bordeaux-Mérignac (BOD)",
+      "airportMins": 30
+    },
+    "sources": {
+      "housing.totalMonthlyBudget": {
+        "label": "author estimate from component costs",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "housing.studioRentMonthly": {
+        "label": "author estimate (local listings)",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "overview.safetyRating": {
+        "label": "Numbeo Safety Index",
+        "url": "https://www.numbeo.com/crime/",
+        "retrievedDate": "2026-07-02"
+      },
+      "distances.toParisMins": {
+        "label": "SNCF TGV timetable",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "distances.airportMins": {
+        "label": "tram + shuttle estimate",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      }
+    }
   },
   {
     "slug": "toulouse",
@@ -595,8 +851,72 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-06-30",
-    "editorNote": "Toulouse is called La Ville Rose because every building in the historic centre is built from the same local rose-pink brick — it genuinely looks different from any other French city, especially at dusk. The aerospace connection is not just marketing: Airbus's global headquarters is here, alongside Thales, Safran, and Dassault Aviation. If you're studying engineering, the career pipeline from ISAE-SUPAERO or INP Toulouse into the aerospace industry is among the strongest in Europe. The Canal du Midi, a UNESCO World Heritage waterway, runs through the city and is the social spine of outdoor student life from March to October. Toulouse consistently ranks as France's #1 student city in national surveys — the infrastructure, nightlife, and student services reflect that."
+    "lastUpdated": "2026-07-02",
+    "editorNote": "Toulouse is called La Ville Rose because every building in the historic centre is built from the same local rose-pink brick — it genuinely looks different from any other French city, especially at dusk. The aerospace connection is not just marketing: Airbus's global headquarters is here, alongside Thales, Safran, and Dassault Aviation. If you're studying engineering, the career pipeline from ISAE-SUPAERO or INP Toulouse into the aerospace industry is among the strongest in Europe. The Canal du Midi, a UNESCO World Heritage waterway, runs through the city and is the social spine of outdoor student life from March to October. Toulouse consistently ranks as France's #1 student city in national surveys — the infrastructure, nightlife, and student services reflect that.",
+    "faq": [
+      {
+        "q": "Do I need a French guarantor to rent in Toulouse?",
+        "a": "Usually yes — most landlords ask for a French guarantor. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+      },
+      {
+        "q": "Which Toulouse neighbourhood is best for international students?",
+        "a": "Les Carmes and Saint-Aubin are the liveliest central options, while Minimes and Empalot offer cheaper rents with metro access. Toulouse's two-line metro makes most areas convenient."
+      },
+      {
+        "q": "Is Toulouse good for internships in aerospace?",
+        "a": "Exceptionally — Airbus, Thales and Safran are all headquartered here, making Toulouse France's aerospace capital and one of the strongest cities for engineering and aeronautics internships."
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Les Carmes",
+        "blurb": "Elegant, central and full of terraces — the most sought-after (and priciest) student address in the pink city."
+      },
+      {
+        "name": "Saint-Aubin",
+        "blurb": "Bohemian and lively around its Sunday market; central, characterful and popular with students."
+      },
+      {
+        "name": "Minimes",
+        "blurb": "An affordable working-class area north of the centre with good metro links — solid value."
+      },
+      {
+        "name": "Empalot",
+        "blurb": "One of the cheapest areas, south of the centre by the Garonne, with its own metro stop."
+      }
+    ],
+    "distances": {
+      "toParisMins": 250,
+      "nearestAirport": "Toulouse-Blagnac (TLS)",
+      "airportMins": 20
+    },
+    "sources": {
+      "housing.totalMonthlyBudget": {
+        "label": "author estimate from component costs",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "housing.studioRentMonthly": {
+        "label": "author estimate (local listings)",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "overview.safetyRating": {
+        "label": "Numbeo Safety Index",
+        "url": "https://www.numbeo.com/crime/",
+        "retrievedDate": "2026-07-02"
+      },
+      "distances.toParisMins": {
+        "label": "SNCF TGV timetable",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "distances.airportMins": {
+        "label": "tram T2 estimate",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      }
+    }
   },
   {
     "slug": "montpellier",
@@ -702,8 +1022,72 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-06-30",
-    "editorNote": "Montpellier is demographically the youngest city in France — the median age is noticeably lower than any other major city, which shapes everything from the bar scene to the pace of the streets. The free public transport (tram, bus, bike-share) for all metropolitan residents is genuinely free: no student card required, no subscription, no registration. The Mediterranean coast is 30 minutes by tram-to-bus connection, which matters for mental health in a long academic year. The medical faculty here (Faculté de Médecine de Montpellier-Nîmes) was founded in 1220 and is still operating from its original medieval building — it's the oldest continuously running medical school in the world, which makes anatomy lectures slightly surreal."
+    "lastUpdated": "2026-07-02",
+    "editorNote": "Montpellier is demographically the youngest city in France — the median age is noticeably lower than any other major city, which shapes everything from the bar scene to the pace of the streets. The free public transport (tram, bus, bike-share) for all metropolitan residents is genuinely free: no student card required, no subscription, no registration. The Mediterranean coast is 30 minutes by tram-to-bus connection, which matters for mental health in a long academic year. The medical faculty here (Faculté de Médecine de Montpellier-Nîmes) was founded in 1220 and is still operating from its original medieval building — it's the oldest continuously running medical school in the world, which makes anatomy lectures slightly surreal.",
+    "faq": [
+      {
+        "q": "Is public transport really free in Montpellier?",
+        "a": "Yes — the metropolitan area made trams and buses free for all residents, so students with a local address pay nothing to get around. It's one of the biggest hidden savings of studying here."
+      },
+      {
+        "q": "Do I need a French guarantor to rent in Montpellier?",
+        "a": "Usually yes — most landlords ask for a French guarantor. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+      },
+      {
+        "q": "Which Montpellier neighbourhood is best for international students?",
+        "a": "The Écusson old town is central and atmospheric but competitive; Antigone and Beaux-Arts offer better value while staying on the tram network close to the universities."
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Écusson",
+        "blurb": "The medieval old town — pedestrian, atmospheric and central, right by the universities but in high demand."
+      },
+      {
+        "name": "Antigone",
+        "blurb": "A striking neoclassical district between the centre and the river; well served by tram and good value."
+      },
+      {
+        "name": "Port Marianne",
+        "blurb": "Modern, spacious and family-friendly to the east, with newer flats and easy tram access."
+      },
+      {
+        "name": "Beaux-Arts",
+        "blurb": "Trendy and leafy north of the centre with a lively cafe scene — popular with students."
+      }
+    ],
+    "distances": {
+      "toParisMins": 205,
+      "nearestAirport": "Montpellier-Méditerranée (MPL)",
+      "airportMins": 25
+    },
+    "sources": {
+      "housing.totalMonthlyBudget": {
+        "label": "author estimate from component costs",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "housing.studioRentMonthly": {
+        "label": "author estimate (local listings)",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "overview.safetyRating": {
+        "label": "Numbeo Safety Index",
+        "url": "https://www.numbeo.com/crime/",
+        "retrievedDate": "2026-07-02"
+      },
+      "distances.toParisMins": {
+        "label": "SNCF TGV timetable",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "distances.airportMins": {
+        "label": "airport shuttle estimate",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      }
+    }
   },
   {
     "slug": "strasbourg",
@@ -797,8 +1181,72 @@
       "notableStatus": "UNESCO World Heritage — Grande Île historic centre (1988); seat of the European Parliament and Council of Europe",
       "languageBarrier": "Low — English widely spoken due to EU institutions; German also common; one of France's most internationally accessible cities"
     },
-    "lastUpdated": "2026-06-30",
-    "editorNote": "Strasbourg is the only city in France where you can meaningfully feel the German border in everyday life — the architecture in the Petite France district is half-timbered Alsatian, the food blends French and German traditions (choucroute, flammekueche), and many residents are genuinely bilingual. For students interested in international law, European institutions, or political science, no city in the world offers the same access: the European Parliament, Council of Europe, and European Court of Human Rights are all within cycling distance of the university campus. Strasbourg has over 600km of bike lanes — it's the most cycle-friendly major city in France by infrastructure density, and most students never need public transport at all."
+    "lastUpdated": "2026-07-02",
+    "editorNote": "Strasbourg is the only city in France where you can meaningfully feel the German border in everyday life — the architecture in the Petite France district is half-timbered Alsatian, the food blends French and German traditions (choucroute, flammekueche), and many residents are genuinely bilingual. For students interested in international law, European institutions, or political science, no city in the world offers the same access: the European Parliament, Council of Europe, and European Court of Human Rights are all within cycling distance of the university campus. Strasbourg has over 600km of bike lanes — it's the most cycle-friendly major city in France by infrastructure density, and most students never need public transport at all.",
+    "faq": [
+      {
+        "q": "Do I need a French guarantor to rent in Strasbourg?",
+        "a": "Usually yes — most landlords ask for a French guarantor. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+      },
+      {
+        "q": "Which Strasbourg neighbourhood is best for international students?",
+        "a": "Esplanade sits right by the main campus, while Krutenau is the lively student quarter near the centre. Neudorf offers cheaper rents with good tram links."
+      },
+      {
+        "q": "Can I visit Germany easily from Strasbourg?",
+        "a": "Very easily — Strasbourg sits on the German border with a direct train to Kehl in minutes and frequent connections to Frankfurt. Its EU institutions also make it a hub for European affairs students."
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Krutenau",
+        "blurb": "The classic student quarter — canals, bars and bistros a short walk from the centre; lively and central."
+      },
+      {
+        "name": "Neudorf",
+        "blurb": "A large, affordable residential district south of the centre with strong tram links — good value."
+      },
+      {
+        "name": "Esplanade",
+        "blurb": "Right next to the main university campus — the most convenient and student-dense area for coursework."
+      },
+      {
+        "name": "Orangerie",
+        "blurb": "Upmarket and green around the city's biggest park, near the EU institutions; quieter and pricier."
+      }
+    ],
+    "distances": {
+      "toParisMins": 105,
+      "nearestAirport": "Strasbourg Airport (SXB)",
+      "airportMins": 15
+    },
+    "sources": {
+      "housing.totalMonthlyBudget": {
+        "label": "author estimate from component costs",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "housing.studioRentMonthly": {
+        "label": "author estimate (local listings)",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "overview.safetyRating": {
+        "label": "Numbeo Safety Index",
+        "url": "https://www.numbeo.com/crime/",
+        "retrievedDate": "2026-07-02"
+      },
+      "distances.toParisMins": {
+        "label": "SNCF TGV timetable",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "distances.airportMins": {
+        "label": "airport shuttle train estimate",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      }
+    }
   },
   {
     "slug": "nantes",
@@ -903,8 +1351,72 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-06-30",
-    "editorNote": "Nantes has spent the last 15 years building a reputation as France's most creative city, anchored by Les Machines de l'Île — a permanent installation of giant mechanical animals built on the site of the old shipyards, including a working 12-metre mechanical elephant that walks visitors around the island. It sounds absurd; it's become one of France's most-visited cultural attractions. The creative economy is real: digital agencies, game studios, and design firms cluster in the former industrial districts, and the graduate retention rate is high. Nantes is also Jules Verne's birthplace — the Jules Verne Museum is worth an afternoon. Paris is 2h10 by TGV, cheap enough for regular trips, far enough to feel like a different city."
+    "lastUpdated": "2026-07-02",
+    "editorNote": "Nantes has spent the last 15 years building a reputation as France's most creative city, anchored by Les Machines de l'Île — a permanent installation of giant mechanical animals built on the site of the old shipyards, including a working 12-metre mechanical elephant that walks visitors around the island. It sounds absurd; it's become one of France's most-visited cultural attractions. The creative economy is real: digital agencies, game studios, and design firms cluster in the former industrial districts, and the graduate retention rate is high. Nantes is also Jules Verne's birthplace — the Jules Verne Museum is worth an afternoon. Paris is 2h10 by TGV, cheap enough for regular trips, far enough to feel like a different city.",
+    "faq": [
+      {
+        "q": "Do I need a French guarantor to rent in Nantes?",
+        "a": "Usually yes — most landlords ask for a French guarantor. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+      },
+      {
+        "q": "Which Nantes neighbourhood is best for international students?",
+        "a": "Bouffay is central and lively but competitive; Hauts-Pavés and Zola offer good tram links and more reasonable rents. Doulon is among the cheaper options."
+      },
+      {
+        "q": "Is Nantes good for careers and internships?",
+        "a": "Yes — Nantes combines a growing startup scene with major employers like Airbus and Naval Group, and it consistently ranks among France's most liveable cities, so students rarely feel they've traded opportunity for affordability."
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Bouffay",
+        "blurb": "The medieval core — cobbled, central and full of nightlife; desirable but in high demand."
+      },
+      {
+        "name": "Hauts-Pavés",
+        "blurb": "Residential and well-connected north of the centre, popular with students and young families."
+      },
+      {
+        "name": "Zola",
+        "blurb": "West of the centre with good tram links and reasonable rents — practical and calm."
+      },
+      {
+        "name": "Doulon",
+        "blurb": "An eastern residential area with some of the more affordable rents while staying tram-connected."
+      }
+    ],
+    "distances": {
+      "toParisMins": 125,
+      "nearestAirport": "Nantes Atlantique (NTE)",
+      "airportMins": 20
+    },
+    "sources": {
+      "housing.totalMonthlyBudget": {
+        "label": "author estimate from component costs",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "housing.studioRentMonthly": {
+        "label": "author estimate (local listings)",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "overview.safetyRating": {
+        "label": "Numbeo Safety Index",
+        "url": "https://www.numbeo.com/crime/",
+        "retrievedDate": "2026-07-02"
+      },
+      "distances.toParisMins": {
+        "label": "SNCF TGV timetable",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "distances.airportMins": {
+        "label": "airport shuttle estimate",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      }
+    }
   },
   {
     "slug": "grenoble",
@@ -1010,8 +1522,72 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-06-30",
-    "editorNote": "Grenoble's defining feature is physical: the city sits in a flat valley floor entirely surrounded by three mountain ranges (Belledonne, Vercors, Chartreuse), all visible from every street. The ski resorts are 45 minutes away by bus; the hiking trails start at the city's edge. The research ecosystem here is out of all proportion to the city's size — the CEA (Atomic Energy Commission), CNRS, ESRF (the most powerful synchrotron in Europe), and STMicroelectronics all operate major facilities here. Grenoble has the highest concentration of researchers per capita of any city in France, which creates an unusually international and intellectually intense campus atmosphere. If cost is your primary constraint and STEM is your field, Grenoble is the clearest value case on this entire site."
+    "lastUpdated": "2026-07-02",
+    "editorNote": "Grenoble's defining feature is physical: the city sits in a flat valley floor entirely surrounded by three mountain ranges (Belledonne, Vercors, Chartreuse), all visible from every street. The ski resorts are 45 minutes away by bus; the hiking trails start at the city's edge. The research ecosystem here is out of all proportion to the city's size — the CEA (Atomic Energy Commission), CNRS, ESRF (the most powerful synchrotron in Europe), and STMicroelectronics all operate major facilities here. Grenoble has the highest concentration of researchers per capita of any city in France, which creates an unusually international and intellectually intense campus atmosphere. If cost is your primary constraint and STEM is your field, Grenoble is the clearest value case on this entire site.",
+    "faq": [
+      {
+        "q": "Do I need a French guarantor to rent in Grenoble?",
+        "a": "Usually yes — most landlords ask for a French guarantor. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+      },
+      {
+        "q": "Which Grenoble neighbourhood is best for international students?",
+        "a": "Centre Ville and Championnet are central and lively, while Villeneuve offers the cheapest rents with tram access. Ile Verte is calm and scenic if you prefer quiet."
+      },
+      {
+        "q": "Is Grenoble a good choice for engineering students?",
+        "a": "Excellent — Grenoble is a leading European hub for engineering, physics and tech, home to major research institutes and a strong internship pipeline. It's also France's most affordable major student city and sits right at the foot of the Alps for skiing and hiking."
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Centre Ville",
+        "blurb": "Compact and walkable with the mountains as a backdrop; central and lively but pricier."
+      },
+      {
+        "name": "Ile Verte",
+        "blurb": "Green, calm and scenic by the Isère with mountain views — a pleasant residential pick."
+      },
+      {
+        "name": "Championnet",
+        "blurb": "A sought-after central-south area with markets and cafes, popular with students and academics."
+      },
+      {
+        "name": "Villeneuve",
+        "blurb": "One of the most affordable districts, south of the centre with tram access — budget-friendly."
+      }
+    ],
+    "distances": {
+      "toParisMins": 180,
+      "nearestAirport": "Lyon-Saint-Exupéry (LYS)",
+      "airportMins": 60
+    },
+    "sources": {
+      "housing.totalMonthlyBudget": {
+        "label": "author estimate from component costs",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "housing.studioRentMonthly": {
+        "label": "author estimate (local listings)",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "overview.safetyRating": {
+        "label": "Numbeo Safety Index",
+        "url": "https://www.numbeo.com/crime/",
+        "retrievedDate": "2026-07-02"
+      },
+      "distances.toParisMins": {
+        "label": "SNCF TGV timetable",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "distances.airportMins": {
+        "label": "coach to Lyon-Saint-Exupéry estimate",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      }
+    }
   },
   {
     "slug": "rennes",
@@ -1118,8 +1694,72 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-06-30",
-    "editorNote": "Rennes carries a strong Breton identity that sets it apart from the rest of France — Celtic music sessions in bars on Thursday nights, Breton-language signs alongside French, and a food culture built around galettes (buckwheat crêpes) and local cider. The medieval old town, with its half-timbered houses around Place Saint-Anne, survived WWII largely intact. The emerging specialism worth noting: Rennes has quietly become France's leading city for cybersecurity and digital defence, with the Cyber Campus Bretagne and a cluster of defence-tech companies around the Beaulieu technology park. If you're studying computer science or cybersecurity, the internship market here is more targeted and less competitive than Paris. Les Transmusicales festival every December is one of Europe's best new-music discovery events."
+    "lastUpdated": "2026-07-02",
+    "editorNote": "Rennes carries a strong Breton identity that sets it apart from the rest of France — Celtic music sessions in bars on Thursday nights, Breton-language signs alongside French, and a food culture built around galettes (buckwheat crêpes) and local cider. The medieval old town, with its half-timbered houses around Place Saint-Anne, survived WWII largely intact. The emerging specialism worth noting: Rennes has quietly become France's leading city for cybersecurity and digital defence, with the Cyber Campus Bretagne and a cluster of defence-tech companies around the Beaulieu technology park. If you're studying computer science or cybersecurity, the internship market here is more targeted and less competitive than Paris. Les Transmusicales festival every December is one of Europe's best new-music discovery events.",
+    "faq": [
+      {
+        "q": "Do I need a French guarantor to rent in Rennes?",
+        "a": "Usually yes — most landlords ask for a French guarantor. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+      },
+      {
+        "q": "Which Rennes neighbourhood is best for international students?",
+        "a": "Villejean and Beaulieu sit next to the main campuses and offer cheaper rents, while Centre Ville and Thabor are more central and desirable. The metro links them all quickly."
+      },
+      {
+        "q": "Is Rennes good for tech and cybersecurity careers?",
+        "a": "Yes — Rennes has a strong digital and cybersecurity cluster and consistently ranks among the most liveable cities in France, with a large student population and quick 1h30 TGV access to Paris."
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Centre Ville",
+        "blurb": "Historic, walkable and buzzing with one of France's liveliest student nightlife scenes; central and in demand."
+      },
+      {
+        "name": "Thabor",
+        "blurb": "Elegant and green around the beautiful Thabor gardens — a desirable, calmer address."
+      },
+      {
+        "name": "Villejean",
+        "blurb": "Home to the Rennes 2 campus with metro access — student-dense and among the cheaper options."
+      },
+      {
+        "name": "Beaulieu",
+        "blurb": "The main science-campus area east of the centre, practical for students at Rennes 1."
+      }
+    ],
+    "distances": {
+      "toParisMins": 90,
+      "nearestAirport": "Rennes–Saint-Jacques (RNS)",
+      "airportMins": 15
+    },
+    "sources": {
+      "housing.totalMonthlyBudget": {
+        "label": "author estimate from component costs",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "housing.studioRentMonthly": {
+        "label": "author estimate (local listings)",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "overview.safetyRating": {
+        "label": "Numbeo Safety Index",
+        "url": "https://www.numbeo.com/crime/",
+        "retrievedDate": "2026-07-02"
+      },
+      "distances.toParisMins": {
+        "label": "SNCF TGV timetable",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "distances.airportMins": {
+        "label": "airport shuttle estimate",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      }
+    }
   },
   {
     "slug": "aix-en-provence",
@@ -1213,8 +1853,72 @@
       "notableStatus": "Birthplace of Paul Cézanne; 17th-century Provençal architecture along Cours Mirabeau; surrounded by lavender fields and Sainte-Victoire mountain",
       "languageBarrier": "Low-moderate — significant English-speaking expat and tourist presence; French still essential for daily life and admin"
     },
-    "lastUpdated": "2026-06-30",
-    "editorNote": "Aix is one of the few French cities where the physical environment — the light, the plane trees along Cours Mirabeau, the Sainte-Victoire mountain visible from the périphérique — becomes part of daily life in a way that's hard to overstate. Cézanne painted Sainte-Victoire over 80 times; the Cézanne trail around the city visits his studio and the landscapes he returned to obsessively. Practically: Aix is small (145,000 residents) and genuinely walkable — no student here is more than 20 minutes on foot from the centre. Marseille is 30 minutes by bus (€3 one-way), which effectively doubles your job market and cultural options while letting you live in a calmer, safer city. The trade-off is that Aix itself has limited industry — most careers requiring scale will pull you toward Marseille or further afield after graduation."
+    "lastUpdated": "2026-07-02",
+    "editorNote": "Aix is one of the few French cities where the physical environment — the light, the plane trees along Cours Mirabeau, the Sainte-Victoire mountain visible from the périphérique — becomes part of daily life in a way that's hard to overstate. Cézanne painted Sainte-Victoire over 80 times; the Cézanne trail around the city visits his studio and the landscapes he returned to obsessively. Practically: Aix is small (145,000 residents) and genuinely walkable — no student here is more than 20 minutes on foot from the centre. Marseille is 30 minutes by bus (€3 one-way), which effectively doubles your job market and cultural options while letting you live in a calmer, safer city. The trade-off is that Aix itself has limited industry — most careers requiring scale will pull you toward Marseille or further afield after graduation.",
+    "faq": [
+      {
+        "q": "Do I need a French guarantor to rent in Aix-en-Provence?",
+        "a": "Usually yes, and Aix's small, premium market makes landlords selective. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+      },
+      {
+        "q": "Which Aix-en-Provence neighbourhood is best for international students?",
+        "a": "The old-town streets around Cours Mirabeau and Mazarin are beautiful but expensive; Les Allées and Jas de Bouffan offer more affordable rents a little further out."
+      },
+      {
+        "q": "Is Aix-en-Provence worth the premium pricing?",
+        "a": "It makes most sense if Sciences Po Aix or KEDGE is your target. Aix is small, charming and pricey, but Marseille — with its bigger job market and international airport — is just 30 minutes away, which widens your options."
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Cours Mirabeau",
+        "blurb": "The grand plane-tree avenue at the city's heart — beautiful, central and the priciest place to live."
+      },
+      {
+        "name": "Mazarin",
+        "blurb": "The elegant 17th-century quarter just south of the Cours — refined, central and expensive."
+      },
+      {
+        "name": "Les Allées",
+        "blurb": "A more modern shopping-and-residential area near the centre with better value than the old town."
+      },
+      {
+        "name": "Jas de Bouffan",
+        "blurb": "A residential district west of the centre offering Aix's more affordable rents, with bus links."
+      }
+    ],
+    "distances": {
+      "toParisMins": 190,
+      "nearestAirport": "Marseille Provence (MRS)",
+      "airportMins": 30
+    },
+    "sources": {
+      "housing.totalMonthlyBudget": {
+        "label": "author estimate from component costs",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "housing.studioRentMonthly": {
+        "label": "author estimate (local listings)",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "overview.safetyRating": {
+        "label": "Numbeo Safety Index",
+        "url": "https://www.numbeo.com/crime/",
+        "retrievedDate": "2026-07-02"
+      },
+      "distances.toParisMins": {
+        "label": "SNCF TGV timetable",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "distances.airportMins": {
+        "label": "airport shuttle bus estimate",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      }
+    }
   },
   {
     "slug": "nice",
@@ -1327,7 +2031,71 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-06-30",
-    "editorNote": "Nice's student experience is shaped by proximity to things that don't exist anywhere else in France: Monaco is 20 minutes by train (useful for finance and luxury sector internships), Italy is 40 minutes, and Sophia Antipolis — Europe's largest technology park, home to Microsoft, SAP, and 2,400 other companies — is 30 minutes by bus. The Promenade des Anglais and the Vieux-Nice neighbourhood (narrow Baroque lanes, Niçoise markets, socca flatbread from street stalls) make the city genuinely exceptional to live in. The cost is real: Nice is the most expensive city on this list, and the gap with Grenoble or Toulouse is significant over a full academic year. It makes most sense for students in business, tourism, digital, or luxury industries who can convert the location into internship and network access that justifies the premium."
+    "lastUpdated": "2026-07-02",
+    "editorNote": "Nice's student experience is shaped by proximity to things that don't exist anywhere else in France: Monaco is 20 minutes by train (useful for finance and luxury sector internships), Italy is 40 minutes, and Sophia Antipolis — Europe's largest technology park, home to Microsoft, SAP, and 2,400 other companies — is 30 minutes by bus. The Promenade des Anglais and the Vieux-Nice neighbourhood (narrow Baroque lanes, Niçoise markets, socca flatbread from street stalls) make the city genuinely exceptional to live in. The cost is real: Nice is the most expensive city on this list, and the gap with Grenoble or Toulouse is significant over a full academic year. It makes most sense for students in business, tourism, digital, or luxury industries who can convert the location into internship and network access that justifies the premium.",
+    "faq": [
+      {
+        "q": "Do I need a French guarantor to rent in Nice?",
+        "a": "Usually yes, and rents run high with strong seasonal demand on the Riviera, so start early. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+      },
+      {
+        "q": "Which Nice neighbourhood is best for international students?",
+        "a": "Libération is central and better value than the seafront, while Madeleine and Riquier offer cheaper rents a little further out. The tram makes most of the city easy to reach."
+      },
+      {
+        "q": "Is Nice a good choice despite the high cost?",
+        "a": "If you're targeting SKEMA or EDHEC and value the Riviera lifestyle, yes — but Nice is among the most expensive French student cities, so budget at least €2,000/month including rent and factor in higher seasonal prices."
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Libération",
+        "blurb": "Around the lively Libération market and tram line — authentic, central and better value than the seafront."
+      },
+      {
+        "name": "Musiciens",
+        "blurb": "A central residential grid near the centre and beach; convenient but priced for the location."
+      },
+      {
+        "name": "Madeleine",
+        "blurb": "A hillside residential area west of the centre offering more affordable rents with bus links."
+      },
+      {
+        "name": "Riquier",
+        "blurb": "An eastern district near the port — one of the cheaper central-ish options, improving steadily."
+      }
+    ],
+    "distances": {
+      "toParisMins": 330,
+      "nearestAirport": "Nice Côte d'Azur (NCE)",
+      "airportMins": 20
+    },
+    "sources": {
+      "housing.totalMonthlyBudget": {
+        "label": "author estimate from component costs",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "housing.studioRentMonthly": {
+        "label": "author estimate (local listings)",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "overview.safetyRating": {
+        "label": "Numbeo Safety Index",
+        "url": "https://www.numbeo.com/crime/",
+        "retrievedDate": "2026-07-02"
+      },
+      "distances.toParisMins": {
+        "label": "SNCF TGV timetable",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      },
+      "distances.airportMins": {
+        "label": "tram line 2 estimate",
+        "retrievedDate": "2026-07-02",
+        "estimated": true
+      }
+    }
   }
 ]

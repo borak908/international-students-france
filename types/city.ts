@@ -73,6 +73,29 @@ export interface SchoolRanking {
   note: string | null
 }
 
+export interface FaqItem {
+  q: string
+  a: string
+}
+
+export interface Neighborhood {
+  name: string
+  blurb: string
+}
+
+export interface Distances {
+  toParisMins: number | null
+  nearestAirport: string
+  airportMins: number
+}
+
+export interface FieldSource {
+  label: string
+  url?: string
+  retrievedDate: string
+  estimated?: boolean
+}
+
 export interface City {
   slug: string
   name: string
@@ -88,6 +111,10 @@ export interface City {
   workVisa: WorkVisa
   cityLife: CityLife
   rankings?: SchoolRanking[]
+  faq?: FaqItem[]
+  neighborhoods?: Neighborhood[]
+  distances?: Distances
+  sources?: Record<string, FieldSource>
   editorNote?: string
   lastUpdated: string
 }

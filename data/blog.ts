@@ -79,48 +79,48 @@ International students often compare France to their home countries and conclude
 
 Here's what the data actually shows across the 12 cities we track.
 
-> The totals below assume your own studio (studio rent + living costs). Our individual city pages quote an all-in budget based on shared/colocation housing instead, which runs roughly €600–750/month lower. Same data, two housing assumptions — pick the one that matches how you plan to live.
+> The totals below assume your own studio (studio rent + living costs). Our individual city pages quote an all-in budget based on shared/colocation housing instead, which runs roughly €200–480/month lower. Same data, two housing assumptions — pick the one that matches how you plan to live.
 
 ## The cheapest cities: where your money goes furthest
 
-**[Grenoble](/cities/grenoble) — Total ~€1,420/month (studio + living)**
+**[Grenoble](/cities/grenoble) — Total ~€1,000/month (studio + living)**
 Grenoble is the most affordable major student city in France. Studio rents average €620/month, and living costs are among the lowest of any French university city. The transport pass is €35/month. What you're trading: Grenoble is smaller, the winters are cold, and the job market is concentrated in engineering and tech. But if that's your field, it's genuinely exceptional value.
 
-**[Rennes](/cities/rennes) — Total ~€1,450/month**
-Rennes consistently ranks as one of the most liveable cities in France, and the prices reflect a city that doesn't need to oversell itself. Rent at €630/month for a studio, living costs around €820/month excluding rent. Strong digital and cybersecurity sector if that's your career path.
+**[Rennes](/cities/rennes) — Total ~€1,030/month**
+Rennes consistently ranks as one of the most liveable cities in France, and the prices reflect a city that doesn't need to oversell itself. Rent at €630/month for a studio, living costs around €400/month excluding rent. Strong digital and cybersecurity sector if that's your career path.
 
-**[Nantes](/cities/nantes) — Total ~€1,550/month**
+**[Nantes](/cities/nantes) — Total ~€1,100/month**
 Nantes sits in a sweet spot: major enough to have real career opportunities (Airbus, Naval Group, a growing startup scene), affordable enough that students aren't stressed about money every month. The €650/month studio rent is among the lowest for a city of this size.
 
-**[Montpellier](/cities/montpellier) — Total ~€1,580/month**
+**[Montpellier](/cities/montpellier) — Total ~€1,130/month**
 Montpellier has something no other French city can offer: **completely free public transport** for residents of the metropolitan area. Students with a local address pay nothing for buses and trams. With studio rents at €700/month and Mediterranean sunshine included, it's exceptional value. The safety rating is lower than average — something to factor in.
 
-**[Lille](/cities/lille) — Total ~€1,613/month**
+**[Lille](/cities/lille) — Total ~€1,140/month**
 Often overlooked because it's in the north, Lille is one of France's great student cities. The student transport pass is just €30/month, food costs are low, and the social scene is disproportionately good for the price. The Eurostar connection to London is useful if you have family or internship interests in the UK.
 
 ## The middle tier
 
-**[Toulouse](/cities/toulouse) — Total ~€1,650/month**
+**[Toulouse](/cities/toulouse) — Total ~€1,200/month**
 Toulouse costs slightly more than the cities above but delivers significantly more for it: France's #1 ranked student city in 2025, 120,000+ students, and Airbus, Thales, and Safran all headquartered here for internships. The value-for-money ratio is strong.
 
-**[Strasbourg](/cities/strasbourg) — Total ~€1,670/month**
+**[Strasbourg](/cities/strasbourg) — Total ~€1,220/month**
 Strasbourg is priced fairly for what it offers: a genuinely European city with EU institutions, a prestigious university, and exceptional cycling infrastructure.
 
 ## The expensive tier
 
-**[Bordeaux](/cities/bordeaux) — Total ~€1,830/month**
+**[Bordeaux](/cities/bordeaux) — Total ~€1,320/month**
 Bordeaux is beautiful and the social scene is excellent, but prices have risen sharply over the past five years as the city became fashionable. Budget carefully.
 
-**[Lyon](/cities/lyon) — Total ~€1,902/month**
+**[Lyon](/cities/lyon) — Total ~€1,350/month**
 Lyon's costs are justified by its career opportunities and quality of life, but it's firmly in the expensive bracket. The CAF housing benefit helps.
 
-**[Aix-en-Provence](/cities/aix-en-provence) — Total ~€1,950/month**
+**[Aix-en-Provence](/cities/aix-en-provence) — Total ~€1,400/month**
 Small city, Provençal charm, premium pricing. Only makes financial sense if Sciences Po Aix or KEDGE is your specific target.
 
-**[Nice](/cities/nice) — Total ~€2,080/month**
-Nice is stunning and the international business school scene (SKEMA, EDHEC) is excellent, but the cost is real. Budget at least €2,000/month including rent.
+**[Nice](/cities/nice) — Total ~€1,470/month**
+Nice is stunning and the international business school scene (SKEMA, EDHEC) is excellent, but the cost is real. Budget at least €1,500/month for your own studio including rent.
 
-**[Paris](/cities/paris) — Total ~€2,294/month**
+**[Paris](/cities/paris) — Total ~€1,680/month**
 Paris is the outlier. Studio rents averaging €1,230/month make it nearly twice as expensive as Grenoble for housing alone. The career and cultural upside is real — but so is the financial pressure.
 
 ## The number that matters most: total monthly cost
