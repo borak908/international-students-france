@@ -127,7 +127,7 @@ Paris is the outlier. Studio rents averaging €1,230/month make it nearly twice
 
 When comparing cities, the mistake students make is comparing rent alone. Transport, food prices, and social life costs vary significantly. Use our [budget planner](/budget-planner) to model your actual monthly cost in any city, including your specific accommodation choice.
 
-The data is clear: for most students, choosing a cheaper city over Paris or Nice frees up €400–800/month — money that could fund travel, savings, or a much higher quality of life.`,
+The data is clear: for most students, choosing a cheaper city over Paris or Nice frees up €400–700/month — money that could fund travel, savings, or a much higher quality of life.`,
   },
   {
     slug: 'paris-vs-bordeaux-international-students',
@@ -145,9 +145,9 @@ Let me break it down honestly.
 
 ## Cost: the numbers are stark
 
-**Paris** averages **€1,230/month for a studio** in the city. Add living costs of ~€1,064/month and you're looking at over €2,200/month before you've bought a single coffee. The student transport pass (Navigo) is €32.80/month, which is actually reasonable, but it's one of the few affordable things in the city.
+**Paris** averages **€1,230/month for a studio** in the city. Add day-to-day living costs and you're looking at around **€1,680/month** all-in for your own place, before you've bought a single coffee. The student transport pass (Navigo) is €32.80/month, which is actually reasonable, but it's one of the few affordable things in the city.
 
-**Bordeaux** averages **€850/month for a studio**. Total monthly costs including living expenses come in around €1,830/month — roughly €400 less than Paris every month, or nearly €5,000/year. Over a two-year master's, that's €10,000 in your pocket versus Paris.
+**Bordeaux** averages **€850/month for a studio**. All-in with living expenses, total monthly costs come in around **€1,320/month** — roughly €360 less than Paris every month, or about €4,300/year. Over a two-year master's, that's nearly €9,000 in your pocket versus Paris.
 
 Both cities qualify for the same CAF housing benefit (€100–300/month) and the same €178/year EU tuition or €2,895/year non-EU tuition at public universities.
 
