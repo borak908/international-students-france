@@ -459,7 +459,7 @@
       ]
     },
     "transport": {
-      "studentPassMonthly": 34,
+      "studentPassMonthly": 25,
       "regularPassMonthly": 72.3,
       "airportConnection": "Lyon-Saint-Exupéry; TGV to Paris 2 hrs",
       "bikeFriendly": true,
@@ -498,38 +498,102 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-07-02",
+    "lastUpdated": "2026-07-03",
     "editorNote": "Lyon rewards students who arrive curious about food — the city takes gastronomy seriously at every price point, not just in Michelin-starred restaurants. Bouchons (traditional Lyonnais bistros) serve full weekday lunches for €12–15, and the Saturday market in Croix-Rousse — the old silk-workers' neighbourhood on the hill above the city — is one of the best farmers' markets in France. The city sits between two rivers (the Saône and the Rhône), which gives it an unusually pleasant cycling and running infrastructure along the quays. Lyon's growing biotech and digital cluster (Lyon French Tech) means the internship pipeline, especially in life sciences and software, is increasingly competitive with Paris.",
     "faq": [
       {
-        "q": "Do I need a French guarantor to rent in Lyon?",
-        "a": "Usually yes — most Lyon landlords require a French guarantor. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+        "q": "Which neighborhoods do international students in Lyon actually live in?",
+        "a": "Most cluster in the 7th arrondissement — La Guillotière and Jean Macé — because it sits between Lyon 2 and Lyon 3 and is the cheapest central area, full of bars, markets and international grocers. Croix-Rousse (4th) draws those who want village character and canut apartments over convenience, while Villeurbanne, just east, gives Lyon 1 and INSA students more space for less. Part-Dieu suits anyone prioritising the TGV commute.",
+        "sourceUrl": "https://www.myenglishsister.com/post/where-to-live-in-lyon-a-simple-guide-to-the-different-neighbourhoods-of-lyon"
       },
       {
-        "q": "Which Lyon neighbourhood is best for students?",
-        "a": "Croix-Rousse and Guillotière are the classic student areas — walkable, lively and close to campuses. Villeurbanne is cheaper and well-connected, while Part-Dieu is central but more corporate and pricier."
+        "q": "How much does a studio cost to rent in Lyon?",
+        "a": "Studios typically run in the mid-hundreds of euros a month before CAF housing aid, with the 7th and Villeurbanne cheaper than the Presqu'île or the 6th. Because student demand for housing is high, small flats let quickly — start your search early.",
+        "sourceUrl": null,
+        "flags": {
+          "studioPrice": "needs SeLoger/LocService Lyon studio median; keep prose hedged, no hard number"
+        }
       },
       {
-        "q": "How affordable is food in Lyon on a student budget?",
-        "a": "Very. CROUS student restaurants serve full hot meals for €3.30, and the Croix-Rousse and Guillotière markets are cheap and excellent. Expect roughly €220/month on groceries if you cook most days."
+        "q": "How much is a student public-transport pass in Lyon?",
+        "a": "Lyon's network is run by TCL, and reduced monthly passes for under-26s run around €25 — among the cheaper big-city fares in France. TCL revises tariffs each year, so check the current youth/student rate on TCL directly before you subscribe.",
+        "sourceUrl": "https://www.tcl.fr/en/tickets-fares/fares",
+        "flags": {
+          "fare": "verify live under-26/student monthly figure on tcl.fr; ~€25 as of 2026, revised annually"
+        }
+      },
+      {
+        "q": "How long does it take to get from Lyon to Paris?",
+        "a": "Direct TGVs link Lyon (Part-Dieu and Perrache) to Paris Gare de Lyon in under two hours, with departures roughly every 30–60 minutes — a big reason Lyon works as a base with easy weekend access to the capital.",
+        "sourceUrl": null,
+        "flags": {
+          "timeByTrain": "add live SNCF Connect Lyon Part-Dieu→Paris Gare de Lyon link in-browser"
+        }
+      },
+      {
+        "q": "Is Lyon a good city for international students?",
+        "a": "Lyon is France's second-largest student city, with around 190,000 students across Lyon 1 (sciences, medicine), Lyon 2 (humanities, social sciences), Lyon 3 (law, business), INSA and emlyon. It pairs big-city academic breadth with lower costs than Paris, a UNESCO-listed centre, and a two-hour TGV to the capital.",
+        "sourceUrl": null,
+        "flags": {
+          "studentCount": "needs Université de Lyon / lyoncampus.com official student-population figure (~190,000)"
+        }
+      },
+      {
+        "q": "Is Lyon safe for international students, including at night?",
+        "a": "Lyon is generally safe for students, and the central, well-lit areas — Presqu'île, Bellecour and the 6th around Foch — are comfortable to walk at night. As in any big city, stay more alert late around Part-Dieu station and parts of La Guillotière near Place Gabriel Péri, watch for pickpockets on Métro line D and in busy squares, and stick to the well-frequented Berges du Rhône rather than empty side streets after dark. Weekend TCL services run reliably into the early hours.",
+        "sourceUrl": null
+      },
+      {
+        "q": "What's the student social life and nightlife like in Lyon?",
+        "a": "Student social life centres on the Berges du Rhône riverbanks and the péniches (barge bars) moored along them, especially in warmer months. La Guillotière and the slopes of the Croix-Rousse (the 'Pentes') carry the cheap-bar and gig-night scene, while the Presqu'île covers bigger nights out and shopping. Food is a real part of it too — traditional bouchons and the Halles Paul Bocuse food market are Lyon institutions worth the occasional student splurge.",
+        "sourceUrl": null
+      },
+      {
+        "q": "Can I manage in Lyon with only English, or do I need French?",
+        "a": "You can get started in English — many Master's programmes at emlyon, INSA and the public universities are taught in English, and international-facing services will usually cope. But Lyon is less anglophone than Paris day to day: administrative steps (CAF, bank, prefecture, doctors) and most casual interactions run in French, and landlords often expect it. Even basic French makes finding a flat, a part-time job and local friends dramatically easier, so it's worth building from day one.",
+        "sourceUrl": null
       }
     ],
     "neighborhoods": [
       {
-        "name": "Croix-Rousse",
-        "blurb": "The old silk-weavers' hill above the centre — bohemian, walkable, with one of the best Saturday markets in France. Popular with students who want character over convenience."
+        "name": "La Guillotière (7th)",
+        "blurb": "Lyon's most student-dense quarter, wedged between Lyon 2 and Lyon 3 in the 7th. A dense cultural mix — North and West African grocers, Vietnamese and Middle-Eastern canteens, second-hand shops and cheap bars — around Métro D and several tram lines. The budget-friendly central option: lively and a little rough near Place Gabriel Péri, calmer toward Jean Macé.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "sourceUrl": "https://www.myenglishsister.com/post/where-to-live-in-lyon-a-simple-guide-to-the-different-neighbourhoods-of-lyon",
+        "flags": {
+          "avgRent": "needs Numbeo Lyon 7e or SeLoger/LocService studio rent index"
+        }
       },
       {
-        "name": "Guillotière",
-        "blurb": "Central, diverse and lively, wedged between the two universities. The cheapest central option and the most international in feel, though busier in patches."
+        "name": "Croix-Rousse (4th)",
+        "blurb": "The old silk-weavers' hill, 'the working hill.' Big, bright canut apartments with high ceilings and tall windows, a village-like plateau with one of France's best daily markets and a bohemian, mixed crowd. The catch is the topography: it's a climb served by Métro C and buses, and hauling furniture up the walk-ups is real work.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "sourceUrl": "https://www.vanupied.com/lyon/quartier-lyon/plateau-de-la-croix-rousse-a-lyon.html",
+        "flags": {
+          "avgRent": "needs Numbeo Lyon 4e or SeLoger studio rent index"
+        }
       },
       {
         "name": "Villeurbanne",
-        "blurb": "Technically its own city, immediately east of Lyon. Lower rents, strong metro links and a big student population around INSA and Lyon 1."
+        "blurb": "Technically its own city, immediately east of Lyon and home to Lyon 1 and INSA. Students come for more square metres per euro than central Lyon, a strong cultural scene (TNP theatre, music venues) and good tram/Métro A links via Charpennes and Gratte-Ciel. Rents run below the equivalent Lyon arrondissements.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "sourceUrl": "https://blog.lodgis.com/en/living-lyon-neighborhood/",
+        "flags": {
+          "avgRent": "needs Numbeo Villeurbanne or SeLoger rent index"
+        }
       },
       {
-        "name": "Part-Dieu",
-        "blurb": "The business district around the TGV station — modern, central and convenient for commuting, but pricier and less charming than the older quarters."
+        "name": "Part-Dieu (3rd)",
+        "blurb": "Lyon's business district and main TGV hub. Modern, central and unbeatable for commuting — a Paris train in minutes — with the giant Part-Dieu mall on your doorstep. The pricier, less atmospheric choice: towers and offices over old-quarter charm, but convenient if connectivity beats character.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "sourceUrl": "https://blog.lodgis.com/en/living-lyon-neighborhood/",
+        "flags": {
+          "avgRent": "needs Numbeo Lyon 3e or SeLoger rent index"
+        }
       }
     ],
     "distances": {
@@ -537,6 +601,35 @@
       "nearestAirport": "Lyon-Saint-Exupéry (LYS)",
       "airportMins": 30
     },
+    "travelTimes": [
+      {
+        "destination": "Paris",
+        "timeByTrain": "~1h57 (under 2 hours)",
+        "timeByCar": "~4h40",
+        "sourceUrl": null,
+        "flags": {
+          "sourceUrl": "add live SNCF Connect (train) / ViaMichelin (car) links in-browser"
+        }
+      },
+      {
+        "destination": "Geneva",
+        "timeByTrain": "~1h50",
+        "timeByCar": "~1h40",
+        "sourceUrl": null,
+        "flags": {
+          "sourceUrl": "add live SNCF Connect (train) / ViaMichelin (car) links in-browser"
+        }
+      },
+      {
+        "destination": "Marseille",
+        "timeByTrain": "~1h40 (direct TGV)",
+        "timeByCar": "~3h05",
+        "sourceUrl": null,
+        "flags": {
+          "sourceUrl": "add live SNCF Connect (train) / ViaMichelin (car) links in-browser"
+        }
+      }
+    ],
     "sources": {
       "housing.totalMonthlyBudget": {
         "label": "author estimate from component costs",

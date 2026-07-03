@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import cities from '@/data/cities.json'
-import type { City } from '@/types/city'
+import type { City, FaqItem } from '@/types/city'
 import RelatedCities from '@/components/RelatedCities'
 import NewsletterSignup from '@/components/NewsletterSignup'
 
@@ -127,7 +127,7 @@ function TempBadge({ label, tempC }: { label: string; tempC: number }) {
 }
 
 // ── FAQ section (visible content — mirrors FAQPage JSON-LD) ─────────────────────
-function FAQSection({ items }: { items: { q: string; a: string }[] }) {
+function FAQSection({ items }: { items: FaqItem[] }) {
   return (
     <Section id="faq" emoji="❓" title="Frequently Asked Questions">
       <div className="space-y-3">
@@ -141,6 +141,16 @@ function FAQSection({ items }: { items: { q: string; a: string }[] }) {
               <span className="text-stone-300 group-open:rotate-180 transition-transform flex-shrink-0">▾</span>
             </summary>
             <p className="text-sm text-stone-600 leading-relaxed mt-3">{f.a}</p>
+            {f.sourceUrl && (
+              <a
+                href={f.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-2 text-xs text-stone-400 hover:text-[#1E3A6E] underline"
+              >
+                Source ↗
+              </a>
+            )}
           </details>
         ))}
       </div>
@@ -227,11 +237,19 @@ export default function CityPage({ params }: { params: { slug: string } }) {
       (sharedBudget - sharedRoomMidpoint(city.housing.sharedRoomMonthly) + city.housing.studioRentMonthly) / 10
     ) * 10
 
+  // Studio rent is stated as a hard figure ONLY when its sources entry carries a real url.
+  // Estimated-only fields (no url / no entry) fall back to a hedged phrase, so an unsourced
+  // number never reaches the visible FAQ or the FAQPage JSON-LD. General across all cities.
+  const studioRentSourceUrl = city.sources?.['housing.studioRentMonthly']?.url
+  const studioClause = studioRentSourceUrl
+    ? `Studio apartments average €${city.housing.studioRentMonthly}/month and shared rooms ${city.housing.sharedRoomMonthly}/month`
+    : `Studio rents run in the mid-hundreds per month, with shared rooms notably cheaper`
+
   // Single source of truth — feeds BOTH the visible FAQ section and the FAQPage JSON-LD
-  const faqItems: { q: string; a: string }[] = [
+  const faqItems: FaqItem[] = [
     {
       q: `How much does it cost to live in ${city.name} as a student?`,
-      a: `Budget roughly €${sharedBudget}/month sharing an apartment (colocation), or around €${studioBudget}/month for your own studio. Both figures include rent, food, transport, and daily expenses. Studio apartments average €${city.housing.studioRentMonthly}/month and shared rooms ${city.housing.sharedRoomMonthly}/month; CAF housing aid of ${city.housing.cafAidMonthly} is available for eligible students.`,
+      a: `Budget roughly €${sharedBudget}/month sharing an apartment (colocation), or around €${studioBudget}/month for your own studio. Both figures include rent, food, transport, and daily expenses. ${studioClause}; CAF housing aid of ${city.housing.cafAidMonthly} is available for eligible students.`,
     },
     {
       q: `What are the best universities in ${city.name} for international students?`,
@@ -247,7 +265,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
     },
     // City-specific questions authored per city (unique long-tail content)
     ...(city.faq ?? []),
-  ]
+  ].filter((f) => f.a?.trim())
 
   // Top 3 budget-nearest cities for the sidebar (excluding self)
   const sidebarCities = cityData
@@ -474,7 +492,19 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {city.neighborhoods.map((n) => (
                       <div key={n.name} className="bg-white rounded-xl border border-stone-100 p-4">
-                        <p className="text-sm font-semibold text-[#1E3A6E] mb-1">{n.name}</p>
+                        <div className="flex items-center gap-2 mb-1 flex-wrap">
+                          <p className="text-sm font-semibold text-[#1E3A6E]">{n.name}</p>
+                          {n.studentFriendly && (
+                            <span className="text-[10px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-1.5 py-0.5 rounded-full leading-none">
+                              Student-friendly
+                            </span>
+                          )}
+                          {n.avgRent && (
+                            <span className="text-[10px] font-medium text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded-full leading-none">
+                              {n.avgRent}
+                            </span>
+                          )}
+                        </div>
                         <p className="text-xs text-stone-600 leading-relaxed">{n.blurb}</p>
                       </div>
                     ))}
@@ -644,6 +674,24 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                   </>
                 )}
               </div>
+              {city.travelTimes && city.travelTimes.some((t) => t.timeByTrain || t.timeByCar) && (
+                <div className="mt-5">
+                  <h3 className="text-sm font-semibold text-stone-700 mb-3">Getting to other cities</h3>
+                  <div className="bg-white rounded-xl border border-stone-100 px-5 divide-y divide-stone-100">
+                    {city.travelTimes
+                      .filter((t) => t.timeByTrain || t.timeByCar)
+                      .map((t) => (
+                        <div key={t.destination} className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 py-3">
+                          <span className="text-sm font-medium text-stone-700 sm:w-32 flex-shrink-0">{t.destination}</span>
+                          <span className="flex flex-wrap gap-x-5 gap-y-1 text-sm text-stone-600">
+                            {t.timeByTrain && <span>🚆 {t.timeByTrain}</span>}
+                            {t.timeByCar && <span>🚗 {t.timeByCar}</span>}
+                          </span>
+                        </div>
+                      ))}
+                  </div>
+                </div>
+              )}
             </Section>
 
             {/* 5 — Work & Visa */}

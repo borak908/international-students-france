@@ -76,17 +76,31 @@ export interface SchoolRanking {
 export interface FaqItem {
   q: string
   a: string
+  sourceUrl?: string | null
+  flags?: Record<string, string>
 }
 
 export interface Neighborhood {
   name: string
   blurb: string
+  studentFriendly?: boolean
+  avgRent?: string | null
+  sourceUrl?: string | null
+  flags?: Record<string, string>
 }
 
 export interface Distances {
   toParisMins: number | null
   nearestAirport: string
   airportMins: number
+}
+
+export interface DistanceEntry {
+  destination: string
+  timeByTrain: string | null
+  timeByCar: string | null
+  sourceUrl: string | null
+  flags?: Record<string, string>
 }
 
 export interface FieldSource {
@@ -114,6 +128,7 @@ export interface City {
   faq?: FaqItem[]
   neighborhoods?: Neighborhood[]
   distances?: Distances
+  travelTimes?: DistanceEntry[]
   sources?: Record<string, FieldSource>
   editorNote?: string
   lastUpdated: string
