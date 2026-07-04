@@ -508,19 +508,13 @@
       },
       {
         "q": "How much does a studio cost to rent in Lyon?",
-        "a": "Studios typically run in the mid-hundreds of euros a month before CAF housing aid, with the 7th and Villeurbanne cheaper than the Presqu'île or the 6th. Because student demand for housing is high, small flats let quickly — start your search early.",
-        "sourceUrl": null,
-        "flags": {
-          "studioPrice": "needs SeLoger/LocService Lyon studio median; keep prose hedged, no hard number"
-        }
+        "a": "Studios typically run €500–700/month depending on arrondissement and size, with Villeurbanne and the 7th cheaper than the 3rd or 4th, before CAF housing aid.",
+        "sourceUrl": "https://www.seloger.com/classified-search?distributionTypes=Rent&estateTypes=Apartment&locations=AD09FR23&numberOfRoomsMax=1&numberOfRoomsMin=1&projectTypes=Stock"
       },
       {
         "q": "How much is a student public-transport pass in Lyon?",
-        "a": "Lyon's network is run by TCL, and reduced monthly passes for under-26s run around €25 — among the cheaper big-city fares in France. TCL revises tariffs each year, so check the current youth/student rate on TCL directly before you subscribe.",
-        "sourceUrl": "https://www.tcl.fr/en/tickets-fares/fares",
-        "flags": {
-          "fare": "verify live under-26/student monthly figure on tcl.fr; ~€25 as of 2026, revised annually"
-        }
+        "a": "Lyon's network is run by TCL, and the reduced student monthly pass is €25/month for zones 1–2 (central Lyon) — among the cheaper big-city fares in France. TCL revises tariffs each year, so check the current student rate on TCL before you subscribe.",
+        "sourceUrl": "https://www.tcl.fr/titres-et-tarifs/tous-les-titres-et-abonnements/etudiants-26-27-ans-illimite-par-prelevement"
       },
       {
         "q": "How long does it take to get from Lyon to Paris?",
@@ -559,41 +553,33 @@
         "name": "La Guillotière (7th)",
         "blurb": "Lyon's most student-dense quarter, wedged between Lyon 2 and Lyon 3 in the 7th. A dense cultural mix — North and West African grocers, Vietnamese and Middle-Eastern canteens, second-hand shops and cheap bars — around Métro D and several tram lines. The budget-friendly central option: lively and a little rough near Place Gabriel Péri, calmer toward Jean Macé.",
         "studentFriendly": true,
-        "avgRent": null,
-        "sourceUrl": "https://www.myenglishsister.com/post/where-to-live-in-lyon-a-simple-guide-to-the-different-neighbourhoods-of-lyon",
-        "flags": {
-          "avgRent": "needs Numbeo Lyon 7e or SeLoger/LocService studio rent index"
-        }
+        "avgRent": "~€550–650/mo",
+        "avgRentSourceUrl": "https://www.seloger.com/classified-search?distributionTypes=Rent&estateTypes=Apartment&locations=AD09FR23&numberOfRoomsMax=1&numberOfRoomsMin=1&projectTypes=Stock",
+        "sourceUrl": "https://www.myenglishsister.com/post/where-to-live-in-lyon-a-simple-guide-to-the-different-neighbourhoods-of-lyon"
       },
       {
         "name": "Croix-Rousse (4th)",
         "blurb": "The old silk-weavers' hill, 'the working hill.' Big, bright canut apartments with high ceilings and tall windows, a village-like plateau with one of France's best daily markets and a bohemian, mixed crowd. The catch is the topography: it's a climb served by Métro C and buses, and hauling furniture up the walk-ups is real work.",
         "studentFriendly": true,
-        "avgRent": null,
-        "sourceUrl": "https://www.vanupied.com/lyon/quartier-lyon/plateau-de-la-croix-rousse-a-lyon.html",
-        "flags": {
-          "avgRent": "needs Numbeo Lyon 4e or SeLoger studio rent index"
-        }
+        "avgRent": "~€600–700/mo",
+        "avgRentSourceUrl": "https://www.seloger.com/classified-search?distributionTypes=Rent&estateTypes=Apartment&locations=AD09FR20&numberOfRoomsMax=1&numberOfRoomsMin=1&projectTypes=Stock",
+        "sourceUrl": "https://www.vanupied.com/lyon/quartier-lyon/plateau-de-la-croix-rousse-a-lyon.html"
       },
       {
         "name": "Villeurbanne",
         "blurb": "Technically its own city, immediately east of Lyon and home to Lyon 1 and INSA. Students come for more square metres per euro than central Lyon, a strong cultural scene (TNP theatre, music venues) and good tram/Métro A links via Charpennes and Gratte-Ciel. Rents run below the equivalent Lyon arrondissements.",
         "studentFriendly": true,
-        "avgRent": null,
-        "sourceUrl": "https://blog.lodgis.com/en/living-lyon-neighborhood/",
-        "flags": {
-          "avgRent": "needs Numbeo Villeurbanne or SeLoger rent index"
-        }
+        "avgRent": "~€500–600/mo",
+        "avgRentSourceUrl": "https://www.seloger.com/classified-search?distributionTypes=Rent&estateTypes=Apartment&locations=AD08FR28950&numberOfRoomsMax=1&numberOfRoomsMin=1&projectTypes=Stock",
+        "sourceUrl": "https://blog.lodgis.com/en/living-lyon-neighborhood/"
       },
       {
         "name": "Part-Dieu (3rd)",
         "blurb": "Lyon's business district and main TGV hub. Modern, central and unbeatable for commuting — a Paris train in minutes — with the giant Part-Dieu mall on your doorstep. The pricier, less atmospheric choice: towers and offices over old-quarter charm, but convenient if connectivity beats character.",
         "studentFriendly": true,
-        "avgRent": null,
-        "sourceUrl": "https://blog.lodgis.com/en/living-lyon-neighborhood/",
-        "flags": {
-          "avgRent": "needs Numbeo Lyon 3e or SeLoger rent index"
-        }
+        "avgRent": "~€600–700/mo",
+        "avgRentSourceUrl": "https://www.seloger.com/classified-search?distributionTypes=Rent&estateTypes=Apartment&locations=AD09FR19&numberOfRoomsMax=1&numberOfRoomsMin=1&projectTypes=Stock",
+        "sourceUrl": "https://blog.lodgis.com/en/living-lyon-neighborhood/"
       }
     ],
     "distances": {

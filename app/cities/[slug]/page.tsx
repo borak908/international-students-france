@@ -504,6 +504,16 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                               {n.avgRent}
                             </span>
                           )}
+                          {n.avgRentSourceUrl && (
+                            <a
+                              href={n.avgRentSourceUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-[10px] text-stone-400 hover:text-[#1E3A6E] underline leading-none"
+                            >
+                              Source ↗
+                            </a>
+                          )}
                         </div>
                         <p className="text-xs text-stone-600 leading-relaxed">{n.blurb}</p>
                       </div>

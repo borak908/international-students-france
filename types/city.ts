@@ -85,6 +85,7 @@ export interface Neighborhood {
   blurb: string
   studentFriendly?: boolean
   avgRent?: string | null
+  avgRentSourceUrl?: string | null
   sourceUrl?: string | null
   flags?: Record<string, string>
 }
