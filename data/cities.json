@@ -2332,8 +2332,8 @@
         "value": "€800"
       },
       {
-        "label": "Studio Rent",
-        "value": "€620/mo"
+        "label": "Sunshine",
+        "value": "182 days/yr"
       },
       {
         "label": "Safety Rating",
@@ -2384,7 +2384,22 @@
       "regularPassMonthly": 75,
       "airportConnection": "Lyon-Saint-Exupéry 1 hr; TGV to Paris 3 hrs; Grenoble-Isère airport",
       "bikeFriendly": true,
-      "bikeShareName": "Metrovélo (€30/yr student pass)"
+      "bikeShareName": "Metrovélo (€30/yr student pass)",
+      "networkName": "M (SMMAG / TAG network)",
+      "studentPassName": "TAG abonnement étudiant",
+      "transitModes": "5 tram lines (A–E) and an extensive bus network, plus the Bastille cable car",
+      "airports": [
+        {
+          "name": "Lyon-Saint-Exupéry",
+          "code": "LYS",
+          "sourceUrl": "https://www.lyonaeroports.com/en"
+        },
+        {
+          "name": "Grenoble-Alpes-Isère",
+          "code": "GNB",
+          "sourceUrl": "https://www.grenoble-airport.com/en/"
+        }
+      ]
     },
     "workVisa": {
       "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
@@ -2402,7 +2417,8 @@
       "costBreakdown": {
         "groceriesMonthly": 190,
         "diningOutAvgMeal": 11,
-        "utilitiesMonthly": 90
+        "utilitiesMonthly": 90,
+        "crousMealPrice": 3.3
       },
       "cityPopulation": "160,000",
       "notableStatus": "Surrounded by three mountain ranges with ski resorts 45 min away; one of Europe's top research ecosystems (CEA, CNRS, ESRF)",
@@ -2419,38 +2435,84 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-07-02",
+    "lastUpdated": "2026-07-05",
     "editorNote": "Grenoble's defining feature is physical: the city sits in a flat valley floor entirely surrounded by three mountain ranges (Belledonne, Vercors, Chartreuse), all visible from every street. The ski resorts are 45 minutes away by bus; the hiking trails start at the city's edge. The research ecosystem here is out of all proportion to the city's size — the CEA (Atomic Energy Commission), CNRS, ESRF (the most powerful synchrotron in Europe), and STMicroelectronics all operate major facilities here. Grenoble has the highest concentration of researchers per capita of any city in France, which creates an unusually international and intellectually intense campus atmosphere. If cost is your primary constraint and STEM is your field, Grenoble is the clearest value case on this entire site.",
     "faq": [
       {
-        "q": "Do I need a French guarantor to rent in Grenoble?",
-        "a": "Usually yes — most landlords ask for a French guarantor. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+        "q": "Is Grenoble good for students who want to ski?",
+        "a": "Ideal — it’s the Alpine capital, ringed by the Vercors, Chartreuse and Belledonne ranges, and weekend ski buses run from the centre to resorts like Chamrousse and Les 2 Alpes. Many students ski every winter weekend."
+      },
+      {
+        "q": "Is Grenoble a strong city for science and tech internships?",
+        "a": "Very — it’s a European research powerhouse with the CEA, Minatec, ESRF synchrotron and STMicroelectronics, feeding Université Grenoble Alpes and Grenoble INP students into physics, microelectronics and engineering roles."
       },
       {
         "q": "Which Grenoble neighbourhood is best for international students?",
-        "a": "Centre Ville and Championnet are central and lively, while Villeneuve offers the cheapest rents with tram access. Ile Verte is calm and scenic if you prefer quiet."
+        "a": "The hyper-centre around Victor Hugo is convenient; Berriat is the arty, affordable choice; and the Domaine Universitaire in Saint-Martin-d’Hères concentrates halls on tram lines B and C."
       },
       {
-        "q": "Is Grenoble a good choice for engineering students?",
-        "a": "Excellent — Grenoble is a leading European hub for engineering, physics and tech, home to major research institutes and a strong internship pipeline. It's also France's most affordable major student city and sits right at the foot of the Alps for skiing and hiking."
+        "q": "How do I reach Grenoble and its airports?",
+        "a": "Lyon-Saint-Exupéry (LYS) is about an hour away by shuttle and handles most international flights; the TGV reaches Paris in about 3 hours; small Grenoble-Alpes-Isère (GNB) runs seasonal ski charters."
+      },
+      {
+        "q": "What is student life like in Grenoble?",
+        "a": "Outdoorsy and international — cable-car trips to the Bastille, cycling on flat streets, gigs in Berriat, and mountains on every side for skiing, climbing and lake swims. It has a large foreign-researcher community."
+      },
+      {
+        "q": "Do I need a French guarantor to rent in Grenoble?",
+        "a": "Usually yes. Without a French guarantor, use Visale, the free government-backed scheme for under-30s; the online certificate takes about a week and is accepted by most Grenoble agencies."
       }
     ],
     "neighborhoods": [
       {
-        "name": "Centre Ville",
-        "blurb": "Compact and walkable with the mountains as a backdrop; central and lively but pricier."
+        "name": "Hyper-centre (Victor Hugo)",
+        "blurb": "The lively commercial core around Place Victor Hugo and the Grenette, walkable and well-served by trams. Central and convenient with mid-to-high rents.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Ile Verte",
-        "blurb": "Green, calm and scenic by the Isère with mountain views — a pleasant residential pick."
+        "name": "Berriat",
+        "blurb": "The artsy former-industrial quarter west of the station, full of studios, cheap eats and gig venues. Cool, affordable and student-friendly.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Championnet",
-        "blurb": "A sought-after central-south area with markets and cafes, popular with students and academics."
+        "name": "Île Verte",
+        "blurb": "A leafy riverside district at the foot of the Bastille cable car, quieter and green. Pleasant, residential, mid-range rents.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Villeneuve",
-        "blurb": "One of the most affordable districts, south of the centre with tram access — budget-friendly."
+        "name": "Europole",
+        "blurb": "The business and station quarter beside Grenoble École de Management, handy for commuters and cross-Alps trains. Modern with mixed value.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
+      },
+      {
+        "name": "Domaine Universitaire",
+        "blurb": "The main campus in Saint-Martin-d’Hères and Gières to the east, on trams B and C, dense with student halls — the cheapest campus-side option.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       }
     ],
     "distances": {
@@ -2483,8 +2545,64 @@
         "label": "coach to Lyon-Saint-Exupéry estimate",
         "retrievedDate": "2026-07-02",
         "estimated": true
+      },
+      "costBreakdown.crousMealPrice": {
+        "label": "CROUS national meal tariff (etudiant.gouv.fr)",
+        "url": "https://www.etudiant.gouv.fr",
+        "retrievedDate": "2026-07-05"
       }
-    }
+    },
+    "knownFor": [
+      "Alpine capital — gateway to Vercors, Chartreuse & Belledonne",
+      "Bastille cable car (\"Les Bulles\")",
+      "Minatec & CEA — France’s tech-research hub",
+      "Flattest city in France",
+      "Weekend skiing"
+    ],
+    "localTips": [
+      "Ride the \"Bulles\" bubble cable car up to the Bastille fort for a 360° view of the Alps.",
+      "Weekend ski buses run from the centre to Chamrousse and Les 2 Alpes all winter.",
+      "The city is dead flat and ringed by mountains — everyone cycles with a Métrovélo.",
+      "Berriat is the artsy former-industrial quarter for cheap eats and live gigs.",
+      "In summer, swim in the nearby lakes and hike straight out of town into the Vercors."
+    ],
+    "travelTimes": [
+      {
+        "destination": "Lyon",
+        "timeByTrain": "~1h20 by train",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Paris",
+        "timeByTrain": "~3h by TGV",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Lyon-Saint-Exupéry Airport (LYS)",
+        "timeByTrain": null,
+        "timeByCar": null,
+        "timeByTransit": "Express coach, ~1h",
+        "sourceUrl": "https://www.lyonaeroports.com/en"
+      },
+      {
+        "destination": "Chamrousse (ski)",
+        "timeByTrain": null,
+        "timeByCar": null,
+        "timeByTransit": "Ski bus, ~1h",
+        "sourceUrl": "https://www.itinisere.fr/"
+      },
+      {
+        "destination": "Geneva",
+        "timeByTrain": null,
+        "timeByCar": "~1h30 by car",
+        "timeByTransit": null,
+        "sourceUrl": "https://www.viamichelin.com"
+      }
+    ]
   },
   {
     "slug": "rennes",
