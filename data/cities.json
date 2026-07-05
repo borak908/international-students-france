@@ -16,8 +16,8 @@
         "value": "€913"
       },
       {
-        "label": "Studio Rent",
-        "value": "€700/mo"
+        "label": "Sunshine",
+        "value": "165 days/yr"
       },
       {
         "label": "Safety Rating",
@@ -69,7 +69,17 @@
       "regularPassMonthly": 62.5,
       "airportConnection": "Eurostar to London, TGV to Paris (1 hr)",
       "bikeFriendly": true,
-      "bikeShareName": "V'Lille"
+      "bikeShareName": "V'Lille",
+      "networkName": "Ilévia",
+      "studentPassName": "Ilévia abonnement étudiant",
+      "transitModes": "2 fully-automated métro lines, 2 tram lines to Roubaix and Tourcoing, and a dense bus network",
+      "airports": [
+        {
+          "name": "Lille-Lesquin",
+          "code": "LIL",
+          "sourceUrl": "https://www.lille.aeroport.fr/"
+        }
+      ]
     },
     "workVisa": {
       "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
@@ -87,7 +97,8 @@
       "costBreakdown": {
         "groceriesMonthly": 200,
         "diningOutAvgMeal": 12,
-        "utilitiesMonthly": 80
+        "utilitiesMonthly": 80,
+        "crousMealPrice": 3.3
       },
       "cityPopulation": "235,000",
       "notableStatus": "Historic Flemish Grand Place; gateway to Belgium and London via Eurostar — Paris is just 1 hour by TGV",
@@ -104,38 +115,84 @@
         "note": "School-wide rank — campuses in Lille and Nice"
       }
     ],
-    "lastUpdated": "2026-07-02",
+    "lastUpdated": "2026-07-05",
     "editorNote": "What the data doesn't show: Lille has the highest student-to-resident ratio of any city on this list — one in six people here is a student. That density creates a remarkably self-contained student culture. The Wazemmes Sunday market is a Lille institution: cheap, chaotic, and brilliant for weekly grocery runs. The Vieux-Lille neighbourhood, with its narrow Flemish streets and stepped gable facades, looks more like Ghent than France — it's genuinely unlike anywhere else in the country. Practical bonus: Lille-Europe station puts you in London in 1h20 via Eurostar and Paris in 1h by TGV, making weekend travel cheaper and faster than from almost any other French city.",
     "faq": [
       {
-        "q": "Do I need a French guarantor to rent in Lille?",
-        "a": "Usually yes — most Lille landlords ask for a French guarantor. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+        "q": "Is Lille a good base for travelling around Europe?",
+        "a": "Exceptionally — it sits on the Eurostar and TGV network with Brussels ~35 minutes, London ~1h20 and Paris ~1h away. Lille-Europe and Lille-Flandres stations are next to each other in the centre."
       },
       {
         "q": "Which Lille neighbourhood is best for international students?",
-        "a": "Wazemmes is the cheapest and most lively central option, while Vauban is the classic student quarter near the Catholic University. Vieux-Lille is beautiful but the priciest."
+        "a": "Wazemmes is cheap, multicultural and student-packed; Vauban-Esquermes clusters around the Catholic University; Vieux-Lille is beautiful but expensive. Moulins near the Lille-2 campus offers budget rents."
       },
       {
-        "q": "Is Lille well connected for travel around Europe?",
-        "a": "Exceptionally — Lille is 1 hour from Paris by TGV, on the Eurostar to London, and a short hop from Brussels. It's one of the best-connected student cities in France for weekend travel."
+        "q": "Can I study in English in Lille?",
+        "a": "Yes — Lille is a business-school hub with EDHEC, IÉSEG and SKEMA all running English-taught programmes, alongside international tracks at Université de Lille."
+      },
+      {
+        "q": "What is the food like for students in Lille?",
+        "a": "Hearty and northern: estaminets serve welsh, carbonnade flamande (beef in beer) and maroilles cheese, and the Wazemmes market is a cheap-eats institution. Belgian beer culture crosses the nearby border."
+      },
+      {
+        "q": "What is student life like in Lille?",
+        "a": "Sociable and affordable — the bars around Wazemmes and the Grand Place, the September Braderie, LOSC football and cheap cross-border trips to Belgium. Lille consistently rates among France’s friendliest student cities."
+      },
+      {
+        "q": "Do I need a French guarantor to rent in Lille?",
+        "a": "Usually yes. If you lack a French guarantor, use Visale, the free government-backed scheme for students under 30; the certificate is issued online in about a week and accepted by most local agencies."
       }
     ],
     "neighborhoods": [
       {
-        "name": "Vauban",
-        "blurb": "Leafy student quarter around the Catholic University — quiet, well-kept and full of bars aimed at students."
+        "name": "Vieux-Lille",
+        "blurb": "The cobbled Flemish old town of red-brick facades and boutiques. The prettiest and priciest central district — charming but a stretch on a student budget.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
         "name": "Wazemmes",
-        "blurb": "Working-class, multicultural and cheap, famous for its Sunday market. The most affordable central option and a student favourite."
+        "blurb": "Lille’s multicultural, artsy quarter built around its huge Sunday market. Cheap, lively and packed with students — the classic first address.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Centre",
-        "blurb": "The République/city-centre core — central, well-connected by metro and walkable, though pricier."
+        "name": "Vauban-Esquermes",
+        "blurb": "Green and residential beside the Citadelle park and the Catholic University of Lille, so it’s dense with students. Calmer than Wazemmes, well-connected by tram.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Vieux-Lille",
-        "blurb": "The picturesque old town with Flemish facades — beautiful and lively but the most expensive place to rent."
+        "name": "Moulins",
+        "blurb": "South of the centre near the Lille-2 law and health campus, gentrifying and still cheap. Good value with a growing bar scene.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
+      },
+      {
+        "name": "Euralille",
+        "blurb": "The modern business and transport district wrapped around both train stations. Central and convenient if you want to live on top of the Eurostar.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       }
     ],
     "distances": {
@@ -168,8 +225,64 @@
         "label": "airport shuttle estimate",
         "retrievedDate": "2026-07-02",
         "estimated": true
+      },
+      "costBreakdown.crousMealPrice": {
+        "label": "CROUS national meal tariff (etudiant.gouv.fr)",
+        "url": "https://www.etudiant.gouv.fr",
+        "retrievedDate": "2026-07-05"
       }
-    }
+    },
+    "knownFor": [
+      "Braderie de Lille — Europe’s largest flea market",
+      "Flemish architecture & the Grand Place",
+      "Estaminets, carbonnade & maroilles",
+      "Cross-border to Belgium",
+      "LOSC football"
+    ],
+    "localTips": [
+      "Plan around the Braderie de Lille the first weekend of September — the whole city eats moules-frites in the street.",
+      "Sunday belongs to the Wazemmes market — go hungry.",
+      "Eat in an estaminet: welsh, carbonnade flamande and a local beer.",
+      "Browse the second-hand book market inside the Vieille Bourse on the Grand Place.",
+      "Use Lille as a hub — Brussels is ~35 min, London ~1h20, Paris ~1h by train."
+    ],
+    "travelTimes": [
+      {
+        "destination": "Paris",
+        "timeByTrain": "~1h02 by TGV",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Brussels",
+        "timeByTrain": "~35 min by TGV",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "London (St Pancras)",
+        "timeByTrain": "~1h20 by Eurostar",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.eurostar.com"
+      },
+      {
+        "destination": "Lille-Lesquin Airport (LIL)",
+        "timeByTrain": null,
+        "timeByCar": null,
+        "timeByTransit": "Shuttle bus, ~20 min",
+        "sourceUrl": "https://www.lille.aeroport.fr/"
+      },
+      {
+        "destination": "Bruges",
+        "timeByTrain": "~1h10 via Brussels",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      }
+    ]
   },
   {
     "slug": "paris",
