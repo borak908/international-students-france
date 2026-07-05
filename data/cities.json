@@ -2269,12 +2269,12 @@
         "value": "€1,100"
       },
       {
-        "label": "Studio Rent",
-        "value": "€980/mo"
+        "label": "Sunshine",
+        "value": "300 days/yr"
       },
       {
         "label": "Safety Rating",
-        "value": "5/10 est."
+        "value": "5/10"
       }
     ],
     "overview": {
@@ -2319,7 +2319,17 @@
       "regularPassMonthly": 75,
       "airportConnection": "Nice Côte d'Azur (3rd busiest in France); TGV to Paris 5.5 hrs",
       "bikeFriendly": true,
-      "bikeShareName": "Vélobleu bike-share"
+      "bikeShareName": "Vélobleu bike-share",
+      "networkName": "Lignes d’Azur",
+      "studentPassName": "Lignes d’Azur abonnement étudiant",
+      "transitModes": "3 tram lines (T2 serves the airport) and an extensive bus network",
+      "airports": [
+        {
+          "name": "Nice Côte d’Azur",
+          "code": "NCE",
+          "sourceUrl": "https://www.nice.aeroport.fr/en"
+        }
+      ]
     },
     "workVisa": {
       "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
@@ -2337,7 +2347,8 @@
       "costBreakdown": {
         "groceriesMonthly": 240,
         "diningOutAvgMeal": 15,
-        "utilitiesMonthly": 80
+        "utilitiesMonthly": 80,
+        "crousMealPrice": 3.3
       },
       "cityPopulation": "340,000",
       "notableStatus": "UNESCO World Heritage — Nice's winter resort town architecture (2021); hosts one of the world's largest carnivals (since 1294)",
@@ -2363,38 +2374,84 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-07-02",
+    "lastUpdated": "2026-07-05",
     "editorNote": "Nice's student experience is shaped by proximity to things that don't exist anywhere else in France: Monaco is 20 minutes by train (useful for finance and luxury sector internships), Italy is 40 minutes, and Sophia Antipolis — Europe's largest technology park, home to Microsoft, SAP, and 2,400 other companies — is 30 minutes by bus. The Promenade des Anglais and the Vieux-Nice neighbourhood (narrow Baroque lanes, Niçoise markets, socca flatbread from street stalls) make the city genuinely exceptional to live in. The cost is real: Nice is the most expensive city on this list, and the gap with Grenoble or Toulouse is significant over a full academic year. It makes most sense for students in business, tourism, digital, or luxury industries who can convert the location into internship and network access that justifies the premium.",
     "faq": [
       {
-        "q": "Do I need a French guarantor to rent in Nice?",
-        "a": "Usually yes, and rents run high with strong seasonal demand on the Riviera, so start early. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+        "q": "Is Nice an expensive city for students?",
+        "a": "The Riviera is one of France’s pricier student cities — studio rents near the Promenade des Anglais and Vieux Nice run high, and summer sublets spike. Living in Libération or up near the Valrose science campus keeps costs down while staying on the tram."
+      },
+      {
+        "q": "How do I get from Nice airport (NCE) to the city centre?",
+        "a": "Tram line T2 links Nice Côte d’Azur airport to the port and centre in about 25–30 minutes for the price of a standard ticket — far cheaper than a taxi. NCE is France’s third-busiest airport, so budget flights across Europe are easy."
       },
       {
         "q": "Which Nice neighbourhood is best for international students?",
-        "a": "Libération is central and better value than the seafront, while Madeleine and Riquier offer cheaper rents a little further out. The tram makes most of the city easy to reach."
+        "a": "Vieux Nice is atmospheric but pricey; Libération and the area around the Valrose campus offer cheaper rents on tram line 1, while Le Port is trendy and central. Cimiez is quieter and greener but further from student nightlife."
       },
       {
-        "q": "Is Nice a good choice despite the high cost?",
-        "a": "If you're targeting SKEMA or EDHEC and value the Riviera lifestyle, yes — but Nice is among the most expensive French student cities, so budget at least €2,000/month including rent and factor in higher seasonal prices."
+        "q": "Can I study in English on the French Riviera?",
+        "a": "Yes — Université Côte d’Azur runs English-taught tracks, and nearby Sophia Antipolis hosts SKEMA and EDHEC business schools with international programmes in English."
+      },
+      {
+        "q": "What is student life like in Nice?",
+        "a": "Beach life dominates: mornings on the pebbles, apéro on the Promenade, and cheap train day-trips to Monaco, Cannes and Menton. Vieux Nice supplies the bars; the Carnaval de Nice each February is the big event."
+      },
+      {
+        "q": "Do I need a French guarantor to rent in Nice?",
+        "a": "Usually yes. If you don’t have a French guarantor, use Visale, the free government-backed scheme for students under 30; the certificate takes about a week online and is accepted by most Riviera agencies."
       }
     ],
     "neighborhoods": [
       {
+        "name": "Vieux Nice",
+        "blurb": "The baroque old town of tangled lanes and the Cours Saleya flower-and-food market. Atmospheric and central but touristy and pricey — for students who want to live in the postcard.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
+      },
+      {
+        "name": "Le Port",
+        "blurb": "The trendy harbour district east of the centre, full of restaurants and antique shops, served by tram T2. Lively and increasingly fashionable, with rents to match.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
+      },
+      {
         "name": "Libération",
-        "blurb": "Around the lively Libération market and tram line — authentic, central and better value than the seafront."
+        "blurb": "A real-life local quarter around the Marché de la Libération and the old Gare du Sud, on tram line 1. Cheaper, well-connected and popular with students.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Musiciens",
-        "blurb": "A central residential grid near the centre and beach; convenient but priced for the location."
+        "name": "Valrose / Saint-Barthélemy",
+        "blurb": "North of the centre around the Valrose science campus of Université Côte d’Azur, set in a park. Practical, greener and better value for science students.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Madeleine",
-        "blurb": "A hillside residential area west of the centre offering more affordable rents with bus links."
-      },
-      {
-        "name": "Riquier",
-        "blurb": "An eastern district near the port — one of the cheaper central-ish options, improving steadily."
+        "name": "Cimiez",
+        "blurb": "Leafy and bourgeois on the hill above town, with Roman ruins and the Matisse Museum. Quiet and elegant but further out and expensive.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       }
     ],
     "distances": {
@@ -2427,7 +2484,63 @@
         "label": "tram line 2 estimate",
         "retrievedDate": "2026-07-02",
         "estimated": true
+      },
+      "costBreakdown.crousMealPrice": {
+        "label": "CROUS national meal tariff (etudiant.gouv.fr)",
+        "url": "https://www.etudiant.gouv.fr",
+        "retrievedDate": "2026-07-05"
       }
-    }
+    },
+    "knownFor": [
+      "Promenade des Anglais",
+      "Côte d’Azur pebble beaches",
+      "Carnaval de Nice",
+      "Socca & cuisine niçoise",
+      "Gateway to Monaco & Cannes"
+    ],
+    "localTips": [
+      "Do your food shopping at the Cours Saleya market in Vieux Nice, then eat socca straight off the griddle.",
+      "The beaches are pebble, not sand — bring a mat and water shoes.",
+      "Hop the regional train along the coast: Monaco is ~25 min, Cannes ~30 min, Menton ~35 min.",
+      "Climb the Colline du Château at sunset for the classic bay panorama.",
+      "Tram T2 runs straight from the airport to the port and centre — skip the taxis."
+    ],
+    "travelTimes": [
+      {
+        "destination": "Nice Côte d’Azur Airport (NCE)",
+        "timeByTrain": null,
+        "timeByCar": null,
+        "timeByTransit": "Tram T2, ~25–30 min",
+        "sourceUrl": "https://www.nice.aeroport.fr/en"
+      },
+      {
+        "destination": "Monaco",
+        "timeByTrain": "~25 min by TER",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Cannes",
+        "timeByTrain": "~30 min by TER",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Marseille",
+        "timeByTrain": "~2h35 by TGV",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Paris",
+        "timeByTrain": "~5h50 by TGV",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      }
+    ]
   }
 ]
