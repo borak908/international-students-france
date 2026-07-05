@@ -801,8 +801,8 @@
         "value": "€980"
       },
       {
-        "label": "Studio Rent",
-        "value": "€850/mo"
+        "label": "Sunshine",
+        "value": "200 days/yr"
       },
       {
         "label": "Safety Rating",
@@ -853,7 +853,17 @@
       "regularPassMonthly": 62,
       "airportConnection": "Bordeaux-Mérignac international; TGV to Paris 2 hrs",
       "bikeFriendly": true,
-      "bikeShareName": "V3 bike-share (extensive cycling lanes)"
+      "bikeShareName": "V3 bike-share (extensive cycling lanes)",
+      "networkName": "TBM (Transports Bordeaux Métropole)",
+      "studentPassName": "TBM abonnement étudiant",
+      "transitModes": "4 tram lines (A–D), a river shuttle and an extensive bus network",
+      "airports": [
+        {
+          "name": "Bordeaux-Mérignac",
+          "code": "BOD",
+          "sourceUrl": "https://www.bordeaux.aeroport.fr/en"
+        }
+      ]
     },
     "workVisa": {
       "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
@@ -871,7 +881,8 @@
       "costBreakdown": {
         "groceriesMonthly": 210,
         "diningOutAvgMeal": 13,
-        "utilitiesMonthly": 85
+        "utilitiesMonthly": 85,
+        "crousMealPrice": 3.3
       },
       "cityPopulation": "260,000",
       "notableStatus": "UNESCO World Heritage — Port of the Moon historic district since 2007; global wine capital",
@@ -888,38 +899,84 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-07-02",
+    "lastUpdated": "2026-07-05",
     "editorNote": "Bordeaux rebuilt its city centre in the 2000s around a tram network that now makes most of the city genuinely car-free for students. The result is one of the most walkable mid-size cities in France — the historic Belle Époque stone architecture, golden in afternoon light, is the reason it's consistently rated France's most beautiful city. Saint-Michel market (Sundays) is the affordable neighbourhood anchor: fruit, vegetables, and Moroccan street food. The Chartrons district, historically the wine merchants' quarter, has become the creative hub — independent coffee shops, vintage dealers, and a strong expat community. The obvious downside: job market depth outside wine, aerospace, and tourism is thinner than Lyon or Paris.",
     "faq": [
       {
-        "q": "Do I need a French guarantor to rent in Bordeaux?",
-        "a": "Usually yes, and rents have risen sharply as the city has become fashionable, so landlords are selective. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+        "q": "Is Bordeaux a good city for wine and food students?",
+        "a": "Uniquely so — it’s the world wine capital, with La Cité du Vu and the INSEEC/KEDGE wine-business and oenology programmes, plus vineyard estates a short train ride away in Saint-Émilion and the Médoc."
+      },
+      {
+        "q": "How do I get from Bordeaux-Mérignac airport (BOD) to the centre?",
+        "a": "The ’30 Direct shuttle bus and the tram A extension both link Bordeaux-Mérignac to the centre in around 30 minutes. The TGV also reaches Paris in about 2 hours, making Bordeaux well-connected for weekend trips."
       },
       {
         "q": "Which Bordeaux neighbourhood is best for international students?",
-        "a": "Saint-Michel is central, lively and relatively affordable; Chartrons is trendier and pricier. Both are well served by the tram network that makes the city easy to get around without a car."
+        "a": "La Victoire and Saint-Michel are the student nightlife core near the health faculties; Chartrons is arty and central; the Talence–Pessac campus southwest concentrates halls and cheaper rents on the tram B line."
       },
       {
-        "q": "Is Bordeaux expensive compared to other French cities?",
-        "a": "It sits in the pricier tier — rents climbed as Bordeaux became fashionable and the 2-hour TGV to Paris drew new residents. It's still cheaper than Paris or Nice, but budget carefully for housing."
+        "q": "Can I study in English in Bordeaux?",
+        "a": "Yes — KEDGE Business School, Sciences Po Bordeaux and INP Bordeaux run English-taught programmes, and Université de Bordeaux offers international tracks in sciences and law."
+      },
+      {
+        "q": "What is student life like in Bordeaux?",
+        "a": "It centres on the riverfront quays and the Miroir d’eau, the bars around Place de la Victoire, and easy escapes to the Arcachon beaches and Saint-Émilion vineyards. The whole historic core is UNESCO-listed and walkable."
+      },
+      {
+        "q": "Do I need a French guarantor to rent in Bordeaux?",
+        "a": "Usually yes. Without a French guarantor, use Visale, the free state-backed guarantor for under-30s; the online certificate takes about a week and is widely accepted by Bordeaux agencies."
       }
     ],
     "neighborhoods": [
       {
-        "name": "Saint-Michel",
-        "blurb": "Bohemian and diverse around its famous basilica and flea market — central, lively and relatively affordable."
+        "name": "Saint-Pierre",
+        "blurb": "The medieval heart by the quays, packed with bars and restaurants around Place du Parlement. Central and lively but among the priciest addresses.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
         "name": "Chartrons",
-        "blurb": "The former wine-merchant district, now trendy with quays, antique shops and cafes; pricier but very pleasant."
+        "blurb": "The former wine-merchant quarter, now antique shops and brunch spots on tram lines B and C. Arty, characterful and popular with older students.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Bacalan",
-        "blurb": "Regenerated docklands near the Cité du Vin — modern flats, improving fast and still cheaper than the centre."
+        "name": "La Victoire & Saint-Michel",
+        "blurb": "The student nightlife hub around Place de la Victoire, next to the health faculties. Cheaper, buzzing and a little rough at the edges — maximum student value.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Nansouty",
-        "blurb": "A quiet residential neighbourhood south of the centre, popular with students wanting calm and value."
+        "name": "La Bastide",
+        "blurb": "The up-and-coming right bank across the river, home to the Darwin eco-hub, on tram A. Cheaper rents and river views, still gentrifying.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
+      },
+      {
+        "name": "Talence – Pessac (campus)",
+        "blurb": "The main university campus southwest of the centre, dense with student halls and residences on tram line B — practical and affordable for undergraduates.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       }
     ],
     "distances": {
@@ -952,8 +1009,64 @@
         "label": "tram + shuttle estimate",
         "retrievedDate": "2026-07-02",
         "estimated": true
+      },
+      "costBreakdown.crousMealPrice": {
+        "label": "CROUS national meal tariff (etudiant.gouv.fr)",
+        "url": "https://www.etudiant.gouv.fr",
+        "retrievedDate": "2026-07-05"
       }
-    }
+    },
+    "knownFor": [
+      "UNESCO Port of the Moon",
+      "World wine capital & La Cité du Vin",
+      "Miroir d’eau at Place de la Bourse",
+      "Dune du Pilat & Arcachon nearby",
+      "Rue Sainte-Catherine shopping"
+    ],
+    "localTips": [
+      "Catch the Miroir d’eau reflecting Place de la Bourse — it mists on the hour in summer.",
+      "Learn the region at La Cité du Vin, then do a Saint-Émilion vineyard day-trip by train.",
+      "Beach day: train to Arcachon and climb Europe’s tallest sand dune, the Dune du Pilat.",
+      "Sunday brunch at the Marché des Capucins, the city’s belly.",
+      "The tram is fast but stops early — the V³ bikes and flat streets cover the late nights."
+    ],
+    "travelTimes": [
+      {
+        "destination": "Bordeaux-Mérignac Airport (BOD)",
+        "timeByTrain": null,
+        "timeByCar": null,
+        "timeByTransit": "Tram A + shuttle, ~30 min",
+        "sourceUrl": "https://www.bordeaux.aeroport.fr/en"
+      },
+      {
+        "destination": "Paris",
+        "timeByTrain": "~2h04 by TGV",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Toulouse",
+        "timeByTrain": "~2h10 by TGV",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Arcachon",
+        "timeByTrain": "~50 min by TER",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Saint-Émilion",
+        "timeByTrain": "~40 min by TER",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      }
+    ]
   },
   {
     "slug": "toulouse",
