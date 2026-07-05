@@ -1823,8 +1823,8 @@
         "value": "€900"
       },
       {
-        "label": "Studio Rent",
-        "value": "€650/mo"
+        "label": "Sunshine",
+        "value": "186 days/yr"
       },
       {
         "label": "Safety Rating",
@@ -1874,7 +1874,17 @@
       "regularPassMonthly": 67,
       "airportConnection": "Nantes Atlantique airport; TGV to Paris 2.5 hrs",
       "bikeFriendly": true,
-      "bikeShareName": "Bicloo bike-share"
+      "bikeShareName": "Bicloo bike-share",
+      "networkName": "TAN (Transports de l’agglomération nantaise)",
+      "studentPassName": "TAN abonnement étudiant",
+      "transitModes": "3 tram lines, a busway (BRT) and an extensive bus network",
+      "airports": [
+        {
+          "name": "Nantes Atlantique",
+          "code": "NTE",
+          "sourceUrl": "https://www.nantes.aeroport.fr/en"
+        }
+      ]
     },
     "workVisa": {
       "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
@@ -1892,7 +1902,8 @@
       "costBreakdown": {
         "groceriesMonthly": 200,
         "diningOutAvgMeal": 12,
-        "utilitiesMonthly": 82
+        "utilitiesMonthly": 82,
+        "crousMealPrice": 3.3
       },
       "cityPopulation": "320,000",
       "notableStatus": "Named most liveable French city multiple times (L'Express); famous for 'Les Machines de l'Île' — world-renowned mechanical art installations",
@@ -1909,38 +1920,84 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-07-02",
+    "lastUpdated": "2026-07-05",
     "editorNote": "Nantes has spent the last 15 years building a reputation as France's most creative city, anchored by Les Machines de l'Île — a permanent installation of giant mechanical animals built on the site of the old shipyards, including a working 12-metre mechanical elephant that walks visitors around the island. It sounds absurd; it's become one of France's most-visited cultural attractions. The creative economy is real: digital agencies, game studios, and design firms cluster in the former industrial districts, and the graduate retention rate is high. Nantes is also Jules Verne's birthplace — the Jules Verne Museum is worth an afternoon. Paris is 2h10 by TGV, cheap enough for regular trips, far enough to feel like a different city.",
     "faq": [
       {
-        "q": "Do I need a French guarantor to rent in Nantes?",
-        "a": "Usually yes — most landlords ask for a French guarantor. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+        "q": "Why do students rate Nantes so highly?",
+        "a": "It repeatedly tops French quality-of-life rankings: green, walkable, on the Loire near the Atlantic, with a strong arts scene (Les Machines de l’île, Le Voyage à Nantes) and lower rents than Paris or Bordeaux."
       },
       {
         "q": "Which Nantes neighbourhood is best for international students?",
-        "a": "Bouffay is central and lively but competitive; Hauts-Pavés and Zola offer good tram links and more reasonable rents. Doulon is among the cheaper options."
+        "a": "Bouffay is the medieval nightlife core; the Île de Nantes is the creative, modern hub; Hauts-Pavés and the Tertre campus area are leafier and cheaper near the university."
       },
       {
-        "q": "Is Nantes good for careers and internships?",
-        "a": "Yes — Nantes combines a growing startup scene with major employers like Airbus and Naval Group, and it consistently ranks among France's most liveable cities, so students rarely feel they've traded opportunity for affordability."
+        "q": "How do I reach the Atlantic coast from Nantes?",
+        "a": "Easily — trains run to La Baule and the Côte d’Amour beaches in about an hour, and Pornic and the coast are close by. Nantes itself sits on the Loire about 50 km inland."
+      },
+      {
+        "q": "Can I study in English in Nantes?",
+        "a": "Yes — Audencia Business School and Centrale Nantes run English-taught programmes, and Nantes Université offers international tracks across sciences and design."
+      },
+      {
+        "q": "What is student life like in Nantes?",
+        "a": "Creative and outdoors-driven: the Machines de l’île, riverside bars on the Île de Nantes, the summer Voyage à Nantes art trail, and quick escapes to the coast. Nightlife concentrates in the Bouffay quarter."
+      },
+      {
+        "q": "Do I need a French guarantor to rent in Nantes?",
+        "a": "Usually yes. Without one, use Visale, the free state-backed guarantor for under-30s; the online certificate takes about a week and is accepted by most Nantes agencies."
       }
     ],
     "neighborhoods": [
       {
         "name": "Bouffay",
-        "blurb": "The medieval core — cobbled, central and full of nightlife; desirable but in high demand."
+        "blurb": "The medieval heart of narrow streets and the densest nightlife, beside the Château des ducs. Central and lively but pricier and noisy at weekends.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Hauts-Pavés",
-        "blurb": "Residential and well-connected north of the centre, popular with students and young families."
+        "name": "Île de Nantes",
+        "blurb": "The creative island on the Loire, home to Les Machines de l’île and converted shipyards. Modern, arty and increasingly desirable.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Zola",
-        "blurb": "West of the centre with good tram links and reasonable rents — practical and calm."
+        "name": "Hauts-Pavés – Saint-Félix",
+        "blurb": "A leafy, residential district north of the centre near the university, popular with students and families. Calm with good value.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Doulon",
-        "blurb": "An eastern residential area with some of the more affordable rents while staying tram-connected."
+        "name": "Chantenay",
+        "blurb": "A former industrial quarter to the west, riverside and up-and-coming, with cheaper rents and a village feel near Trentemoult.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
+      },
+      {
+        "name": "Campus Tertre",
+        "blurb": "The main Nantes Université campus northwest of the centre, dense with halls and student residences — practical and affordable.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       }
     ],
     "distances": {
@@ -1973,8 +2030,64 @@
         "label": "airport shuttle estimate",
         "retrievedDate": "2026-07-02",
         "estimated": true
+      },
+      "costBreakdown.crousMealPrice": {
+        "label": "CROUS national meal tariff (etudiant.gouv.fr)",
+        "url": "https://www.etudiant.gouv.fr",
+        "retrievedDate": "2026-07-05"
       }
-    }
+    },
+    "knownFor": [
+      "Les Machines de l’île — the mechanical Grand Éléphant",
+      "Château des ducs de Bretagne",
+      "Birthplace of Jules Verne",
+      "Le Voyage à Nantes art trail",
+      "Atlantic coast at La Baule"
+    ],
+    "localTips": [
+      "Ride the Grand Éléphant on the Île de Nantes — the city’s signature 12-metre mechanical beast.",
+      "Follow the green line painted through the streets: it links the Voyage à Nantes artworks.",
+      "Cross the river to Trentemoult, a pastel fishing village of narrow lanes.",
+      "Beach weekend: the train reaches La Baule and the Côte d’Amour in about an hour.",
+      "Explore the Château des ducs de Bretagne ramparts — free to walk."
+    ],
+    "travelTimes": [
+      {
+        "destination": "Nantes Atlantique Airport (NTE)",
+        "timeByTrain": null,
+        "timeByCar": null,
+        "timeByTransit": "Tram T3 + navette, ~30 min",
+        "sourceUrl": "https://www.nantes.aeroport.fr/en"
+      },
+      {
+        "destination": "Paris",
+        "timeByTrain": "~2h05 by TGV",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Rennes",
+        "timeByTrain": "~1h15 by train",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "La Baule",
+        "timeByTrain": "~1h05 by TER",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Bordeaux",
+        "timeByTrain": "~4h by train",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      }
+    ]
   },
   {
     "slug": "grenoble",
