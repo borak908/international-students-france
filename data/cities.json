@@ -972,8 +972,8 @@
         "value": "€900"
       },
       {
-        "label": "Studio Rent",
-        "value": "€750/mo"
+        "label": "Sunshine",
+        "value": "210 days/yr"
       },
       {
         "label": "Safety Rating",
@@ -1026,7 +1026,17 @@
       "regularPassMonthly": 63,
       "airportConnection": "Toulouse-Blagnac international airport; TGV to Paris 4 hrs",
       "bikeFriendly": true,
-      "bikeShareName": "VélÔToulouse bike-share"
+      "bikeShareName": "VélÔToulouse bike-share",
+      "networkName": "Tisséo",
+      "studentPassName": "Tisséo abonnement étudiant (carte Pastel)",
+      "transitModes": "2 métro lines, 2 tram lines and an extensive bus network (a third métro line is under construction)",
+      "airports": [
+        {
+          "name": "Toulouse-Blagnac",
+          "code": "TLS",
+          "sourceUrl": "https://www.toulouse.aeroport.fr/en"
+        }
+      ]
     },
     "workVisa": {
       "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
@@ -1044,7 +1054,8 @@
       "costBreakdown": {
         "groceriesMonthly": 200,
         "diningOutAvgMeal": 12,
-        "utilitiesMonthly": 80
+        "utilitiesMonthly": 80,
+        "crousMealPrice": 3.3
       },
       "cityPopulation": "480,000",
       "notableStatus": "La Ville Rose — iconic rose-brick medieval city; Airbus global headquarters and Europe's aerospace capital",
@@ -1070,38 +1081,84 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-07-02",
+    "lastUpdated": "2026-07-05",
     "editorNote": "Toulouse is called La Ville Rose because every building in the historic centre is built from the same local rose-pink brick — it genuinely looks different from any other French city, especially at dusk. The aerospace connection is not just marketing: Airbus's global headquarters is here, alongside Thales, Safran, and Dassault Aviation. If you're studying engineering, the career pipeline from ISAE-SUPAERO or INP Toulouse into the aerospace industry is among the strongest in Europe. The Canal du Midi, a UNESCO World Heritage waterway, runs through the city and is the social spine of outdoor student life from March to October. Toulouse consistently ranks as France's #1 student city in national surveys — the infrastructure, nightlife, and student services reflect that.",
     "faq": [
       {
-        "q": "Do I need a French guarantor to rent in Toulouse?",
-        "a": "Usually yes — most landlords ask for a French guarantor. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+        "q": "Is Toulouse a good city for aerospace and engineering students?",
+        "a": "Exceptionally. Airbus’s global headquarters, Thales, Safran and ATR are all here, and schools like ISAE-SUPAERO and INSA Toulouse feed directly into the local “aeronautical valley”. For aeronautics, space or engineering it is arguably the strongest career pipeline in Europe."
       },
       {
         "q": "Which Toulouse neighbourhood is best for international students?",
-        "a": "Les Carmes and Saint-Aubin are the liveliest central options, while Minimes and Empalot offer cheaper rents with metro access. Toulouse's two-line metro makes most areas convenient."
+        "a": "Les Carmes and Saint-Cyprien are the liveliest central choices; Compans-Caffarelli suits business students near TBS, while Rangueil puts science and engineering students beside the Paul Sabatier campus on métro line B. The two-line métro makes most areas commutable."
       },
       {
-        "q": "Is Toulouse good for internships in aerospace?",
-        "a": "Exceptionally — Airbus, Thales and Safran are all headquartered here, making Toulouse France's aerospace capital and one of the strongest cities for engineering and aeronautics internships."
+        "q": "How do I get from Toulouse-Blagnac airport to the city centre?",
+        "a": "The airport tram (line T2) runs from Toulouse-Blagnac (TLS) into the centre in roughly 20–30 minutes and is the cheapest option; a dedicated airport shuttle bus and taxis are also available. The airport sits just northwest of the city."
+      },
+      {
+        "q": "Is Toulouse cheaper than Paris or Lyon for students?",
+        "a": "Yes — rents and daily costs in Toulouse are noticeably lower than in Paris and generally below Lyon, while it still ranks as France’s top student city in national surveys. The southwest sunshine and student infrastructure are a big part of the draw."
+      },
+      {
+        "q": "What is student life like in Toulouse?",
+        "a": "Warm and outdoors-driven: apéro on the banks of the Garonne, live music at venues like Le Bikini, and rugby fervour around Stade Toulousain. The Canal du Midi, Place Saint-Pierre and the Saint-Aubin market anchor most students’ weekends."
+      },
+      {
+        "q": "Do I need a French guarantor to rent in Toulouse?",
+        "a": "Usually yes — most Toulouse landlords ask for a French guarantor. If you don’t have one, use Visale, the free government-backed guarantor scheme for students under 30; the certificate takes about a week to obtain online and is widely accepted by local agencies."
       }
     ],
     "neighborhoods": [
       {
         "name": "Les Carmes",
-        "blurb": "Elegant, central and full of terraces — the most sought-after (and priciest) student address in the pink city."
+        "blurb": "The elegant heart of the pink city: rose-brick townhouses, café terraces and the covered Marché des Carmes. The most sought-after — and priciest — central address, best for students who want to live in the postcard and can pay for it.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Saint-Aubin",
-        "blurb": "Bohemian and lively around its Sunday market; central, characterful and popular with students."
+        "name": "Saint-Cyprien",
+        "blurb": "The arty left bank of the Garonne, cheaper than the historic centre and on métro line A. Home to Les Abattoirs modern-art museum and the riverside Prairie des Filtres — a favourite of design and fine-arts students.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Minimes",
-        "blurb": "An affordable working-class area north of the centre with good metro links — solid value."
+        "name": "Saint-Aubin – Dupuy",
+        "blurb": "Bohemian and market-driven, built around the Sunday-morning Saint-Aubin market and its indie bars, a short walk from the Canal du Midi. Characterful and central without Carmes prices.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Empalot",
-        "blurb": "One of the cheapest areas, south of the centre by the Garonne, with its own metro stop."
+        "name": "Compans-Caffarelli & Minimes",
+        "blurb": "North of the centre on métro line B, beside the Compans-Caffarelli park and its Japanese garden. Close to Toulouse Business School with better-value rents — practical for business students.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
+      },
+      {
+        "name": "Rangueil",
+        "blurb": "The science-campus district in the southeast, at the terminus of métro line B beside Université Paul Sabatier and Rangueil hospital. Lots of student halls and the cheapest rents near a campus — ideal for science and engineering students.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       }
     ],
     "distances": {
@@ -1134,8 +1191,64 @@
         "label": "tram T2 estimate",
         "retrievedDate": "2026-07-02",
         "estimated": true
+      },
+      "costBreakdown.crousMealPrice": {
+        "label": "CROUS Toulouse-Occitanie — student restaurants",
+        "url": "https://www.crous-toulouse.fr/restauration/",
+        "retrievedDate": "2026-07-05"
       }
-    }
+    },
+    "knownFor": [
+      "Airbus & Europe’s aerospace capital",
+      "La Ville Rose — rose-brick architecture",
+      "Canal du Midi (UNESCO)",
+      "Stade Toulousain rugby",
+      "Cassoulet & candied violets"
+    ],
+    "localTips": [
+      "Start Sunday with coffee at the Saint-Aubin market, then walk the Canal du Midi towpath — it’s the city’s social spine from March to October.",
+      "The Cité de l’Espace on the eastern edge is worth the tram trip: Toulouse is the only French city with a full space-industry theme park.",
+      "For riverside apéro, Place Saint-Pierre and the Prairie des Filtres on the Garonne fill up at sunset — locals bring their own drinks.",
+      "One Carte Pastel loads your Tisséo pass, VélÔToulouse bike-share and park-and-ride — set it up in your first week.",
+      "On Stade Toulousain match days the whole city turns red-and-black; book restaurants ahead or join the crowd around the Capitole."
+    ],
+    "travelTimes": [
+      {
+        "destination": "Toulouse-Blagnac Airport (TLS)",
+        "timeByTrain": null,
+        "timeByCar": null,
+        "timeByTransit": "Tram T2, ~20–30 min",
+        "sourceUrl": "https://www.toulouse.aeroport.fr/en"
+      },
+      {
+        "destination": "Paris",
+        "timeByTrain": "~4h10 by TGV",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Bordeaux",
+        "timeByTrain": "~2h10 by TGV",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Montpellier",
+        "timeByTrain": "~2h15 by train",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Barcelona",
+        "timeByTrain": null,
+        "timeByCar": "~4h by car",
+        "timeByTransit": null,
+        "sourceUrl": "https://www.viamichelin.com"
+      }
+    ]
   },
   {
     "slug": "montpellier",
