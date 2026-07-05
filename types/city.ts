@@ -142,7 +142,7 @@ export interface City {
   neighborhoods?: Neighborhood[]
   distances?: Distances
   travelTimes?: DistanceEntry[]
-  sources?: Record<string, FieldSource>
+  sources?: { [key: string]: FieldSource | undefined }
   knownFor?: string[]
   localTips?: string[]
   editorNote?: string

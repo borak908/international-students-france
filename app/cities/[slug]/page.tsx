@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import cities from '@/data/cities.json'
-import type { City, FaqItem } from '@/types/city'
+import type { City, FaqItem, FieldSource } from '@/types/city'
 import RelatedCities from '@/components/RelatedCities'
 import NewsletterSignup from '@/components/NewsletterSignup'
 
@@ -174,7 +174,9 @@ function formatMins(mins: number): string {
 
 // ── Sources & last-verified footnote (E-E-A-T / anti-hallucination) ─────────────
 function SourcesFootnote({ sources }: { sources?: City['sources'] }) {
-  const entries = sources ? Object.entries(sources) : []
+  const entries: [string, FieldSource][] = sources
+    ? Object.entries(sources).filter((e): e is [string, FieldSource] => e[1] !== undefined)
+    : []
   if (!entries.length) return null
   const labelFor: Record<string, string> = {
     'housing.totalMonthlyBudget': 'Monthly budget',
