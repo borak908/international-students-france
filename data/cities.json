@@ -2621,12 +2621,12 @@
         "value": "€820"
       },
       {
-        "label": "Studio Rent",
-        "value": "€630/mo"
+        "label": "Sunshine",
+        "value": "165 days/yr"
       },
       {
         "label": "Safety Rating",
-        "value": "6/10 est."
+        "value": "6/10"
       }
     ],
     "overview": {
@@ -2674,7 +2674,17 @@
       "regularPassMonthly": 68,
       "airportConnection": "Rennes Bretagne airport; TGV to Paris 1.5 hrs",
       "bikeFriendly": true,
-      "bikeShareName": "Star Vélo'v (extensive bike network)"
+      "bikeShareName": "Star Vélo'v (extensive bike network)",
+      "networkName": "STAR (transports de l’agglomération rennaise)",
+      "studentPassName": "STAR abonnement étudiant",
+      "transitModes": "2 fully-automated métro lines and an extensive bus network",
+      "airports": [
+        {
+          "name": "Rennes-Saint-Jacques",
+          "code": "RNS",
+          "sourceUrl": "https://www.rennes.aeroport.fr/en/"
+        }
+      ]
     },
     "workVisa": {
       "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
@@ -2692,7 +2702,8 @@
       "costBreakdown": {
         "groceriesMonthly": 195,
         "diningOutAvgMeal": 11,
-        "utilitiesMonthly": 78
+        "utilitiesMonthly": 78,
+        "crousMealPrice": 3.3
       },
       "cityPopulation": "220,000",
       "notableStatus": "Celtic/Breton capital with a preserved medieval old town; home to Les Transmusicales, one of Europe's most important music discovery festivals",
@@ -2709,38 +2720,84 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-07-02",
+    "lastUpdated": "2026-07-05",
     "editorNote": "Rennes carries a strong Breton identity that sets it apart from the rest of France — Celtic music sessions in bars on Thursday nights, Breton-language signs alongside French, and a food culture built around galettes (buckwheat crêpes) and local cider. The medieval old town, with its half-timbered houses around Place Saint-Anne, survived WWII largely intact. The emerging specialism worth noting: Rennes has quietly become France's leading city for cybersecurity and digital defence, with the Cyber Campus Bretagne and a cluster of defence-tech companies around the Beaulieu technology park. If you're studying computer science or cybersecurity, the internship market here is more targeted and less competitive than Paris. Les Transmusicales festival every December is one of Europe's best new-music discovery events.",
     "faq": [
       {
-        "q": "Do I need a French guarantor to rent in Rennes?",
-        "a": "Usually yes — most landlords ask for a French guarantor. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+        "q": "Why is Rennes considered such a student city?",
+        "a": "It has one of France’s youngest populations — students make up roughly a quarter of residents — with two big universities, a compact half-timbered centre, an automated métro and famously cheap, sociable nightlife around Place Sainte-Anne."
+      },
+      {
+        "q": "How do I reach the Brittany coast from Rennes?",
+        "a": "Fast — trains reach Saint-Malo in about 50 minutes, and a train-plus-bus combination gets you to Mont-Saint-Michel in around 75 minutes. Rennes sits inland at the crossroads of Brittany and Normandy."
       },
       {
         "q": "Which Rennes neighbourhood is best for international students?",
-        "a": "Villejean and Beaulieu sit next to the main campuses and offer cheaper rents, while Centre Ville and Thabor are more central and desirable. The metro links them all quickly."
+        "a": "Sainte-Anne and the old centre are the nightlife core; Villejean around the Rennes 2 campus (métro line a) and Beaulieu around Rennes 1 and INSA are the cheapest, most student-dense areas."
       },
       {
-        "q": "Is Rennes good for tech and cybersecurity careers?",
-        "a": "Yes — Rennes has a strong digital and cybersecurity cluster and consistently ranks among the most liveable cities in France, with a large student population and quick 1h30 TGV access to Paris."
+        "q": "Can I study in English in Rennes?",
+        "a": "Yes — Rennes School of Business is fully international and English-taught, and INSA Rennes and the two universities offer international tracks in tech, telecoms and sciences."
+      },
+      {
+        "q": "What is student life like in Rennes?",
+        "a": "Young and lively on a budget — legendary Thursday nights on Place Sainte-Anne, the December Transmusicales music festival, the Marché des Lices, and quick escapes to Saint-Malo and the coast."
+      },
+      {
+        "q": "Do I need a French guarantor to rent in Rennes?",
+        "a": "Usually yes. If you don’t have a French guarantor, use Visale, the free state-backed scheme for under-30s; the online certificate takes about a week and is accepted by most Rennes agencies."
       }
     ],
     "neighborhoods": [
       {
-        "name": "Centre Ville",
-        "blurb": "Historic, walkable and buzzing with one of France's liveliest student nightlife scenes; central and in demand."
+        "name": "Vieux Rennes",
+        "blurb": "The half-timbered medieval centre around the Parlement de Bretagne, full of bars and restaurants. Beautiful and central but pricier.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Thabor",
-        "blurb": "Elegant and green around the beautiful Thabor gardens — a desirable, calmer address."
+        "name": "Sainte-Anne",
+        "blurb": "The student nightlife square at the edge of the old town, ringed by cheap bars — the epicentre of Rennes’ Thursday nights. Central and buzzing.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
         "name": "Villejean",
-        "blurb": "Home to the Rennes 2 campus with metro access — student-dense and among the cheaper options."
+        "blurb": "The western campus district around Université Rennes 2 on métro line a, dense with halls and cheap rents. Maximum student value.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
         "name": "Beaulieu",
-        "blurb": "The main science-campus area east of the centre, practical for students at Rennes 1."
+        "blurb": "The eastern science campus of Rennes 1 and INSA, with student residences and easy bus links. Affordable and practical for engineers and scientists.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
+      },
+      {
+        "name": "Thabor – Jeanne d’Arc",
+        "blurb": "A leafy, sought-after district beside the Parc du Thabor, quieter and more residential. Nicer surroundings at higher rents.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       }
     ],
     "distances": {
@@ -2773,8 +2830,64 @@
         "label": "airport shuttle estimate",
         "retrievedDate": "2026-07-02",
         "estimated": true
+      },
+      "costBreakdown.crousMealPrice": {
+        "label": "CROUS national meal tariff (etudiant.gouv.fr)",
+        "url": "https://www.etudiant.gouv.fr",
+        "retrievedDate": "2026-07-05"
       }
-    }
+    },
+    "knownFor": [
+      "Half-timbered medieval old town",
+      "Les Transmusicales festival",
+      "Gateway to Saint-Malo & Mont-Saint-Michel",
+      "Galette-saucisse street food",
+      "Smallest city in the world with a métro"
+    ],
+    "localTips": [
+      "Thursday night on Place Sainte-Anne is a Rennes institution — the whole student city turns out.",
+      "Saturday means the Marché des Lices, one of France’s largest food markets.",
+      "Eat a galette-saucisse from a street stall — the local grab-and-go.",
+      "Day-trip by train to Saint-Malo’s ramparts and, with a bus, Mont-Saint-Michel.",
+      "Picnic in the Parc du Thabor, the city’s beautiful botanical garden."
+    ],
+    "travelTimes": [
+      {
+        "destination": "Paris",
+        "timeByTrain": "~1h25 by TGV",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Saint-Malo",
+        "timeByTrain": "~50 min by TER",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Mont-Saint-Michel",
+        "timeByTrain": null,
+        "timeByCar": null,
+        "timeByTransit": "~1h15 by train + bus",
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Nantes",
+        "timeByTrain": "~1h15 by train",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Rennes-Saint-Jacques Airport (RNS)",
+        "timeByTrain": null,
+        "timeByCar": null,
+        "timeByTransit": "Bus C6, ~20 min",
+        "sourceUrl": "https://www.rennes.aeroport.fr/en/"
+      }
+    ]
   },
   {
     "slug": "aix-en-provence",
