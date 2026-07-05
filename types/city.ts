@@ -27,12 +27,22 @@ export interface Universities {
   bestFields: string[]
 }
 
+export interface Airport {
+  name: string
+  code: string
+  sourceUrl?: string | null
+}
+
 export interface Transport {
   studentPassMonthly: number
   regularPassMonthly: number
   airportConnection: string
   bikeFriendly: boolean
   bikeShareName: string
+  networkName?: string
+  studentPassName?: string
+  transitModes?: string
+  airports?: Airport[]
 }
 
 export interface WorkVisa {
@@ -53,6 +63,7 @@ export interface CostBreakdown {
   groceriesMonthly: number
   diningOutAvgMeal: number
   utilitiesMonthly: number
+  crousMealPrice?: number | null
 }
 
 export interface CityLife {
@@ -100,6 +111,7 @@ export interface DistanceEntry {
   destination: string
   timeByTrain: string | null
   timeByCar: string | null
+  timeByTransit?: string | null
   sourceUrl: string | null
   flags?: Record<string, string>
 }
@@ -131,6 +143,8 @@ export interface City {
   distances?: Distances
   travelTimes?: DistanceEntry[]
   sources?: Record<string, FieldSource>
+  knownFor?: string[]
+  localTips?: string[]
   editorNote?: string
   lastUpdated: string
 }

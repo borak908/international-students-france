@@ -188,8 +188,8 @@
         "value": "€1,200"
       },
       {
-        "label": "Studio Rent",
-        "value": "€1,230/mo"
+        "label": "Sunshine",
+        "value": "164 days/yr"
       },
       {
         "label": "Safety Rating",
@@ -244,7 +244,27 @@
       "regularPassMonthly": 90.8,
       "airportConnection": "CDG via RER B (30 min), Orly via RER B + tram",
       "bikeFriendly": true,
-      "bikeShareName": "Vélib' (1,400+ stations)"
+      "bikeShareName": "Vélib' (1,400+ stations)",
+      "networkName": "RATP / Île-de-France Mobilités",
+      "studentPassName": "Imagine R Étudiant",
+      "transitModes": "16-line métro, 5 RER lines, trams and a dense bus network",
+      "airports": [
+        {
+          "name": "Paris-Charles de Gaulle",
+          "code": "CDG",
+          "sourceUrl": "https://www.parisaeroport.fr"
+        },
+        {
+          "name": "Paris-Orly",
+          "code": "ORY",
+          "sourceUrl": "https://www.parisaeroport.fr"
+        },
+        {
+          "name": "Beauvais-Tillé (Paris-Beauvais)",
+          "code": "BVA",
+          "sourceUrl": null
+        }
+      ]
     },
     "workVisa": {
       "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
@@ -257,12 +277,13 @@
         "avgSummerTempC": 25,
         "avgWinterTempC": 5,
         "sunshineDaysPerYear": 164,
-        "character": "Temperate oceanic — warm summers, mild winters; rain spread evenly year-round"
+        "character": "Mild oceanic climate: grey, drizzly winters that rarely freeze, and warm summers that increasingly spike into 35°C-plus heatwaves — brutal in the top-floor, un-air-conditioned chambres most students rent."
       },
       "costBreakdown": {
         "groceriesMonthly": 250,
         "diningOutAvgMeal": 15,
-        "utilitiesMonthly": 100
+        "utilitiesMonthly": 100,
+        "crousMealPrice": 3.3
       },
       "cityPopulation": "2,100,000",
       "notableStatus": "UNESCO World Heritage — Seine riverbanks, Versailles, Notre-Dame cathedral",
@@ -324,38 +345,97 @@
         "note": "#1 in the EU for 11 consecutive years"
       }
     ],
-    "lastUpdated": "2026-07-02",
+    "lastUpdated": "2026-07-05",
     "editorNote": "The honest picture: Paris costs roughly €150–200/month more than Lyon or Bordeaux, and the housing market is the most competitive in France — expect to lose several apartments before securing one. That said, no other city matches it for career access: the density of multinational headquarters, consulting firms, and startup headquarters means internship and graduate job prospects are in a different league. The Latin Quarter (5th arrondissement) has been a student district since the 12th century and still feels it — bookshops, cheap crêpe stands, and library terraces along the Seine. If cost is a hard constraint, look at shared rooms in Belleville (20th) or Montparnasse (14th), where colocation prices are meaningfully lower than the studio averages.",
     "faq": [
       {
         "q": "Do I need a French guarantor to rent in Paris?",
-        "a": "Almost always — Paris has France's most competitive rental market, so landlords expect a French guarantor and complete files. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted. Start your search two to three months early."
+        "a": "Almost always. Paris has France's tightest rental market, so landlords expect a French guarantor and a complete dossier. If you don't have one, use Visale — the free, state-backed guarantor scheme for under-30s; the certificate is issued online in about a week and is widely accepted. Have the whole file ready as one PDF before you view, because flats here go within hours, not days.",
+        "sourceUrl": "https://www.visale.fr"
       },
       {
-        "q": "Which Paris neighbourhood is best for international students?",
-        "a": "The Latin Quarter (5e) is closest to the historic universities but expensive; Belleville (20e) and parts of the 11e offer more affordable rooms while staying central and well-connected."
+        "q": "Can international students live at the Cité Universitaire in Paris?",
+        "a": "Yes — the Cité Internationale Universitaire de Paris in the 14e is a park-set campus of around 40 residence houses built specifically for international students and researchers, with subsidised rooms, canteens and its own RER B station. It's a Paris institution with no real equivalent in other French cities, but demand vastly outstrips supply, so apply months ahead through your home institution or the CIUP and keep a private-market backup.",
+        "sourceUrl": "https://www.ciup.fr"
       },
       {
-        "q": "Is studying in Paris worth the higher cost?",
-        "a": "It depends on your field. Paris has unrivalled academic prestige and career access, but living costs run several hundred euros a month above cheaper cities. If your programme or industry is concentrated in Paris, the premium can pay off; otherwise a regional city offers far better value."
+        "q": "Which travel pass should a student get in Paris?",
+        "a": "The Imagine R Étudiant pass from Île-de-France Mobilités is the one to get: an annual student season ticket covering the whole Île-de-France region — every métro, RER, tram and bus, including the RER B out to Charles-de-Gaulle airport — paid by monthly direct debit and cheaper per month than the standard Navigo Mensuel.",
+        "sourceUrl": null,
+        "flags": {
+          "pass": "verify live Imagine R étudiant rate on iledefrance-mobilites.fr / imagine-r.com"
+        }
+      },
+      {
+        "q": "How hard is it really to find student housing in Paris?",
+        "a": "Harder than anywhere else in France. CROUS halls exist but Paris has far more applicants than rooms, so treat a CROUS place as a long shot rather than a plan. Most international students end up in private studios, colocations, or just outside the Périphérique in the inner suburbs where rent drops sharply. Budget two to three months of searching and expect to lose several flats before one sticks.",
+        "sourceUrl": null
+      },
+      {
+        "q": "Can I travel to London or Brussels easily from Paris?",
+        "a": "Yes, and it's a genuine Paris advantage: Eurostar runs from Gare du Nord to London St Pancras in about 2h20 and to Brussels in roughly 1h20, with onward high-speed links to Amsterdam and Cologne. No other French student city has direct high-speed trains straight to London. Book weeks ahead for the cheaper student-friendly fares.",
+        "sourceUrl": null,
+        "flags": {
+          "sourceUrl": "verify live Eurostar Paris→London/Brussels times on eurostar.com"
+        }
+      },
+      {
+        "q": "Can I study in English in Paris?",
+        "a": "More easily than in most of France. PSL, Sciences Po, HEC and the Sorbonne institutions run a wide range of English-taught Master's programmes and their international offices are used to non-French speakers. For daily life, English is common in central and student areas, though you'll still need some French for admin, CAF and the préfecture.",
+        "sourceUrl": null
       }
     ],
     "neighborhoods": [
       {
         "name": "Latin Quarter (5e)",
-        "blurb": "The historic student heart around the Sorbonne — central, iconic and expensive, but unbeatable for university access."
+        "blurb": "Europe's oldest student quarter — the Sorbonne has pulled students here since the 12th century, and it still shows in the bookshops, cheap crêpe stands and library terraces along the Seine. You pay a heavy premium for the address and the tiny top-floor chambres de bonne, so many students come for a semester rather than a full lease. Concrete draw: rue Mouffetard's daily market and walking to Panthéon-Sorbonne lectures.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService per-arrondissement studio rent index in-browser"
+        }
       },
       {
-        "name": "Bastille (11e)",
-        "blurb": "Lively nightlife and a young crowd, with good transport and slightly better value than the most central arrondissements."
+        "name": "Belleville & Ménilmontant (19e–20e)",
+        "blurb": "Paris's most mixed, multi-ethnic hillside: Chinese and North-African grocers, former artist squats turned studios, and some of the city's best cheap eats. Rents sit well below the central arrondissements, which is why students, young artists and working families share the same streets. The tradeoff is a genuine climb and a long hop from the historic campuses. Concrete draw: the whole-city sunset from Parc de Belleville.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService per-arrondissement studio rent index in-browser"
+        }
       },
       {
-        "name": "Belleville (20e)",
-        "blurb": "Diverse, artsy and among the more affordable central areas — popular with students and creatives."
+        "name": "Bastille–Oberkampf (11e)",
+        "blurb": "Where students actually go out — rue Oberkampf and rue de la Roquette string together a solid kilometre of bars, and the crowd skews young-professional-meets-student. Better value than the 5e or 6e without feeling peripheral, and superbly connected. The flip side is noise: a flat above an Oberkampf bar is cheap for a reason.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService per-arrondissement studio rent index in-browser"
+        }
       },
       {
-        "name": "Montparnasse (14e)",
-        "blurb": "Calmer and residential with excellent transport links; a practical base away from the tourist crush."
+        "name": "Cité Universitaire & Montsouris (14e)",
+        "blurb": "Built around the Cité Internationale Universitaire de Paris — roughly 40 nation-themed residence houses set in a big park, made specifically for international students and reachable on RER B and tram T3. The surrounding 14e is calm, green and residential, with Parc Montsouris next door. Cité rooms are subsidised but hugely oversubscribed, so apply early and keep a private-market backup.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "sourceUrl": "https://www.ciup.fr",
+        "flags": {
+          "avgRent": "add SeLoger/LocService per-arrondissement studio rent index in-browser"
+        }
+      },
+      {
+        "name": "Just past the Périph — Montreuil, Pantin, Saint-Denis",
+        "blurb": "Where a lot of international students really end up. Cross the Périphérique into Montreuil or Seine-Saint-Denis (93) and studio rents drop by hundreds a month while you stay on métro lines 9, 5 or 13. The reputation is rougher than the reality in the gentrifying pockets, but check the specific street and your night-time commute. Concrete tradeoff: €200–400/month cheaper for 20–30 min more to a central campus.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService per-arrondissement studio rent index in-browser"
+        }
       }
     ],
     "distances": {
@@ -388,8 +468,62 @@
         "label": "RER B estimate",
         "retrievedDate": "2026-07-02",
         "estimated": true
+      },
+      "costBreakdown.crousMealPrice": {
+        "label": "CROUS national meal tariff (etudiant.gouv.fr)",
+        "url": "https://www.etudiant.gouv.fr",
+        "retrievedDate": "2026-07-05"
       }
-    }
+    },
+    "travelTimes": [
+      {
+        "destination": "Charles-de-Gaulle Airport (CDG)",
+        "timeByTrain": null,
+        "timeByCar": "~45–60 min",
+        "timeByTransit": "RER B, ~35 min",
+        "sourceUrl": "https://www.parisaeroport.fr/en/passengers/access-and-parking"
+      },
+      {
+        "destination": "Orly Airport (ORY)",
+        "timeByTrain": null,
+        "timeByCar": "~30–45 min",
+        "timeByTransit": "Tram T7 or Orlyval + RER B, ~40 min",
+        "sourceUrl": "https://www.parisaeroport.fr/en/passengers/access-and-parking"
+      },
+      {
+        "destination": "Lille",
+        "timeByTrain": "~1h02 by TGV",
+        "timeByCar": "~2h20",
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "London (St Pancras)",
+        "timeByTrain": "~2h20 by Eurostar",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.eurostar.com"
+      },
+      {
+        "destination": "Brussels",
+        "timeByTrain": "~1h22 by Eurostar/TGV",
+        "timeByCar": "~3h30",
+        "timeByTransit": null,
+        "sourceUrl": "https://www.eurostar.com"
+      }
+    ],
+    "knownFor": [
+      "The Sorbonne & Europe's oldest student quarter",
+      "Fashion & luxury HQs (LVMH, Kering, Chanel)",
+      "130+ museums — Louvre, Orsay, Pompidou",
+      "Eurostar gateway to London & Brussels"
+    ],
+    "localTips": [
+      "Get the annual Imagine R pass rather than paying monthly Navigo — for students it works out cheaper over the year and covers the RER B out to CDG airport.",
+      "Keep your rental dossier — Visale certificate, ID, proof of funds — ready as a single PDF; central Paris flats are gone within hours of listing.",
+      "CROUS housing in Paris is massively oversubscribed; line up a private studio or colocation as your real plan, not a backup.",
+      "Look just past the Périphérique — Montreuil, Pantin, Saint-Denis — where studio rents fall by hundreds a month but you're still on the métro."
+    ]
   },
   {
     "slug": "lyon",
@@ -408,8 +542,8 @@
         "value": "€1,062"
       },
       {
-        "label": "Studio Rent",
-        "value": "€840/mo"
+        "label": "Sunshine",
+        "value": "188 days/yr"
       },
       {
         "label": "Safety Rating",
@@ -463,7 +597,17 @@
       "regularPassMonthly": 72.3,
       "airportConnection": "Lyon-Saint-Exupéry; TGV to Paris 2 hrs",
       "bikeFriendly": true,
-      "bikeShareName": "Vélo'v (350+ stations)"
+      "bikeShareName": "Vélo'v (350+ stations)",
+      "networkName": "TCL (Transports en Commun Lyonnais)",
+      "studentPassName": "TCL abonnement étudiant",
+      "transitModes": "4 métro lines, 2 funiculars, 7 tram lines and a dense bus network",
+      "airports": [
+        {
+          "name": "Lyon-Saint-Exupéry",
+          "code": "LYS",
+          "sourceUrl": "https://www.lyonaeroports.com/en"
+        }
+      ]
     },
     "workVisa": {
       "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
@@ -592,28 +736,19 @@
         "destination": "Paris",
         "timeByTrain": "~1h57 (under 2 hours)",
         "timeByCar": "~4h40",
-        "sourceUrl": null,
-        "flags": {
-          "sourceUrl": "add live SNCF Connect (train) / ViaMichelin (car) links in-browser"
-        }
+        "sourceUrl": "https://www.sncf-connect.com"
       },
       {
         "destination": "Geneva",
         "timeByTrain": "~1h50",
         "timeByCar": "~1h40",
-        "sourceUrl": null,
-        "flags": {
-          "sourceUrl": "add live SNCF Connect (train) / ViaMichelin (car) links in-browser"
-        }
+        "sourceUrl": "https://www.sncf-connect.com"
       },
       {
         "destination": "Marseille",
         "timeByTrain": "~1h40 (direct TGV)",
         "timeByCar": "~3h05",
-        "sourceUrl": null,
-        "flags": {
-          "sourceUrl": "add live SNCF Connect (train) / ViaMichelin (car) links in-browser"
-        }
+        "sourceUrl": "https://www.sncf-connect.com"
       }
     ],
     "sources": {
@@ -641,6 +776,11 @@
         "label": "Rhônexpress tram estimate",
         "retrievedDate": "2026-07-02",
         "estimated": true
+      },
+      "transport.studentPassMonthly": {
+        "label": "TCL — abonnement étudiant (zones 1–2)",
+        "url": "https://www.tcl.fr/titres-et-tarifs/tous-les-titres-et-abonnements/etudiants-26-27-ans-illimite-par-prelevement",
+        "retrievedDate": "2026-07-05"
       }
     }
   },

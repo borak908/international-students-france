@@ -182,6 +182,9 @@ function SourcesFootnote({ sources }: { sources?: City['sources'] }) {
     'overview.safetyRating': 'Safety rating',
     'distances.toParisMins': 'Time to Paris',
     'distances.airportMins': 'Airport transfer',
+    'costBreakdown.crousMealPrice': 'CROUS meal',
+    'transport.studentPassMonthly': 'Student transport pass',
+    'transport.regularPassMonthly': 'Regular transport pass',
   }
   return (
     <section className="scroll-mt-24 pt-2">
@@ -245,6 +248,18 @@ export default function CityPage({ params }: { params: { slug: string } }) {
     ? `Studio apartments average €${city.housing.studioRentMonthly}/month and shared rooms ${city.housing.sharedRoomMonthly}/month`
     : `Studio rents run in the mid-hundreds per month, with shared rooms notably cheaper`
 
+  // "Gate, never badge" — a transport price renders as a hard number ONLY when its sources
+  // entry carries a real url. FREE (=== 0) is a categorical fact, not a volatile fare, so it
+  // always renders. Otherwise: sourced → show €N; unsourced → fall back to the pass name +
+  // "check the network" (Rule 2), never an estimated number or an "est." badge.
+  const studentPassSourced = !!city.sources?.['transport.studentPassMonthly']?.url
+  const regularPassSourced = !!city.sources?.['transport.regularPassMonthly']?.url
+  const studentPassFree = city.transport.studentPassMonthly === 0
+  const regularPassFree = city.transport.regularPassMonthly === 0
+  const showStudentPassPrice = studentPassFree || studentPassSourced
+  const showRegularPassPrice = regularPassFree || regularPassSourced
+  const netName = city.transport.networkName || 'the local network'
+
   // Single source of truth — feeds BOTH the visible FAQ section and the FAQPage JSON-LD
   const faqItems: FaqItem[] = [
     {
@@ -257,7 +272,13 @@ export default function CityPage({ params }: { params: { slug: string } }) {
     },
     {
       q: `How do international students get around ${city.name}?`,
-      a: `${city.name} has good public transport. The student monthly pass costs ${city.transport.studentPassMonthly === 0 ? 'nothing — public transport is free for residents' : `€${city.transport.studentPassMonthly}/month with a student discount`}. The city is ${city.transport.bikeFriendly ? `bike-friendly with ${city.transport.bikeShareName} bike-share` : 'primarily served by public transit'}. Airport access is available via ${city.transport.airportConnection}.`,
+      a: `${city.name} has good public transport. ${
+        studentPassFree
+          ? 'Public transport is free for residents'
+          : studentPassSourced
+            ? `The student monthly pass costs €${city.transport.studentPassMonthly}/month with a student discount`
+            : `A discounted student pass${city.transport.studentPassName ? ` (${city.transport.studentPassName})` : ''} is available — check ${netName} for the current rate`
+      }. The city is ${city.transport.bikeFriendly ? `bike-friendly with ${city.transport.bikeShareName} bike-share` : 'primarily served by public transit'}. Airport access is available via ${city.transport.airportConnection}.`,
     },
     {
       q: `Can international students work part-time in ${city.name}?`,
@@ -485,6 +506,24 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                 />
               </div>
 
+              {city.cityLife.costBreakdown.crousMealPrice != null && (
+                <p className="-mt-2 mb-5 text-xs text-stone-500">
+                  🍽️ A subsidised CROUS university-restaurant meal costs{' '}
+                  <strong className="text-stone-700">€{city.cityLife.costBreakdown.crousMealPrice}</strong>{' '}
+                  (nationally set — a reliable cheap lunch on campus)
+                  {city.sources?.['costBreakdown.crousMealPrice']?.url && (
+                    <a
+                      href={city.sources['costBreakdown.crousMealPrice'].url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-1 text-stone-400 hover:text-[#1E3A6E] underline"
+                    >
+                      Source ↗
+                    </a>
+                  )}
+                </p>
+              )}
+
               {/* Where to live — authored neighborhood guide, tag fallback */}
               {city.neighborhoods && city.neighborhoods.length > 0 ? (
                 <div>
@@ -650,14 +689,28 @@ export default function CityPage({ params }: { params: { slug: string } }) {
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
                 <StatCard
                   label="Student pass"
-                  value={city.transport.studentPassMonthly === 0 ? 'FREE 🎉' : `€${city.transport.studentPassMonthly}/mo`}
-                  sub={city.transport.studentPassMonthly === 0 ? 'Public transport free for residents' : 'With student discount'}
+                  value={
+                    studentPassFree
+                      ? 'FREE 🎉'
+                      : showStudentPassPrice
+                        ? `€${city.transport.studentPassMonthly}/mo`
+                        : city.transport.studentPassName || 'Student pass'
+                  }
+                  sub={
+                    studentPassFree
+                      ? 'Public transport free for residents'
+                      : showStudentPassPrice
+                        ? city.transport.studentPassName || 'With student discount'
+                        : `Rate updated seasonally — check ${netName}`
+                  }
                 />
-                <StatCard
-                  label="Regular pass"
-                  value={city.transport.regularPassMonthly === 0 ? 'FREE' : `€${city.transport.regularPassMonthly}/mo`}
-                  sub="Without discount"
-                />
+                {showRegularPassPrice && (
+                  <StatCard
+                    label="Regular pass"
+                    value={regularPassFree ? 'FREE' : `€${city.transport.regularPassMonthly}/mo`}
+                    sub="Without discount"
+                  />
+                )}
                 <StatCard
                   label="Bike-friendly"
                   value={city.transport.bikeFriendly ? 'Yes ✅' : 'Limited'}
@@ -665,6 +718,36 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                 />
               </div>
               <div className="bg-white rounded-xl border border-stone-100 px-5 divide-y divide-stone-100">
+                {city.transport.networkName && (
+                  <InfoRow label="Local network" value={city.transport.networkName} />
+                )}
+                {city.transport.transitModes && (
+                  <InfoRow label="What runs here" value={city.transport.transitModes} />
+                )}
+                {city.transport.airports && city.transport.airports.length > 0 && (
+                  <InfoRow
+                    label={city.transport.airports.length > 1 ? 'Airports' : 'Airport'}
+                    value={
+                      <span className="flex flex-wrap gap-x-4 gap-y-1 mt-1">
+                        {city.transport.airports.map((a) => (
+                          <span key={a.code} className="text-stone-600">
+                            {a.name} <span className="font-semibold text-stone-700">({a.code})</span>
+                            {a.sourceUrl && (
+                              <a
+                                href={a.sourceUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="ml-1 text-xs text-stone-400 hover:text-[#1E3A6E] underline"
+                              >
+                                ↗
+                              </a>
+                            )}
+                          </span>
+                        ))}
+                      </span>
+                    }
+                  />
+                )}
                 <InfoRow label="Airport connection" value={city.transport.airportConnection} />
                 <InfoRow label="Bike-share"          value={city.transport.bikeShareName} />
                 {city.distances && (
@@ -684,18 +767,32 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                   </>
                 )}
               </div>
-              {city.travelTimes && city.travelTimes.some((t) => t.timeByTrain || t.timeByCar) && (
+              {/* "Gate, never badge": a travel time renders ONLY when the row carries a real
+                  sourceUrl (canonical operator — SNCF Connect / airport access page). Unsourced
+                  times are hidden, never shown as bare numbers. */}
+              {city.travelTimes && city.travelTimes.some((t) => t.sourceUrl && (t.timeByTrain || t.timeByCar || t.timeByTransit)) && (
                 <div className="mt-5">
-                  <h3 className="text-sm font-semibold text-stone-700 mb-3">Getting to other cities</h3>
+                  <h3 className="text-sm font-semibold text-stone-700 mb-3">Getting to airports &amp; other cities</h3>
                   <div className="bg-white rounded-xl border border-stone-100 px-5 divide-y divide-stone-100">
                     {city.travelTimes
-                      .filter((t) => t.timeByTrain || t.timeByCar)
+                      .filter((t) => t.sourceUrl && (t.timeByTrain || t.timeByCar || t.timeByTransit))
                       .map((t) => (
                         <div key={t.destination} className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 py-3">
-                          <span className="text-sm font-medium text-stone-700 sm:w-32 flex-shrink-0">{t.destination}</span>
-                          <span className="flex flex-wrap gap-x-5 gap-y-1 text-sm text-stone-600">
+                          <span className="text-sm font-medium text-stone-700 sm:w-44 flex-shrink-0">{t.destination}</span>
+                          <span className="flex flex-wrap items-baseline gap-x-5 gap-y-1 text-sm text-stone-600">
                             {t.timeByTrain && <span>🚆 {t.timeByTrain}</span>}
+                            {t.timeByTransit && <span>🚈 {t.timeByTransit}</span>}
                             {t.timeByCar && <span>🚗 {t.timeByCar}</span>}
+                            {t.sourceUrl && (
+                              <a
+                                href={t.sourceUrl}
+                                target="_blank"
+                                rel="nofollow noopener noreferrer"
+                                className="text-xs text-stone-400 hover:text-[#1E3A6E] underline"
+                              >
+                                Source↗
+                              </a>
+                            )}
                           </span>
                         </div>
                       ))}
@@ -745,6 +842,38 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                   <InfoRow label="Notable for" value={city.cityLife.notableStatus} />
                 )}
               </div>
+
+              {city.knownFor && city.knownFor.length > 0 && (
+                <div className="mb-5">
+                  <h3 className="text-sm font-semibold text-stone-700 mb-3">What {city.name} is known for</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {city.knownFor.map((k) => (
+                      <span
+                        key={k}
+                        className="text-xs font-medium text-[#1E3A6E] bg-[#EDF0F8] border border-[#C5D0EC] px-2.5 py-1 rounded-full"
+                      >
+                        {k}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {city.localTips && city.localTips.length > 0 && (
+                <div className="bg-[#F5F2ED] rounded-xl border border-stone-100 p-5">
+                  <h3 className="text-sm font-semibold text-stone-700 mb-3">
+                    Local tips — from students who&apos;ve lived here
+                  </h3>
+                  <ul className="space-y-2.5">
+                    {city.localTips.map((tip, idx) => (
+                      <li key={idx} className="flex gap-2.5 text-sm text-stone-600 leading-relaxed">
+                        <span className="flex-shrink-0">📍</span>
+                        <span>{tip}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </Section>
 
             {/* 7 — FAQ (visible content mirrors FAQPage JSON-LD) */}
@@ -805,16 +934,20 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                     <span className="text-stone-500">Monthly budget</span>
                     <span className="font-medium text-stone-700">€{city.housing.totalMonthlyBudget}</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-stone-500">Studio rent</span>
-                    <span className="font-medium text-stone-700">€{city.housing.studioRentMonthly}/mo</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-stone-500">Transport</span>
-                    <span className="font-medium text-stone-700">
-                      {city.transport.studentPassMonthly === 0 ? 'FREE' : `€${city.transport.studentPassMonthly}/mo`}
-                    </span>
-                  </div>
+                  {studioRentSourceUrl && (
+                    <div className="flex justify-between">
+                      <span className="text-stone-500">Studio rent</span>
+                      <span className="font-medium text-stone-700">€{city.housing.studioRentMonthly}/mo</span>
+                    </div>
+                  )}
+                  {showStudentPassPrice && (
+                    <div className="flex justify-between">
+                      <span className="text-stone-500">Transport</span>
+                      <span className="font-medium text-stone-700">
+                        {studentPassFree ? 'FREE' : `€${city.transport.studentPassMonthly}/mo`}
+                      </span>
+                    </div>
+                  )}
                   <div className="flex justify-between">
                     <span className="text-stone-500">Summer avg</span>
                     <span className="font-medium text-orange-600">{city.cityLife.climate.avgSummerTempC}°C</span>
