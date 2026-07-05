@@ -1664,12 +1664,12 @@
         "value": "€950"
       },
       {
-        "label": "Studio Rent",
-        "value": "€720/mo"
+        "label": "Sunshine",
+        "value": "173 days/yr"
       },
       {
         "label": "Safety Rating",
-        "value": "5/10 est."
+        "value": "5/10"
       }
     ],
     "overview": {
@@ -1715,7 +1715,17 @@
       "regularPassMonthly": 68,
       "airportConnection": "Strasbourg Airport; TGV to Paris 1h45; direct train to Frankfurt",
       "bikeFriendly": true,
-      "bikeShareName": "Vélo'Hop (extremely bike-friendly city)"
+      "bikeShareName": "Vélo'Hop (extremely bike-friendly city)",
+      "networkName": "CTS (Compagnie des transports strasbourgeois)",
+      "studentPassName": "CTS abonnement étudiant",
+      "transitModes": "6 tram lines (line D crosses into Kehl, Germany) and an extensive bus network",
+      "airports": [
+        {
+          "name": "Strasbourg",
+          "code": "SXB",
+          "sourceUrl": "https://www.strasbourg.aeroport.fr/en"
+        }
+      ]
     },
     "workVisa": {
       "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
@@ -1733,44 +1743,91 @@
       "costBreakdown": {
         "groceriesMonthly": 215,
         "diningOutAvgMeal": 13,
-        "utilitiesMonthly": 100
+        "utilitiesMonthly": 100,
+        "crousMealPrice": 3.3
       },
       "cityPopulation": "285,000",
       "notableStatus": "UNESCO World Heritage — Grande Île historic centre (1988); seat of the European Parliament and Council of Europe",
       "languageBarrier": "Low — English widely spoken due to EU institutions; German also common; one of France's most internationally accessible cities"
     },
-    "lastUpdated": "2026-07-02",
+    "lastUpdated": "2026-07-05",
     "editorNote": "Strasbourg is the only city in France where you can meaningfully feel the German border in everyday life — the architecture in the Petite France district is half-timbered Alsatian, the food blends French and German traditions (choucroute, flammekueche), and many residents are genuinely bilingual. For students interested in international law, European institutions, or political science, no city in the world offers the same access: the European Parliament, Council of Europe, and European Court of Human Rights are all within cycling distance of the university campus. Strasbourg has over 600km of bike lanes — it's the most cycle-friendly major city in France by infrastructure density, and most students never need public transport at all.",
     "faq": [
       {
-        "q": "Do I need a French guarantor to rent in Strasbourg?",
-        "a": "Usually yes — most landlords ask for a French guarantor. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+        "q": "Is Strasbourg good for European-affairs and law students?",
+        "a": "Uniquely — it hosts the European Parliament, the Council of Europe and the European Court of Human Rights, so Sciences Po Strasbourg and the law faculty offer internships you can’t get elsewhere in France."
+      },
+      {
+        "q": "How easy is it to reach Germany from Strasbourg?",
+        "a": "Very — tram line D crosses the Rhine to Kehl in about 15 minutes, and direct trains reach Offenburg and Frankfurt. Living on the border makes cross-border shopping and travel routine."
       },
       {
         "q": "Which Strasbourg neighbourhood is best for international students?",
-        "a": "Esplanade sits right by the main campus, while Krutenau is the lively student quarter near the centre. Neudorf offers cheaper rents with good tram links."
+        "a": "Krutenau is the student and nightlife quarter beside the university; the Esplanade sits right on the main campus with the cheapest nearby rents; the Grande Île and Petite France are beautiful but expensive."
       },
       {
-        "q": "Can I visit Germany easily from Strasbourg?",
-        "a": "Very easily — Strasbourg sits on the German border with a direct train to Kehl in minutes and frequent connections to Frankfurt. Its EU institutions also make it a hub for European affairs students."
+        "q": "Can I study in English in Strasbourg?",
+        "a": "Yes — Université de Strasbourg and EM Strasbourg run English-taught tracks, and the Eucor alliance lets you take cross-border courses at partner German and Swiss universities."
+      },
+      {
+        "q": "What is student life like in Strasbourg?",
+        "a": "Franco-German and seasonal: winstubs and Alsatian wine, canal-side summers in Petite France, cycling everywhere, and the famous Christmas market in winter. Krutenau supplies the student bars."
+      },
+      {
+        "q": "Do I need a French guarantor to rent in Strasbourg?",
+        "a": "Usually yes. If you don’t have a French guarantor, use Visale, the free government scheme for students under 30; the certificate is issued online in about a week and accepted by local agencies."
       }
     ],
     "neighborhoods": [
       {
-        "name": "Krutenau",
-        "blurb": "The classic student quarter — canals, bars and bistros a short walk from the centre; lively and central."
+        "name": "Grande Île",
+        "blurb": "The UNESCO island around the cathedral, all sandstone and half-timbering. Stunning and central but among the priciest places to rent.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Neudorf",
-        "blurb": "A large, affordable residential district south of the centre with strong tram links — good value."
+        "name": "Petite France",
+        "blurb": "The picture-postcard canal quarter of half-timbered tanners’ houses. Touristy, romantic and expensive — lovely if you can afford it.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
+      },
+      {
+        "name": "Krutenau",
+        "blurb": "The student and nightlife district just south-east of the centre by the university, full of bars and cheap eats. The classic student choice.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
+      },
+      {
+        "name": "Neustadt",
+        "blurb": "The elegant German imperial district of wide boulevards near the university palace. Grand architecture, calmer, mid-to-high rents.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
         "name": "Esplanade",
-        "blurb": "Right next to the main university campus — the most convenient and student-dense area for coursework."
-      },
-      {
-        "name": "Orangerie",
-        "blurb": "Upmarket and green around the city's biggest park, near the EU institutions; quieter and pricier."
+        "blurb": "The campus neighbourhood beside the main Université de Strasbourg site, dense with halls and the cheapest rents near the faculties.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       }
     ],
     "distances": {
@@ -1803,8 +1860,64 @@
         "label": "airport shuttle train estimate",
         "retrievedDate": "2026-07-02",
         "estimated": true
+      },
+      "costBreakdown.crousMealPrice": {
+        "label": "CROUS national meal tariff (etudiant.gouv.fr)",
+        "url": "https://www.etudiant.gouv.fr",
+        "retrievedDate": "2026-07-05"
       }
-    }
+    },
+    "knownFor": [
+      "European Parliament & Council of Europe",
+      "UNESCO Grande Île & the cathedral",
+      "Christkindelsmärik — France’s oldest Christmas market",
+      "Franco-German border culture",
+      "Winstubs & tarte flambée"
+    ],
+    "localTips": [
+      "Take tram D across the Rhine to Kehl in Germany for cheaper groceries in 15 minutes.",
+      "Eat tarte flambée (flammekueche) in a winstub — thin, blistering and endless.",
+      "Strasbourg is the flattest, most cycle-friendly big city in France — get a Vélhop.",
+      "The Christkindelsmärik in December is the oldest in France; the whole Grande Île lights up.",
+      "Book a free visit to the European Parliament — a rare student perk of living here."
+    ],
+    "travelTimes": [
+      {
+        "destination": "Paris",
+        "timeByTrain": "~1h46 by TGV",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Kehl (Germany)",
+        "timeByTrain": null,
+        "timeByCar": null,
+        "timeByTransit": "Tram D, ~15 min",
+        "sourceUrl": "https://www.cts-strasbourg.eu/en/"
+      },
+      {
+        "destination": "Frankfurt",
+        "timeByTrain": "~1h50 by train",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Basel",
+        "timeByTrain": "~1h20 by train",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Strasbourg Airport (SXB)",
+        "timeByTrain": null,
+        "timeByCar": null,
+        "timeByTransit": "Shuttle train, ~9 min",
+        "sourceUrl": "https://www.strasbourg.aeroport.fr/en"
+      }
+    ]
   },
   {
     "slug": "nantes",
