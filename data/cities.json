@@ -755,7 +755,7 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-07-03",
+    "lastUpdated": "2026-07-05",
     "editorNote": "Lyon rewards students who arrive curious about food — the city takes gastronomy seriously at every price point, not just in Michelin-starred restaurants. Bouchons (traditional Lyonnais bistros) serve full weekday lunches for €12–15, and the Saturday market in Croix-Rousse — the old silk-workers' neighbourhood on the hill above the city — is one of the best farmers' markets in France. The city sits between two rivers (the Saône and the Rhône), which gives it an unusually pleasant cycling and running infrastructure along the quays. Lyon's growing biotech and digital cluster (Lyon French Tech) means the internship pipeline, especially in life sciences and software, is increasingly competitive with Paris.",
     "faq": [
       {
@@ -895,7 +895,21 @@
         "url": "https://www.tcl.fr/titres-et-tarifs/tous-les-titres-et-abonnements/etudiants-26-27-ans-illimite-par-prelevement",
         "retrievedDate": "2026-07-05"
       }
-    }
+    },
+    "knownFor": [
+      "World capital of gastronomy — bouchons & Paul Bocuse",
+      "Fête des Lumières — December light festival",
+      "Vieux Lyon & the Renaissance traboules",
+      "Presqu’île between the Rhône and Saône",
+      "Part-Dieu — France’s second business district"
+    ],
+    "localTips": [
+      "Eat in a bouchon in Vieux Lyon — quenelles, andouillette and a pot of Beaujolais.",
+      "Cut through the traboules, the hidden passageways linking Vieux Lyon’s courtyards.",
+      "Take the funicular up Fourvière for the basilica and the view across the city to the Alps.",
+      "In December the Fête des Lumières turns the whole city into a four-night light show.",
+      "Sunday morning: the Croix-Rousse market, then coffee on the old silk-weavers’ plateau."
+    ]
   },
   {
     "slug": "bordeaux",
