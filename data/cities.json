@@ -2906,12 +2906,12 @@
         "value": "€1,050"
       },
       {
-        "label": "Studio Rent",
-        "value": "€900/mo"
+        "label": "Sunshine",
+        "value": "300 days/yr"
       },
       {
         "label": "Safety Rating",
-        "value": "6/10 est."
+        "value": "6/10"
       }
     ],
     "overview": {
@@ -2957,7 +2957,17 @@
       "regularPassMonthly": 30,
       "airportConnection": "Marseille Provence airport 30 min; TGV Aix to Paris 3 hrs",
       "bikeFriendly": true,
-      "bikeShareName": "Vélo'in bike-share"
+      "bikeShareName": "Vélo'in bike-share",
+      "networkName": "Aix en Bus",
+      "studentPassName": "Aix en Bus abonnement étudiant",
+      "transitModes": "an urban bus network (no tram or métro), plus regional Zou! coaches to Marseille and the coast",
+      "airports": [
+        {
+          "name": "Marseille Provence",
+          "code": "MRS",
+          "sourceUrl": "https://www.marseille.aeroport.fr/en/"
+        }
+      ]
     },
     "workVisa": {
       "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
@@ -2975,44 +2985,91 @@
       "costBreakdown": {
         "groceriesMonthly": 230,
         "diningOutAvgMeal": 15,
-        "utilitiesMonthly": 75
+        "utilitiesMonthly": 75,
+        "crousMealPrice": 3.3
       },
       "cityPopulation": "145,000",
       "notableStatus": "Birthplace of Paul Cézanne; 17th-century Provençal architecture along Cours Mirabeau; surrounded by lavender fields and Sainte-Victoire mountain",
       "languageBarrier": "Low-moderate — significant English-speaking expat and tourist presence; French still essential for daily life and admin"
     },
-    "lastUpdated": "2026-07-02",
+    "lastUpdated": "2026-07-05",
     "editorNote": "Aix is one of the few French cities where the physical environment — the light, the plane trees along Cours Mirabeau, the Sainte-Victoire mountain visible from the périphérique — becomes part of daily life in a way that's hard to overstate. Cézanne painted Sainte-Victoire over 80 times; the Cézanne trail around the city visits his studio and the landscapes he returned to obsessively. Practically: Aix is small (145,000 residents) and genuinely walkable — no student here is more than 20 minutes on foot from the centre. Marseille is 30 minutes by bus (€3 one-way), which effectively doubles your job market and cultural options while letting you live in a calmer, safer city. The trade-off is that Aix itself has limited industry — most careers requiring scale will pull you toward Marseille or further afield after graduation.",
     "faq": [
       {
+        "q": "How do I get between Aix-en-Provence and Marseille?",
+        "a": "Frequent express coaches link the two in about 35 minutes, and the Aix-en-Provence TGV station (south of town) and Marseille Provence airport are both close. Many students split their life between the two cities."
+      },
+      {
+        "q": "Which Aix neighbourhood is best for international students?",
+        "a": "The Vieil Aix centre is atmospheric but pricey; the elegant Mazarin quarter is bourgeois; and the area around the Schuman faculties, plus cheaper western districts like Encagnane, suit students on a budget."
+      },
+      {
+        "q": "Can I study in English in Aix-en-Provence?",
+        "a": "Yes — Sciences Po Aix, IAE Aix and Aix-Marseille Université run English-taught programmes in politics, management, law and economics, and the city has a large international student population."
+      },
+      {
+        "q": "Is Aix-en-Provence expensive for students?",
+        "a": "It’s one of the pricier southern towns — a compact, desirable centre keeps rents high — but daily transport is cheap and living further out near the faculties or in Marseille lowers costs."
+      },
+      {
+        "q": "What is student life like in Aix?",
+        "a": "Refined and Provençal — café terraces on the Cours Mirabeau, daily markets, the summer Festival d’Aix opera, and day-trips to Marseille, Cassis and the calanques. Cézanne’s landscapes are on the doorstep."
+      },
+      {
         "q": "Do I need a French guarantor to rent in Aix-en-Provence?",
-        "a": "Usually yes, and Aix's small, premium market makes landlords selective. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
-      },
-      {
-        "q": "Which Aix-en-Provence neighbourhood is best for international students?",
-        "a": "The old-town streets around Cours Mirabeau and Mazarin are beautiful but expensive; Les Allées and Jas de Bouffan offer more affordable rents a little further out."
-      },
-      {
-        "q": "Is Aix-en-Provence worth the premium pricing?",
-        "a": "It makes most sense if Sciences Po Aix or KEDGE is your target. Aix is small, charming and pricey, but Marseille — with its bigger job market and international airport — is just 30 minutes away, which widens your options."
+        "a": "Usually yes. Without a French guarantor, use Visale, the free government scheme for students under 30; the online certificate takes about a week and is accepted by most local agencies."
       }
     ],
     "neighborhoods": [
       {
-        "name": "Cours Mirabeau",
-        "blurb": "The grand plane-tree avenue at the city's heart — beautiful, central and the priciest place to live."
+        "name": "Vieil Aix",
+        "blurb": "The historic core of fountains, squares and hôtels particuliers around the Cours Mirabeau. The most charming and expensive place to live.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
         "name": "Mazarin",
-        "blurb": "The elegant 17th-century quarter just south of the Cours — refined, central and expensive."
+        "blurb": "The elegant 17th-century grid just south of the Cours Mirabeau, bourgeois and quiet. Beautiful but among the priciest addresses.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Les Allées",
-        "blurb": "A more modern shopping-and-residential area near the centre with better value than the old town."
+        "name": "Sextius-Mirabeau",
+        "blurb": "A newer central district near the bus station and thermal baths, more modern and slightly better value. Convenient and walkable.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
-        "name": "Jas de Bouffan",
-        "blurb": "A residential district west of the centre offering Aix's more affordable rents, with bus links."
+        "name": "La Torse",
+        "blurb": "A leafy eastern quarter along the Torse stream, residential and calm. Pleasant surroundings at mid-range rents.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
+      },
+      {
+        "name": "Quartier des Facultés (Schuman)",
+        "blurb": "The university district east of the centre around the Schuman campus of Aix-Marseille Université, with student residences and cheaper rents near class.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       }
     ],
     "distances": {
@@ -3045,8 +3102,64 @@
         "label": "airport shuttle bus estimate",
         "retrievedDate": "2026-07-02",
         "estimated": true
+      },
+      "costBreakdown.crousMealPrice": {
+        "label": "CROUS national meal tariff (etudiant.gouv.fr)",
+        "url": "https://www.etudiant.gouv.fr",
+        "retrievedDate": "2026-07-05"
       }
-    }
+    },
+    "knownFor": [
+      "Cézanne & the Montagne Sainte-Victoire",
+      "Cours Mirabeau & its fountains",
+      "Calissons d’Aix",
+      "Festival d’Aix (opera)",
+      "Roman spa-town origins"
+    ],
+    "localTips": [
+      "Take your coffee on the Cours Mirabeau under the plane trees, like every Aixois.",
+      "Visit Cézanne’s atelier, then the Terrain des Peintres for his view of Sainte-Victoire.",
+      "Buy calissons — the almond-and-melon sweet — from a historic confiserie.",
+      "The daily Provençal markets on Place Richelme are the real grocery run.",
+      "Aix has no tram: hop the frequent coach to Marseille (~35 min) for the sea and the calanques."
+    ],
+    "travelTimes": [
+      {
+        "destination": "Marseille",
+        "timeByTrain": null,
+        "timeByCar": null,
+        "timeByTransit": "~35 min by express coach",
+        "sourceUrl": "https://www.lepilote.com/"
+      },
+      {
+        "destination": "Marseille Provence Airport (MRS)",
+        "timeByTrain": null,
+        "timeByCar": null,
+        "timeByTransit": "Shuttle coach, ~30 min",
+        "sourceUrl": "https://www.marseille.aeroport.fr/en/"
+      },
+      {
+        "destination": "Paris",
+        "timeByTrain": "~3h10 by TGV",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Cassis (calanques)",
+        "timeByTrain": null,
+        "timeByCar": "~40 min by car",
+        "timeByTransit": null,
+        "sourceUrl": "https://www.viamichelin.com"
+      },
+      {
+        "destination": "Avignon",
+        "timeByTrain": "~1h10 by train",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      }
+    ]
   },
   {
     "slug": "nice",
