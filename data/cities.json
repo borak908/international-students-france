@@ -1493,8 +1493,8 @@
         "value": "€880"
       },
       {
-        "label": "Studio Rent",
-        "value": "€700/mo"
+        "label": "Sunshine",
+        "value": "300 days/yr"
       },
       {
         "label": "Safety Rating",
@@ -1545,7 +1545,17 @@
       "regularPassMonthly": 0,
       "airportConnection": "Montpellier-Méditerranée airport; TGV to Paris 3.5 hrs",
       "bikeFriendly": true,
-      "bikeShareName": "VéloMagg (€20/yr student pass) — tram/bus FREE for metro residents"
+      "bikeShareName": "VéloMagg (€20/yr student pass) — tram/bus FREE for metro residents",
+      "networkName": "TaM (Transports de l’agglomération de Montpellier)",
+      "studentPassName": "TaM — free for métropole residents",
+      "transitModes": "4 colourful designer tram lines and buses — free for residents of the métropole",
+      "airports": [
+        {
+          "name": "Montpellier-Méditerranée",
+          "code": "MPL",
+          "sourceUrl": "https://www.montpellier.aeroport.fr/en/"
+        }
+      ]
     },
     "workVisa": {
       "partTimeHours": "964 hrs/year (~18.5 hrs/wk)",
@@ -1563,7 +1573,8 @@
       "costBreakdown": {
         "groceriesMonthly": 200,
         "diningOutAvgMeal": 12,
-        "utilitiesMonthly": 75
+        "utilitiesMonthly": 75,
+        "crousMealPrice": 3.3
       },
       "cityPopulation": "295,000",
       "notableStatus": "Home to the world's oldest operating medical school (founded 1220); public transport free for all metropolitan residents",
@@ -1580,38 +1591,84 @@
         "note": null
       }
     ],
-    "lastUpdated": "2026-07-02",
+    "lastUpdated": "2026-07-05",
     "editorNote": "Montpellier is demographically the youngest city in France — the median age is noticeably lower than any other major city, which shapes everything from the bar scene to the pace of the streets. The free public transport (tram, bus, bike-share) for all metropolitan residents is genuinely free: no student card required, no subscription, no registration. The Mediterranean coast is 30 minutes by tram-to-bus connection, which matters for mental health in a long academic year. The medical faculty here (Faculté de Médecine de Montpellier-Nîmes) was founded in 1220 and is still operating from its original medieval building — it's the oldest continuously running medical school in the world, which makes anatomy lectures slightly surreal.",
     "faq": [
       {
         "q": "Is public transport really free in Montpellier?",
-        "a": "Yes — the metropolitan area made trams and buses free for all residents, so students with a local address pay nothing to get around. It's one of the biggest hidden savings of studying here."
-      },
-      {
-        "q": "Do I need a French guarantor to rent in Montpellier?",
-        "a": "Usually yes — most landlords ask for a French guarantor. If you don't have one, use Visale, the free government-backed guarantor scheme for students under 30 — the certificate takes about a week to obtain online and is widely accepted."
+        "a": "Yes — since the end of 2023 trams and buses are free for all residents of Montpellier Méditerranée Métropole. Students who register their residency travel the whole network at no cost, a rarity among big French cities."
       },
       {
         "q": "Which Montpellier neighbourhood is best for international students?",
-        "a": "The Écusson old town is central and atmospheric but competitive; Antigone and Beaux-Arts offer better value while staying on the tram network close to the universities."
+        "a": "The Écusson (historic centre) is lively but pricey; Beaux-Arts and Boutonnet are bohemian and cheaper near the old faculties; the Hôpitaux-Facultés area concentrates science and medical students on tram line 1."
+      },
+      {
+        "q": "How do I get to the beach from Montpellier?",
+        "a": "Montpellier sits about 10 km inland; in summer a tram-and-bus combination reaches the beaches at Palavas-les-Flots and Carnon in under an hour, and the free network keeps it cheap."
+      },
+      {
+        "q": "Can I study medicine or English-taught courses in Montpellier?",
+        "a": "Yes — the Université de Montpellier runs the oldest still-operating medical faculty in the Western world (founded 1220), and Montpellier Business School and international tracks offer English-taught programmes."
+      },
+      {
+        "q": "What is student life like in Montpellier?",
+        "a": "Young and outdoors — it’s one of France’s youngest cities, centred on Place de la Comédie, with a warm Mediterranean climate, free transport and beaches within reach. Nightlife spreads across the Écusson’s lanes."
+      },
+      {
+        "q": "Do I need a French guarantor to rent in Montpellier?",
+        "a": "Usually yes. Without a French guarantor, use Visale, the free state-backed scheme for under-30s; the online certificate takes about a week and is accepted by most Montpellier agencies."
       }
     ],
     "neighborhoods": [
       {
         "name": "Écusson",
-        "blurb": "The medieval old town — pedestrian, atmospheric and central, right by the universities but in high demand."
-      },
-      {
-        "name": "Antigone",
-        "blurb": "A striking neoclassical district between the centre and the river; well served by tram and good value."
-      },
-      {
-        "name": "Port Marianne",
-        "blurb": "Modern, spacious and family-friendly to the east, with newer flats and easy tram access."
+        "blurb": "The medieval pedestrian core around Place de la Comédie, all narrow lanes and hidden mansions. Central and lively but the priciest place to rent.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       },
       {
         "name": "Beaux-Arts",
-        "blurb": "Trendy and leafy north of the centre with a lively cafe scene — popular with students."
+        "blurb": "A bohemian, café-filled quarter just north of the centre, popular with students and artists. Characterful with mid-range rents.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
+      },
+      {
+        "name": "Antigone",
+        "blurb": "The striking postmodern neoclassical district by Ricardo Bofill, stretching to the river Lez. Spacious, well-served by tram and good value.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
+      },
+      {
+        "name": "Boutonnet",
+        "blurb": "A student area near the historic faculties, leafy and relaxed with cheaper rents. A long-standing favourite for undergraduates.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
+      },
+      {
+        "name": "Hôpitaux-Facultés",
+        "blurb": "The northern campus district around the science and medical faculties on tram line 1, dense with student residences — practical and affordable.",
+        "studentFriendly": true,
+        "avgRent": null,
+        "avgRentSourceUrl": null,
+        "flags": {
+          "avgRent": "add SeLoger/LocService monthly rent in-browser"
+        }
       }
     ],
     "distances": {
@@ -1644,8 +1701,64 @@
         "label": "airport shuttle estimate",
         "retrievedDate": "2026-07-02",
         "estimated": true
+      },
+      "costBreakdown.crousMealPrice": {
+        "label": "CROUS national meal tariff (etudiant.gouv.fr)",
+        "url": "https://www.etudiant.gouv.fr",
+        "retrievedDate": "2026-07-05"
       }
-    }
+    },
+    "knownFor": [
+      "Place de la Comédie (\"l’Œuf\")",
+      "Oldest medical faculty in the Western world (1220)",
+      "Free public transport for residents",
+      "One of France’s youngest cities",
+      "Mediterranean beaches at Palavas"
+    ],
+    "localTips": [
+      "Register as a resident and ride the trams and buses for free across the métropole.",
+      "In summer, the tram-plus-bus combo gets you to the beach at Palavas-les-Flots.",
+      "Meet friends at \"l’Œuf\" — the egg-shaped centre of Place de la Comédie.",
+      "Wander the Écusson’s hidden hôtels particuliers behind unmarked doors.",
+      "Sunday morning belongs to the Arceaux market under the aqueduct."
+    ],
+    "travelTimes": [
+      {
+        "destination": "Paris",
+        "timeByTrain": "~3h15 by TGV",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Nîmes",
+        "timeByTrain": "~30 min by train",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Marseille",
+        "timeByTrain": "~1h45 by TGV",
+        "timeByCar": null,
+        "timeByTransit": null,
+        "sourceUrl": "https://www.sncf-connect.com"
+      },
+      {
+        "destination": "Palavas-les-Flots (beach)",
+        "timeByTrain": null,
+        "timeByCar": null,
+        "timeByTransit": "Tram + bus, ~45 min",
+        "sourceUrl": "https://www.tam-voyages.com/"
+      },
+      {
+        "destination": "Montpellier-Méditerranée Airport (MPL)",
+        "timeByTrain": null,
+        "timeByCar": null,
+        "timeByTransit": "Shuttle bus, ~30 min",
+        "sourceUrl": "https://www.montpellier.aeroport.fr/en/"
+      }
+    ]
   },
   {
     "slug": "strasbourg",
