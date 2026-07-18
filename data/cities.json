@@ -828,7 +828,7 @@
         "studentFriendly": true,
         "avgRent": "~€500–600/mo",
         "avgRentSourceUrl": "https://www.seloger.com/classified-search?distributionTypes=Rent&estateTypes=Apartment&locations=AD08FR28950&numberOfRoomsMax=1&numberOfRoomsMin=1&projectTypes=Stock",
-        "sourceUrl": "https://blog.lodgis.com/en/living-lyon-neighborhood/"
+        "sourceUrl": null
       },
       {
         "name": "Part-Dieu (3rd)",
