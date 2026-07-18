@@ -95,9 +95,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <p className="text-xs text-[#90ADDA]">
                 Data sourced from Numbeo, CampusFrance, CAF.fr, and university websites.
               </p>
-              <p className="text-xs text-[#90ADDA]">
-                © {new Date().getFullYear()} Compare Study France · For informational purposes only
-              </p>
+              <div className="flex items-center gap-4">
+                <Link href="/privacy" className="text-xs text-[#90ADDA] hover:text-white transition-colors">
+                  Privacy
+                </Link>
+                <p className="text-xs text-[#90ADDA]">
+                  © {new Date().getFullYear()} Compare Study France · For informational purposes only
+                </p>
+              </div>
             </div>
           </div>
         </footer>
