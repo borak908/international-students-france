@@ -16,7 +16,6 @@ export default function Error({
 
   return (
     <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 py-16">
-      <div className="text-5xl mb-4">⚠️</div>
       <h2 className="text-2xl font-bold text-stone-800 mb-2">Something went wrong</h2>
       <p className="text-stone-500 text-sm mb-8 max-w-sm leading-relaxed">
         An unexpected error occurred. You can try again or head back to the homepage.

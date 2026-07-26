@@ -116,7 +116,7 @@ export default function Image({ params }: { params: { slug: string } }) {
                 fontWeight: 600,
               }}
             >
-              📖 {post.readTime}
+              {post.readTime}
             </div>
             <div
               style={{

@@ -92,19 +92,19 @@ export default function BlogPage() {
           href="/city-quiz"
           className="block text-center bg-[#1E3A6E] hover:bg-[#162D58] text-white rounded-xl px-5 py-4 text-sm font-semibold transition-colors"
         >
-          🎯 Take the city quiz
+          Take the city quiz
         </Link>
         <Link
           href="/budget-planner"
           className="block text-center bg-[#FDFBF7] hover:bg-[#F5F2ED] border border-stone-200 text-stone-700 rounded-xl px-5 py-4 text-sm font-semibold transition-colors"
         >
-          💶 Budget planner
+          Budget planner
         </Link>
         <Link
           href="/"
           className="block text-center bg-[#FDFBF7] hover:bg-[#F5F2ED] border border-stone-200 text-stone-700 rounded-xl px-5 py-4 text-sm font-semibold transition-colors"
         >
-          🏙️ Compare all cities
+          Compare all cities
         </Link>
       </div>
     </div>

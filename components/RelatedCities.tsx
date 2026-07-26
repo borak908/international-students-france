@@ -64,7 +64,6 @@ export default function RelatedCities({ currentCity, allCities }: RelatedCitiesP
   return (
     <section id="related-cities" className="scroll-mt-24">
       <div className="flex items-center gap-3 mb-5">
-        <span className="text-2xl">🗺️</span>
         <h2 className="text-xl font-bold text-stone-800">Compare to Similar Cities</h2>
       </div>
       <p className="text-sm text-stone-500 mb-5 -mt-2">

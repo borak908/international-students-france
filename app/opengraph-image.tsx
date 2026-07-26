@@ -38,21 +38,6 @@ export default function Image() {
         >
           {/* Top: logo mark */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-            {/* Simplified pin logo */}
-            <div
-              style={{
-                width: 48,
-                height: 48,
-                background: 'white',
-                borderRadius: 10,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: 28,
-              }}
-            >
-              📍
-            </div>
             <span style={{ color: '#90ADDA', fontSize: 18, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase' }}>
               Compare Study France
             </span>

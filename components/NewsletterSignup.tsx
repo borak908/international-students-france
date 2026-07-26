@@ -42,7 +42,6 @@ export default function NewsletterSignup({ variant = 'blog' }: NewsletterSignupP
   if (status === 'success') {
     return (
       <div className={`rounded-2xl p-6 text-center ${variant === 'city' ? 'bg-[#EDF0F8] border border-[#C5D0EC]' : 'bg-[#EDF0F8] border border-[#C5D0EC]'}`}>
-        <div className="text-3xl mb-2">✅</div>
         <p className="font-bold text-stone-800 text-sm">You&apos;re on the list</p>
         <p className="text-stone-500 text-xs mt-1">We&apos;ll let you know when we add cities or update rankings.</p>
       </div>
@@ -52,7 +51,6 @@ export default function NewsletterSignup({ variant = 'blog' }: NewsletterSignupP
   return (
     <div className={`rounded-2xl p-6 ${variant === 'city' ? 'bg-[#EDF0F8] border border-[#C5D0EC]' : 'bg-[#F5F2ED] border border-stone-200'}`}>
       <div className="flex items-start gap-3 mb-4">
-        <span className="text-2xl flex-shrink-0">📬</span>
         <div>
           <p className="font-bold text-stone-800 text-sm leading-snug">
             Get notified when we add new cities or update rankings

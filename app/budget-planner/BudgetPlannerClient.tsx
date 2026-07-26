@@ -129,13 +129,13 @@ export default function BudgetPlannerClient() {
   const deficit = delta !== null && delta < 0
 
   const rows = [
-    { label: 'Rent', emoji: '🏠', value: breakdown.rent, note: rentType === 'studio' ? 'Studio (avg.)' : 'Shared room (avg.)' },
-    { label: 'Food & Groceries', emoji: '🍽️', value: breakdown.food, note: 'Supermarkets + restaurants' },
-    { label: 'Transport', emoji: '🚇', value: breakdown.transport, note: 'Student monthly pass' + (breakdown.transport === 0 ? ' — FREE here!' : '') },
-    { label: 'Utilities & Bills', emoji: '💡', value: breakdown.utilities, note: 'Electricity, internet, water' },
-    { label: 'Phone', emoji: '📱', value: breakdown.phone, note: 'Sim-only plan' },
-    { label: 'Leisure & Social', emoji: '🎉', value: breakdown.leisure, note: 'Nights out, sport, hobbies' },
-    { label: 'Misc / Clothing', emoji: '📦', value: breakdown.misc, note: 'Unexpected costs' },
+    { label: 'Rent', value: breakdown.rent, note: rentType === 'studio' ? 'Studio (avg.)' : 'Shared room (avg.)' },
+    { label: 'Food & Groceries', value: breakdown.food, note: 'Supermarkets + restaurants' },
+    { label: 'Transport', value: breakdown.transport, note: 'Student monthly pass' + (breakdown.transport === 0 ? ' — FREE here!' : '') },
+    { label: 'Utilities & Bills', value: breakdown.utilities, note: 'Electricity, internet, water' },
+    { label: 'Phone', value: breakdown.phone, note: 'Sim-only plan' },
+    { label: 'Leisure & Social', value: breakdown.leisure, note: 'Nights out, sport, hobbies' },
+    { label: 'Misc / Clothing', value: breakdown.misc, note: 'Unexpected costs' },
   ]
 
   return (
@@ -231,8 +231,7 @@ export default function BudgetPlannerClient() {
         <div className="divide-y divide-stone-50">
           {rows.map((row) => (
             <div key={row.label} className="flex items-center px-6 py-4">
-              <span className="text-xl w-8 flex-shrink-0">{row.emoji}</span>
-              <div className="flex-1 min-w-0 ml-3">
+              <div className="flex-1 min-w-0">
                 <p className="text-sm font-medium text-stone-800">{row.label}</p>
                 <p className="text-xs text-stone-400 mt-0.5">{row.note}</p>
               </div>
@@ -254,7 +253,6 @@ export default function BudgetPlannerClient() {
       {delta !== null && (
         <div className={`rounded-2xl p-5 mb-8 border ${surplus ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200'}`}>
           <div className="flex items-center gap-3">
-            <span className="text-2xl">{surplus ? '✅' : '⚠️'}</span>
             <div>
               <p className={`font-bold text-base ${surplus ? 'text-green-800' : 'text-red-800'}`}>
                 {surplus
@@ -293,7 +291,7 @@ export default function BudgetPlannerClient() {
       {/* Saving tips */}
       <div className="bg-amber-50 border border-amber-100 rounded-2xl p-6">
         <h3 className="font-bold text-stone-800 mb-4 flex items-center gap-2">
-          <span>💡</span> How to save in {city.name}
+          How to save in {city.name}
         </h3>
         <ul className="space-y-2.5">
           {tips.map((tip, i) => (

@@ -228,7 +228,6 @@ export default function HomePage() {
       {/* ── Visa info banner ── */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 pb-16">
         <div className="bg-gradient-to-r from-[#EDF0F8] to-[#F5F6FC] border border-[#C5D0EC] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-          <div className="text-3xl">🎓</div>
           <div className="flex-1">
             <h3 className="font-bold text-stone-800 text-base mb-1">Tuition fees are the same across all French public universities</h3>
             <p className="text-stone-600 text-sm leading-relaxed">
