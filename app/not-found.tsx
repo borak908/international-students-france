@@ -3,7 +3,6 @@ import Link from 'next/link'
 export default function NotFound() {
   return (
     <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 py-16">
-      <div className="text-5xl mb-4">🗺️</div>
       <h2 className="text-2xl font-bold text-stone-800 mb-2">Page not found</h2>
       <p className="text-stone-500 text-sm mb-8 max-w-sm leading-relaxed">
         The page you&apos;re looking for doesn&apos;t exist. It may have been moved, or the URL

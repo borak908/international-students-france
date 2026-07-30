@@ -38,19 +38,19 @@ const questions: Question[] = [
     text: 'What kind of climate do you prefer?',
     options: [
       {
-        label: '☀️ Sunny and warm (Mediterranean)',
+        label: 'Sunny and warm (Mediterranean)',
         scores: { montpellier: 3, nice: 3, 'aix-en-provence': 3, toulouse: 3, bordeaux: 2, nantes: 0, lille: 0, strasbourg: 0, grenoble: 0, rennes: 0, lyon: 1, paris: 0 },
       },
       {
-        label: '🌤️ Mild / Atlantic',
+        label: 'Mild / Atlantic',
         scores: { bordeaux: 3, nantes: 3, rennes: 2, paris: 2, lyon: 2, lille: 1, toulouse: 2, montpellier: 2, nice: 1, 'aix-en-provence': 2, grenoble: 1, strasbourg: 1 },
       },
       {
-        label: '❄️ Cold — I don\'t mind winter',
+        label: 'Cold — I don\'t mind winter',
         scores: { strasbourg: 3, lille: 3, grenoble: 3, rennes: 2, paris: 2, lyon: 2, nantes: 2, toulouse: 1, bordeaux: 1, montpellier: 0, nice: 0, 'aix-en-provence': 0 },
       },
       {
-        label: '⛰️ Alpine (mountains nearby)',
+        label: 'Alpine (mountains nearby)',
         scores: { grenoble: 3, nice: 2, strasbourg: 1, lyon: 2, toulouse: 0, bordeaux: 0, montpellier: 0, rennes: 0, nantes: 0, lille: 0, paris: 0, 'aix-en-provence': 1 },
       },
     ],
@@ -60,19 +60,19 @@ const questions: Question[] = [
     text: 'What city size suits you best?',
     options: [
       {
-        label: '🏙️ Huge metropolis (1M+ people)',
+        label: 'Huge metropolis (1M+ people)',
         scores: { paris: 3, lyon: 2, toulouse: 1, bordeaux: 1, lille: 1, nantes: 1, marseille: 2, montpellier: 0, strasbourg: 0, nice: 0, grenoble: 0, rennes: 0, 'aix-en-provence': 0 },
       },
       {
-        label: '🌆 Large city (300k–1M)',
+        label: 'Large city (300k–1M)',
         scores: { lyon: 3, toulouse: 3, bordeaux: 3, nantes: 3, lille: 3, nice: 2, strasbourg: 2, montpellier: 2, rennes: 2, paris: 1, grenoble: 1, 'aix-en-provence': 1 },
       },
       {
-        label: '🏘️ Medium city (100k–300k)',
+        label: 'Medium city (100k–300k)',
         scores: { strasbourg: 3, montpellier: 3, nice: 3, rennes: 3, grenoble: 2, 'aix-en-provence': 2, nantes: 2, bordeaux: 1, toulouse: 1, lyon: 1, paris: 0, lille: 1 },
       },
       {
-        label: '🌿 Compact and walkable',
+        label: 'Compact and walkable',
         scores: { grenoble: 3, 'aix-en-provence': 3, strasbourg: 3, rennes: 2, montpellier: 2, nice: 2, nantes: 1, toulouse: 1, bordeaux: 1, lyon: 0, paris: 0, lille: 0 },
       },
     ],
@@ -82,23 +82,23 @@ const questions: Question[] = [
     text: 'What is your field of study?',
     options: [
       {
-        label: '⚙️ Engineering, Tech & Computer Science',
+        label: 'Engineering, Tech & Computer Science',
         scores: { grenoble: 3, toulouse: 3, nantes: 2, lyon: 2, rennes: 2, paris: 2, strasbourg: 1, bordeaux: 1, lille: 1, montpellier: 1, nice: 1, 'aix-en-provence': 0 },
       },
       {
-        label: '💼 Business, Management & Finance',
+        label: 'Business, Management & Finance',
         scores: { paris: 3, lyon: 3, toulouse: 2, bordeaux: 3, strasbourg: 2, nice: 2, lille: 2, nantes: 2, montpellier: 2, grenoble: 2, rennes: 1, 'aix-en-provence': 2 },
       },
       {
-        label: '⚕️ Medicine, Sciences & Life Sciences',
+        label: 'Medicine, Sciences & Life Sciences',
         scores: { montpellier: 3, paris: 3, lyon: 3, toulouse: 2, strasbourg: 2, bordeaux: 2, grenoble: 2, rennes: 1, nantes: 1, lille: 2, nice: 1, 'aix-en-provence': 1 },
       },
       {
-        label: '⚖️ Law, Political Science & European Studies',
+        label: 'Law, Political Science & European Studies',
         scores: { paris: 3, strasbourg: 3, 'aix-en-provence': 3, rennes: 3, bordeaux: 2, toulouse: 2, montpellier: 2, lyon: 1, lille: 2, nantes: 1, grenoble: 1, nice: 1 },
       },
       {
-        label: '🎨 Arts, Humanities & Languages',
+        label: 'Arts, Humanities & Languages',
         scores: { paris: 3, 'aix-en-provence': 3, montpellier: 2, lyon: 2, bordeaux: 2, toulouse: 1, strasbourg: 2, rennes: 1, nantes: 1, lille: 1, grenoble: 1, nice: 1 },
       },
     ],
@@ -108,15 +108,15 @@ const questions: Question[] = [
     text: 'How important is access to internships and jobs?',
     options: [
       {
-        label: '🚀 Top priority — I want the best career opportunities',
+        label: 'Top priority — I want the best career opportunities',
         scores: { paris: 3, lyon: 3, toulouse: 3, grenoble: 3, strasbourg: 2, nantes: 2, bordeaux: 2, lille: 2, montpellier: 1, rennes: 2, nice: 1, 'aix-en-provence': 1 },
       },
       {
-        label: '📊 Important but not the only thing',
+        label: 'Important but not the only thing',
         scores: { paris: 2, lyon: 2, toulouse: 2, grenoble: 2, strasbourg: 3, nantes: 3, bordeaux: 3, lille: 2, montpellier: 2, rennes: 2, nice: 2, 'aix-en-provence': 2 },
       },
       {
-        label: '😊 I care more about lifestyle than career right now',
+        label: 'I care more about lifestyle than career right now',
         scores: { montpellier: 3, 'aix-en-provence': 3, nice: 3, bordeaux: 3, toulouse: 2, rennes: 2, grenoble: 2, nantes: 2, strasbourg: 2, lille: 1, lyon: 1, paris: 0 },
       },
     ],
@@ -126,15 +126,15 @@ const questions: Question[] = [
     text: 'Which lifestyle fits you best?',
     options: [
       {
-        label: '🎉 Vibrant nightlife and a big social scene',
+        label: 'Vibrant nightlife and a big social scene',
         scores: { toulouse: 3, lyon: 3, montpellier: 3, paris: 3, bordeaux: 3, lille: 3, rennes: 3, nice: 2, nantes: 2, strasbourg: 1, grenoble: 1, 'aix-en-provence': 0 },
       },
       {
-        label: '⚖️ Balanced — good social life and time to study',
+        label: 'Balanced — good social life and time to study',
         scores: { nantes: 3, strasbourg: 3, rennes: 2, grenoble: 2, bordeaux: 2, lyon: 2, toulouse: 2, lille: 2, montpellier: 2, paris: 1, nice: 2, 'aix-en-provence': 2 },
       },
       {
-        label: '📚 Quiet and studious — I\'m here to focus',
+        label: 'Quiet and studious — I\'m here to focus',
         scores: { grenoble: 3, 'aix-en-provence': 3, strasbourg: 2, rennes: 2, nantes: 2, lille: 1, bordeaux: 1, lyon: 1, toulouse: 1, montpellier: 1, paris: 0, nice: 1 },
       },
     ],
@@ -144,15 +144,15 @@ const questions: Question[] = [
     text: 'How important are English-taught programmes?',
     options: [
       {
-        label: '🇬🇧 Essential — I need programmes fully in English',
+        label: 'Essential — I need programmes fully in English',
         scores: { paris: 3, grenoble: 3, nice: 3, strasbourg: 3, lyon: 2, lille: 2, bordeaux: 2, toulouse: 2, nantes: 2, rennes: 2, montpellier: 1, 'aix-en-provence': 2 },
       },
       {
-        label: '🗣️ Some English is fine — I can manage French too',
+        label: 'Some English is fine — I can manage French too',
         scores: { paris: 2, grenoble: 2, nice: 2, strasbourg: 2, lyon: 3, lille: 3, bordeaux: 3, toulouse: 3, nantes: 3, rennes: 3, montpellier: 3, 'aix-en-provence': 3 },
       },
       {
-        label: '🇫🇷 I want full immersion in French',
+        label: 'I want full immersion in French',
         scores: { paris: 3, lyon: 3, toulouse: 3, bordeaux: 3, nantes: 3, rennes: 3, montpellier: 3, lille: 3, strasbourg: 2, grenoble: 2, nice: 2, 'aix-en-provence': 2 },
       },
     ],
@@ -162,19 +162,19 @@ const questions: Question[] = [
     text: 'What matters to you outside the city?',
     options: [
       {
-        label: '⛷️ Mountains and skiing',
+        label: 'Mountains and skiing',
         scores: { grenoble: 3, nice: 2, strasbourg: 1, lyon: 2, toulouse: 0, bordeaux: 0, montpellier: 0, rennes: 0, nantes: 0, lille: 0, paris: 0, 'aix-en-provence': 1 },
       },
       {
-        label: '🏖️ Beach and coast',
+        label: 'Beach and coast',
         scores: { nice: 3, montpellier: 3, bordeaux: 2, nantes: 2, 'aix-en-provence': 2, toulouse: 0, grenoble: 0, rennes: 1, strasbourg: 0, lyon: 0, paris: 0, lille: 0 },
       },
       {
-        label: '🌳 Countryside and parks are enough',
+        label: 'Countryside and parks are enough',
         scores: { 'aix-en-provence': 3, toulouse: 3, rennes: 3, nantes: 3, strasbourg: 3, bordeaux: 2, lyon: 2, paris: 2, montpellier: 2, grenoble: 2, nice: 2, lille: 1 },
       },
       {
-        label: '🏙️ I\'m a city person — nature isn\'t important',
+        label: 'I\'m a city person — nature isn\'t important',
         scores: { paris: 3, lyon: 2, toulouse: 2, bordeaux: 2, lille: 2, nantes: 2, rennes: 2, montpellier: 1, strasbourg: 1, grenoble: 1, nice: 1, 'aix-en-provence': 1 },
       },
     ],
@@ -230,7 +230,6 @@ export default function CityQuizClient() {
     return (
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
         <div className="text-center mb-10">
-          <span className="text-5xl mb-4 block">🎯</span>
           <h2 className="text-3xl font-bold text-stone-800 mb-2">Your top French cities</h2>
           <p className="text-stone-500">Based on your budget, lifestyle, and academic goals</p>
         </div>
@@ -243,7 +242,6 @@ export default function CityQuizClient() {
             >
               <div className="flex items-start justify-between mb-3">
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">{i === 0 ? '🥇' : i === 1 ? '🥈' : '🥉'}</span>
                   <div>
                     <h3 className="text-xl font-bold text-stone-800">{r.city.name}</h3>
                     <p className="text-xs text-stone-400">{r.city.region}, France</p>
@@ -270,7 +268,6 @@ export default function CityQuizClient() {
               {/* Top ranking — shown only for cities with confirmed ranking data */}
               {r.city.rankings && r.city.rankings.length > 0 && (
                 <div className="flex items-center gap-2.5 bg-[#0D1B35] rounded-xl px-4 py-2.5 mb-4">
-                  <span className="text-sm flex-shrink-0">🏆</span>
                   <p className="text-xs text-[#B8CAE8] leading-snug">
                     <span className="text-white font-semibold">{r.city.rankings[0].school}</span>
                     {' — '}

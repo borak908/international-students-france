@@ -51,19 +51,16 @@ export async function generateMetadata({
 // ── Reusable section wrapper ───────────────────────────────────────────────────
 function Section({
   id,
-  emoji,
   title,
   children,
 }: {
   id: string
-  emoji: string
   title: string
   children: React.ReactNode
 }) {
   return (
     <section id={id} className="scroll-mt-24">
-      <div className="flex items-center gap-3 mb-5">
-        <span className="text-2xl">{emoji}</span>
+      <div className="flex items-center mb-5">
         <h2 className="text-xl font-bold text-stone-800">{title}</h2>
       </div>
       {children}
@@ -129,7 +126,7 @@ function TempBadge({ label, tempC }: { label: string; tempC: number }) {
 // ── FAQ section (visible content — mirrors FAQPage JSON-LD) ─────────────────────
 function FAQSection({ items }: { items: FaqItem[] }) {
   return (
-    <Section id="faq" emoji="❓" title="Frequently Asked Questions">
+    <Section id="faq" title="Frequently Asked Questions">
       <div className="space-y-3">
         {items.map((f) => (
           <details
@@ -436,7 +433,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
           <div className="flex-1 min-w-0 space-y-14">
 
             {/* 1 — Overview */}
-            <Section id="overview" emoji="🏙️" title="Overview">
+            <Section id="overview" title="Overview">
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
                 <StatCard label="Total Students" value={city.overview.studentPopulation} />
                 <StatCard label="International %" value={city.overview.internationalStudentPct} />
@@ -449,8 +446,8 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                   label="English programs"
                   value={
                     city.overview.englishProgramsAvailable
-                      ? '✅ Available — see universities section'
-                      : '❌ Limited'
+                      ? 'Available — see universities section'
+                      : 'Limited'
                   }
                 />
               </div>
@@ -465,7 +462,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
             </Section>
 
             {/* 2 — Housing & Cost */}
-            <Section id="housing" emoji="🏠" title="Housing & Cost of Living">
+            <Section id="housing" title="Housing & Cost of Living">
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
                 <StatCard
                   label="Studio rent"
@@ -510,7 +507,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
 
               {city.cityLife.costBreakdown.crousMealPrice != null && (
                 <p className="-mt-2 mb-5 text-xs text-stone-500">
-                  🍽️ A subsidised CROUS university-restaurant meal costs{' '}
+                  A subsidised CROUS university-restaurant meal costs{''}
                   <strong className="text-stone-700">€{city.cityLife.costBreakdown.crousMealPrice}</strong>{' '}
                   (nationally set — a reliable cheap lunch on campus)
                   {city.sources?.['costBreakdown.crousMealPrice']?.url && (
@@ -576,13 +573,13 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                 </div>
               )}
               <div className="mt-4 bg-amber-50 border border-amber-100 rounded-xl p-4 text-sm text-amber-800">
-                <strong>💡 CAF tip:</strong> Apply for CAF housing benefit as soon as you have a signed lease.
+                <strong>CAF tip:</strong> Apply for CAF housing benefit as soon as you have a signed lease.
                 Students from most countries are eligible for €100–300/month.
               </div>
             </Section>
 
             {/* 3 — Universities */}
-            <Section id="universities" emoji="🎓" title="Universities & Tuition">
+            <Section id="universities" title="Universities & Tuition">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                 <StatCard
                   label="EU tuition"
@@ -603,7 +600,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                 <ul className="px-5 py-3 divide-y divide-stone-50">
                   {city.universities.main.map((u) => (
                     <li key={u} className="py-2.5 text-sm text-stone-700 flex items-center gap-2">
-                      <span className="text-blue-400">🏛</span> {u}
+                      {u}
                     </li>
                   ))}
                 </ul>
@@ -638,7 +635,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
 
             {/* 4 — Rankings (only for cities with confirmed data) */}
             {city.rankings && city.rankings.length > 0 && (
-              <Section id="rankings" emoji="🏆" title="School Rankings">
+              <Section id="rankings" title="School Rankings">
                 <div className="space-y-3">
                   {city.rankings.map((r, i) => (
                     <div
@@ -687,13 +684,13 @@ export default function CityPage({ params }: { params: { slug: string } }) {
             )}
 
             {/* — Transport */}
-            <Section id="transport" emoji="🚇" title="Transport & Getting Around">
+            <Section id="transport" title="Transport & Getting Around">
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
                 <StatCard
                   label="Student pass"
                   value={
                     studentPassFree
-                      ? 'FREE 🎉'
+                      ? 'FREE'
                       : showStudentPassPrice
                         ? `€${city.transport.studentPassMonthly}/mo`
                         : city.transport.studentPassName || 'Student pass'
@@ -715,7 +712,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                 )}
                 <StatCard
                   label="Bike-friendly"
-                  value={city.transport.bikeFriendly ? 'Yes ✅' : 'Limited'}
+                  value={city.transport.bikeFriendly ? 'Yes' : 'Limited'}
                   sub={city.transport.bikeShareName}
                 />
               </div>
@@ -782,9 +779,9 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                         <div key={t.destination} className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 py-3">
                           <span className="text-sm font-medium text-stone-700 sm:w-44 flex-shrink-0">{t.destination}</span>
                           <span className="flex flex-wrap items-baseline gap-x-5 gap-y-1 text-sm text-stone-600">
-                            {t.timeByTrain && <span>🚆 {t.timeByTrain}</span>}
-                            {t.timeByTransit && <span>🚈 {t.timeByTransit}</span>}
-                            {t.timeByCar && <span>🚗 {t.timeByCar}</span>}
+                            {t.timeByTrain && <span>{t.timeByTrain}</span>}
+                            {t.timeByTransit && <span>{t.timeByTransit}</span>}
+                            {t.timeByCar && <span>{t.timeByCar}</span>}
                             {t.sourceUrl && (
                               <a
                                 href={t.sourceUrl}
@@ -804,7 +801,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
             </Section>
 
             {/* 5 — Work & Visa */}
-            <Section id="work-visa" emoji="💼" title="Work & Visa">
+            <Section id="work-visa" title="Work & Visa">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                 <div className="bg-[#F5F2ED] rounded-xl p-4 border border-stone-100 col-span-1 sm:col-span-2">
                   <p className="text-xs text-stone-400 font-medium uppercase tracking-wide mb-1">Part-time work allowance</p>
@@ -818,14 +815,14 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                 <InfoRow label="Internship scene" value={city.workVisa.internshipScene} />
               </div>
               <div className="mt-4 bg-[#EDF0F8] border border-[#C5D0EC] rounded-xl p-4 text-sm text-[#162D58]">
-                <strong>📋 Visa tip:</strong> Apply for your long-stay student visa (VLS-TS) through
+                <strong>Visa tip:</strong> Apply for your long-stay student visa (VLS-TS) through
                 Campus France in your home country. After arrival, validate it online via the ANEF portal
                 — no prefecture appointment needed.
               </div>
             </Section>
 
             {/* 6 — City Life & Climate */}
-            <Section id="city-life" emoji="🌤️" title="City Life & Climate">
+            <Section id="city-life" title="City Life & Climate">
               {/* Climate */}
               <div className="grid grid-cols-3 gap-3 mb-5">
                 <TempBadge label="Summer" tempC={city.cityLife.climate.avgSummerTempC} />
@@ -869,7 +866,6 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                   <ul className="space-y-2.5">
                     {city.localTips.map((tip, idx) => (
                       <li key={idx} className="flex gap-2.5 text-sm text-stone-600 leading-relaxed">
-                        <span className="flex-shrink-0">📍</span>
                         <span>{tip}</span>
                       </li>
                     ))}

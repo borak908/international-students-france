@@ -35,9 +35,9 @@ function ClimateBar({ city }: { city: City }) {
   const { avgSummerTempC, sunshineDaysPerYear } = city.cityLife.climate
   return (
     <div className="flex items-center gap-3 text-xs text-stone-500">
-      <span>☀️ {sunshineDaysPerYear} days/yr</span>
+      <span>{sunshineDaysPerYear} days/yr</span>
       <span className="text-stone-300">·</span>
-      <span>🌡️ {avgSummerTempC}°C summer</span>
+      <span>{avgSummerTempC}°C summer</span>
     </div>
   )
 }
